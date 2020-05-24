@@ -1,0 +1,224 @@
+//-------------------------------
+//     PATRONES DE COLORES
+//-------------------------------
+$texto:black;
+$principal:#009dff;
+$secundario: #ff600d;
+$tercero: #10d100;
+$cuarto: #262626;
+
+//********************************
+//   SOBREESCRITURA DE COLORES
+//********************************
+
+.bg-primary{
+    background-color: $principal !important;
+}
+
+.bg-secondary{
+    background-color: $secundario !important;
+}
+
+.bg-tertiary{
+    background-color: $tercero !important;
+}
+
+.text-primary{
+    color: $principal !important;
+}
+
+.text-secondary{
+    color: $secundario !important;
+}
+
+.text-tertiary{
+    color: $tercero !important;
+}
+
+.btn-primary{
+    background-color: $principal !important;
+    border-color: $principal !important;
+}
+
+.btn-secondary{
+    background-color: $secundario !important;
+    border-color: $secundario !important;
+}
+
+.btn-tertiary{
+    background-color: $tercero !important;
+    border-color: $tercero !important;
+    color: white;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    color: #fff;
+    background-color: darken($principal, 10%) !important;   //Color un poco mas oscuro que el principal
+    border-color: darken($principal, 15%) !important;
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba($principal, .5) !important;   //Sombra que se crea al hacer focus en el boton
+}
+
+.btn-primary:active{
+    background-color: darken($principal, 17%) !important;   //Color un poco mas oscuro que el principal
+    border-color: darken($principal, 20%) !important;
+}
+
+.btn-outline-primary {
+    color: $principal !important;
+    border-color: $principal !important;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:focus {
+    color: #fff !important;
+    background-color: $principal !important;
+    border-color: $principal !important;
+}
+
+.btn-outline-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba($principal, .5) !important;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show>.btn-outline-primary.dropdown-toggle {
+    color: #fff !important;
+    background-color: darken($principal, 17%) !important;
+    border-color: darken($principal, 17%) !important;
+}
+
+.btn-secondary:hover, .btn-secondary:focus {
+    color: #fff;
+    background-color: darken($secundario, 10%) !important;   //Color un poco mas oscuro que el principal
+    border-color: darken($secundario, 15%) !important;
+}
+
+.btn-secondary:focus {
+    box-shadow: 0 0 0 0.2rem rgba($secundario, .5) !important;   //Sombra que se crea al hacer focus en el boton
+}
+
+.btn-secondary:active{
+    background-color: darken($secundario, 17%) !important;   //Color un poco mas oscuro que el principal
+    border-color: darken($secundario, 20%) !important;
+}
+
+.btn-outline-secondary {
+    color: $secundario !important;
+    border-color: $secundario !important;
+}
+
+.btn-outline-secondary:hover, .btn-outline-secondary:focus {
+    color: #fff !important;
+    background-color: $secundario !important;
+    border-color: $secundario !important;
+}
+
+.btn-outline-secondary:focus {
+    box-shadow: 0 0 0 0.2rem rgba($secundario, .5) !important;
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled).active, .btn-outline-secondary:not(:disabled):not(.disabled):active, .show>.btn-outline-secondary.dropdown-toggle {
+    color: #fff !important;
+    background-color: darken($secundario, 17%) !important;
+    border-color: darken($secundario, 17%) !important;
+}
+
+.btn-tertiary:hover, .btn-tertiary:focus {
+    color: #fff;
+    background-color: darken($tercero, 10%) !important;   //Color un poco mas oscuro que el principal
+    border-color: darken($tercero, 15%) !important;
+}
+
+.btn-tertiary:focus {
+    box-shadow: 0 0 0 0.2rem rgba($secundario, .5) !important;   //Sombra que se crea al hacer focus en el boton
+}
+
+.btn-tertiary:active{
+    background-color: darken($tercero, 17%) !important;   //Color un poco mas oscuro que el principal
+    border-color: darken($tercero, 20%) !important;
+}
+
+.btn-outline-tertiary {
+    color: $tercero!important;
+    border-color: $tercero !important;
+}
+
+.btn-outline-tertiary:hover, .btn-outline-tertiary:focus {
+    color: #fff !important;
+    background-color: $tercero !important;
+    border-color: $tercero!important;
+}
+
+.btn-outline-tertiary:focus {
+    box-shadow: 0 0 0 0.2rem rgba($tercero, .5) !important;
+}
+
+.btn-outline-tertiary:not(:disabled):not(.disabled).active, .btn-outline-tertiary:not(:disabled):not(.disabled):active, .show>.btn-outline-tertiary.dropdown-toggle {
+    color: #fff !important;
+    background-color: darken($tercero, 17%) !important;
+    border-color: darken($tercero, 17%) !important;
+}
+
+//********************************
+//      ESTILOS DEL DISEÑO
+//********************************
+html{
+    font-size: 13px;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: $cuarto;
+    color: white;
+}
+
+.nav-link {
+    font-size: medium !important;
+}
+
+.card:hover{
+    box-shadow: 0 0 10px #6c757d !important;
+}
+
+.brand-img{
+    width: 3rem;
+}
+
+.circle-img{
+    width: 17rem;
+}
+
+.text-black{
+    color: black;
+}
+
+.service-img{
+    width: 10rem;
+    height: 10rem;
+}
+
+.contact-img{
+    width: 8rem;
+    height: 8rem;
+}
+
+#btnInfo{
+    margin-left: 0.3rem;
+}
+
+//**************************
+//SHOW DE LOS MEDIA QUERIES
+//**************************
+
+@media(min-width: 768px){
+    html{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 768px){
+    .contact-img{
+        width: 6rem;
+        height: 6rem;
+    }
+}
