@@ -8,9 +8,23 @@ $tercero: #10d100;
 $cuarto: #262626;
 
 //********************************
-//   SOBREESCRITURA DE COLORES
+//      ESTILOS DEL DISEÑO
 //********************************
+html{
+    font-size: 13px;
+}
 
+.bg-img{
+    background-image: url("https://www.mundodeportivo.com/r/GODO/MD/p5/ContraPortada/Imagenes/2018/10/15/Recortada/img_mguadilla_20181015-162744_imagenes_md_otras_fuentes_concert-2527495_1280-kavF-U4523679437391zG-980x554@MundoDeportivo-Web.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 15rem;
+}
+
+//********************************
+//   SOBREESCRITURA DE COLORES BOOTSTRAP
+//********************************
+/*
 .bg-primary{
     background-color: $principal !important;
 }
@@ -158,54 +172,7 @@ $cuarto: #262626;
     background-color: darken($tercero, 17%) !important;
     border-color: darken($tercero, 17%) !important;
 }
-
-//********************************
-//      ESTILOS DEL DISEÑO
-//********************************
-html{
-    font-size: 13px;
-}
-
-body{
-    font-family: 'Ubuntu', sans-serif;
-    background-color: $cuarto;
-    color: white;
-}
-
-.nav-link {
-    font-size: medium !important;
-}
-
-.card:hover{
-    box-shadow: 0 0 10px #6c757d !important;
-}
-
-.brand-img{
-    width: 3rem;
-}
-
-.circle-img{
-    width: 17rem;
-}
-
-.text-black{
-    color: black;
-}
-
-.service-img{
-    width: 10rem;
-    height: 10rem;
-}
-
-.contact-img{
-    width: 8rem;
-    height: 8rem;
-}
-
-#btnInfo{
-    margin-left: 0.3rem;
-}
-
+*/
 //**************************
 //SHOW DE LOS MEDIA QUERIES
 //**************************
@@ -213,12 +180,5 @@ body{
 @media(min-width: 768px){
     html{
         font-size: 16px;
-    }
-}
-
-@media(max-width: 768px){
-    .contact-img{
-        width: 6rem;
-        height: 6rem;
     }
 }
