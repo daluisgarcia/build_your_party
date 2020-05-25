@@ -2,8 +2,8 @@
 //     PATRONES DE COLORES
 //-------------------------------
 $texto:black;
-$principal:#009dff;
-$secundario: #ff600d;
+$principal: #00adb3;
+$secundario: #fa1401;
 $tercero: #10d100;
 $cuarto: #262626;
 
@@ -15,16 +15,17 @@ html{
 }
 
 .bg-img{
-    background-image: url("https://www.mundodeportivo.com/r/GODO/MD/p5/ContraPortada/Imagenes/2018/10/15/Recortada/img_mguadilla_20181015-162744_imagenes_md_otras_fuentes_concert-2527495_1280-kavF-U4523679437391zG-980x554@MundoDeportivo-Web.jpg");
+    background-image: url("https://i.ytimg.com/vi/_mK-lkBITwc/maxresdefault.jpg");
+    //background-image: url("https://static1.abc.es/media/sociedad/2019/06/14/parejas-boda-kIyB--620x349@abc.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 15rem;
+    height: 25rem;
 }
 
 //********************************
 //   SOBREESCRITURA DE COLORES BOOTSTRAP
 //********************************
-/*
+
 .bg-primary{
     background-color: $principal !important;
 }
@@ -38,6 +39,10 @@ html{
 }
 
 .text-primary{
+    color: $principal !important;
+}
+
+a.text-primary:focus{
     color: $principal !important;
 }
 
@@ -172,7 +177,7 @@ html{
     background-color: darken($tercero, 17%) !important;
     border-color: darken($tercero, 17%) !important;
 }
-*/
+
 //**************************
 //SHOW DE LOS MEDIA QUERIES
 //**************************
