@@ -35,3 +35,7 @@ Route::get('/register', function () {
 Route::get('/mainFifteen', function () {
     return view('mainFifteen');
 });
+
+Route::get('/templos_y_jefaturas', function () {
+    return view('templos_y_jefaturas');
+});

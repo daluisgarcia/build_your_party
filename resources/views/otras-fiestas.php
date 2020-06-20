@@ -18,49 +18,85 @@
     <div class="display-3 text-center">Otras fiestas</div>
     <section>
         <div class="container-fluid">
-            <div class="display-4 text-center">
-                Bautizos
+            <div class="text-center">
+                <div class="display-4">
+                    Bautizos
+                </div>
             </div>
             <div class="row">
-                MUCHO TEXTO
+                <div class="col-12 col-md-7">
+                    <p>
+                        MUCHOS TEXTO
+                    </p>
+                    <div class="btn btn-primary">Armar el bautizo</div>
+                </div>
+                <div class="col-12 col-md-5">
+                    IMAGEN
+                </div>
             </div>
-            <div class="btn btn-primary">Armar el bautizo</div>
         </div>
     </section>
 
     <section>
         <div class="container-fluid">
-            <div class="display-4 text-center">
-                Fiestas infantiles y Cumpleaños
+            <div class="text-center">
+                <div class="display-4">
+                    Fiestas infantiles y Cumpleaños
+                </div>
             </div>
             <div class="row">
-                MUCHO TEXTO
+                <div class="col-12 col-md-7">
+                    <p>
+                        MUCHOS TEXTO
+                    </p>
+                    <div class="btn btn-primary">Armar el bautizo</div>
+                </div>
+                <div class="col-12 col-md-5">
+                    IMAGEN
+                </div>
             </div>
-            <div class="btn btn-primary">Armar la fiesta</div>
         </div>
     </section>
 
     <section>
         <div class="container-fluid">
-            <div class="display-4 text-center">
-                Despedida de Solter@
+            <div class="text-center">
+                <div class="display-4">
+                    Despedida de Solter@
+                </div>
             </div>
             <div class="row">
-                MUCHO TEXTO
+                <div class="col-12 col-md-7">
+                    <p>
+                        MUCHOS TEXTO
+                    </p>
+                    <div class="btn btn-primary">Armar el bautizo</div>
+                </div>
+                <div class="col-12 col-md-5">
+                    IMAGEN
+                </div>
             </div>
-            <div class="btn btn-primary">Armar la despedida</div>
         </div>
     </section>
 
     <section>
         <div class="container-fluid">
-            <div class="display-4 text-center">
-                Divorcios
+            <div class="text-center">
+                <div class="display-4">
+                    Divorcios
+                </div>
             </div>
             <div class="row">
-                MUCHO TEXTO
+                <div class="col-12 col-md-7">
+                    <p>
+                        MUCHOS TEXTO
+                    </p>
+                    <div class="btn btn-primary">Armar el bautizo</div>
+                </div>
+                <div class="col-12 col-md-5">
+                    IMAGEN
+                </div>
             </div>
-            <div class="btn btn-primary">Armar el divorcio</div>
         </div>
     </section>
 
