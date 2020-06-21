@@ -19,7 +19,7 @@
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="boda-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="main_bodas" id="boda-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Boda
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">

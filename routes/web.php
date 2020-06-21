@@ -39,3 +39,7 @@ Route::get('/mainFifteen', function () {
 Route::get('/templos_y_jefaturas', function () {
     return view('templos_y_jefaturas');
 });
+
+Route::get('/main_bodas', function () {
+    return view('main_bodas');
+});

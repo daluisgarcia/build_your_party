@@ -3,6 +3,7 @@
 //-------------------------------
 $texto:black;
 $principal: #00adb3;
+$principal-transparente: #00adb3af;
 $secundario: #fa1401;
 $tercero: #10d100;
 $cuarto: #262626;
@@ -13,6 +14,25 @@ $cuarto: #262626;
 
 body{
     overflow-x: hidden;
+}
+
+.sub-menu-bar{
+    
+
+
+    padding: 1vh;
+    background-color: $principal-transparente;
+    position: fixed; /* Set the navbar to fixed position */
+    max-width: 100%; /* Full width */
+    left: 0;
+    right: 0;
+      z-index: 9999;
+      a {
+        color:white;
+      }
+
+
+
 }
 
 .bg-wed-img{
@@ -226,4 +246,107 @@ a.text-primary:focus{
     html{
         font-size: 16px;
     }
+}
+
+@media(max-width: 767px){
+    .sub-menu-bar{
+        margin-top: 5vh;
+    }
+}
+
+
+//**************************
+//PARA EL CARRUSEL DE IMAGENES
+//**************************
+
+.contenedor-carrusel {
+    position: relative;
+    width: 700px;
+    height: 300px;
+    //background-color: black;
+    border-radius: 15px;
+    padding: auto;
+    margin: auto;
+
+    a{
+        position: absolute;
+        text-decoration: none;
+        //color: white;
+        color: $principal;
+        font-size: 36px;
+        top : 50%;
+        transform: translateY(-50%);
+    }
+    
+}
+
+.header-img{
+            
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-size: 100%;
+    height: 20rem;
+    width: 100%;
+    position:relative;
+}
+
+.imagen-carrusel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.imagen-carrusel img {
+    height: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.texto-carrusel {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    top: 83%;
+    color: white;
+    background-color: $principal-transparente;
+    font-weight: bold;
+}
+
+ 
+.siguiente-carrusel {
+    left: 97%;
+}
+
+.puntos-carrusel {
+    position: absolute;
+    top: 93%;
+    width: 100%;
+    text-align: center;
+}
+.punto-carrusel {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: gray;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.punto-carrusel:hover {
+    cursor: pointer;
+    background-color: $principal;
+}
+.contenedor-carrusel a:hover {
+    color: gray;
+}
+
+.actual-carrusel {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 1s, opacity 1s;
+}
+.activo-carrusel {
+    background-color: $principal;
 }
