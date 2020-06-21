@@ -16,43 +16,10 @@
 <br>
 <br>
 <br>
- <div class = "container sub-menu-bar">
-        <div class="">
-            <div class="row">
-                
-                <div class="col-lg-1 col-sm-3 header-category"> 
-                    <a href=#>Tips</a>
-                </div>
-               
-                
-                <div class="col-lg-2 col-sm-5 header-category"> 
-                    <a href=#>Bodas católicas</a>
-                </div>
-                
-                <div class="col-lg-3 col-sm-6 header-category"> 
-                    <a href=#>¿Qué documentos necesito?</a>
-                </div>
 
-                <div class="col-lg-2 col-sm-6 header-category"> 
-                    <a href=#>Templos y jefaturas</a>
-                </div>
-
-                <div class="col-lg-1 col-sm-4 header-category"> 
-                    <a href=#>Vestidos</a>
-                </div>
-
-                <div class="col-lg-1 col-sm-4 header-category"> 
-                    <a href=#>Accesorios</a>
-                </div>
-
-                <div class="col-lg-1 col-sm-4 header-category"> 
-                    <a href=#>Buques</a>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-
+<?php
+    require 'navbar_bodas.php';
+?>
 
 <div class="header-img" style="background-image: url(https://img5.goodfon.com/wallpaper/nbig/2/7b/wedding-bride-groom.jpg)"> </div>
 

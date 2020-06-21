@@ -30,9 +30,11 @@ body{
       a {
         color:white;
       }
+}
 
-
-
+.hover-text a:hover{
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .bg-wed-img{
