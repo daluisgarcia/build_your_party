@@ -71,8 +71,4 @@
 		</div>
 	</body>
 
-
-
-
-</body>
 </html>
