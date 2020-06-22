@@ -43,3 +43,7 @@ Route::get('/templos_y_jefaturas', function () {
 Route::get('/main_bodas', function () {
     return view('main_bodas');
 });
+
+Route::get('/wedding_courses', function () {
+    return view('wedding_courses');
+});
