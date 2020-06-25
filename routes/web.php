@@ -47,3 +47,6 @@ Route::get('/main_bodas', function () {
 Route::get('/documentacion_bodas', function () {
     return view('documentacion_bodas');
 });
+Route::get('/wedding_courses', function () {
+    return view('wedding_courses');
+});

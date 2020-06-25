@@ -3,7 +3,8 @@
 //-------------------------------
 $texto:black;
 $principal: #00adb3;
-$principal-transparente: #00adb3af;
+//$principal-transparente: #00adb3af;
+$principal-transparente: #00adb3;
 $secundario: #fa1401;
 $tercero: #10d100;
 $cuarto: #262626;
@@ -17,7 +18,7 @@ body{
 }
 
 .sub-menu-bar{
-    
+
 
 
     padding: 1vh;
@@ -279,11 +280,11 @@ a.text-primary:focus{
         top : 50%;
         transform: translateY(-50%);
     }
-    
+
 }
 
 .header-img{
-            
+
     background-repeat: no-repeat;
     background-position-y: 50%;
     background-size: 100%;
@@ -317,7 +318,7 @@ a.text-primary:focus{
     font-weight: bold;
 }
 
- 
+
 .siguiente-carrusel {
     left: 97%;
 }
