@@ -20,7 +20,11 @@
 <?php
     require 'navbar_bodas.php';
 ?>
+<br>
+<br>
 
+
+<h1>Bodas</h1>
 <div class="header-img" style="background-image: url(https://img5.goodfon.com/wallpaper/nbig/2/7b/wedding-bride-groom.jpg)"> </div>
 
 <div class="col-12 align-self-center">
