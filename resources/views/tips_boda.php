@@ -247,7 +247,7 @@
 	</div>
 
 	<div class="text-center">
-		<button class="btn btn-outline-success my-2 my-sm-0">
+		<button type="button" class="btn btn-info">
 			Contrata los mejores servicios para bodas
 		</button>
 </div>

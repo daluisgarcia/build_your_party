@@ -16,7 +16,7 @@
                 </div>
 
                 <div class="col-lg-2 col-sm-6 header-category"> 
-                    <a href=#>Templos y jefaturas</a>
+                    <a href="templos_y_jefaturas">Templos y jefaturas</a>
                 </div>
 
                 <div class="col-lg-1 col-sm-4 header-category"> 

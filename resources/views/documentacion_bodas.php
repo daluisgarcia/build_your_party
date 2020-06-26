@@ -63,10 +63,10 @@
 	</div>
 
 	<div class="text-center">
-		<button class="btn btn-outline-success my-2 my-sm-0">
+		<button type="button" class="btn btn-info">
 			Generar carta de soltería ¡Gratis!
 		</button>
-</div>
+	</div>
 
 </body>
 </html>

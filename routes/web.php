@@ -56,3 +56,7 @@ Route::get('/wedding_courses', function () {
 Route::get('/tips_boda', function () {
     return view('tips_boda');
 });
+
+Route::get('/form_inscripcion_cursos_matrimoniales', function () {
+    return view('form_inscripcion_cursos_matrimoniales');
+});
