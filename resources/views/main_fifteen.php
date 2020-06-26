@@ -9,51 +9,44 @@
             background-size: 100%;
             height: 20rem;
         }
+        .right-border-button{
+            background-color: white;
+            margin: 0px 0px 0px 0px;
+            border-right: 2px solid;
+            border-bottom: 0px;
+            border-top: 0px;
+            border-left: 0px;
+        }
+
+        .plain-button {
+            background-color: white;
+            border-right: 0px;
+            border-bottom: 0px;
+            border-top: 0px;
+            border-left: 0px;
+        }
     </style>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../../public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../public/css/style.css">
+    <script src="../../public/js/carrusel.js"></script>
 </head>
 <body>
 <?php
     require 'navbar.php';
 ?>
-
-<br>
 <br>
 <br>
 <br>
 
-<ul class="navbar-nav mr-auto">
-    <li>
-        <a>
-            Tips
-        </a>
-    </li>
-    <li>
-        <a>
-            Bailes especiales
-        </a>
-    </li>
-    <li>
-        <a>
-            Temas únicos
-        </a>
-    </li>
-    <li>
-        <a>
-            Vestidos
-        </a>
-    </li>
-    <li>
-        <a>
-            Accesorios
-        </a>
-    </li>
-</ul>
+<?php
+require 'navbar_quinces.php';
+?>
+<br>
+<br>
 
-<div class="row header-img">
+<div class="header-img">
 
 </div>
 
@@ -75,7 +68,32 @@
     </p>
 </div>
 
+<div class="contenedor-carrusel">
+    <div class="imagen-carrusel actual-carrusel">
+        <img src="https://i.pinimg.com/originals/75/2d/54/752d5460f7e2544423199d8d3b693f5e.jpg" />
+    </div>
 
+    <div class="imagen-carrusel">
+        <img src="https://www.blogchulisimo.com/wp-content/uploads/2020/03/architecture-auditorium-blue-bright-colours-382297-1140x855.jpg" />
+    </div>
+
+    <div class="imagen-carrusel">
+        <img src="https://comoorganizarlacasa.com/wp-content/uploads/2018/10/programa-para-15-anos.jpg" />
+    </div>
+
+    <div class="imagen-carrusel">
+        <img src="https://4.bp.blogspot.com/_gLg3CroY0w8/TEL9n5dE2GI/AAAAAAAAAH0/GOa59p1_KrU/s1600/15+años+046.jpg" />
+    </div>
+
+
+    <div class="puntos-carrusel">
+        <span class="punto-carrusel activo-carrusel" onclick="mostrar(0);"></span>
+        <span class="punto-carrusel" onclick="mostrar(1);"></span>
+        <span class="punto-carrusel" onclick="mostrar(2);"></span>
+        <span class="punto-carrusel" onclick="mostrar(3);"></span>
+    </div>
+
+</div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="../../public/js/bootstrap.min.js"></script>
