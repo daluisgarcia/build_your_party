@@ -85,6 +85,38 @@ body{
     width: 2rem;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
+ol {
+    list-style: none;
+    counter-reset: item;
+  }
+  ol li {
+    counter-increment: item;
+    margin-bottom: 5px;
+  }
+  ol li:before {
+    margin-right: 10px;
+    content: counter(item);
+    background: $principal;
+    border-radius: 100%;
+    color: white;
+    width: 1.2em;
+    text-align: center;
+    display: inline-block;
+  }
+
+
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
+
+
+.titulo-lista{
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 28px;
+}
 //********************************
 //   SOBREESCRITURA DE COLORES BOOTSTRAP
 //********************************
@@ -249,11 +281,17 @@ a.text-primary:focus{
     html{
         font-size: 16px;
     }
+    .img-ventana-info{
+        max-width: 1150px;
+    }
 }
 
 @media(max-width: 767px){
     .sub-menu-bar{
         margin-top: 5vh;
+    }
+    .img-ventana-info{
+        max-width: 400px;
     }
 }
 

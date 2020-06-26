@@ -3,7 +3,7 @@
             <div class="row hover-text">
                 
                 <div class="col-lg-1 col-sm-3 header-category"> 
-                    <a href=#>Tips</a>
+                    <a href="tips_boda">Tips</a>
                 </div>
                
                 
