@@ -60,3 +60,7 @@ Route::get('/tips_boda', function () {
 Route::get('/form_inscripcion_cursos_matrimoniales', function () {
     return view('form_inscripcion_cursos_matrimoniales');
 });
+
+Route::get('/seleccion_tipo_fiesta', function () {
+    return view('seleccion_tipo_fiesta');
+});
