@@ -9,22 +9,6 @@
             background-size: 100%;
             height: 20rem;
         }
-        .right-border-button{
-            background-color: white;
-            margin: 0px 0px 0px 0px;
-            border-right: 2px solid;
-            border-bottom: 0px;
-            border-top: 0px;
-            border-left: 0px;
-        }
-
-        .plain-button {
-            background-color: white;
-            border-right: 0px;
-            border-bottom: 0px;
-            border-top: 0px;
-            border-left: 0px;
-        }
     </style>
     <meta charset="UTF-8">
     <title>Title</title>
