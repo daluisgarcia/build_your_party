@@ -5,9 +5,8 @@
     <title>Title</title>
     <link rel="stylesheet" href="../../public/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../public/css/style.css">
-    <script src="../../public/js/carrusel.js"></script>
     <style>
-        img {
+        .theme_img {
             max-width: 25rem;
             height: 18rem;
         }
@@ -54,7 +53,7 @@ require 'navbar_quinces.php';
 <div class="row ml-2 mr-2">
     <div class="col-lg-4 col-md-4 col-xs-4 thumb">
         <a class="thumbnail" href="#">
-            <img src="https://www.rocknrollbride.com/wp-content/uploads/2020/01/Informal-Heavy-Metal-Wedding-28.jpg">
+            <img class="theme_img" src="https://www.rocknrollbride.com/wp-content/uploads/2020/01/Informal-Heavy-Metal-Wedding-28.jpg">
         </a>
         <p class="text-center">
             Heavy metal
@@ -62,7 +61,7 @@ require 'navbar_quinces.php';
     </div>
     <div class="col-lg-4 col-md-4 col-xs-4 thumb">
         <a class="thumbnail" href="#">
-            <img src="https://www.pastiche.org.uk/wp-content/uploads/2020/04/IMG_6564-scaled.jpg">
+            <img class="theme_img" src="https://www.pastiche.org.uk/wp-content/uploads/2020/04/IMG_6564-scaled.jpg">
         </a>
         <p class="text-center">
             Antigua china
@@ -70,7 +69,7 @@ require 'navbar_quinces.php';
     </div>
     <div class="col-lg-4 col-md-4 col-xs-4 thumb">
         <a class="thumbnail" href="#">
-            <img src="http://www.enchantedfairies.com.au/uploads/4/0/5/3/40530249/5641495_orig.jpg">
+            <img class="theme_img" src="http://www.enchantedfairies.com.au/uploads/4/0/5/3/40530249/5641495_orig.jpg">
         </a>
         <p class="text-center">
             Bosque encantado
