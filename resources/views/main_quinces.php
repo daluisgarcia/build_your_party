@@ -11,7 +11,7 @@
         }
     </style>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Quinceaños</title>
     <link rel="stylesheet" href="../../public/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../public/css/style.css">
     <script src="../../public/js/carrusel.js"></script>
