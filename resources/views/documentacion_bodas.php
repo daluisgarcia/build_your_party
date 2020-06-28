@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
-    <title>Bodas</title>
+    <title>Documentos necesarios para casarse</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/carrusel.js"></script>
@@ -62,11 +62,11 @@
 		
 	</div>
 
-	<span class="centrado">
-		<button class="btn btn-outline-success my-2 my-sm-0">
+	<div class="text-center">
+		<button type="button" class="btn btn-info">
 			Generar carta de soltería ¡Gratis!
 		</button>
-	</span>
+	</div>
 
 </body>
 </html>

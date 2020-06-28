@@ -45,7 +45,7 @@
 
 <div class="contenedor-carrusel">
 			<div class="imagen-carrusel actual-carrusel">
-				<img src="https://lh3.googleusercontent.com/proxy/YSqubqNIbdDkq0vQPsS3wpV3ilJ0bYffwn-p-CjrdHCcWMMY3vDbpzGkBBRVVZd2HUPFa_uy5n8Gd8nNVeWJZuYCQyCISsXjGCvLNBpc0kEneaP14eUsDOwwBtj0Fz_o" />
+				<img src="https://images.immediate.co.uk/production/volatile/sites/13/2019/08/Sally-Rawlins-e19f897.jpg?quality=90&resize=620,413" />
 				<div class="texto-carrusel">Ariadna y Saidy</div>
 			</div>
 			
