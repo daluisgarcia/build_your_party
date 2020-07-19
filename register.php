@@ -1,25 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        .login-img{
-            background-image: url("https://img2.goodfon.com/wallpaper/nbig/8/91/party-smoke-electronica.jpg");
-            background-repeat: no-repeat;
-            background-position-y: bottom;
-            background-size: 100%;
-            height: 35rem;
-        }
-        .form-container {
-            position: absolute;
-            top: 6vh;
-            background: #ffffff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px 0px #000000;
-            width: 365px;
-
-        }
-    </style>
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -33,11 +14,11 @@
 <br>
 <br>
 
-<div class="row login-img">
+<div class="row register-img">
     <section class="container-fluid">
         <section class="row justify-content-md-center">
             <section class="col-12 col-sm-6 col-md-3">
-                <form class="form-container">
+                <form class="form-container-register">
                     <div class="text-center">
                         <h5>
                             Ingresa tus datos

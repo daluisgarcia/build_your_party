@@ -5,12 +5,6 @@
     <title>Temas de quinceños</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        .theme_img {
-            max-width: 25rem;
-            height: 18rem;
-        }
-    </style>
 </head>
 <body>
 

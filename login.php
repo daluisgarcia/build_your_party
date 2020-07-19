@@ -1,24 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        .login-img{
-            background-image: url("https://delhiitesmagazine.com/wp-content/uploads/2016/06/maxresdefault-1.jpg");
-            background-repeat: no-repeat;
-            background-size: 100%;
-            height: 34rem;
-        }
-        .form-container {
-            position: absolute;
-            top: 20vh;
-            background: #ffffff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px 0px #000000;
-            width: 365px;
-
-        }
-    </style>
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -36,7 +18,7 @@
     <section class="container-fluid">
         <section class="row justify-content-md-center">
             <section class="col-12 col-sm-6 col-md-3">
-                <form class="form-container">
+                <form class="form-container-login">
                     <div class="text-center">
                         <h5>
                             ¡Comienza a armar tu fiesta!

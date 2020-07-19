@@ -6,12 +6,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/carrusel.js"></script>
-    <style>
-        .imagen_disenador {
-            max-width: 25rem;
-            height: 18rem;
-        }
-    </style>
 </head>
 <body>
 

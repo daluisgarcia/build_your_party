@@ -3,13 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>bailes de quinceaños</title>
-    <link rel="stylesheet" href="../../public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../public/css/style.css">
-    <style>
-        .header-img {
-            background-position-y: -75px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -32,7 +27,9 @@ require 'navbar_quinces.php';
 </h2>
 <br>
 <br>
-<div class="header-img" style="background-image: url(https://www.luxondancestudio.com/images/vals_para_quince_años.jpg)"></div>
+<div class="header-img-bailes" style="background-image: url(https://www.luxondancestudio.com/images/vals_para_quince_años.jpg)">
+
+</div>
 <br>
 <div class="text-left ml-3 mr-3">
     <p>
