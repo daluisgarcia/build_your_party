@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS USUARIO(
   	passw_usuario VARCHAR(10) NOT NULL,
     fk_persona INT NOT NULL,
     PRIMARY KEY(id_usuario),
-    FOREIGN KEY(fk_persona) REFERENCES PERSONA(id_persona)
+    FOREIGN KEY(fk_persona) REFERENCES PERSONA(cedula_persona)
 );
 
 CREATE TABLE IF NOT EXISTS HORARIO(
@@ -111,18 +111,8 @@ CREATE TABLE IF NOT EXISTS TEMPLO(
     fk_religion INT NOT NULL,
     fk_lugar INT NOT NULL,
     PRIMARY KEY(id_templo, fk_religion),
-    FOREIGN KEY(fk_persona) REFERENCES PERSONA(id_persona),
+    FOREIGN KEY(fk_persona) REFERENCES PERSONA(cedula_persona),
     FOREIGN KEY(fk_religion) REFERENCES RELIGION(id_religion),
-    FOREIGN KEY(fk_lugar) REFERENCES LUGAR(id_lugar)
-);
-
-CREATE TABLE IF NOT EXISTS CITA(
-    id_reserva INT NOT NULL,
-    id_reserva_2 INT NOT NULL,
-    fk_lugar INT NOT NULL,
-    PRIMARY KEY(id_reserva, id_reserva_2),
-    FOREIGN KEY(id_reserva) REFERENCES RESERVA(id_reserva),
-    FOREIGN KEY(id_reserva_2) REFERENCES RESERVA(fk_contrato),
     FOREIGN KEY(fk_lugar) REFERENCES LUGAR(id_lugar)
 );
 
@@ -141,6 +131,26 @@ CREATE TABLE IF NOT EXISTS ORDEN_COMPRA(
   	PRIMARY KEY(nro_orden_compra)
 );
 
+CREATE TABLE IF NOT EXISTS PRODUCTO(
+    id_producto INT NOT NULL auto_increment,
+    nombre_producto VARCHAR(20) NOT NULL,
+    precio_producto DOUBLE NOT NULL,
+    cantidad_disponible_producto INT NOT NULL,
+    venta_ind_producto VARCHAR(2) NOT NULL CHECK(venta_ind_producto IN ('SI', 'NO')),
+	descuento_producto INT,
+    fk_categoria INT,
+    PRIMARY KEY(id_producto),
+    FOREIGN KEY(fk_categoria) REFERENCES CATEGORIA(id_categoria)
+);
+
+create table if not exists PRODUCTO_PROVEEDOR (
+fk_proveedor int not null,
+fk_producto int not null,
+costo_und_producto_proveedor int not null,
+primary key (fk_proveedor, fk_producto),
+constraint fk_producto foreign key (fk_producto) references PRODUCTO (id_producto),
+constraint fk_proveedor foreign key (fk_proveedor) references PROVEEDOR (id_proveedor));
+
 CREATE TABLE IF NOT EXISTS DETALLE_COMPRA(
     cantidad_detalle_compra INT(5) NOT NULL,
     costo_total_detalle_compra INT(20) NOT NULL,
@@ -149,7 +159,7 @@ CREATE TABLE IF NOT EXISTS DETALLE_COMPRA(
     fk_orden_compra INT NOT NULL,
     PRIMARY KEY(fk_producto_proveedor, fk_producto_proveedor2, fk_orden_compra),
     FOREIGN KEY(fk_producto_proveedor) REFERENCES PRODUCTO_PROVEEDOR(fk_producto),
-    FOREIGN KEY(fk_producto_proveedor) REFERENCES PRODUCTO_PROVEEDOR(fk_proveedor),
+    FOREIGN KEY(fk_producto_proveedor2) REFERENCES PRODUCTO_PROVEEDOR(fk_proveedor),
     FOREIGN KEY(fk_orden_compra) REFERENCES ORDEN_COMPRA(nro_orden_compra)
 );
 
@@ -158,7 +168,7 @@ CREATE TABLE IF NOT EXISTS PUNTO_REFERENCIA(
     descripcion_punto_refencia VARCHAR(50) NOT NULL,
     fk_salon_fiesta INT NOT NULL,
     PRIMARY KEY(id_punto_refencia),
-    FOREIGN KEY(fk_salon_fiesta) REFERENCES SALON_FIESTA(id_salon_fiesta)
+    FOREIGN KEY(fk_salon_fiesta) REFERENCES SALON_FIESTA(id_servicio)
 );
 
 CREATE TABLE IF NOT EXISTS DECORACION(
@@ -168,8 +178,14 @@ CREATE TABLE IF NOT EXISTS DECORACION(
     PRIMARY KEY(id_servicio),
     FOREIGN KEY (id_servicio) REFERENCES SERVICIO(id_servicio),
     FOREIGN KEY (fk_tematica) REFERENCES TEMATICA(id_tematica),
-    FOREIGN KEY (fk_persona) REFERENCES PERSONA(id_persona)
+    FOREIGN KEY (fk_persona) REFERENCES PERSONA(cedula_persona)
 );
+
+create table if not exists TIPO_FIESTA (
+id_tipo_fiesta int not null auto_increment,
+nombre_tipo_fiesta varchar(60) not null,
+descripcion_tipo_fiesta varchar(200),
+primary key (id_tipo_fiesta));
 
 CREATE TABLE IF NOT EXISTS FIESTA(
 	id_fiesta INT NOT NULL auto_increment,
@@ -194,6 +210,15 @@ CREATE TABLE IF NOT EXISTS HORARIO_SERVICIO(
     FOREIGN KEY (fk_servicio) REFERENCES SERVICIO(id_servicio)
 );
 
+CREATE TABLE IF NOT EXISTS CORTE_Y_COSTURA (
+cedula_persona INT NOT NULL,
+rol_cyc VARCHAR(10) NOT NULL,
+PRIMARY KEY (cedula_persona),
+FOREIGN KEY (cedula_persona) REFERENCES PERSONA(cedula_persona),
+CONSTRAINT CHECK(rol_cyc='modista' OR rol_cyc='diseñador' OR rol_cyc='costurera')
+);
+
+
 create table if not exists TRABAJO_CYC ( 
 id_trabajo_cyc INT NOT NULL auto_increment,
 nombre_trabajo_cyc varchar(200) not null,
@@ -210,14 +235,14 @@ fk_lugar int not null,
 fk_persona int not null,
 primary key (id_jefatura),
 constraint fk_lugar foreign key (fk_lugar) references LUGAR (id_lugar),
-constraint fk_persona foreign key (fk_persona) references PERSONA (cedula_persona));
+constraint fk_persona_jefatura foreign key (fk_persona) references PERSONA (cedula_persona));
 
 create table if not exists NOTARIA (
 id_notaria int not null auto_increment,
 nombre_notaria varchar(200) not null,
 fk_lugar int not null,
 primary key (id_notaria),
-constraint fk_lugar foreign key (fk_lugar) references LUGAR (id_lugar));
+constraint fk_lugar_notaria foreign key (fk_lugar) references LUGAR (id_lugar));
 
 create table if not exists COORDENADA (
 id_coordenada int not null auto_increment,
@@ -237,7 +262,7 @@ CREATE TABLE IF NOT EXISTS PRESUPUESTO(
     fk_persona INT NOT NULL,
     fk_fiesta INT NOT NULL,
     PRIMARY KEY(id_presupuesto),
-    FOREIGN KEY(fk_persona) REFERENCES PERSONA(id_persona),
+    FOREIGN KEY(fk_persona) REFERENCES PERSONA(cedula_persona),
     FOREIGN KEY(fk_fiesta) REFERENCES FIESTA(id_fiesta)
 );
 
@@ -263,24 +288,26 @@ fk_jefatura int not null,
 fk_templo int not null,
 primary key (id_reserva, fk_contrato),
 constraint fk_contrato foreign key (fk_contrato) references CONTRATO (id_contrato),
-constraint fk_servicio foreign key (fk_servicio) references SERVICIO (id_servicio),
-constraint fk_jefatura foreign key (fk_jefatura) references JEFATURA (id_jefatura),
-constraint fk_templo foreign key (fk_templo) references TEMPLO (id_templo));
+constraint fk_servicio_reserva foreign key (fk_servicio) references SERVICIO (id_servicio),
+constraint fk_jefatura_reserva foreign key (fk_jefatura) references JEFATURA (id_jefatura),
+constraint fk_templo_reserva foreign key (fk_templo) references TEMPLO (id_templo));
 
-create table if not exists PRODUCTO_PROVEEDOR (
-fk_proveedor int not null,
-fk_producto int not null,
-costo_und_producto_proveedor int not null,
-primary key (fk_proveedor, fk_producto),
-constraint fk_producto foreign key (fk_producto) references PRODUCTO (id_producto),
-constraint fk_proveedor foreign key (fk_proveedor) references PROVEEDOR (id_proveedor));
+CREATE TABLE IF NOT EXISTS CITA(
+    id_reserva INT NOT NULL,
+    id_reserva_2 INT NOT NULL,
+    fk_lugar INT NOT NULL,
+    PRIMARY KEY(id_reserva, id_reserva_2),
+    FOREIGN KEY(id_reserva) REFERENCES RESERVA(id_reserva),
+    FOREIGN KEY(id_reserva_2) REFERENCES RESERVA(fk_contrato),
+    FOREIGN KEY(fk_lugar) REFERENCES LUGAR(id_lugar)
+);
 
 create table if not exists PRODUCTO_SERVICIO (
 fk_servicio int not null,
 fk_producto int not null,
 primary key (fk_servicio, fk_producto),
-constraint fk_servicio foreign key (fk_servicio) references SERVICIO (id_servicio),
-constraint fk_producto foreign key (fk_producto) references PRODUCTO (id_producto));
+constraint fk_servicio_producto_servicio foreign key (fk_servicio) references SERVICIO (id_servicio),
+constraint fk_producto_producto_servicio foreign key (fk_producto) references PRODUCTO (id_producto));
 
 CREATE TABLE IF NOT EXISTS AMBIENTE(
     id_ambiente INT NOT NULL auto_increment,
@@ -303,8 +330,8 @@ detalles_servicio_presupuesto varchar(100),
 fk_presupuesto int not null,
 fk_servicio int not null,
 primary key (id_servicio_presupuesto),
-constraint fk_presupuesto foreign key (fk_presupuesto) references PRESUPUESTO (id_presupuesto),
-constraint fk_servicio foreign key (fk_servicio) references SERVICIO (id_servicio));
+constraint fk_presupuesto_servicio foreign key (fk_presupuesto) references PRESUPUESTO (id_presupuesto),
+constraint fk_servicio_presupuesto foreign key (fk_servicio) references SERVICIO (id_servicio));
 
 create table if not exists PAGO (
 id_pago int not null auto_increment,
@@ -313,7 +340,7 @@ fecha_realizacion_pago date not null,
 fk_contrato int not null,
 fk_metodo_de_pago int not null,
 primary key (id_pago, fk_contrato),
-constraint fk_contrato foreign key (fk_contrato) references CONTRATO (id_contrato),
+constraint fk_contrato_pago foreign key (fk_contrato) references CONTRATO (id_contrato),
 constraint fk_metodo_de_pago foreign key (fk_metodo_de_pago) references METODO_PAGO (id_metodo_pago));
 
 create table if not exists PRODUCTO_PEDIDO (
@@ -321,8 +348,8 @@ cantidad_producto_pedido int not null,
 fk_producto int not null,
 fk_servicio_presupuesto int not null,
 primary key (fk_producto, fk_servicio_presupuesto),
-constraint fk_producto foreign key (fk_producto) references PRODUCTO (id_producto),
-constraint fk_servicio_presupuesto foreign key (fk_servicio_presupuesto) references SERVICIO_PRESUPUESTO (id_servicio_presupuesto));
+constraint fk_producto_pedido foreign key (fk_producto) references PRODUCTO (id_producto),
+constraint fk_servicio_presupuesto_producto_pedido foreign key (fk_servicio_presupuesto) references SERVICIO_PRESUPUESTO (id_servicio_presupuesto));
 
 create table if not exists ROL (
 id_rol int not null auto_increment,
@@ -334,7 +361,7 @@ fk_rol int not null,
 fk_usuario int not null,
 primary key (fk_rol, fk_usuario),
 constraint fk_rol foreign key (fk_rol) references ROL (id_rol),
-constraint fk_usuario foreign key (fk_usuario) references ROL (id_usuario));
+constraint fk_usuario foreign key (fk_usuario) references USUARIO (id_usuario));
 
 create table if not exists PERMISO (
 id_permiso int not null auto_increment,
@@ -345,7 +372,7 @@ create table if not exists ROL_PERMISO (
 fk_rol int not null,
 fk_permiso int not null,
 primary key (fk_rol, fk_permiso),
-constraint fk_rol foreign key (fk_rol) references ROL (id_rol),
+constraint fk_rol_permiso foreign key (fk_rol) references ROL (id_rol),
 constraint fk_permiso foreign key (fk_permiso) references PERMISO (id_permiso));
 
 CREATE TABLE IF NOT EXISTS CONTRATO_TERCERO(
@@ -376,7 +403,7 @@ CREATE TABLE IF NOT EXISTS SERVICIO_TERCERIZADO(
 	tipo_servicio_tercerizado VARCHAR(100),
   	PRIMARY KEY(id_servicio),
  	FOREIGN KEY(id_servicio) REFERENCES SERVICIO(id_servicio),
-    FOREIGN KEY(fk_persona) REFERENCES PERSONA(id_persona)
+    FOREIGN KEY(fk_persona) REFERENCES PERSONA(cedula_persona)
 );
 
 CREATE TABLE IF NOT EXISTS ESTACIONAMIENTO(
@@ -388,18 +415,6 @@ CREATE TABLE IF NOT EXISTS ESTACIONAMIENTO(
  	FOREIGN KEY(fk_salon_fiesta) REFERENCES SALON_FIESTA(id_servicio)
 );
 
-CREATE TABLE IF NOT EXISTS PRODUCTO(
-    id_producto INT NOT NULL auto_increment,
-    nombre_producto VARCHAR(20) NOT NULL,
-    precio_producto DOUBLE NOT NULL,
-    cantidad_disponible_producto INT NOT NULL,
-    venta_ind_producto VARCHAR(2) NOT NULL CHECK(venta_ind_producto IN ('SI', 'NO')),
-	descuento_producto INT,
-    fk_categoria INT,
-    PRIMARY KEY(id_producto),
-    FOREIGN KEY(fk_categoria) REFERENCES CATEGORIA(id_categoria)
-);
-
 create table if not exists CURSO_MATRIM (
 id_curso_matrim int not null auto_increment,
 fecha_inicio_curso_matrim date not null,
@@ -409,7 +424,7 @@ descripcion_curso_matrim varchar(200),
 cupos_curso_matrim int not null,
 fk_templo int not null,
 primary key (id_curso_matrim, fk_templo),
-constraint fk_templo foreign key (fk_templo) references TEMPLO (id_templo));
+constraint fk_templo_curso foreign key (fk_templo) references TEMPLO (id_templo));
 
 CREATE TABLE IF NOT EXISTS INSCRIPCION_CUR_M(
     fk_curso_matrim_1 INT NOT NULL,
@@ -419,14 +434,6 @@ CREATE TABLE IF NOT EXISTS INSCRIPCION_CUR_M(
     FOREIGN KEY(fk_curso_matrim_1) REFERENCES CURSO_MATRIM(id_curso_matrim),
 	FOREIGN KEY(fk_curso_matrim_2) REFERENCES CURSO_MATRIM(fk_templo),
 	FOREIGN KEY(fk_presupuesto) REFERENCES PRESUPUESTO(id_presupuesto)
-);
-
-CREATE TABLE IF NOT EXISTS CORTE_Y_COSTURA (
-cedula_persona INT NOT NULL,
-rol_cyc VARCHAR(10) NOT NULL,
-PRIMARY KEY (cedula_persona),
-FOREIGN KEY (cedula_persona) REFERENCES PERSONA(cedula_persona),
-CONSTRAINT CHECK(rol_cyc='modista' OR rol_cyc='diseñador' OR rol_cyc='costurera')
 );
 
 CREATE TABLE IF NOT EXISTS ESTADO (
@@ -476,9 +483,9 @@ fecha_inicio_detalle DATE NOT NULL,
 fecha_fin_detalle DATE,
 PRIMARY KEY (fk_estado, fk_detalle_compra_1, fk_detalle_compra_2, fk_detalle_compra_3),
 FOREIGN KEY (fk_estado) REFERENCES ESTADO(id_estado),
-FOREIGN KEY (fk_detalle_compra_1) REFERENCES DETALLE_COMPRA(fk_producto_proveedor),
-FOREIGN KEY (fk_detalle_compra_2) REFERENCES DETALLE_COMPRA(fk_producto_proveedor2),
-FOREIGN KEY (fk_detalle_compra_3) REFERENCES DETALLE_COMPRA(fk_orden_compra)
+constraint fk1 FOREIGN KEY (fk_detalle_compra_1) REFERENCES DETALLE_COMPRA (fk_producto_proveedor),
+constraint fk2 FOREIGN KEY (fk_detalle_compra_2) REFERENCES DETALLE_COMPRA (fk_producto_proveedor2),
+constraint fk3 FOREIGN KEY (fk_detalle_compra_3) REFERENCES DETALLE_COMPRA (fk_orden_compra)
 );
 
 CREATE TABLE IF NOT EXISTS TELEFONO(
@@ -493,9 +500,9 @@ CREATE TABLE IF NOT EXISTS TELEFONO(
     PRIMARY KEY(id_telefono),
     FOREIGN KEY(fk_templo) REFERENCES TEMPLO(id_templo),
     FOREIGN KEY(fk_jefatura) REFERENCES JEFATURA(id_jefatura),
-    FOREIGN KEY(fk_persona) REFERENCES PERSONA(id_persona),
+    FOREIGN KEY(fk_persona) REFERENCES PERSONA(cedula_persona),
     FOREIGN KEY(fk_proveedor) REFERENCES PROVEEDOR(id_proveedor),
-    FOREIGN KEY(fk_salon) REFERENCES SALON_FIESTA(id_salon_fiesta)
+    FOREIGN KEY(fk_salon) REFERENCES SALON_FIESTA(id_servicio)
 );
 
 CREATE TABLE IF NOT EXISTS IMAGEN(
@@ -512,9 +519,9 @@ CREATE TABLE IF NOT EXISTS IMAGEN(
     PRIMARY KEY(id_imagen),
     FOREIGN KEY(fk_templo) REFERENCES TEMPLO(id_templo),
     FOREIGN KEY(fk_trabajo_cyc) REFERENCES TRABAJO_CYC(id_trabajo_cyc),
-    FOREIGN KEY(fk_trabajo_cyc_2) REFERENCES TEMPLO(fk_cyc),
+    FOREIGN KEY(fk_trabajo_cyc_2) REFERENCES TRABAJO_CYC(fk_cyc),
     FOREIGN KEY(fk_jefatura) REFERENCES JEFATURA(id_jefatura),
-    FOREIGN KEY(fk_persona) REFERENCES PERSONA(id_persona),
+    FOREIGN KEY(fk_persona) REFERENCES PERSONA(cedula_persona),
     FOREIGN KEY(fk_producto) REFERENCES PRODUCTO(id_producto),
     FOREIGN KEY(fk_servicio) REFERENCES SERVICIO(id_servicio),
     FOREIGN KEY(fk_post) REFERENCES POST(id_post)
