@@ -1,20 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        .header-img{
-            background-image: url("https://img2.goodfon.com/wallpaper/nbig/8/91/party-smoke-electronica.jpg");
-            background-repeat: no-repeat;
-            background-position-y: bottom;
-            background-size: 100%;
-            height: 20rem;
-        }
-    </style>
     <meta charset="UTF-8">
     <title>Quinceaños</title>
-    <link rel="stylesheet" href="../../public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../public/css/style.css">
-    <script src="../../public/js/carrusel.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/carrusel.js"></script>
 </head>
 <body>
 <?php
@@ -30,7 +21,7 @@ require 'navbar_quinces.php';
 <br>
 <br>
 
-<div class="header-img">
+<div class="header-img-quinces">
 
 </div>
 

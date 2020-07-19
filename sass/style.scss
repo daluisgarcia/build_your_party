@@ -17,6 +17,11 @@ body{
     overflow-x: hidden;
 }
 
+.theme_img {
+    max-width: 25rem;
+    height: 18rem;
+}
+
 .img-fondo-seccion-sm{
     background-repeat: no-repeat;
     background-position-y: bottom;
@@ -33,6 +38,52 @@ body{
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px #000000;
     width: 600px;
+}
+
+.header-img-bailes {
+    background-position-y: -75px;
+    height: 370px;
+}
+
+.register-img{
+    background-image: url("https://img2.goodfon.com/wallpaper/nbig/8/91/party-smoke-electronica.jpg");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: 100%;
+    height: 35rem;
+}
+
+.login-img{
+    background-image: url("https://delhiitesmagazine.com/wp-content/uploads/2016/06/maxresdefault-1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 34rem;
+}
+
+.imagen_disenador {
+    max-width: 25rem;
+    height: 18rem;
+}
+
+.form-container-login {
+    position: absolute;
+    top: 20vh;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #000000;
+    width: 365px;
+
+}
+.form-container-register {
+    position: absolute;
+    top: 6vh;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #000000;
+    width: 365px;
+
 }
 
 .sub-menu-bar{
@@ -337,6 +388,14 @@ a.text-primary:focus{
         transform: translateY(-50%);
     }
 
+}
+
+.header-img-quinces{
+    background-image: url("https://img2.goodfon.com/wallpaper/nbig/8/91/party-smoke-electronica.jpg");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: 100%;
+    height: 20rem;
 }
 
 .header-img{

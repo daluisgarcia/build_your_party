@@ -3,14 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Temas de quinceños</title>
-    <link rel="stylesheet" href="../../public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../public/css/style.css">
-    <style>
-        .theme_img {
-            max-width: 25rem;
-            height: 18rem;
-        }
-    </style>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
