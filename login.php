@@ -6,7 +6,7 @@
             background-image: url("https://delhiitesmagazine.com/wp-content/uploads/2016/06/maxresdefault-1.jpg");
             background-repeat: no-repeat;
             background-size: 100%;
-            height: 35rem;
+            height: 34rem;
         }
         .form-container {
             position: absolute;
