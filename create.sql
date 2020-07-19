@@ -393,17 +393,9 @@ CREATE TABLE IF NOT EXISTS PRODUCTO(
     nombre_producto VARCHAR(20) NOT NULL,
     precio_producto DOUBLE NOT NULL,
     cantidad_disponible_producto INT NOT NULL,
+    venta_ind_producto VARCHAR(2) NOT NULL CHECK(venta_ind_producto IN ('SI', 'NO')),
 	descuento_producto INT,
     PRIMARY KEY(id_producto)
-);
-
-CREATE TABLE IF NOT EXISTS USUARIO(
-    id_usuario INT NOT NULL auto_increment,
-    nombre_usuario VARCHAR(10) NOT NULL UNIQUE,
-  	passw_usuario VARCHAR(10) NOT NULL,
-    fk_persona INT NOT NULL,
-    PRIMARY KEY(id_usuario),
-    FOREIGN KEY(fk_persona) REFERENCES PERSONA(id_persona)
 );
 
 create table if not exists CURSO_MATRIM (

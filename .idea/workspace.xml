@@ -20,7 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3d9412f-d832-42ed-9e83-6e44df7bd0b9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/Connection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/Product.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/products.view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/create.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/navbar.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,9 +50,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../recipe-social-network/model/Conection.php" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\build_your_party\view" />
       <recent name="C:\wamp64\www\build_your_party" />
     </key>
   </component>
@@ -60,6 +69,9 @@
       <option name="presentableId" value="Default" />
       <updated>1594491171890</updated>
       <workItem from="1594491175596" duration="390000" />
+      <workItem from="1594871700917" duration="929000" />
+      <workItem from="1594872737606" duration="396000" />
+      <workItem from="1595094725401" duration="15465000" />
     </task>
     <servers />
   </component>
@@ -76,5 +88,28 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1594872479621">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1594872479621" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1594871948615">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594871948615" />
+    <state x="486" y="87" key="NewPhpClassDialog" timestamp="1595097252085">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="486" y="87" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1595097252085" />
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1595097241144">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1595097241144" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1595114308764">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1595114308764" />
   </component>
 </project>
