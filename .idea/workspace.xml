@@ -21,15 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4abbf05e-8e07-4203-bc32-7ed3eddfe9a0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bailes_quinces.php" beforeDir="false" afterPath="$PROJECT_DIR$/bailes_quinces.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_quinces.php" beforeDir="false" afterPath="$PROJECT_DIR$/main_quinces.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temas_quinces.php" beforeDir="false" afterPath="$PROJECT_DIR$/temas_quinces.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vestidos_quinces.php" beforeDir="false" afterPath="$PROJECT_DIR$/vestidos_quinces.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/login.view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,6 +145,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\build_your_party\view" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
@@ -189,6 +186,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="486" y="87" key="NewPhpClassDialog" timestamp="1595123698030">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="486" y="87" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1595123698030" />
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1595123670796">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1595123670796" />
     <state x="511" y="84" key="RollbackChangesDialog" timestamp="1595122968564">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
