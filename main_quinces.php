@@ -12,9 +12,9 @@
     </style>
     <meta charset="UTF-8">
     <title>Quinceaños</title>
-    <link rel="stylesheet" href="../../public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../public/css/style.css">
-    <script src="../../public/js/carrusel.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/carrusel.js"></script>
 </head>
 <body>
 <?php
