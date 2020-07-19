@@ -2,7 +2,7 @@
 
 include_once 'Connection.php';
 
-class user
+class user extends Connection
 {
     function __construct(){
         parent::__construct();

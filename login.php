@@ -15,10 +15,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     $error = '';
 
-    if(isEmpty($usuario)){
+    if(empty($usuario)){
         $error .= '<li>Usuario no debe estar vacío</li>';
     }
-    if(isEmpty($pass)){
+    if(empty($pass)){
         $error .= '<li>contraseña no debe estar vacío</li>';
     }else {
         $pass = ENCRYPT($pass);
@@ -45,6 +45,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             $error .='<li>Error de conexión</li>';
         }
     }
-    include "/view/login.view.php";
-
 }
+
+include "view/login.view.php";
