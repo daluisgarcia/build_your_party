@@ -18,7 +18,7 @@
     <section class="container-fluid">
         <section class="row justify-content-md-center">
             <section class="col-12 col-sm-6 col-md-3">
-                <form class="form-container-login">
+                <form class="form-container-login" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
                     <div class="text-center">
                         <h5>
                             ¡Comienza a armar tu fiesta!
@@ -26,18 +26,22 @@
                     </div>
                     <br>
                     <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo electrónico">
+                        <input type="text" class="form-control" name="user" id="user" placeholder="Usuario">
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+                        <input type="password" class="form-control" name="pass" id="pass" placeholder="Contraseña">
                     </div>
+                    <ul class="text-light bg-danger">
+                        <?php
+                            echo (isset($error)) ? $error : '';
+                        ?>
+                    </ul>
                     <div class="text-center">
                         <button type="submit" class="btn btn-primary text-center">Iniciar sesión</button>
                     </div>
                     <div class="text-center">
                         <a href="register">¿No posees una cuenta?</a>
                     </div>
-
                 </form>
             </section>
         </section>
