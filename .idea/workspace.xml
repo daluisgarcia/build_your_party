@@ -20,14 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4abbf05e-8e07-4203-bc32-7ed3eddfe9a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/build_your_party.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/build_your_party.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bodas_catolicas.php" beforeDir="false" afterPath="$PROJECT_DIR$/bodas_catolicas.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_quinces.php" beforeDir="false" afterPath="$PROJECT_DIR$/main_quinces.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temas_quinces.php" beforeDir="false" afterPath="$PROJECT_DIR$/temas_quinces.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tips_quinces.php" beforeDir="false" afterPath="$PROJECT_DIR$/tips_quinces.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vestidos_quinces.php" beforeDir="false" afterPath="$PROJECT_DIR$/vestidos_quinces.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -167,7 +160,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595119797137</updated>
-      <workItem from="1595119800683" duration="267000" />
+      <workItem from="1595119800683" duration="722000" />
     </task>
     <servers />
   </component>
