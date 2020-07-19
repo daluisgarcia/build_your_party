@@ -395,7 +395,9 @@ CREATE TABLE IF NOT EXISTS PRODUCTO(
     cantidad_disponible_producto INT NOT NULL,
     venta_ind_producto VARCHAR(2) NOT NULL CHECK(venta_ind_producto IN ('SI', 'NO')),
 	descuento_producto INT,
-    PRIMARY KEY(id_producto)
+    fk_categoria INT,
+    PRIMARY KEY(id_producto),
+    FOREIGN KEY(fk_categoria) REFERENCES CATEGORIA(id_categoria)
 );
 
 create table if not exists CURSO_MATRIM (
