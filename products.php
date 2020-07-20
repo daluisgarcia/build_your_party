@@ -54,8 +54,25 @@ try {
     if (empty($categories)) {
         $not = 'ERROR';
     }
-    $id = 2;
+    $id = 1;
     $products = $connect->get_products_by_category($id);
+    //var_dump($products);
+    $service = $connect->get_services_by_category($id);
+    //var_dump($service);
+
+    if (empty($products) or empty($service)) {
+        $not = 'ERROR';
+    }else{
+        foreach ($products as &$p){
+            $arr = array('CLASE' => 'PRODUCTO');
+            $p = $p + $arr;
+        }
+        foreach ($service as &$s) {
+            $arr = array('CLASE' => 'SERVICIO');
+            $s = $s + $arr;
+            array_push($products, $s);
+        }
+    }
 
 }catch (PDOException $e){
     $not = 'No se han encontrado categorias, error al conectar con servidor.';

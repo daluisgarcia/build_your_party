@@ -55,7 +55,7 @@ CREATE TABLE IF NOT EXISTS CATEGORIA(
 create table if not exists SERVICIO (
 id_servicio int not null auto_increment,
 nombre_servicio varchar(60) not null,
-modalidad_pago_servicio enum('horas','cantidad','na') not null,
+modalidad_pago_servicio enum('HORA','CANTIDAD','NA') not null,
 costo_servicio int,
 precio_servicio int,
 descuento_servicio int,
