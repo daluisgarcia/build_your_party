@@ -51,3 +51,4 @@ fabric.properties
 
 # *.iml
 # modules.xml
+.idea/workspace.xml
