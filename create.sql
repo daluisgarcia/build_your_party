@@ -5,7 +5,7 @@ USE ATF;
 CREATE TABLE IF NOT EXISTS LUGAR(
     id_lugar INT NOT NULL auto_increment,
     nombre_lugar VARCHAR(50) NOT NULL,
-    tipo_lugar VARCHAR(6) NOT NULL CHECK(tipo_lugar IN('PAIS','ESTADO','CIUDAD','CALLE')),
+    tipo_lugar VARCHAR(12) NOT NULL CHECK(tipo_lugar IN('PAIS','ESTADO','MUNICIPIO','CIUDAD','CALLE')),
     fk_lugar INT,
     PRIMARY KEY(id_lugar),
     FOREIGN KEY (fk_lugar) REFERENCES LUGAR(id_lugar)
