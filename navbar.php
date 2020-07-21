@@ -76,6 +76,3 @@
     </button>
 
 </nav>
-
-<br>
-<br>

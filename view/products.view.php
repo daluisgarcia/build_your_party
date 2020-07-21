@@ -1,4 +1,7 @@
 
+<br>
+<br>
+
 <div class="container-fluid mt-3">
     <div class="row">
         <section class="col-2 border-right" id="c-categorias">
