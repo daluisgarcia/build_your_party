@@ -28,7 +28,7 @@
                             <a href="#" class="text-decoration-none card">
                                 <img src="" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title"><?php echo $p['nombre'] ?> <i>SERVICIO</i></h5>
+                                    <h5 class="card-title"><?php echo $p['nombre'] ?> <i>PRODUCTO</i></h5>
                                     <p class="card-text"><b>Precio:</b> <?php echo $p['precio']; ?></p>
                                 </div>
                             </a>
