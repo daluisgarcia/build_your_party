@@ -409,5 +409,5 @@ insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Sim
 insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Sucre', 'MUNICIPIO', 24);
 insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Valmore Rodríguez', 'MUNICIPIO', 24);
 
-
-select count(nombre_lugar) from lugar where tipo_lugar = 'MUNICIPIO';
+use atf;
+select * from lugar where tipo_lugar = 'ESTADO';

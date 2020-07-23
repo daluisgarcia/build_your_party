@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS LUGAR(
 );
 
 create table if not exists PERSONA (
-cedula_persona int not null auto_increment,
+cedula_persona int not null unique,
 nombre_persona varchar(200) not null,
 apellido_persona varchar(200) not null,
 correo_persona varchar(40),
