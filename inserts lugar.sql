@@ -2044,3 +2044,6 @@ SELECT lpp.nombre_lugar as 'Nombre Estado',
              AND lpp.id_lugar = lp.fk_lugar
              AND lpp.tipo_lugar = 'ESTADO'
        GROUP BY lpp.nombre_lugar;
+
+use atf;
+select * from lugar where tipo_lugar = 'ESTADO';
