@@ -8,11 +8,11 @@
             <?php print_list($categories); ?>
         </section>
         <section class="col-10" id="c-productos">
-            <div class="row">
+            <div id="productos-row" class="row">
                 <?php foreach ($products as $p): ?>
                     <?php if ($p['CLASE']==='SERVICIO'): ?>
                         <div class="col-3">
-                            <a href="#" class="text-decoration-none card">
+                            <a href="SERVICIO-<?php echo $p['id']; ?>" class="text-decoration-none card">
                                 <img src="" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title"><?php echo $p['nombre']; ?> <i>SERVICIO</i></h5>
@@ -25,7 +25,7 @@
                         </div>
                     <?php else: ?>
                         <div class="col-3">
-                            <a href="#" class="text-decoration-none card">
+                            <a href="PRODUCTO-<?php echo $p['id']; ?>" class="text-decoration-none card">
                                 <img src="" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title"><?php echo $p['nombre'] ?> <i>PRODUCTO</i></h5>
@@ -39,6 +39,8 @@
         </section>
     </div>
 </div>
+
+<script src="js/products_AJAX.js"></script>
 
 </body>
 </html>
