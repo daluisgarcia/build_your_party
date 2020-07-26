@@ -21,13 +21,14 @@ function search_category($id, &$categories){
 function print_list($array){
     $id = 'id';
     $n = 'nombre';
+    $clase = 'CLASE';
     echo "<ul>";
     $size = sizeof($array);
     for ($i = 0; $i < $size; $i++){
         if (array_key_exists($i,$array)) {
             $a = $array[$i];
             echo "<li>";
-            echo "<a href='$a[$id]'>$a[$n]</a>";
+            echo "<a id='$a[$id]' href='#' class='category'>$a[$n]</a>";
             $result = search_category($a['id'], $array);
             if (!empty($result)) {
                 print_list($result);
@@ -54,14 +55,11 @@ try {
     if (empty($categories)) {
         $not = 'ERROR';
     }
-    $id = 1;
-    $products = $connect->get_products_by_category($id);
-    //var_dump($products);
-    $service = $connect->get_services_by_category($id);
-    //var_dump($service);
+    $products = $connect->get_products_by_category(0);
+    $service = $connect->get_services_by_category(0);
 
     if (empty($products) or empty($service)) {
-        $not = 'ERROR';
+        $not .= 'ERROR';
     }else{
         foreach ($products as &$p){
             $arr = array('CLASE' => 'PRODUCTO');
@@ -73,7 +71,6 @@ try {
             array_push($products, $s);
         }
     }
-
 }catch (PDOException $e){
     $not = 'No se han encontrado categorias, error al conectar con servidor.';
 }
