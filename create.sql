@@ -103,10 +103,10 @@ CREATE TABLE IF NOT EXISTS RELIGION(
 
 CREATE TABLE IF NOT EXISTS TEMPLO(
     id_templo INT NOT NULL auto_increment,
-    nombre_templo VARCHAR(50) NOT NULL,
-    pagina_web_templo VARCHAR(50) NOT NULL,
-    email_templo VARCHAR(50) NOT NULL,
-    descripcion_templo VARCHAR(100),
+    nombre_templo VARCHAR(150) NOT NULL,
+    pagina_web_templo VARCHAR(150) NOT NULL,
+    email_templo VARCHAR(150) NOT NULL,
+    descripcion_templo VARCHAR(250),
     fk_persona INT NOT NULL, 
     fk_religion INT NOT NULL,
     fk_lugar INT NOT NULL,
