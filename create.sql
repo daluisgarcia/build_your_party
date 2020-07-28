@@ -67,9 +67,9 @@ constraint fk_servicio foreign key (fk_categoria) references CATEGORIA (id_categ
 
 CREATE TABLE IF NOT EXISTS POST(
     id_post INT NOT NULL auto_increment,
-    seccion_post VARCHAR(5) NOT NULL CHECK(seccion_post IN('BODA','XV','OTRO')),
-    titulo_post VARCHAR(20) NOT NULL,
-    contenido_post TEXT NOT NULL,
+    seccion_post VARCHAR(5) NOT NULL CHECK(seccion_post IN('BODA','XV','OTRO','DECORACION')),
+    titulo_post VARCHAR(40) NOT NULL,
+    cuerpo_post TEXT NOT NULL,
     PRIMARY KEY (id_post) 
 );
 
@@ -119,6 +119,7 @@ CREATE TABLE IF NOT EXISTS TEMPLO(
 CREATE TABLE IF NOT EXISTS PROVEEDOR(
     id_proveedor INT NOT NULL auto_increment,
     nombre_proveedor VARCHAR(50) NOT NULL,
+    tipo_proveedor varchar(15) not null check(tipo_proveedor IN ('FLORES', 'ALIMENTOS', 'OTRO')),
     fk_lugar INT NOT NULL,
     PRIMARY KEY(id_proveedor),
     FOREIGN KEY(fk_lugar) REFERENCES LUGAR(id_lugar)

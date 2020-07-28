@@ -2046,5 +2046,11 @@ SELECT lpp.nombre_lugar as 'Nombre Estado',
        GROUP BY lpp.nombre_lugar;
 
 use atf;
+
 select l.id_lugar as ID, l.nombre_lugar as Nombre, l.tipo_lugar as TIPO, ld.nombre_lugar as 'Nombre Superior', ld.tipo_lugar as 'Tipo Superior', ldd.nombre_lugar as 'Nombre Mas Superior', ldd.tipo_lugar as 'Tipo Mas Superior' from lugar as l join lugar as ld on l.fk_lugar=ld.id_lugar left join lugar as ldd on ld.fk_lugar=ldd.id_lugar where l.nombre_lugar LIKE '%bolivar%';
 select l.id_lugar as ID, l.nombre_lugar as Nombre, l.tipo_lugar as TIPO from lugar as l where l.nombre_lugar LIKE '%tinaco%';
+
+select * from lugar where tipo_lugar = 'ESTADO';
+
+select l.id_lugar as i_parr, l.nombre_lugar as parroquia, l2.nombre_lugar as estado from lugar l, lugar l2, lugar l3 where l.fk_lugar = l3.id_lugar and l3.fk_lugar = l2.id_lugar order by l2.nombre_lugar;
+select distinct count(l.nombre_lugar) as cant_parr, l2.nombre_lugar as estado from lugar l, lugar l2, lugar l3 where l.fk_lugar = l3.id_lugar and l3.fk_lugar = l2.id_lugar group by l2.nombre_lugar;
