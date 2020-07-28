@@ -2896,7 +2896,7 @@ INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_not
 INSERT INTO NOTARIA VALUES (null, 'Notaria Principal del Estado Apure', 484, 27780893);
 INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_notaria) VALUES (7.8726693, -67.4819329, 4);
 INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_notaria) VALUES (null, 0247, 3410571, 4);
-INSERT INTO JEFATURA VALUES (null, 'Registro Civil de Maracay', 519, 27780894);
+INSERT INTO NOTARIA VALUES (null, 'Registro Civil de Maracay', 519, 27780894);
 INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_notaria) VALUES (10.2566733, -67.6353261, 5);
 INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_notaria) VALUES (null, 0416, 6536392, 5);
 INSERT INTO NOTARIA VALUES (null, 'Notaria del Municipio Ezequial Zamora', 578, 27880895);
