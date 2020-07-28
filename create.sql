@@ -242,8 +242,10 @@ create table if not exists NOTARIA (
 id_notaria int not null auto_increment,
 nombre_notaria varchar(200) not null,
 fk_lugar int not null,
+fk_persona int not null,
 primary key (id_notaria),
-constraint fk_lugar_notaria foreign key (fk_lugar) references LUGAR (id_lugar));
+constraint fk_lugar_notaria foreign key (fk_lugar) references LUGAR (id_lugar),
+constraint fk_persona_jefatura foreign key (fk_persona) references PERSONA (cedula_persona));
 
 create table if not exists COORDENADA (
 id_coordenada int not null auto_increment,
@@ -494,12 +496,14 @@ CREATE TABLE IF NOT EXISTS TELEFONO(
     codigo_area_telefono TINYINT NOT NULL,
     numero_telefono TINYINT NOT NULL,
     fk_templo INT,
+    fk_notaria INT,
     fk_jefatura INT,
     fk_persona INT,
     fk_proveedor INT,
     fk_salon INT,
     PRIMARY KEY(id_telefono),
     FOREIGN KEY(fk_templo) REFERENCES TEMPLO(id_templo),
+    FOREIGN KEY(fk_notaria) REFERENCES JEFATURA(id_notaria),
     FOREIGN KEY(fk_jefatura) REFERENCES JEFATURA(id_jefatura),
     FOREIGN KEY(fk_persona) REFERENCES PERSONA(cedula_persona),
     FOREIGN KEY(fk_proveedor) REFERENCES PROVEEDOR(id_proveedor),

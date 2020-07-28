@@ -2031,6 +2031,7 @@ insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Raf
 insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Victoria', 'PARROQUIA', 359);
 insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Raúl Cuenca', 'PARROQUIA', 359);
 
+
 select count(nombre_lugar) from lugar where tipo_lugar = 'PARROQUIA';
 
 SELECT lpp.nombre_lugar as 'Nombre Estado', 

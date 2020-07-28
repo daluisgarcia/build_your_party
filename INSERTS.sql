@@ -1,0 +1,3110 @@
+USE ATF;
+
+#estados
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Amazonas', 'ESTADO', null);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Anzoategui', 'ESTADO', null);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Apure', 'ESTADO', null);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Aragua', 'ESTADO', null);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Barinas', 'ESTADO', null);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Bolívar', 'ESTADO', null);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Carabobo', 'ESTADO', null);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cojedes', 'ESTADO', null);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Delta Amacuro', 'ESTADO', null);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Distrito Capital', 'ESTADO', null);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Falcón', 'ESTADO', null);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Guárico', 'ESTADO', null);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Lara', 'ESTADO', null);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Mérida', 'ESTADO', null);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Miranda', 'ESTADO', null);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Monagas', 'ESTADO', null);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Nueva Esparta', 'ESTADO', null);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Portuguesa', 'ESTADO', null);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Sucre', 'ESTADO', null);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Táchira', 'ESTADO', null);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Trujillo', 'ESTADO', null);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Guaira', 'ESTADO', null);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Yaracuy', 'ESTADO', null);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Zulia', 'ESTADO', null);
+
+#municipios por estado
+#------------
+#Amazonas
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Atures', 'MUNICIPIO', 1);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Alto Orinoco', 'MUNICIPIO', 1);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Atabapo', 'MUNICIPIO', 1);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Autana', 'MUNICIPIO', 1);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Manapiare', 'MUNICIPIO', 1);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Maroa', 'MUNICIPIO', 1);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Río Negro', 'MUNICIPIO', 1);
+
+#Anzoategui
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Anaco', 'MUNICIPIO', 2);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Aragua', 'MUNICIPIO', 2);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Bolívar', 'MUNICIPIO', 2);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Bruzual', 'MUNICIPIO', 2);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cajigal', 'MUNICIPIO', 2);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Carvajal', 'MUNICIPIO', 2);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Diego Bautista Urbaneja', 'MUNICIPIO', 2);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Freites', 'MUNICIPIO', 2);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Guanipa', 'MUNICIPIO', 2);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Guanta', 'MUNICIPIO', 2);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Independencia', 'MUNICIPIO', 2);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Libertad', 'MUNICIPIO',2);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'McGregor', 'MUNICIPIO', 2);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Miranda', 'MUNICIPIO', 2);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Monagas', 'MUNICIPIO', 2);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Peñalver', 'MUNICIPIO', 2);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Píritu', 'MUNICIPIO', 2);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Juan de Capistrano', 'MUNICIPIO', 2);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa Ana', 'MUNICIPIO', 2);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Simón Rodriguez', 'MUNICIPIO', 2);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Sotillo', 'MUNICIPIO', 2);
+
+#Apure
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Achaguas', 'MUNICIPIO', 3);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Biruaca', 'MUNICIPIO', 3);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Muñoz', 'MUNICIPIO', 3);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Páez', 'MUNICIPIO', 3);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Pedro Camejo', 'MUNICIPIO', 3);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Rómulo Gallegos', 'MUNICIPIO', 3);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Fernando', 'MUNICIPIO', 3);
+
+#Aragua
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Bolívar', 'MUNICIPIO', 4);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Camatagua', 'MUNICIPIO', 4);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Francisco Linares Alcántara', 'MUNICIPIO', 4);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Girardot', 'MUNICIPIO', 4);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'José Ángel Lamas', 'MUNICIPIO', 4);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'José Félix Ribas', 'MUNICIPIO', 4);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'José Rafael Revenga', 'MUNICIPIO', 4);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Libertador', 'MUNICIPIO', 4);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Mario Briceño Iragorry', 'MUNICIPIO', 4);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Ocumare de la Costa de Oro', 'MUNICIPIO', 4);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Casimiro', 'MUNICIPIO', 4);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Sebastián', 'MUNICIPIO', 4);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santiago Mariño', 'MUNICIPIO', 4);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santos Michelena', 'MUNICIPIO', 4);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Sucre', 'MUNICIPIO', 4);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Tovar', 'MUNICIPIO', 4);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Urdaneta', 'MUNICIPIO', 4);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Zamora', 'MUNICIPIO', 4);
+
+#Barinas
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Alberto Arvelo Torrealba', 'MUNICIPIO', 5);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Andrés Eloy Blanco', 'MUNICIPIO', 5);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Antonio José de Sucre', 'MUNICIPIO', 5);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Arismendi', 'MUNICIPIO', 5);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Barinas', 'MUNICIPIO', 5);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Bolívar', 'MUNICIPIO', 5);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cruz Paredes', 'MUNICIPIO', 5);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Ezequiel Zamora', 'MUNICIPIO', 5);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Obispos', 'MUNICIPIO', 5);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Pedraza', 'MUNICIPIO', 5);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Rojas', 'MUNICIPIO', 5);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Sosa', 'MUNICIPIO', 5);
+
+#Bolívar
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Caroní', 'MUNICIPIO', 6);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cedeño', 'MUNICIPIO', 6);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Callao', 'MUNICIPIO', 6);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Gran Sabana', 'MUNICIPIO', 6);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Heres', 'MUNICIPIO', 6);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Piar', 'MUNICIPIO', 6);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Raúl Leoni', 'MUNICIPIO', 6);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Roscio', 'MUNICIPIO', 6);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Sifontes', 'MUNICIPIO', 6);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Sucre', 'MUNICIPIO', 6);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Padre Pedro Chen', 'MUNICIPIO', 6);
+
+#Carabobo
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Bejuma', 'MUNICIPIO', 7);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Carlos Arvelo', 'MUNICIPIO', 7);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Diego Ibarra', 'MUNICIPIO', 7);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Guacara', 'MUNICIPIO', 7);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Juan José Mora', 'MUNICIPIO', 7);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Libertador', 'MUNICIPIO', 7);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Los Guayos', 'MUNICIPIO', 7);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Miranda', 'MUNICIPIO', 7);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Montalbán', 'MUNICIPIO', 7);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Naguanagua', 'MUNICIPIO', 7);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Puerto Cabello', 'MUNICIPIO', 7);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Diego', 'MUNICIPIO', 7);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Joaquín', 'MUNICIPIO', 7);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Valencia', 'MUNICIPIO', 7);
+
+#Cojedes
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Anzoátegui', 'MUNICIPIO', 8);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Ezequiel Zamora', 'MUNICIPIO', 8);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Girardot', 'MUNICIPIO', 8);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Lima Blanco', 'MUNICIPIO', 8);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Pao de San Juan Bautista', 'MUNICIPIO', 8);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Ricaurte', 'MUNICIPIO', 8);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Rómulo Gallegos', 'MUNICIPIO', 8);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Tinaco', 'MUNICIPIO', 8);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Tinaquillo', 'MUNICIPIO', 8);
+
+#Delta Amacuro
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Antonio Díaz', 'MUNICIPIO', 9);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Casacoima', 'MUNICIPIO', 9);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Pedernales', 'MUNICIPIO', 9);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Tucupita', 'MUNICIPIO', 9);
+
+#Distrito Capital
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Libertador', 'MUNICIPIO', 10);
+
+#Falcón
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Acosta', 'MUNICIPIO', 11);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Bolívar', 'MUNICIPIO', 11);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Buchivacoa', 'MUNICIPIO', 11);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cacique Manaure', 'MUNICIPIO', 11);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Carirubana', 'MUNICIPIO', 11);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Colina', 'MUNICIPIO', 11);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Dabajuro', 'MUNICIPIO', 11);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Democracia', 'MUNICIPIO', 11);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Falcón', 'MUNICIPIO', 11);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Federación', 'MUNICIPIO', 11);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Jacura', 'MUNICIPIO', 11);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Los Taques', 'MUNICIPIO', 11);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Mauroa', 'MUNICIPIO', 11);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Miranda', 'MUNICIPIO', 11);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Monseñor Iturriza', 'MUNICIPIO', 11);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Palmasola', 'MUNICIPIO', 11);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Petit', 'MUNICIPIO', 11);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Píritu', 'MUNICIPIO', 11);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Francisco', 'MUNICIPIO', 11);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Silva', 'MUNICIPIO', 11);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Sucre', 'MUNICIPIO', 11);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Tocópero', 'MUNICIPIO', 11);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Unión', 'MUNICIPIO', 11);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Urumaco', 'MUNICIPIO', 11);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Zamora', 'MUNICIPIO', 11);
+
+#Guarico
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Esteros de Camaguan', 'MUNICIPIO', 12);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Chaguaramas', 'MUNICIPIO', 12);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Socorro', 'MUNICIPIO', 12);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Francisco de Miranda', 'MUNICIPIO', 12);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'José Félix Ribas', 'MUNICIPIO', 12);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'José Tadeo Monagas', 'MUNICIPIO', 12);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Juan Germán Roscio', 'MUNICIPIO', 12);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Julián Mellado', 'MUNICIPIO', 12);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Las Mercedes', 'MUNICIPIO', 12);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Leonardo Infante', 'MUNICIPIO', 12);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Pedro Zaraza', 'MUNICIPIO', 12);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Ortíz', 'MUNICIPIO', 12);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Gerónimo de Guayabal', 'MUNICIPIO', 12);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San José de Guaribe', 'MUNICIPIO', 12);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa María de Ipire', 'MUNICIPIO', 12);
+
+#Lara
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Andrés Eloy Blanco', 'MUNICIPIO', 13);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Crespo', 'MUNICIPIO', 13);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Iribarren', 'MUNICIPIO', 13);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Jiménez', 'MUNICIPIO', 13);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Morán', 'MUNICIPIO', 13);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Palavecino', 'MUNICIPIO', 13);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Simón Planas', 'MUNICIPIO', 13);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Torres', 'MUNICIPIO', 13);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Urdaneta', 'MUNICIPIO', 13);
+
+#Merida
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Libertador', 'MUNICIPIO', 14);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Alberto Adriani', 'MUNICIPIO', 14);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Andrés Bello', 'MUNICIPIO', 14);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Antonio Pinto Salinas', 'MUNICIPIO', 14);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Aricagua', 'MUNICIPIO', 14);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Arzobispo Chacón', 'MUNICIPIO', 14);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Campo Elías', 'MUNICIPIO', 14);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Caracciolo Parra Olmedo', 'MUNICIPIO', 14);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cardenal Quintero', 'MUNICIPIO', 14);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Guaraque', 'MUNICIPIO', 14);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Julio César Salas', 'MUNICIPIO', 14);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Justo Briceño', 'MUNICIPIO', 14);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Miranda', 'MUNICIPIO', 14);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Obispo Ramos de Lora', 'MUNICIPIO', 14);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Padre Noguera', 'MUNICIPIO', 14);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Pueblo Llano', 'MUNICIPIO', 14);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Rangel', 'MUNICIPIO', 14);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Rivas Dávila', 'MUNICIPIO', 14);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santos Marquina', 'MUNICIPIO', 14);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Sucre', 'MUNICIPIO', 14);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Tovar', 'MUNICIPIO', 14);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Tulio Febres Cordero', 'MUNICIPIO', 14);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Zea', 'MUNICIPIO', 14);
+
+#Miranda
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Acevedo', 'MUNICIPIO', 15);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Andrés Bello', 'MUNICIPIO', 15);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Baruta', 'MUNICIPIO', 15);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Brión', 'MUNICIPIO', 15);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Buroz', 'MUNICIPIO', 15);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Carrizal', 'MUNICIPIO', 15);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Chacao', 'MUNICIPIO', 15);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cristóbal Rojas', 'MUNICIPIO', 15);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Hatillo', 'MUNICIPIO', 15);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Guaicaipuro', 'MUNICIPIO', 15);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Independencia', 'MUNICIPIO', 15);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Lander', 'MUNICIPIO', 15);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Los Salias', 'MUNICIPIO', 15);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Páez', 'MUNICIPIO', 15);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Paz Castillo', 'MUNICIPIO', 15);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Pedro Gual', 'MUNICIPIO', 15);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Plaza', 'MUNICIPIO', 15);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Simón Bolívar', 'MUNICIPIO', 15);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Sucre', 'MUNICIPIO', 15);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Urdaneta', 'MUNICIPIO', 15);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Zamora', 'MUNICIPIO', 15);
+
+#Monagas
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Acosta', 'MUNICIPIO', 16);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Aguasay', 'MUNICIPIO', 16);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Bolívar', 'MUNICIPIO', 16);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cedeño', 'MUNICIPIO', 16);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Ezequiel Zamora', 'MUNICIPIO', 16);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Libertador', 'MUNICIPIO', 16);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Maturín', 'MUNICIPIO', 16);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Piar', 'MUNICIPIO', 16);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Punceres', 'MUNICIPIO', 16);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa Bárbara', 'MUNICIPIO', 16);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Sotillo', 'MUNICIPIO', 16);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Uracoa', 'MUNICIPIO', 16);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Caripe', 'MUNICIPIO', 16);
+
+#Nueva Esparta
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Antolín del Campo', 'MUNICIPIO', 17);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Arismendi', 'MUNICIPIO', 17);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Díaz', 'MUNICIPIO', 17);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'García', 'MUNICIPIO', 17);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Gómez', 'MUNICIPIO', 17);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Maneiro', 'MUNICIPIO', 17);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Marcano', 'MUNICIPIO', 17);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Mariño', 'MUNICIPIO', 17);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Península de Macanao', 'MUNICIPIO', 17);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Tubores', 'MUNICIPIO', 17);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Villalba', 'MUNICIPIO', 17);
+
+#Portuguesa
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Agua Blanca', 'MUNICIPIO', 18);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Araure', 'MUNICIPIO', 18);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Esteller', 'MUNICIPIO', 18);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Guanare', 'MUNICIPIO', 18);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Guanarito', 'MUNICIPIO', 18);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Monseñor José Vicenti de Unda', 'MUNICIPIO', 18);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Ospino', 'MUNICIPIO', 18);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Páez', 'MUNICIPIO', 18);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Papelón', 'MUNICIPIO', 18);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Genaro de Boconoíto', 'MUNICIPIO', 18);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Rafael de Onoto', 'MUNICIPIO', 18);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa Rosalía', 'MUNICIPIO', 18);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Sucre', 'MUNICIPIO', 18);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Turén', 'MUNICIPIO', 18);
+
+#Sucre
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Andrés Eloy Blanco', 'MUNICIPIO', 19);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Andrés Mata', 'MUNICIPIO', 19);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Arismendi', 'MUNICIPIO', 19);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Benítez', 'MUNICIPIO', 19);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Bermúdez', 'MUNICIPIO', 19);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Bolívar', 'MUNICIPIO', 19);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cajigal', 'MUNICIPIO', 19);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cruz Salmerón Acosta', 'MUNICIPIO', 19);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Libertador', 'MUNICIPIO', 19);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Mariño', 'MUNICIPIO', 19);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Mejía', 'MUNICIPIO', 19);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Montes', 'MUNICIPIO', 19);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Ribero', 'MUNICIPIO', 19);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Sucre', 'MUNICIPIO', 19);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Valdez', 'MUNICIPIO', 19);
+
+#Tachira
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Andrés Bello', 'MUNICIPIO', 20);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Antonio Rómulo Costa', 'MUNICIPIO', 20);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Ayacucho', 'MUNICIPIO', 20);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Bolívar', 'MUNICIPIO', 20);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cárdenas', 'MUNICIPIO', 20);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Córdoba', 'MUNICIPIO', 20);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Fernández Feo', 'MUNICIPIO', 20);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Francisco de Miranda', 'MUNICIPIO', 20);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'García de Hevia', 'MUNICIPIO', 20);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Guásimos', 'MUNICIPIO', 20);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Independencia', 'MUNICIPIO', 20);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Jáuregui', 'MUNICIPIO', 20);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'José María Vargas', 'MUNICIPIO', 20);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Junín', 'MUNICIPIO', 20);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Judas Tadeo', 'MUNICIPIO', 20);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Libertad', 'MUNICIPIO', 20);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Libertador', 'MUNICIPIO', 20);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Lobatera', 'MUNICIPIO', 20);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Michelena', 'MUNICIPIO', 20);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Panamericano', 'MUNICIPIO', 20);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Pedro María Ureña', 'MUNICIPIO', 20);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Rafael Urdaneta', 'MUNICIPIO', 20);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Samuel Dario Maldonado', 'MUNICIPIO', 20);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Cristóbal', 'MUNICIPIO', 20);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Seboruco', 'MUNICIPIO', 20);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Simón Rodríguez', 'MUNICIPIO', 20);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Sucre', 'MUNICIPIO', 20);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Torbes', 'MUNICIPIO', 20);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Uribante', 'MUNICIPIO', 20);
+
+#trujillo
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Andrés Bello', 'MUNICIPIO', 21);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Boconó', 'MUNICIPIO', 21);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Bolívar', 'MUNICIPIO', 21);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Candelaria', 'MUNICIPIO', 21);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Carache', 'MUNICIPIO', 21);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Escuque', 'MUNICIPIO', 21);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'José Felipe Márquez Cañizalez', 'MUNICIPIO', 21);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Juan Vicente Campos Elías', 'MUNICIPIO', 21);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Ceiba', 'MUNICIPIO', 21);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Miranda', 'MUNICIPIO', 21);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Pampán', 'MUNICIPIO', 21);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Trujillo', 'MUNICIPIO', 21);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Pampanito', 'MUNICIPIO', 21);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Monte Carmelo', 'MUNICIPIO', 21);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Motatán', 'MUNICIPIO', 21);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Rafael Rangel', 'MUNICIPIO', 21);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Rafael de Carvajal', 'MUNICIPIO', 21);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Sucre', 'MUNICIPIO', 21);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Urdaneta', 'MUNICIPIO', 21);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Valera', 'MUNICIPIO', 21);
+
+#La Guaira
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Vargas', 'MUNICIPIO', 22);
+
+#Yaracuy
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Arístides Bastidas', 'MUNICIPIO', 23);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Felipe', 'MUNICIPIO', 23);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Bolívar', 'MUNICIPIO', 23);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Bruzual', 'MUNICIPIO', 23);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cocorote', 'MUNICIPIO', 23);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Independencia', 'MUNICIPIO', 23);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'José Antonio Páez', 'MUNICIPIO', 23);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Trinidad', 'MUNICIPIO', 23);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Manuel Monge', 'MUNICIPIO', 23);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Nirgua', 'MUNICIPIO', 23);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Peña', 'MUNICIPIO', 23);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Sucre', 'MUNICIPIO', 23);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Urachiche', 'MUNICIPIO', 23);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Veroes', 'MUNICIPIO', 23);
+
+#Zulia
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Maracaibo', 'MUNICIPIO', 24);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Almirante Padilla', 'MUNICIPIO', 24);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Baralt', 'MUNICIPIO', 24);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cabimas', 'MUNICIPIO', 24);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Catatumbo', 'MUNICIPIO', 24);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Colón', 'MUNICIPIO', 24);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Francisco Javier Pulgar', 'MUNICIPIO', 24);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Guajira', 'MUNICIPIO', 24);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Jesús María Semprún', 'MUNICIPIO', 24);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Lossada', 'MUNICIPIO', 24);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Cañada de Urdaneta', 'MUNICIPIO', 24);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Lagunillas', 'MUNICIPIO', 24);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Machiques de Perijá', 'MUNICIPIO', 24);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Mara', 'MUNICIPIO', 24);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Miranda', 'MUNICIPIO', 24);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Rosario de Perijá', 'MUNICIPIO', 24);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Francisco', 'MUNICIPIO', 24);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa Rita', 'MUNICIPIO', 24);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Simón Bolívar', 'MUNICIPIO', 24);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Sucre', 'MUNICIPIO', 24);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Valmore Rodríguez', 'MUNICIPIO', 24);
+
+#DISTRITO CAPITAL
+#MUNICIPIO LIBERTADOR
+INSERT INTO LUGAR VALUES (null, '23 de Enero', 'PARROQUIA', 128);
+INSERT INTO LUGAR VALUES (null, 'Altagracia', 'PARROQUIA', 128);
+INSERT INTO LUGAR VALUES (null, 'Antimano', 'PARROQUIA', 128);
+INSERT INTO LUGAR VALUES (null, 'Caricuao', 'PARROQUIA', 128);
+INSERT INTO LUGAR VALUES (null, 'Catedral', 'PARROQUIA', 128);
+INSERT INTO LUGAR VALUES (null, 'Coche', 'PARROQUIA', 128);
+INSERT INTO LUGAR VALUES (null, 'El Junquito', 'PARROQUIA', 128);
+INSERT INTO LUGAR VALUES (null, 'El Paraíso', 'PARROQUIA', 128);
+INSERT INTO LUGAR VALUES (null, 'El Recreo', 'PARROQUIA', 128);
+INSERT INTO LUGAR VALUES (null, 'El Valle', 'PARROQUIA', 128);
+INSERT INTO LUGAR VALUES (null, 'Candelaria', 'PARROQUIA', 128);
+INSERT INTO LUGAR VALUES (null, 'La Pastora', 'PARROQUIA', 128);
+INSERT INTO LUGAR VALUES (null, 'La Vega', 'PARROQUIA', 128);
+INSERT INTO LUGAR VALUES (null, 'Macarao', 'PARROQUIA', 128);
+INSERT INTO LUGAR VALUES (null, 'San Agustín', 'PARROQUIA', 128);
+INSERT INTO LUGAR VALUES (null, 'San Bernardino', 'PARROQUIA', 128);
+INSERT INTO LUGAR VALUES (null, 'San José', 'PARROQUIA', 128);
+INSERT INTO LUGAR VALUES (null, 'San Juan', 'PARROQUIA', 128);
+INSERT INTO LUGAR VALUES (null, 'San Pedro', 'PARROQUIA', 128);
+INSERT INTO LUGAR VALUES (null, 'Santa Rosalía', 'PARROQUIA', 128);
+INSERT INTO LUGAR VALUES (null, 'Santa Teresa', 'PARROQUIA', 128);
+INSERT INTO LUGAR VALUES (null, 'Sucre', 'PARROQUIA', 128);
+
+#ESTADO AMAZONAS
+#MUNICIPIO ALTO ORINOCO
+INSERT INTO LUGAR VALUES (null, 'Alto Orinoco', 'PARROQUIA', 26);	
+INSERT INTO LUGAR VALUES (null, 'Huachamacare', 'PARROQUIA', 26);	
+INSERT INTO LUGAR VALUES (null, 'Marawaka', 'PARROQUIA', 26);	
+INSERT INTO LUGAR VALUES (null, 'Mavaka', 'PARROQUIA', 26);	
+INSERT INTO LUGAR VALUES (null, 'Sierra Parima', 'PARROQUIA', 26);	
+#MUNICIPIO ATABAPO
+INSERT INTO LUGAR VALUES (null, 'Atabapo', 'PARROQUIA', 27);	
+INSERT INTO LUGAR VALUES (null, 'Ucata', 'PARROQUIA', 27);
+INSERT INTO LUGAR VALUES (null, 'Yapacana', 'PARROQUIA', 27);
+INSERT INTO LUGAR VALUES (null, 'Caname', 'PARROQUIA', 27);
+#MUNICIPIO ATURES   
+INSERT INTO LUGAR VALUES (null, 'Fernando Girón Tovar', 'PARROQUIA', 25);
+INSERT INTO LUGAR VALUES (null, 'Luis Alberto Gómez', 'PARROQUIA', 25);
+INSERT INTO LUGAR VALUES (null, 'Pahueña', 'PARROQUIA', 25);
+INSERT INTO LUGAR VALUES (null, 'Platanillal', 'PARROQUIA', 25);
+#MUNICIPIO AUTANA       
+INSERT INTO LUGAR VALUES (null, 'Samariapo', 'PARROQUIA', 28);
+INSERT INTO LUGAR VALUES (null, 'Sipapo', 'PARROQUIA', 28);
+INSERT INTO LUGAR VALUES (null, 'Munduapo', 'PARROQUIA', 28);
+INSERT INTO LUGAR VALUES (null, 'Guayapo', 'PARROQUIA', 28);
+INSERT INTO LUGAR VALUES (null, 'Isla Ratón', 'PARROQUIA', 28);
+#MUNICIPIO MANAPIARE      
+INSERT INTO LUGAR VALUES (null, 'Alto Ventuari', 'PARROQUIA', 29);
+INSERT INTO LUGAR VALUES (null, 'Medio Ventuari', 'PARROQUIA', 29);
+INSERT INTO LUGAR VALUES (null, 'Bajo Ventuari', 'PARROQUIA', 29);
+INSERT INTO LUGAR VALUES (null, 'Manapiare', 'PARROQUIA', 29);       
+#MUNICIPIO MAROA      
+INSERT INTO LUGAR VALUES (null, 'Maroa', 'PARROQUIA', 30);
+INSERT INTO LUGAR VALUES (null, 'Victorino', 'PARROQUIA', 30);
+INSERT INTO LUGAR VALUES (null, 'Comunidad', 'PARROQUIA', 30);       
+#MUNICIPIO RIO NEGRO   
+INSERT INTO LUGAR VALUES (null, 'Casiquiare', 'PARROQUIA', 31);
+INSERT INTO LUGAR VALUES (null, 'Cocuy', 'PARROQUIA', 31);
+INSERT INTO LUGAR VALUES (null, 'San Carlos de Rio Negro', 'PARROQUIA', 31);
+INSERT INTO LUGAR VALUES (null, 'Solano', 'PARROQUIA', 31);
+
+#ESTADO ANZOATEGUI
+#MUNICIPIO ANACO   
+INSERT INTO LUGAR VALUES (null, 'Anaco', 'PARROQUIA', 32);
+INSERT INTO LUGAR VALUES (null, 'San Joaquín', 'PARROQUIA', 32);
+INSERT INTO LUGAR VALUES (null, 'Buena Vista', 'PARROQUIA', 32);	
+#MUNICIPIO ARAGUA
+INSERT INTO LUGAR VALUES (null, 'Cachipo', 'PARROQUIA', 33);
+INSERT INTO LUGAR VALUES (null, 'Aragua de Barcelona', 'PARROQUIA', 33);
+#MUNICIPIO DIEGO BAUTISTA URBANEJA     
+INSERT INTO LUGAR VALUES (null, 'Lechería', 'PARROQUIA', 38);
+INSERT INTO LUGAR VALUES (null, 'El Morro', 'PARROQUIA', 38);
+#MUNICIPIO FERNANDO PEÑALVER
+INSERT INTO LUGAR VALUES (null, 'Puerto Píritu', 'PARROQUIA', 47);
+INSERT INTO LUGAR VALUES (null, 'San Miguel', 'PARROQUIA', 47);
+INSERT INTO LUGAR VALUES (null, 'Sucre', 'PARROQUIA', 47);
+#MUNICIPIO FRANCISCO DEL CARMEN CARVAJAL
+INSERT INTO LUGAR VALUES (null, 'Valle de Guanape', 'PARROQUIA', 37);
+INSERT INTO LUGAR VALUES (null, 'Santa Bárbara', 'PARROQUIA', 37);
+#MUNICIPIO FRANCISCO DE MIRANDA 
+INSERT INTO LUGAR VALUES (null, 'Atapirire', 'PARROQUIA', 45);
+INSERT INTO LUGAR VALUES (null, 'Boca del Pao', 'PARROQUIA', 45);
+INSERT INTO LUGAR VALUES (null, 'El Pao', 'PARROQUIA', 45);
+INSERT INTO LUGAR VALUES (null, 'Pariaguán', 'PARROQUIA', 45);
+#MUNICIPIO GUANIPA  
+INSERT INTO LUGAR VALUES (null, 'San José de Guanipa', 'PARROQUIA', 40);
+#MUNICIPIO GUANTA     
+INSERT INTO LUGAR VALUES (null, 'Guanta', 'PARROQUIA', 41);
+INSERT INTO LUGAR VALUES (null, 'Chorrerón', 'PARROQUIA', 41);       
+#MUNICIPIO INDEPENDENCIA
+INSERT INTO LUGAR VALUES (null, 'Mamo', 'PARROQUIA', 42);
+INSERT INTO LUGAR VALUES (null, 'Soledad', 'PARROQUIA', 42);       
+#MUNICIPIO JOSE GREGORIO MONAGAS
+INSERT INTO LUGAR VALUES (null, 'Mapire', 'PARROQUIA', 46);
+INSERT INTO LUGAR VALUES (null, 'Piar', 'PARROQUIA', 46);
+INSERT INTO LUGAR VALUES (null, 'Santa Clara', 'PARROQUIA', 46);
+INSERT INTO LUGAR VALUES (null, 'San Diego de Cabrutica', 'PARROQUIA', 46);
+INSERT INTO LUGAR VALUES (null, 'Uverito', 'PARROQUIA', 46);
+INSERT INTO LUGAR VALUES (null, 'Zuata', 'PARROQUIA', 46);
+#MUNICIPIO JUAN ANTONIO SOTILLO
+INSERT INTO LUGAR VALUES (null, 'Puerto La Cruz', 'PARROQUIA', 52);
+INSERT INTO LUGAR VALUES (null, 'Pozuelos', 'PARROQUIA', 52);
+#MUNICIPIO JUAN MANUEL CAJIGAL
+INSERT INTO LUGAR VALUES (null, 'Onoto', 'PARROQUIA', 36);
+INSERT INTO LUGAR VALUES (null, 'San Pablo', 'PARROQUIA', 36);
+#MUNICIPIO LIBERTAD
+INSERT INTO LUGAR VALUES (null, 'San Mateo', 'PARROQUIA', 43);
+INSERT INTO LUGAR VALUES (null, 'El Carito', 'PARROQUIA', 43);
+INSERT INTO LUGAR VALUES (null, 'Santa Inés', 'PARROQUIA', 43);
+INSERT INTO LUGAR VALUES (null, 'La Romereña', 'PARROQUIA', 43);
+#MUNICIPIO MANUEL EZEQUIEL BRUZUAL
+INSERT INTO LUGAR VALUES (null, 'Clarines', 'PARROQUIA', 35);
+INSERT INTO LUGAR VALUES (null, 'Guanape', 'PARROQUIA', 35);
+INSERT INTO LUGAR VALUES (null, 'Sabana de Uchire', 'PARROQUIA', 35);
+#MUNICIPIO PEDRO MARIA FREITES
+INSERT INTO LUGAR VALUES (null, 'Cantaura', 'PARROQUIA', 39);
+INSERT INTO LUGAR VALUES (null, 'Libertador', 'PARROQUIA', 39);
+INSERT INTO LUGAR VALUES (null, 'Santa Rosa', 'PARROQUIA', 39);
+INSERT INTO LUGAR VALUES (null, 'Urica', 'PARROQUIA', 39);
+#MUNICIPIO PIRITU
+INSERT INTO LUGAR VALUES (null, 'Píritu', 'PARROQUIA', 48);
+INSERT INTO LUGAR VALUES (null, 'San Francisco', 'PARROQUIA', 48);
+#MUNICIPIO SAN JUAN DE CAPISTRANO
+INSERT INTO LUGAR VALUES (null, 'Boca de Uchire', 'PARROQUIA', 49);
+INSERT INTO LUGAR VALUES (null, 'Boca de Chávez', 'PARROQUIA', 49);
+#MUNICIPIO SANTA ANA
+INSERT INTO LUGAR VALUES (null, 'Pueblo Nuevo', 'PARROQUIA', 50);
+INSERT INTO LUGAR VALUES (null, 'Santa Ana', 'PARROQUIA', 50);
+#MUNICIPIO SIMON BOLIVAR
+INSERT INTO LUGAR VALUES (null, 'Bergantín', 'PARROQUIA', 34);  
+INSERT INTO LUGAR VALUES (null, 'Caigua', 'PARROQUIA', 34);  
+INSERT INTO LUGAR VALUES (null, 'El Carmen', 'PARROQUIA', 34);  
+INSERT INTO LUGAR VALUES (null, 'El Pilar', 'PARROQUIA', 34);  
+INSERT INTO LUGAR VALUES (null, 'Naricual', 'PARROQUIA', 34);  
+INSERT INTO LUGAR VALUES (null, 'San Cristóbal', 'PARROQUIA', 34);       
+#MUNICIPIO SIMON RODRIGUEZ
+INSERT INTO LUGAR VALUES (null, 'Edmundo Barrios', 'PARROQUIA', 51);  
+INSERT INTO LUGAR VALUES (null, 'Migul Otero Silva', 'PARROQUIA', 51);         
+#MUNICIPIO SIR ARTHUR MC GREGOR
+INSERT INTO LUGAR VALUES (null, 'El Chaparro', 'PARROQUIA', 44);  
+INSERT INTO LUGAR VALUES (null, 'Tomás Alfaro Calatrava', 'PARROQUIA', 44);  
+
+#ESTADO APURE
+#MUNICIPIO ACHAGUAS
+INSERT INTO LUGAR VALUES (null, 'Achaguas', 'PARROQUIA', 53);  
+INSERT INTO LUGAR VALUES (null, 'Apurito', 'PARROQUIA', 53);  
+INSERT INTO LUGAR VALUES (null, 'El Yagual', 'PARROQUIA', 53);  
+INSERT INTO LUGAR VALUES (null, 'Guachara', 'PARROQUIA', 53);  
+INSERT INTO LUGAR VALUES (null, 'Mucuritas', 'PARROQUIA', 53);  
+INSERT INTO LUGAR VALUES (null, 'Queseras del medio', 'PARROQUIA', 53);  
+#MUNICIPIO BIRUACA
+INSERT INTO LUGAR VALUES (null, 'Biruaca', 'PARROQUIA', 54);  
+#MUNICIPIO MUÑOZ
+INSERT INTO LUGAR VALUES (null, 'Bruzual', 'PARROQUIA', 55);  
+INSERT INTO LUGAR VALUES (null, 'Mantecal', 'PARROQUIA', 55);  
+INSERT INTO LUGAR VALUES (null, 'Quintero', 'PARROQUIA', 55);  
+INSERT INTO LUGAR VALUES (null, 'Rincón Hondo', 'PARROQUIA', 55);  
+INSERT INTO LUGAR VALUES (null, 'San Vicente', 'PARROQUIA', 55);  
+#MUNICIPIO PEDRO CAMEJO
+INSERT INTO LUGAR VALUES (null, 'San Juan de Payara', 'PARROQUIA', 57);
+INSERT INTO LUGAR VALUES (null, 'Codazzi', 'PARROQUIA', 57);  
+INSERT INTO LUGAR VALUES (null, 'Cunaviche', 'PARROQUIA', 57);  
+#MUNICIPIO SAN FERNANDO
+INSERT INTO LUGAR VALUES (null, 'San Fernando', 'PARROQUIA', 59);  
+INSERT INTO LUGAR VALUES (null, 'El Recreo', 'PARROQUIA', 59);
+INSERT INTO LUGAR VALUES (null, 'Peñalver', 'PARROQUIA', 59);
+INSERT INTO LUGAR VALUES (null, 'San Rafael de Atamaica', 'PARROQUIA', 59);
+#MUNICIPIO PAÉZ
+INSERT INTO LUGAR VALUES (null, 'Guasdualito', 'PARROQUIA', 56);
+INSERT INTO LUGAR VALUES (null, 'Aramendi', 'PARROQUIA', 56);
+INSERT INTO LUGAR VALUES (null, 'El Amparo', 'PARROQUIA', 56);
+INSERT INTO LUGAR VALUES (null, 'San Camilo', 'PARROQUIA', 56);
+INSERT INTO LUGAR VALUES (null, 'Urdaneta', 'PARROQUIA', 56);
+#MUNICIPIO ROMULO GALLEGOS
+INSERT INTO LUGAR VALUES (null, 'Elorza', 'PARROQUIA', 58);
+INSERT INTO LUGAR VALUES (null, 'La Trinidad', 'PARROQUIA', 58);
+
+#ESTADO ARAGUA
+#MUNICIPIO BOLIVAR
+INSERT INTO LUGAR VALUES (null, 'Bolivar', 'PARROQUIA', 60);
+#MUNICIPIO CAMATAGUA
+INSERT INTO LUGAR VALUES (null, 'Camatagua', 'PARROQUIA', 61);
+INSERT INTO LUGAR VALUES (null, 'Carmen de Cura', 'PARROQUIA', 61);
+#MUNICIPIO FRANCISCO LINARES ALCANTARA
+INSERT INTO LUGAR VALUES (null, 'Santa Rita', 'PARROQUIA', 62);
+INSERT INTO LUGAR VALUES (null, 'Frnancisco de Miranda', 'PARROQUIA', 62);
+INSERT INTO LUGAR VALUES (null, 'Monseñor Feliciano González', 'PARROQUIA', 62);
+#MUNICIPIO GIRARDOT
+INSERT INTO LUGAR VALUES (null, 'Pedro José Ovalles', 'PARROQUIA', 63);
+INSERT INTO LUGAR VALUES (null, 'Joaquín Crespo', 'PARROQUIA', 63);
+INSERT INTO LUGAR VALUES (null, 'José Casanova Godoy', 'PARROQUIA', 63);
+INSERT INTO LUGAR VALUES (null, 'Madre María de San José', 'PARROQUIA', 63);
+INSERT INTO LUGAR VALUES (null, 'Andrés Eloy Blanco', 'PARROQUIA', 63);
+INSERT INTO LUGAR VALUES (null, 'Los Tacarigua', 'PARROQUIA', 63);
+INSERT INTO LUGAR VALUES (null, 'Las Delicias', 'PARROQUIA', 63);
+INSERT INTO LUGAR VALUES (null, 'Choroní', 'PARROQUIA', 63);
+#MUNICIPIO JOSE ANGEL LAMAS
+INSERT INTO LUGAR VALUES (null, 'Santa Cruz', 'PARROQUIA', 64);
+#MUNICIPIO JOSE FELIX RIBAS
+INSERT INTO LUGAR VALUES (null, 'José Félix Ribas', 'PARROQUIA', 65);
+INSERT INTO LUGAR VALUES (null, 'Castor Nieves Ríos', 'PARROQUIA', 65);
+INSERT INTO LUGAR VALUES (null, 'Las Guacamayas', 'PARROQUIA', 65);
+INSERT INTO LUGAR VALUES (null, 'Pao de Zárate', 'PARROQUIA', 65);
+INSERT INTO LUGAR VALUES (null, 'Zuata', 'PARROQUIA', 65);
+#MUNICIPIO JOSE RAFAEL REVENGA
+INSERT INTO LUGAR VALUES (null, 'José Rafael Revenga', 'PARROQUIA', 66);
+INSERT INTO LUGAR VALUES (null, 'El Consejo', 'PARROQUIA', 66);
+#MUNICIPIO LIBERTADOR
+INSERT INTO LUGAR VALUES (null, 'Palo Negro', 'PARROQUIA', 67);
+INSERT INTO LUGAR VALUES (null, 'San Martín de Porres', 'PARROQUIA', 67);
+#MUNICIPIO MARIO BRICEÑO IRAGORRY
+INSERT INTO LUGAR VALUES (null, 'El Limón', 'PARROQUIA', 68);
+INSERT INTO LUGAR VALUES (null, 'Caña de Azúcar', 'PARROQUIA', 68);
+#MUNICIPIO OCUMARE DE LA COSTA DE ORO
+INSERT INTO LUGAR VALUES (null, 'Ocumare de la Costa', 'PARROQUIA', 69);
+#MUNICIPIO SAN CASIMIRO
+INSERT INTO LUGAR VALUES (null, 'San Casimiro', 'PARROQUIA', 70);
+INSERT INTO LUGAR VALUES (null, 'Güiripa', 'PARROQUIA', 70);
+INSERT INTO LUGAR VALUES (null, 'Ollas de Caramacate', 'PARROQUIA', 70);
+INSERT INTO LUGAR VALUES (null, 'Valle Morín', 'PARROQUIA', 70);
+#MUNICIPIO SAN SEBASTIAN
+INSERT INTO LUGAR VALUES (null, 'San Sebastían', 'PARROQUIA', 71);
+#MUNICIPIO SANTIAGO MARIÑO
+INSERT INTO LUGAR VALUES (null, 'Turmero', 'PARROQUIA', 72);
+INSERT INTO LUGAR VALUES (null, 'Arévalo Aponte', 'PARROQUIA', 72);
+INSERT INTO LUGAR VALUES (null, 'Chuao', 'PARROQUIA', 72);
+INSERT INTO LUGAR VALUES (null, 'Samán de Güere', 'PARROQUIA', 72);
+INSERT INTO LUGAR VALUES (null, 'Alfredo Pacheco Miranda', 'PARROQUIA', 72);
+#MUNICIPIO SANTOS MICHELENA
+INSERT INTO LUGAR VALUES (null, 'Santos Michelena', 'PARROQUIA', 73);
+INSERT INTO LUGAR VALUES (null, 'Tiara', 'PARROQUIA', 73);
+#MUNICIPIO SUCRE
+INSERT INTO LUGAR VALUES (null, 'Cagua', 'PARROQUIA', 74);
+INSERT INTO LUGAR VALUES (null, 'Bella Vista', 'PARROQUIA', 74);
+#MUNICIPIO TOVAR
+INSERT INTO LUGAR VALUES (null, 'Tovar', 'PARROQUIA', 75);
+#MUNICIPIO URDANETA
+INSERT INTO LUGAR VALUES (null, 'Urdaneta', 'PARROQUIA', 76);
+INSERT INTO LUGAR VALUES (null, 'Las Peñitas', 'PARROQUIA', 76);
+INSERT INTO LUGAR VALUES (null, 'San Francisco de Cara', 'PARROQUIA', 76);
+INSERT INTO LUGAR VALUES (null, 'Taguay', 'PARROQUIA', 76);
+#MUNICIPIO ZAMORA
+INSERT INTO LUGAR VALUES (null, 'Villa de Cura', 'PARROQUIA', 77);
+INSERT INTO LUGAR VALUES (null, 'Magdaleno', 'PARROQUIA', 77);
+INSERT INTO LUGAR VALUES (null, 'San Francisco de Asís', 'PARROQUIA', 77);
+INSERT INTO LUGAR VALUES (null, 'Valles de Tucutunemo', 'PARROQUIA', 77);
+INSERT INTO LUGAR VALUES (null, 'Augusto Mijares', 'PARROQUIA', 77);
+
+#ESTADO BARINAS
+#MUNICIPIO ALBERTO ARVELO TORREALBA
+INSERT INTO LUGAR VALUES (null, 'Sabaneta', 'PARROQUIA', 78);
+INSERT INTO LUGAR VALUES (null, 'Juan Antonio Rodríguez Domínguez', 'PARROQUIA', 78);
+#MUNICIPIO ANDRÉS ELOY BLANCO
+INSERT INTO LUGAR VALUES (null, 'El Cantón', 'PARROQUIA', 79);
+INSERT INTO LUGAR VALUES (null, 'Santa Cruz de Guacas', 'PARROQUIA', 79);
+INSERT INTO LUGAR VALUES (null, 'Puerto Vivas', 'PARROQUIA', 79);
+#MUNICIPIO ANTONIO JOSÉ DE SUCRE
+INSERT INTO LUGAR VALUES (null, 'Socopo', 'PARROQUIA', 80);
+INSERT INTO LUGAR VALUES (null, 'Nicolás Pulido', 'PARROQUIA', 80);
+INSERT INTO LUGAR VALUES (null, 'Andrés Bello', 'PARROQUIA', 80);
+#MUNICIPIO ARISMENDI
+INSERT INTO LUGAR VALUES (null, 'Arismendi', 'PARROQUIA', 81);
+INSERT INTO LUGAR VALUES (null, 'Guadarrama', 'PARROQUIA', 81);
+INSERT INTO LUGAR VALUES (null, 'La Unión', 'PARROQUIA', 81);
+INSERT INTO LUGAR VALUES (null, 'San Antonio', 'PARROQUIA', 81);
+#MUNICIPIO BARINAS
+INSERT INTO LUGAR VALUES (null, 'Barinas', 'PARROQUIA', 82);
+INSERT INTO LUGAR VALUES (null, 'Alfredo Arvelo Larriva', 'PARROQUIA', 82);
+INSERT INTO LUGAR VALUES (null, 'San Silvestre', 'PARROQUIA', 82);
+INSERT INTO LUGAR VALUES (null, 'Santa Inés', 'PARROQUIA', 82);
+INSERT INTO LUGAR VALUES (null, 'Santa Lucía', 'PARROQUIA', 82);
+INSERT INTO LUGAR VALUES (null, 'Torunos', 'PARROQUIA', 82);
+INSERT INTO LUGAR VALUES (null, 'El Carmen', 'PARROQUIA', 82);
+INSERT INTO LUGAR VALUES (null, 'Rómulo Betancourt', 'PARROQUIA', 82);
+INSERT INTO LUGAR VALUES (null, 'Corazón de Jesús', 'PARROQUIA', 82);
+INSERT INTO LUGAR VALUES (null, 'Ramón Ignacio Méndez', 'PARROQUIA', 82);
+INSERT INTO LUGAR VALUES (null, 'Alto Barinas', 'PARROQUIA', 82);
+INSERT INTO LUGAR VALUES (null, 'Manuel Palacio Fajardo', 'PARROQUIA', 82);
+INSERT INTO LUGAR VALUES (null, 'Juan Antonio Rodríguez Domínguez', 'PARROQUIA', 82);
+INSERT INTO LUGAR VALUES (null, 'Dominga Ortiz de Paéz', 'PARROQUIA', 82);
+#MUNICIPIO BOLIVAR
+INSERT INTO LUGAR VALUES (null, 'Barinitas', 'PARROQUIA', 83);
+INSERT INTO LUGAR VALUES (null, 'Altamira de Cáceres', 'PARROQUIA', 83);
+INSERT INTO LUGAR VALUES (null, 'Calderas', 'PARROQUIA', 83);
+#MUNICIPIO CRUZ PAREDES
+INSERT INTO LUGAR VALUES (null, 'Barrancas', 'PARROQUIA', 84);
+INSERT INTO LUGAR VALUES (null, 'El Socorro', 'PARROQUIA', 84);
+INSERT INTO LUGAR VALUES (null, 'Mazparrito', 'PARROQUIA', 84);
+#MUNICIPIO EZEQUIEL ZAMORA
+INSERT INTO LUGAR VALUES (null, 'Santa Bárbara', 'PARROQUIA', 85);
+INSERT INTO LUGAR VALUES (null, 'Pedro Briceño Méndez', 'PARROQUIA', 85);
+INSERT INTO LUGAR VALUES (null, 'Ramón Ignacio Méndez', 'PARROQUIA', 85);
+INSERT INTO LUGAR VALUES (null, 'José Ignacio del Pumar', 'PARROQUIA', 85);
+#MUNICIPIO OBISPOS
+INSERT INTO LUGAR VALUES (null, 'Obispos', 'PARROQUIA', 86);
+INSERT INTO LUGAR VALUES (null, 'Los Guasimitos', 'PARROQUIA', 86);
+INSERT INTO LUGAR VALUES (null, 'El Real', 'PARROQUIA', 86);
+INSERT INTO LUGAR VALUES (null, 'La Luz', 'PARROQUIA', 86);
+#MUNICIPIO PEDRAZA
+INSERT INTO LUGAR VALUES (null, 'Ciudad Bolivia', 'PARROQUIA', 87);
+INSERT INTO LUGAR VALUES (null, 'José Ignacio Briceño', 'PARROQUIA', 87);
+INSERT INTO LUGAR VALUES (null, 'José Félix Ribas', 'PARROQUIA', 87);
+INSERT INTO LUGAR VALUES (null, 'Páez', 'PARROQUIA', 87);
+#MUNICIPIO ROJAS
+INSERT INTO LUGAR VALUES (null, 'Libertad', 'PARROQUIA', 88);
+INSERT INTO LUGAR VALUES (null, 'Dolores', 'PARROQUIA', 88);
+INSERT INTO LUGAR VALUES (null, 'Santa Rosa', 'PARROQUIA', 88);
+INSERT INTO LUGAR VALUES (null, 'Palacio Fajardo', 'PARROQUIA', 88);
+INSERT INTO LUGAR VALUES (null, 'Simón Rodríguez', 'PARROQUIA', 88);
+#MUNICIPIO SOSA
+INSERT INTO LUGAR VALUES (null, 'Ciudad de Nutrias', 'PARROQUIA', 89);
+INSERT INTO LUGAR VALUES (null, 'El Regalo', 'PARROQUIA', 89);
+INSERT INTO LUGAR VALUES (null, 'Puerto Nutrias', 'PARROQUIA', 89);
+INSERT INTO LUGAR VALUES (null, 'Santa Catalina', 'PARROQUIA', 89);
+INSERT INTO LUGAR VALUES (null, 'Simón Bolívar', 'PARROQUIA', 89);
+
+#ESTADO BOLIVAR
+#MUNICIPIO CARONI
+INSERT INTO LUGAR VALUES (null, 'Cachamay', 'PARROQUIA', 90);
+INSERT INTO LUGAR VALUES (null, 'Chirica', 'PARROQUIA', 90);
+INSERT INTO LUGAR VALUES (null, 'Dalla Costa', 'PARROQUIA', 90);
+INSERT INTO LUGAR VALUES (null, 'Once de Abril', 'PARROQUIA', 90);
+INSERT INTO LUGAR VALUES (null, 'Simón Bolívar', 'PARROQUIA', 90);
+INSERT INTO LUGAR VALUES (null, 'Unare', 'PARROQUIA', 90);
+INSERT INTO LUGAR VALUES (null, 'Universidad', 'PARROQUIA', 90);
+INSERT INTO LUGAR VALUES (null, 'Vista al Sol', 'PARROQUIA', 90);
+INSERT INTO LUGAR VALUES (null, 'Pozo Verde', 'PARROQUIA', 90);
+INSERT INTO LUGAR VALUES (null, 'Yocoima', 'PARROQUIA', 90);
+INSERT INTO LUGAR VALUES (null, '4 de Julio', 'PARROQUIA', 90);
+INSERT INTO LUGAR VALUES (null, 'Pto. Ordaz', 'PARROQUIA', 90);
+#MUNICIPIO CEDEÑO
+INSERT INTO LUGAR VALUES (null, 'Cedeño', 'PARROQUIA', 91);
+INSERT INTO LUGAR VALUES (null, 'Altagracia', 'PARROQUIA', 91);
+INSERT INTO LUGAR VALUES (null, 'Ascensión Farreras', 'PARROQUIA', 91);
+INSERT INTO LUGAR VALUES (null, 'Guaniamo', 'PARROQUIA', 91);
+INSERT INTO LUGAR VALUES (null, 'La Urbana', 'PARROQUIA', 91);
+INSERT INTO LUGAR VALUES (null, 'Pijiguaos', 'PARROQUIA', 91);
+#MUNICIPIO EL CALLAO
+INSERT INTO LUGAR VALUES (null, 'El Callao', 'PARROQUIA', 92);
+#MUNICIPIO GRAN SABANA
+INSERT INTO LUGAR VALUES (null, 'Gran Sabana', 'PARROQUIA', 93);
+INSERT INTO LUGAR VALUES (null, 'IkabaRú', 'PARROQUIA', 93);
+#MUNICIPIO HERES
+INSERT INTO LUGAR VALUES (null, 'Catedral', 'PARROQUIA', 94);
+INSERT INTO LUGAR VALUES (null, 'Zea', 'PARROQUIA', 94);
+INSERT INTO LUGAR VALUES (null, 'Orinoco', 'PARROQUIA', 94);
+INSERT INTO LUGAR VALUES (null, 'José Antonio Páez', 'PARROQUIA', 94);
+INSERT INTO LUGAR VALUES (null, 'Marhuanta', 'PARROQUIA', 94);
+INSERT INTO LUGAR VALUES (null, 'Agua Salada', 'PARROQUIA', 94);
+INSERT INTO LUGAR VALUES (null, 'Vista Hermosa', 'PARROQUIA', 94);
+INSERT INTO LUGAR VALUES (null, 'La Sabanita', 'PARROQUIA', 94);
+INSERT INTO LUGAR VALUES (null, 'Panapana', 'PARROQUIA', 94);
+#MUNICIPIO PADRE PEDRO CHIEN
+INSERT INTO LUGAR VALUES (null, 'Padre Pedro Chien', 'PARROQUIA', 100);
+#MUNICIPIO PIAR
+INSERT INTO LUGAR VALUES (null, 'Andrés Eloy Blanco', 'PARROQUIA', 95);
+INSERT INTO LUGAR VALUES (null, 'Pedro Cova', 'PARROQUIA', 95);
+INSERT INTO LUGAR VALUES (null, 'Upata', 'PARROQUIA', 95);
+#MUNICIPIO ANGOSTURA (RAUL LEONI)
+INSERT INTO LUGAR VALUES (null, 'Andrés Eloy Blanco', 'PARROQUIA', 96);
+INSERT INTO LUGAR VALUES (null, 'Barceloneta', 'PARROQUIA', 96);
+INSERT INTO LUGAR VALUES (null, 'Santa Bárbara', 'PARROQUIA', 96);
+INSERT INTO LUGAR VALUES (null, 'San Francisco', 'PARROQUIA', 96);
+#MUNICIPIO ROSCIO
+INSERT INTO LUGAR VALUES (null, 'Roscio', 'PARROQUIA', 97);
+INSERT INTO LUGAR VALUES (null, 'Salóm', 'PARROQUIA', 97);
+#MUNICIPIO SIFONTES
+INSERT INTO LUGAR VALUES (null, 'Tumeremo', 'PARROQUIA', 98);
+INSERT INTO LUGAR VALUES (null, 'Dalla Costa', 'PARROQUIA', 98);
+INSERT INTO LUGAR VALUES (null, 'San Isidro', 'PARROQUIA', 98);
+#MUNICIPIO SUCRE
+INSERT INTO LUGAR VALUES (null, 'Sucre', 'PARROQUIA', 99);
+INSERT INTO LUGAR VALUES (null, 'Aripao', 'PARROQUIA', 99);
+INSERT INTO LUGAR VALUES (null, 'Guarataro', 'PARROQUIA', 99);
+INSERT INTO LUGAR VALUES (null, 'Las Majadas', 'PARROQUIA', 99);
+INSERT INTO LUGAR VALUES (null, 'Moitaco', 'PARROQUIA', 99);
+
+#ESTADO CARABOBO
+#MUNICIPIO BEJUMA
+INSERT INTO LUGAR VALUES (null, 'Canoabo', 'PARROQUIA', 101);
+INSERT INTO LUGAR VALUES (null, 'Simón Bolívar', 'PARROQUIA', 101);
+#MUNICIPIO CARLOS ARVELO
+INSERT INTO LUGAR VALUES (null, 'Güigüe', 'PARROQUIA', 102);
+INSERT INTO LUGAR VALUES (null, 'Belén', 'PARROQUIA', 102);
+INSERT INTO LUGAR VALUES (null, 'Tacarigua', 'PARROQUIA', 102);
+#MUNICIPIO DIEGO IBARRA
+INSERT INTO LUGAR VALUES (null, 'Mariara', 'PARROQUIA', 103);
+INSERT INTO LUGAR VALUES (null, 'Aguas Calientes', 'PARROQUIA', 103);
+#MUNICIPIO GUACARA
+INSERT INTO LUGAR VALUES (null, 'Ciudad Alianza', 'PARROQUIA', 104);
+INSERT INTO LUGAR VALUES (null, 'Guacara', 'PARROQUIA', 104);
+INSERT INTO LUGAR VALUES (null, 'Yagua', 'PARROQUIA', 104);
+#MUNICIPIO JUAN JOSE MORA
+INSERT INTO LUGAR VALUES (null, 'Morón', 'PARROQUIA', 105);
+INSERT INTO LUGAR VALUES (null, 'Urama', 'PARROQUIA', 105);
+#MUNICIPIO LIBERTADOR
+INSERT INTO LUGAR VALUES (null, 'Tocuyito', 'PARROQUIA', 106);
+INSERT INTO LUGAR VALUES (null, 'Independencia', 'PARROQUIA', 106);
+#MUNICIPIO LOS GUAYOS
+INSERT INTO LUGAR VALUES (null, 'Los Guayos Valencia', 'PARROQUIA', 107);
+#MUNICIPIO MIRANDA
+INSERT INTO LUGAR VALUES (null, 'Miranda', 'PARROQUIA', 108);
+#MUNICIPIO MONTALBAN
+INSERT INTO LUGAR VALUES (null, 'Montalbán', 'PARROQUIA', 109);
+#MUNICIPIO NAGUANAGUA
+INSERT INTO LUGAR VALUES (null, 'Naguanagua', 'PARROQUIA', 110);
+#MUNICIPIO PUERTO CABELLO
+INSERT INTO LUGAR VALUES (null, 'Bartolomé Salóm', 'PARROQUIA', 111);
+INSERT INTO LUGAR VALUES (null, 'Democracia', 'PARROQUIA', 111);
+INSERT INTO LUGAR VALUES (null, 'Fraternidad', 'PARROQUIA', 111);
+INSERT INTO LUGAR VALUES (null, 'Goaigoaza', 'PARROQUIA', 111);
+INSERT INTO LUGAR VALUES (null, 'Juan José Flores', 'PARROQUIA', 111);
+INSERT INTO LUGAR VALUES (null, 'Unión', 'PARROQUIA', 111);
+INSERT INTO LUGAR VALUES (null, 'Borburata', 'PARROQUIA', 111);
+INSERT INTO LUGAR VALUES (null, 'Patanemo', 'PARROQUIA', 111);
+#MUNICIPIO SAN DIEGO
+INSERT INTO LUGAR VALUES (null, 'San Diego', 'PARROQUIA', 112);
+#MUNICIPIO SAN JOAQUIN
+INSERT INTO LUGAR VALUES (null, 'San Joaquín', 'PARROQUIA', 113);
+#MUNICIPIO VALENCIA
+INSERT INTO LUGAR VALUES (null, 'Candelaria', 'PARROQUIA', 114);
+INSERT INTO LUGAR VALUES (null, 'Catedral', 'PARROQUIA', 114);
+INSERT INTO LUGAR VALUES (null, 'El Socorro', 'PARROQUIA', 114);
+INSERT INTO LUGAR VALUES (null, 'Miguel Peña', 'PARROQUIA', 114);
+INSERT INTO LUGAR VALUES (null, 'Rafael Urdaneta', 'PARROQUIA', 114);
+INSERT INTO LUGAR VALUES (null, 'San Blas', 'PARROQUIA', 114);
+INSERT INTO LUGAR VALUES (null, 'San José', 'PARROQUIA', 114);
+INSERT INTO LUGAR VALUES (null, 'Santa Rosa', 'PARROQUIA', 114);
+INSERT INTO LUGAR VALUES (null, 'Negro Primero', 'PARROQUIA', 114);
+
+#ESTADO COJODES
+#MUNICIPIO ANZOATEGUI
+INSERT INTO LUGAR VALUES (null, 'Cojedes', 'PARROQUIA', 115);
+INSERT INTO LUGAR VALUES (null, 'Juan de Mata Suárez', 'PARROQUIA', 115);
+#MUNICIPIO PAO DE SAN JUAN BAUTISTA
+INSERT INTO LUGAR VALUES (null, 'El Pao', 'PARROQUIA', 119);
+#MUNICIPIO TINAQUILLO
+INSERT INTO LUGAR VALUES (null, 'Tinaquillo', 'PARROQUIA', 123);
+#MUNICIPIO GIRARDOT
+INSERT INTO LUGAR VALUES (null, 'El Baúl', 'PARROQUIA', 117);
+INSERT INTO LUGAR VALUES (null, 'Sucre', 'PARROQUIA', 117);
+#MUNICIPIO LIMA BLANCO
+INSERT INTO LUGAR VALUES (null, 'La Aguadita', 'PARROQUIA', 118);
+INSERT INTO LUGAR VALUES (null, 'Macapo', 'PARROQUIA', 118);
+#MUNICIPIO RICAURTE
+INSERT INTO LUGAR VALUES (null, 'El Amparo', 'PARROQUIA', 120);
+INSERT INTO LUGAR VALUES (null, 'Libertad de Cojedes', 'PARROQUIA', 120);
+#MUNICIPIO ROMULO GALLEGOS
+INSERT INTO LUGAR VALUES (null, 'Rómulo Gallegos', 'PARROQUIA', 121);
+#MUNICIPIO EZEQUIEL ZAMORA
+INSERT INTO LUGAR VALUES (null, 'San Carlos de Austria', 'PARROQUIA', 116);
+INSERT INTO LUGAR VALUES (null, 'Juan Ángel Bravo', 'PARROQUIA', 116);
+INSERT INTO LUGAR VALUES (null, 'Manuel Manrique', 'PARROQUIA', 116);
+#MUNICIPIO TINACO
+INSERT INTO LUGAR VALUES (null, 'General en Jefe José Laurencio Silva', 'PARROQUIA', 122);
+
+#ESTADO DELTA AMACURO
+#MUNICIPIO ANTONIO DIAZ
+INSERT INTO LUGAR VALUES (null, 'Curiapo', 'PARROQUIA', 124);
+INSERT INTO LUGAR VALUES (null, 'Almirante Luis Brión', 'PARROQUIA', 124);
+INSERT INTO LUGAR VALUES (null, 'Francisco  Aniceto Lugo', 'PARROQUIA', 124);
+INSERT INTO LUGAR VALUES (null, 'Manuel Renaud', 'PARROQUIA', 124);
+INSERT INTO LUGAR VALUES (null, 'Padre Barral', 'PARROQUIA', 124);
+INSERT INTO LUGAR VALUES (null, 'Santos de Abelgas', 'PARROQUIA', 124);
+#MUNICIPIO CASACOIMA
+INSERT INTO LUGAR VALUES (null, 'Imataca', 'PARROQUIA', 125);
+INSERT INTO LUGAR VALUES (null, 'Juan Bautista Arismendi', 'PARROQUIA', 125);
+INSERT INTO LUGAR VALUES (null, 'Manuel Piar', 'PARROQUIA', 125);
+INSERT INTO LUGAR VALUES (null, 'Rómulo Gallegos', 'PARROQUIA', 125);
+#MUNICIPIO PEDERNALES
+INSERT INTO LUGAR VALUES (null, 'Pedernales', 'PARROQUIA', 126);
+INSERT INTO LUGAR VALUES (null, 'Luis Beltrán Prieto Figueroa', 'PARROQUIA', 126);
+#MUNICIPIO TUCUPITA
+INSERT INTO LUGAR VALUES (null, 'San José', 'PARROQUIA', 127);
+INSERT INTO LUGAR VALUES (null, 'José Vidal Marcano', 'PARROQUIA', 127);
+INSERT INTO LUGAR VALUES (null, 'Leonardo Ruíz Pineda', 'PARROQUIA', 127);
+INSERT INTO LUGAR VALUES (null, 'Mariscal Antonio José de Sucre', 'PARROQUIA', 127);
+INSERT INTO LUGAR VALUES (null, 'Monseñor Argimiro García', 'PARROQUIA', 127);
+INSERT INTO LUGAR VALUES (null, 'Virgen del Valle', 'PARROQUIA', 127);
+INSERT INTO LUGAR VALUES (null, 'San Rafael', 'PARROQUIA', 127);
+INSERT INTO LUGAR VALUES (null, 'Juan Millan', 'PARROQUIA', 127);
+
+#ESTADO FALCON
+#MUNICIPIO ACOSTA
+INSERT INTO LUGAR VALUES (null, 'Capadare', 'PARROQUIA', 129);
+INSERT INTO LUGAR VALUES (null, 'La Pastora', 'PARROQUIA', 129);
+INSERT INTO LUGAR VALUES (null, 'Libertador', 'PARROQUIA', 129);
+INSERT INTO LUGAR VALUES (null, 'San Juán de los Cayos', 'PARROQUIA', 129);
+#MUNICIPIO BOLIVAR
+INSERT INTO LUGAR VALUES (null, 'Aracua', 'PARROQUIA', 130);
+INSERT INTO LUGAR VALUES (null, 'La Peña', 'PARROQUIA', 130);
+INSERT INTO LUGAR VALUES (null, 'San Luis', 'PARROQUIA', 130);
+#MUNICIPIO BUCHIVACOA
+INSERT INTO LUGAR VALUES (null, 'Bariro', 'PARROQUIA', 131);
+INSERT INTO LUGAR VALUES (null, 'Borojó', 'PARROQUIA', 131);
+INSERT INTO LUGAR VALUES (null, 'Capatárida', 'PARROQUIA', 131);
+INSERT INTO LUGAR VALUES (null, 'Guajiro', 'PARROQUIA', 131);
+INSERT INTO LUGAR VALUES (null, 'Seque', 'PARROQUIA', 131);
+INSERT INTO LUGAR VALUES (null, 'Valle de Eroa', 'PARROQUIA', 131);
+INSERT INTO LUGAR VALUES (null, 'Zazárida', 'PARROQUIA', 131);
+#MUNICIPIO CACIQUE MANAURE
+INSERT INTO LUGAR VALUES (null, 'Cacique Manaure', 'PARROQUIA', 132);
+#MUNICIPIO CARIRUBANA
+INSERT INTO LUGAR VALUES (null, 'Norte', 'PARROQUIA', 133);
+INSERT INTO LUGAR VALUES (null, 'Carirubana', 'PARROQUIA', 133);
+INSERT INTO LUGAR VALUES (null, 'Sanra Ana', 'PARROQUIA', 133);
+INSERT INTO LUGAR VALUES (null, 'Punta Cardón', 'PARROQUIA', 133);
+#MUNICIPIO COLINA
+INSERT INTO LUGAR VALUES (null, 'La Vela de Coro', 'PARROQUIA', 134);
+INSERT INTO LUGAR VALUES (null, 'Acurigua', 'PARROQUIA', 134);
+INSERT INTO LUGAR VALUES (null, 'Guaibacoa', 'PARROQUIA', 134);
+INSERT INTO LUGAR VALUES (null, 'Las Calderas', 'PARROQUIA', 134);
+INSERT INTO LUGAR VALUES (null, 'Mataruca', 'PARROQUIA', 134);
+#MUNICIPIO DABAJURO
+INSERT INTO LUGAR VALUES (null, 'Dabajuro', 'PARROQUIA', 135);
+#MUNICIPIO DEMOCRACIA
+INSERT INTO LUGAR VALUES (null, 'Agua Clara', 'PARROQUIA', 136);
+INSERT INTO LUGAR VALUES (null, 'Avaria', 'PARROQUIA', 136);
+INSERT INTO LUGAR VALUES (null, 'Pedregal', 'PARROQUIA', 136);
+INSERT INTO LUGAR VALUES (null, 'Piedra Grande', 'PARROQUIA', 136);
+INSERT INTO LUGAR VALUES (null, 'Purureche', 'PARROQUIA', 136);
+#MUNICIPIO FALCON
+INSERT INTO LUGAR VALUES (null, 'Adaure', 'PARROQUIA', 137);
+INSERT INTO LUGAR VALUES (null, 'Adícora', 'PARROQUIA', 137);
+INSERT INTO LUGAR VALUES (null, 'Baraived', 'PARROQUIA', 137);
+INSERT INTO LUGAR VALUES (null, 'Buena Vista', 'PARROQUIA', 137);
+INSERT INTO LUGAR VALUES (null, 'Jadacaquiva', 'PARROQUIA', 137);
+INSERT INTO LUGAR VALUES (null, 'El Vínculo', 'PARROQUIA', 137);
+INSERT INTO LUGAR VALUES (null, 'El Hato', 'PARROQUIA', 137);
+INSERT INTO LUGAR VALUES (null, 'Moruy', 'PARROQUIA', 137);
+INSERT INTO LUGAR VALUES (null, 'Pueblo Nuevo', 'PARROQUIA', 137);
+#MUNICIPIO FEDERACION
+INSERT INTO LUGAR VALUES (null, 'Agua Larga', 'PARROQUIA', 138);
+INSERT INTO LUGAR VALUES (null, 'Churuguara', 'PARROQUIA', 138);
+INSERT INTO LUGAR VALUES (null, 'El Paují', 'PARROQUIA', 138);
+INSERT INTO LUGAR VALUES (null, 'Independencia', 'PARROQUIA', 138);
+INSERT INTO LUGAR VALUES (null, 'Mapararí', 'PARROQUIA', 138);
+#MUNICIPIO JACURA
+INSERT INTO LUGAR VALUES (null, 'Agua Linda', 'PARROQUIA', 139);
+INSERT INTO LUGAR VALUES (null, 'Araurima', 'PARROQUIA', 139);
+INSERT INTO LUGAR VALUES (null, 'Jacura', 'PARROQUIA', 139);
+#MUNICIPIO LOS TAQUES
+INSERT INTO LUGAR VALUES (null, 'Los Taques', 'PARROQUIA', 140);
+INSERT INTO LUGAR VALUES (null, 'Judibana', 'PARROQUIA', 140);
+#MUNICIPIO MAUROA
+INSERT INTO LUGAR VALUES (null, 'Mene de Mauroa', 'PARROQUIA', 141);
+INSERT INTO LUGAR VALUES (null, 'San Félix', 'PARROQUIA', 141);
+INSERT INTO LUGAR VALUES (null, 'Casigua', 'PARROQUIA', 141);
+#MUNICIPIO MIRANDA
+INSERT INTO LUGAR VALUES (null, 'Guzmán Guillermo', 'PARROQUIA', 142);
+INSERT INTO LUGAR VALUES (null, 'Mitare', 'PARROQUIA', 142);
+INSERT INTO LUGAR VALUES (null, 'Río Seco', 'PARROQUIA', 142);
+INSERT INTO LUGAR VALUES (null, 'Sabaneta', 'PARROQUIA', 142);
+INSERT INTO LUGAR VALUES (null, 'San Antonio', 'PARROQUIA', 142);
+INSERT INTO LUGAR VALUES (null, 'San Gabriel', 'PARROQUIA', 142);
+INSERT INTO LUGAR VALUES (null, 'Santa Ana', 'PARROQUIA', 142);
+#MUNICIPIO MONSEÑOR ITURRIZA
+INSERT INTO LUGAR VALUES (null, 'Boca del Tocuyo', 'PARROQUIA', 143);
+INSERT INTO LUGAR VALUES (null, 'Chichiriviche', 'PARROQUIA', 143);
+INSERT INTO LUGAR VALUES (null, 'Tocuyo de la Costa', 'PARROQUIA', 143);
+#MUNICIPIO PALMASOLA
+INSERT INTO LUGAR VALUES (null, 'Palmasola', 'PARROQUIA', 144);
+#MUNICIPIO PETIT
+INSERT INTO LUGAR VALUES (null, 'Cabure', 'PARROQUIA', 145);
+INSERT INTO LUGAR VALUES (null, 'Colina', 'PARROQUIA', 145);
+INSERT INTO LUGAR VALUES (null, 'Curimagua', 'PARROQUIA', 145);
+#MUNICIPIO PÍRITU
+INSERT INTO LUGAR VALUES (null, 'San José de la Costa', 'PARROQUIA', 146);
+INSERT INTO LUGAR VALUES (null, 'Píritu', 'PARROQUIA', 146);
+#MUNICIPIO SAN FRANCISCO
+INSERT INTO LUGAR VALUES (null, 'San Francisco Mirimire', 'PARROQUIA', 147);
+#MUNICIPIO JOSE LAURENCIO SILVA
+INSERT INTO LUGAR VALUES (null, 'Tucacas', 'PARROQUIA', 148);
+INSERT INTO LUGAR VALUES (null, 'Boca de Aroa', 'PARROQUIA', 148);
+#MUNICIPIO SUCRE
+INSERT INTO LUGAR VALUES (null, 'Sucre', 'PARROQUIA', 149);
+INSERT INTO LUGAR VALUES (null, 'Pecaya', 'PARROQUIA', 149);
+#MUNICIPIO TOCOPERO
+INSERT INTO LUGAR VALUES (null, 'Tocópero', 'PARROQUIA', 150);
+#MUNICIPIO UNION
+INSERT INTO LUGAR VALUES (null, 'El Charal', 'PARROQUIA', 151);
+INSERT INTO LUGAR VALUES (null, 'Las Vegas del Tuy', 'PARROQUIA', 151);
+INSERT INTO LUGAR VALUES (null, 'Santa Cruz de Bucaral', 'PARROQUIA', 151);
+#MUNICIPIO URUMACO
+INSERT INTO LUGAR VALUES (null, 'Bruzual', 'PARROQUIA', 152);
+INSERT INTO LUGAR VALUES (null, 'Urumaco', 'PARROQUIA', 152);
+#MUNICIPIO ZAMORA
+INSERT INTO LUGAR VALUES (null, 'Puerto Cumarebo', 'PARROQUIA', 153);
+INSERT INTO LUGAR VALUES (null, 'La Ciénaga', 'PARROQUIA', 153);
+INSERT INTO LUGAR VALUES (null, 'La Soledad', 'PARROQUIA', 153);
+INSERT INTO LUGAR VALUES (null, 'Pueblo Cumarebo', 'PARROQUIA', 153);
+INSERT INTO LUGAR VALUES (null, 'Zazárida', 'PARROQUIA', 153);
+
+#Guarico
+#Municipio Esteros de Camaguan
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Camaguán', 'PARROQUIA', 154);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Puerto Miranda', 'PARROQUIA', 154);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Uverito', 'PARROQUIA', 154);
+#Municipio Chaguaramas
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Chaguaramas', 'PARROQUIA', 155);
+#Municipio El Socorro
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Socorro', 'PARROQUIA', 156);
+#Municipio Francisco de Miranda
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Calvario', 'PARROQUIA', 157);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Rastro', 'PARROQUIA', 157);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Guardatinajas', 'PARROQUIA', 157);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Capital Urbana Calabozo', 'PARROQUIA', 157);
+#Municipio José Félix Ribas
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Tucupido', 'PARROQUIA', 158);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Rafael de Laya', 'PARROQUIA', 158);
+#Municipio José Tadeo Monagas
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Altagracia de Orituco', 'PARROQUIA', 159);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Rafael de Orituco', 'PARROQUIA', 159);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Francisco Javier de Lezama', 'PARROQUIA', 159);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Paso Real de Macaira', 'PARROQUIA', 159);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Carlos Soublette', 'PARROQUIA', 159);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Francisco de Macaira', 'PARROQUIA', 159);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Libertad de Orituco', 'PARROQUIA', 159);
+#Municipio Juan Germán Roscio
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cantagallo', 'PARROQUIA', 160);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Juan de Los Morros', 'PARROQUIA', 160);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Parapara', 'PARROQUIA', 160);
+#Municipio Julián Mellado
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Sombrero', 'PARROQUIA', 161);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Sosa', 'PARROQUIA', 161);
+#Municipio Las Mercedes
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Las Mercedes', 'PARROQUIA', 162);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cabruta', 'PARROQUIA', 162);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa Rita de Manapire', 'PARROQUIA', 162);
+#Municipio Leonardo Infante
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Valle de la Pascua', 'PARROQUIA', 163);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Espino', 'PARROQUIA', 163);
+#Municipio Pedro Zaraza
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San José de Unare', 'PARROQUIA', 164);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Zaraza', 'PARROQUIA', 164);
+#Municipio Ortiz
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San José de Tiznados', 'PARROQUIA', 165);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Francisco de Tiznados', 'PARROQUIA', 165);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Lorenzo de Tiznados', 'PARROQUIA', 165);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Ortiz', 'PARROQUIA', 165);
+#Municipio San Gerónimo de Guayabal
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Guayabal', 'PARROQUIA', 166);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cazorla', 'PARROQUIA', 166);
+#Municipio San José de Guaribe
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San José de Guaribe', 'PARROQUIA', 167);
+#Municipio Santa María de Ipire
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa María de Ipire', 'PARROQUIA', 168);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Altamira', 'PARROQUIA', 168);
+
+#Lara
+#Municipio Andrés Eloy Blanco
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Quebrada Honda de Guache', 'PARROQUIA', 169);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Pio Tamayo', 'PARROQUIA', 169);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Yacambú', 'PARROQUIA', 169);
+#Municipio Crespo
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Freitez', 'PARROQUIA', 170);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'José María Blanco', 'PARROQUIA', 170);
+#Municipio Iribarren
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Aguedo Felipe Alvarado', 'PARROQUIA', 171);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Buena Vista', 'PARROQUIA', 171);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Catedral', 'PARROQUIA', 171);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Concepción', 'PARROQUIA', 171);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Cují', 'PARROQUIA', 171);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Juárez', 'PARROQUIA', 171);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Ana Soto', 'PARROQUIA', 171);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa Rosa', 'PARROQUIA', 171);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Tamaca', 'PARROQUIA', 171);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Unión', 'PARROQUIA', 171);
+#Municipio Jiménez
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Juan Bautista Rodríguez', 'PARROQUIA', 172);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cuara', 'PARROQUIA', 172);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Diego de Lozada', 'PARROQUIA', 172);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Paraíso de San José', 'PARROQUIA', 172);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Miguel', 'PARROQUIA', 172);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Tintorero', 'PARROQUIA', 172);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'José Bernardo Dorante', 'PARROQUIA', 172);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Coronel Mariano Peraza', 'PARROQUIA', 172);
+#Municipio Morán
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Anzoátegui', 'PARROQUIA', 173);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Bolívar', 'PARROQUIA', 173);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Guárico', 'PARROQUIA', 173);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Hilario Luna y Luna', 'PARROQUIA', 173);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Humocaro Bajo', 'PARROQUIA', 173);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Humocaro Alto', 'PARROQUIA', 173);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Candelaria', 'PARROQUIA', 173);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Morán', 'PARROQUIA', 173);
+#Municipio Palavecino
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cabudare', 'PARROQUIA', 174);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'José Gregorio Bastidas', 'PARROQUIA', 174);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Agua Viva', 'PARROQUIA', 174);
+#Municipio Simón Planas
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Buría', 'PARROQUIA', 175);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Gustavo Vega', 'PARROQUIA', 175);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Sarare', 'PARROQUIA', 175);
+#Municipio Torres
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Altagracia', 'PARROQUIA', 176);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Antonio Díaz', 'PARROQUIA', 176);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Camacaro', 'PARROQUIA', 176);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Castañeda', 'PARROQUIA', 176);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cecilio Zubillaga', 'PARROQUIA', 176);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Chiquinquira', 'PARROQUIA', 176);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Blanco', 'PARROQUIA', 176);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Espinoza de los Monteros', 'PARROQUIA', 176);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Heriberto Arrollo', 'PARROQUIA', 176);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Lara', 'PARROQUIA', 176);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Las Mercedes', 'PARROQUIA', 176);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Manuel Morillo', 'PARROQUIA', 176);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Montaña Verde', 'PARROQUIA', 176);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Montes de Oca', 'PARROQUIA', 176);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Reyes de Vargas', 'PARROQUIA', 176);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Torres', 'PARROQUIA', 176);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Trinidad Samuel', 'PARROQUIA', 176);
+#Municipio Urdaneta
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Xaguas', 'PARROQUIA', 177);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Siquisique', 'PARROQUIA', 177);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Miguel', 'PARROQUIA', 177);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Moroturo', 'PARROQUIA', 177);
+
+#Merida
+#Municipio Libertador
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Antonio Spinetti Dini', 'PARROQUIA', 178);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Arias', 'PARROQUIA', 178);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Caracciolo Parra Pérez', 'PARROQUIA', 178);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Domingo Peña', 'PARROQUIA', 178);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Llano', 'PARROQUIA', 178);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Gonzalo Picón Febres', 'PARROQUIA', 178);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Jacinto Plaza', 'PARROQUIA', 178);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Juan Rodríguez Suárez', 'PARROQUIA', 178);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Lasso de la Vega', 'PARROQUIA', 178);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Mariano Picón Salas', 'PARROQUIA', 178);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Milla', 'PARROQUIA', 178);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Osuna Rodríguez', 'PARROQUIA', 178);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Sagrario', 'PARROQUIA', 178);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Morro', 'PARROQUIA', 178);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Los Nevados', 'PARROQUIA', 178);
+#Municipio Alberto Adriani
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Presidente Betancourt', 'PARROQUIA', 179);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Presidente Páez', 'PARROQUIA', 179);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Presidente Rómulo Gallegos', 'PARROQUIA', 179);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Gabriel Picón González', 'PARROQUIA', 179);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Héctor Amable Mora', 'PARROQUIA', 179);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'José Nucete Sardi', 'PARROQUIA', 179);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Pulido Méndez', 'PARROQUIA', 179);
+#Municipio Andrés Bello
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Azulita', 'PARROQUIA', 180);
+#Municipio Antonio Pinto Salinas
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa Cruz de Mora', 'PARROQUIA', 181);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Mesa Bolívar', 'PARROQUIA', 181);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Mesa de Las Palmas', 'PARROQUIA', 181);
+#Municipio Aricagua
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Aricagua', 'PARROQUIA', 182);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Antonio', 'PARROQUIA', 182);
+#Municipio Arzobispo Chacón
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Canagua', 'PARROQUIA', 183);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Capurí', 'PARROQUIA', 183);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Chacantá', 'PARROQUIA', 183);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Molino', 'PARROQUIA', 183);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Guaimaral', 'PARROQUIA', 183);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Mucutuy', 'PARROQUIA', 183);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Mucuchachí', 'PARROQUIA', 183);
+#Municipio Campo Elías
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Fernández Peña', 'PARROQUIA', 184);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Matriz', 'PARROQUIA', 184);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Montalbán', 'PARROQUIA', 184);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Acequias', 'PARROQUIA', 184);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Jají', 'PARROQUIA', 184);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Mesa', 'PARROQUIA', 184);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San José del Sur', 'PARROQUIA', 184);
+#Municipio Caracciolo Parra Olmedo
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Tucaní', 'PARROQUIA', 185);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Florencio Ramírez', 'PARROQUIA', 185);
+#Municipio Cardenal Quintero
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santo Domingo', 'PARROQUIA', 186);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Las Piedras', 'PARROQUIA', 186);
+#Municipio Guaraque
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Guaraque', 'PARROQUIA', 187);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Mesa de Quintero', 'PARROQUIA', 187);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Río Negro', 'PARROQUIA', 187);
+#Municipio Julio César Salas
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Arapuey', 'PARROQUIA', 188);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Palmira', 'PARROQUIA', 188);
+#Municipio Justo Briceño
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Cristóbal de Torondoy', 'PARROQUIA', 189);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Torondoy', 'PARROQUIA', 189);
+#Municipio Miranda
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Andrés Eloy Blanco', 'PARROQUIA', 190);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Venta', 'PARROQUIA', 190);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Piñango', 'PARROQUIA', 190);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Timotes', 'PARROQUIA', 190);
+#Municipio Obispo Ramos de Lora
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Eloy Paredes', 'PARROQUIA', 191);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Rafael de Alcázar', 'PARROQUIA', 191);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa Elena de Arenales', 'PARROQUIA', 191);
+#Municipio Padre Noguera
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa María de Caparo', 'PARROQUIA', 192);
+#Municipio Pueblo Llano
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Pueblo Llano', 'PARROQUIA', 193);
+#Municipio Rangel
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cacute', 'PARROQUIA', 194);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Toma', 'PARROQUIA', 194);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Mucuchíes', 'PARROQUIA', 194);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Mucurubá', 'PARROQUIA', 194);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Rafael', 'PARROQUIA', 194);
+#Municipio Rivas Dávila
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Gerónimo Maldonado', 'PARROQUIA', 195);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Bailadores', 'PARROQUIA', 195);
+#Municipio Santos Marquina
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Tabay', 'PARROQUIA', 196);
+#Municipio Sucre
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Chiguará', 'PARROQUIA', 197);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Estánques', 'PARROQUIA', 197);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Lagunillas', 'PARROQUIA', 197);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Trampa', 'PARROQUIA', 197);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Pueblo Nuevo del Sur', 'PARROQUIA', 197);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Juan', 'PARROQUIA', 197);
+#Municipio Tovar
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Amparo', 'PARROQUIA', 198);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Llano', 'PARROQUIA', 198);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Francisco', 'PARROQUIA', 198);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Tovar', 'PARROQUIA', 198);
+#Municipio Tulio Febres Cordero
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Independencia', 'PARROQUIA', 199);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'María de la Concepción Palacios Blanco', 'PARROQUIA', 199);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Nueva Bolivia', 'PARROQUIA', 199);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa Apolonia', 'PARROQUIA', 199); 
+#Municipio Zea
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Caño El Tigre', 'PARROQUIA', 200);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Zea', 'PARROQUIA', 200);
+
+
+#Miranda
+#Municipio Acevedo
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Aragüita', 'PARROQUIA', 201);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Arévalo González', 'PARROQUIA', 201);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Capaya', 'PARROQUIA', 201);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Caucagua', 'PARROQUIA', 201);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Panaquire', 'PARROQUIA', 201);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Ribas', 'PARROQUIA', 201);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Café', 'PARROQUIA', 201);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Marizapa', 'PARROQUIA', 201);
+#Municipio Andrés Bello
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cumbo', 'PARROQUIA', 202);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San José de Barlovento', 'PARROQUIA', 202);
+#Municipio Baruta
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Cafetal', 'PARROQUIA', 203);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Las Minas', 'PARROQUIA', 203);
+#Municipio Brión
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Higuerote', 'PARROQUIA', 204);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Curiepe', 'PARROQUIA', 204);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Tacarigua de Brión', 'PARROQUIA', 204);
+#Municipio Buroz
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Mamporal', 'PARROQUIA', 205);
+#Municipio Carrizal
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Carrizal', 'PARROQUIA', 206);
+#Municipio Chacao
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Chacao', 'PARROQUIA', 207);
+#Municipio Cristóbal Rojas
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Charallave', 'PARROQUIA', 208);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Las Brisas', 'PARROQUIA', 208);
+#Municipio El Hatillo
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa Rosalía de Palermo de El Hatillo', 'PARROQUIA', 209);
+#Municipio Guaicaipuro
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Altagracia de la Montaña', 'PARROQUIA', 210);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cecilio Acosta', 'PARROQUIA', 210);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Los Teques', 'PARROQUIA', 210);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Jarillo', 'PARROQUIA', 210);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Pedro', 'PARROQUIA', 210);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Tácata', 'PARROQUIA', 210);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Paracotos', 'PARROQUIA', 210);
+#Municipio Independencia
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cartanal', 'PARROQUIA', 211);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa Teresa del Tuy', 'PARROQUIA', 211);
+#Municipio Lander
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Democracia', 'PARROQUIA', 212);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Ocumare del Tuy', 'PARROQUIA', 212);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa Bárbara', 'PARROQUIA', 212);
+#Municipio Los Salias
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Antonio de los Altos', 'PARROQUIA', 213);
+#Municipio Páez
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Río Chico', 'PARROQUIA', 214);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Guapo', 'PARROQUIA', 214);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Tacarigua de la Laguna', 'PARROQUIA', 214);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Paparo', 'PARROQUIA', 214);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Fernando del Guapo', 'PARROQUIA', 214);
+#Municipio Paz Castillo
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa Lucía del Tuy', 'PARROQUIA', 215);
+#Municipio Pedro Gual
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cúpira', 'PARROQUIA', 216);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Machurucuto', 'PARROQUIA', 216);
+#Municipio Plaza
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Guarenas', 'PARROQUIA', 217);
+#Municipio Simón Bolívar
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Antonio de Yare', 'PARROQUIA', 218);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Francisco de Yare', 'PARROQUIA', 218);
+#Municipio Sucre
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Leoncio Martínez', 'PARROQUIA', 219);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Caucagüita', 'PARROQUIA', 219);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Filas de Mariche', 'PARROQUIA', 219);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Dolorita', 'PARROQUIA', 219);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Petare', 'PARROQUIA', 219);
+#Municipio Urdaneta
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cúa', 'PARROQUIA', 220);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Nueva Cúa', 'PARROQUIA', 220);
+#Municipio Zamora
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Guatire', 'PARROQUIA', 221);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Bolívar', 'PARROQUIA', 221);
+
+#Monagas
+#Municipio Acosta
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Antonio de Maturín', 'PARROQUIA', 222);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Francisco de Maturín', 'PARROQUIA', 222);
+#Municipio Aguasay
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Aguasay', 'PARROQUIA', 223);
+#Municipio Bolívar
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Caripito', 'PARROQUIA', 224);
+#Municipio Cedeño
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Areo', 'PARROQUIA', 225);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Capital Cedeño', 'PARROQUIA', 225);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Félix de Cantalicio', 'PARROQUIA', 225);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Viento Fresco', 'PARROQUIA', 225);
+#Municipio Ezequiel Zamora
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Tejero', 'PARROQUIA', 226);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Punta de Mata', 'PARROQUIA', 226);
+#Municipio Libertador
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Chaguaramas', 'PARROQUIA', 227);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Las Alhuacas', 'PARROQUIA', 227);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Tabasca', 'PARROQUIA', 227);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Temblador', 'PARROQUIA', 227);
+#Municipio Maturín
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Alto de los Godos', 'PARROQUIA', 228);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Boquerón', 'PARROQUIA', 228);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Las Cocuizas', 'PARROQUIA', 228);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Cruz', 'PARROQUIA', 228);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Simón', 'PARROQUIA', 228);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Corozo', 'PARROQUIA', 228);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Furrial', 'PARROQUIA', 228);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Jusepín', 'PARROQUIA', 228);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Pica', 'PARROQUIA', 228);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Vicente', 'PARROQUIA', 228);
+#Municipio Piar
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Aparicio', 'PARROQUIA', 229);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Aragua de Maturín', 'PARROQUIA', 229);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Chaguaramal', 'PARROQUIA', 229);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Pinto', 'PARROQUIA', 229);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Guanaguana', 'PARROQUIA', 229);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Toscana', 'PARROQUIA', 229);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Taguaya', 'PARROQUIA', 229);
+#Municipio Punceres
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cachipo', 'PARROQUIA', 230);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Quiriquire', 'PARROQUIA', 230);
+#Municipio Santa Bárbara
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa Bárbara', 'PARROQUIA', 231);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Morón', 'PARROQUIA', 231);
+#Municipio Sotillo
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Barrancas', 'PARROQUIA', 232);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Los Barrancos de Fajardo', 'PARROQUIA', 232);
+#Municipio Uracoa
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Uracoa', 'PARROQUIA', 233);
+#Municipio Caripe
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Guácharo', 'PARROQUIA', 234);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Guanota', 'PARROQUIA', 234);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Sabana de Piedra', 'PARROQUIA', 234);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Agustín', 'PARROQUIA', 234);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Teresen', 'PARROQUIA', 234);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Caripe', 'PARROQUIA', 234);
+
+#Nueva Esparta
+#Municipio Antolín del Campo
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Antolín del Campo', 'PARROQUIA', 235);
+#Municipio Arismendi
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Arismendi', 'PARROQUIA', 236);
+#Municipio Díaz
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Juan Bautista', 'PARROQUIA', 237);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Zabala', 'PARROQUIA', 237);
+#Municipio García
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'García', 'PARROQUIA', 238);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Francisco Fajardo', 'PARROQUIA', 238);
+#Municipio Gómez
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Bolívar', 'PARROQUIA', 239);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Guevara', 'PARROQUIA', 239);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Matasiete', 'PARROQUIA', 239);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa Ana', 'PARROQUIA', 239);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Sucre', 'PARROQUIA', 239);
+#Municipio Maneiro
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Aguirre', 'PARROQUIA', 240);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Maneiro', 'PARROQUIA', 240);
+#Municipio Marcano
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Adrián', 'PARROQUIA', 241);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Juan Griego', 'PARROQUIA', 241);
+
+#Municipio Mariño
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Mariño', 'PARROQUIA', 242);
+#Municipio Macanao
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Francisco de Macanao', 'PARROQUIA', 243);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Boca de Río', 'PARROQUIA', 243);
+#Municipio Tubores
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Tubores', 'PARROQUIA', 244);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Los Barales', 'PARROQUIA', 244);
+#Municipio Villalba
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Vicente Fuentes', 'PARROQUIA', 245);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Villalba', 'PARROQUIA', 245);
+
+#Portuguesa
+#Municipio Agua Blanca
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Agua Blanca', 'PARROQUIA', 246);
+#Municipio Araure
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Parroquia Araure', 'PARROQUIA', 247);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Río Acarigua', 'PARROQUIA', 247);
+#Municipio Esteller
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Píritu', 'PARROQUIA', 248);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Uveral', 'PARROQUIA', 248);
+#Municipio Guanare
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cordova', 'PARROQUIA', 249);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Guanare', 'PARROQUIA', 249);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San José de la Montaña', 'PARROQUIA', 249);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Juan de Guanaguanare', 'PARROQUIA', 249);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Virgen de Coromoto', 'PARROQUIA', 249);
+#Municipio Guanarito
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Guanarito', 'PARROQUIA', 250);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Trinidad de la Capilla', 'PARROQUIA', 250);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Divina Pastora', 'PARROQUIA', 250);
+#Municipio Monseñor José Vicente de Unda
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Chabasquén', 'PARROQUIA', 251);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Peña Blanca', 'PARROQUIA', 251);
+#Municipio Ospino
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Aparición', 'PARROQUIA', 252);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Estación', 'PARROQUIA', 252);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Ospino', 'PARROQUIA', 252);
+#Municipio Páez
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Acarigua', 'PARROQUIA', 253);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Payara', 'PARROQUIA', 253);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Pimpinela', 'PARROQUIA', 253);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Ramón Peraza', 'PARROQUIA', 253);
+#Municipio Papelón
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Caño Delgadito', 'PARROQUIA', 254);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Papelón', 'PARROQUIA', 254);
+#Municipio San Genaro de Boconoíto
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Antolín Tovar Anquino', 'PARROQUIA', 255);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Boconoíto', 'PARROQUIA', 255);
+#Municipio San Rafael de Onoto
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa Fé', 'PARROQUIA', 256);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Rafael de Onoto', 'PARROQUIA', 256);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Thelmo Morles', 'PARROQUIA', 256);
+#Municipio Santa Rosalía
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Florida', 'PARROQUIA', 257);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Playón', 'PARROQUIA', 257);
+#Municipio Sucre
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Biscucuy Parroquia Biscucuy', 'PARROQUIA', 258);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Concepción', 'PARROQUIA', 258);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San José de Saguaz', 'PARROQUIA', 258);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Rafael de Palo Alzado', 'PARROQUIA', 258);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Uvencio Antonio Velásquez', 'PARROQUIA', 258);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Villa Rosa', 'PARROQUIA', 258);
+#Municipio Turén
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Villa Bruzual', 'PARROQUIA', 259);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Canelones', 'PARROQUIA', 259);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa Cruz', 'PARROQUIA', 259);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Isidro Labrador', 'PARROQUIA', 259);
+
+#Sucre
+#Municipio Andrés Eloy Blanco
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Mariño', 'PARROQUIA', 260);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Rómulo Gallegos', 'PARROQUIA', 260);
+#Municipio Andrés Mata
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San José de Areocuar', 'PARROQUIA', 261);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Tavera Acosta', 'PARROQUIA', 261);
+#Municipio Arismendi
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Río Caribe', 'PARROQUIA', 262);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Antonio José de Sucre', 'PARROQUIA', 262);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Morro de Puerto Santo', 'PARROQUIA', 262);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Puerto Santo', 'PARROQUIA', 262);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Juan de las Galdonas', 'PARROQUIA', 262);
+#Municipio Benítez
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Pilar', 'PARROQUIA', 263);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Rincón', 'PARROQUIA', 263);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'General Francisco Antonio Vázquez', 'PARROQUIA', 263);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Guaraúnos', 'PARROQUIA', 263);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Guaraúnos', 'PARROQUIA', 263);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Unión', 'PARROQUIA', 263);
+#Municipio Bermúdez
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa Catalina', 'PARROQUIA', 264);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa Rosa', 'PARROQUIA', 264);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa Teresa', 'PARROQUIA', 264);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Bolívar', 'PARROQUIA', 264);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Maracapana', 'PARROQUIA', 264);
+#Municipio Bolívar
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Marigüitar', 'PARROQUIA', 265);
+#Municipio Cajigal
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Libertad', 'PARROQUIA', 266);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Paujil', 'PARROQUIA', 266);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Yaguaraparo', 'PARROQUIA', 266);
+#Municipio Cruz Salmerón Acosta
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Araya', 'PARROQUIA', 267);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Chacopata', 'PARROQUIA', 267);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Manicuare', 'PARROQUIA', 267);
+#Municipio Libertador
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Tunapuy', 'PARROQUIA', 268);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Campo Elías', 'PARROQUIA', 268);
+#Municipio Mariño
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Irapa', 'PARROQUIA', 269);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Campo Claro', 'PARROQUIA', 269);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Marabal', 'PARROQUIA', 269);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Antonio de Irapa', 'PARROQUIA', 269);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Soro', 'PARROQUIA', 269);
+#Municipio Mejía
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Antonio del Golfo', 'PARROQUIA', 270);
+#Municipio Montes
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cumanacoa', 'PARROQUIA', 271);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Arenas', 'PARROQUIA', 271);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Aricagua', 'PARROQUIA', 271);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cocollar', 'PARROQUIA', 271);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Fernando', 'PARROQUIA', 271);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Lorenzo', 'PARROQUIA', 271);
+#Municipio Ribero
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cariaco', 'PARROQUIA', 272);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Catuaro', 'PARROQUIA', 272);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Rendón', 'PARROQUIA', 272);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa Cruz', 'PARROQUIA', 272);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa María', 'PARROQUIA', 272);
+#Municipio Sucre
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Altagracia Cumaná', 'PARROQUIA', 273);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa Inés Cumaná', 'PARROQUIA', 273);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Valentín Valiente Cumaná', 'PARROQUIA', 273);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Ayacucho Cumaná', 'PARROQUIA', 273);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Juan', 'PARROQUIA', 273);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Raúl Leoni', 'PARROQUIA', 273);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Gran Mariscal', 'PARROQUIA', 273); 
+#Municipio Valdez
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cristóbal Colón', 'PARROQUIA', 274);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Bideau', 'PARROQUIA', 274);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Punta de Piedras', 'PARROQUIA', 274);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Güiria', 'PARROQUIA', 274);
+
+#Tachira
+#municipios
+
+#Andres Bello
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cordero', 'PARROQUIA', 275);
+
+#antonio romulo acosta
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Las Mesas', 'PARROQUIA', 276);
+
+#ayacucho
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Rivas Berti', 'PARROQUIA', 277);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Juan de Colón', 'PARROQUIA', 277);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Pedro del Río', 'PARROQUIA', 277);
+
+#bolivar
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Isaías Medina Angarita', 'PARROQUIA', 278);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Juan Vicente Gómez', 'PARROQUIA', 278);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Palotal', 'PARROQUIA', 278);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Antonio del Táchira', 'PARROQUIA', 278);
+
+#cardenas
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Amenodoro Rangel Lamús', 'PARROQUIA', 279);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Florida', 'PARROQUIA', 279);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Táriba', 'PARROQUIA', 279);
+
+#cordoba
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa Ana del Táchira', 'PARROQUIA', 280);
+
+#fernandez feo
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Alberto Adriani', 'PARROQUIA', 281);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Rafael del Piñal', 'PARROQUIA', 281);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santo Domingo', 'PARROQUIA', 281);
+
+#Francisco de Miranda
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San José de Bolívar', 'PARROQUIA', 282);
+
+#García de Hevia
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Boca de Grita', 'PARROQUIA', 283);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'José Antonio Páez', 'PARROQUIA', 283);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Fría', 'PARROQUIA', 283);
+
+#Guásimos
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Palmira', 'PARROQUIA', 284);
+
+#Independencia
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Capacho Nuevo', 'PARROQUIA', 285);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Juan Germán Roscio', 'PARROQUIA', 285);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Román Cárdenas', 'PARROQUIA', 285);
+
+#Jáuregui
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Emilio Constantino Guerrero', 'PARROQUIA', 286);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Grita', 'PARROQUIA', 286);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Monseñor Miguel Antonio Salas', 'PARROQUIA', 286);
+
+#José María Vargas
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Cobre', 'PARROQUIA', 287);
+
+#Junín
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Bramón', 'PARROQUIA', 288);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Petrólea', 'PARROQUIA', 288);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Quinimarí', 'PARROQUIA', 288);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Rubio', 'PARROQUIA', 288);
+
+#Libertad
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Capacho Viejo', 'PARROQUIA', 290);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cipriano Castro', 'PARROQUIA', 290);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Manuel Felipe Rugeles', 'PARROQUIA', 290);
+
+#Libertador
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Abejales', 'PARROQUIA', 291);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Doradas', 'PARROQUIA', 291);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Emeterio Ochoa', 'PARROQUIA', 291);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Joaquín de Navay', 'PARROQUIA', 291);
+
+#lobatera
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Lobatera', 'PARROQUIA', 292);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Constitución', 'PARROQUIA', 292);
+
+#Michelena
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Michelena', 'PARROQUIA', 293);
+
+#Panamericano
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Coloncito', 'PARROQUIA', 294);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Palmita', 'PARROQUIA', 294);
+
+#Pedro María Ureña
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Ureña', 'PARROQUIA', 295);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Nueva Arcadia', 'PARROQUIA', 295);
+
+#Rafael Urdaneta
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Delicias', 'PARROQUIA', 296);
+
+#Samuel Dario Maldonado
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Boconó', 'PARROQUIA', 297);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Hernández', 'PARROQUIA', 297);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Tendida', 'PARROQUIA', 297);
+
+#San Cristóbal
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Francisco Romero Lobo', 'PARROQUIA', 298);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Concordia', 'PARROQUIA', 298);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Pedro María Morantes', 'PARROQUIA', 298);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Juan Bautista', 'PARROQUIA', 298);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Sebastián', 'PARROQUIA', 298);
+
+#San Judas Tadeo
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Umuquena', 'PARROQUIA', 289);
+
+#Seboruco
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Seboruco', 'PARROQUIA', 299);
+
+#Simón Rodríguez
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Simón', 'PARROQUIA', 300);
+
+#Sucre
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Eleazar López Contreras', 'PARROQUIA', 301);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Capital Sucre', 'PARROQUIA', 301);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Pablo', 'PARROQUIA', 301);
+
+#Torbes
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Josecito', 'PARROQUIA', 302);
+
+#Uribante
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cárdenas', 'PARROQUIA', 303);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Juan Pablo Peñaloza', 'PARROQUIA', 303);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Potosí', 'PARROQUIA', 303);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Pregonero', 'PARROQUIA', 303);
+
+#Trujillo
+#municipios
+
+#Andrés Bello
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Araguaney', 'PARROQUIA', 304);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Jaguito', 'PARROQUIA', 304);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Esperanza', 'PARROQUIA', 304);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa Isabel', 'PARROQUIA', 304);
+
+#Boconó
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Boconó', 'PARROQUIA', 305);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Carmen', 'PARROQUIA', 305);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Mosquey', 'PARROQUIA', 305);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Ayacucho', 'PARROQUIA', 305);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Burbusay', 'PARROQUIA', 305);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'General Ribas', 'PARROQUIA', 305);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Guaramacal', 'PARROQUIA', 305);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Vega De Guaramacal', 'PARROQUIA', 305);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Monseñor Jáuregui', 'PARROQUIA', 305);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Rafael Rangel', 'PARROQUIA', 305);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Miguel', 'PARROQUIA', 305);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San José', 'PARROQUIA', 305);
+
+#Bolívar
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Sabana Grande', 'PARROQUIA', 306);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cheregüé', 'PARROQUIA', 306);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Granados', 'PARROQUIA', 306);
+
+#Candelaria
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Arnoldo Gabaldón', 'PARROQUIA', 307);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Bolivia', 'PARROQUIA', 307);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Carrillo', 'PARROQUIA', 307);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cegarra', 'PARROQUIA', 307);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Chejende', 'PARROQUIA', 307);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Manual Salvador Ulloa', 'PARROQUIA', 307);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San José', 'PARROQUIA', 307);
+
+#Carache
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Carache', 'PARROQUIA', 308);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Concepción', 'PARROQUIA', 308);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cuicas', 'PARROQUIA', 308);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Panamericana', 'PARROQUIA', 308);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa Cruz', 'PARROQUIA', 308);
+
+#Escuque
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Escuque', 'PARROQUIA', 309);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Unión', 'PARROQUIA', 309);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa Rita', 'PARROQUIA', 309);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Sabana Libre', 'PARROQUIA', 309);
+
+#José Felipe Márquez Cañizalez
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Socorro', 'PARROQUIA', 310);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Los Caprichos', 'PARROQUIA', 310);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Antonio José de Sucre', 'PARROQUIA', 310);
+
+#Juan Vicente Campos Elías
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Campo Elías', 'PARROQUIA', 311);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Arnoldo Gabaldón', 'PARROQUIA', 311);
+
+#La Ceiba
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa Apolonia', 'PARROQUIA', 312);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Progreso', 'PARROQUIA', 312);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Ceiba', 'PARROQUIA', 312);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Tres de Febrero', 'PARROQUIA', 312);
+
+#Miranda
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Dividive', 'PARROQUIA', 313);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Agua Santa', 'PARROQUIA', 313);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Agua Caliente', 'PARROQUIA', 313);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Cenizo', 'PARROQUIA', 313);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Valerita', 'PARROQUIA', 313);
+
+#Monte Carmelo
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Monte Carmelo', 'PARROQUIA', 317);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Buena Vista', 'PARROQUIA', 317);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa María del Horcón', 'PARROQUIA', 317);
+
+#Motatán
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Motatán', 'PARROQUIA', 318);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Baño', 'PARROQUIA', 318);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Jalisco', 'PARROQUIA', 318);
+
+#Pampán
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Pampán', 'PARROQUIA', 314);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Flor de Patria', 'PARROQUIA', 314);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Paz', 'PARROQUIA', 314);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa Ana', 'PARROQUIA', 314);
+
+#Pampanito
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Pampanito', 'PARROQUIA', 316);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Concepción', 'PARROQUIA', 316);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Pampanito II', 'PARROQUIA', 316);
+
+#Rafael Rangel
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Betijoque', 'PARROQUIA', 319);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'José Gregorio Hernández', 'PARROQUIA', 319);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Pueblita', 'PARROQUIA', 319);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Los Cedros', 'PARROQUIA', 319);
+
+#San Rafael de Carvajal
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Carvajal', 'PARROQUIA', 320);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Campo Alegre', 'PARROQUIA', 320);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Antonio Nicolás Briceño', 'PARROQUIA', 320);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'José Leonardo Suárez', 'PARROQUIA', 320);
+
+#Sucre
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Sabana de Mendoza', 'PARROQUIA', 321);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Junín', 'PARROQUIA', 321);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Valmore Rodríguez', 'PARROQUIA', 321);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Paraíso', 'PARROQUIA', 321);
+
+#Trujillo
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Andrés Linares', 'PARROQUIA', 315);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Chiquinquirá', 'PARROQUIA', 315);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cristóbal Mendoza', 'PARROQUIA', 315);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cruz Carrillo', 'PARROQUIA', 315);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Matriz', 'PARROQUIA', 315);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Monseñor Carrillo', 'PARROQUIA', 315);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Tres Esquinas', 'PARROQUIA', 315);
+
+#Urdaneta
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cabimbú', 'PARROQUIA', 322);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Jajó', 'PARROQUIA', 322);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Mesa de Esnujaque', 'PARROQUIA', 322);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santiago', 'PARROQUIA', 322);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Tuñame', 'PARROQUIA', 322);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Quebrada', 'PARROQUIA', 322);
+
+#Valera
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Juan Ignacio Montilla', 'PARROQUIA', 323);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Beatriz', 'PARROQUIA', 323);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Puerta', 'PARROQUIA', 323);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Mendoza del Valle de Momboy', 'PARROQUIA', 323);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Mercedes Díaz', 'PARROQUIA', 323);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Luis', 'PARROQUIA', 323);
+
+#La Guaira
+#municipios
+
+#Vargas
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Caraballeda', 'PARROQUIA', 324);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Carayaca', 'PARROQUIA', 324);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Carlos Soublette', 'PARROQUIA', 324);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Caruao', 'PARROQUIA', 324);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Catia La Mar', 'PARROQUIA', 324);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Junko', 'PARROQUIA', 324);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Guaira', 'PARROQUIA', 324);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Macuto', 'PARROQUIA', 324);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Maiquetía', 'PARROQUIA', 324);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Naiguatá', 'PARROQUIA', 324);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Urimare', 'PARROQUIA', 324);
+
+#Yaracuy
+#municipios
+
+#Arístides Bastidas
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Arístides Bastidas', 'PARROQUIA', 325);
+
+#Bolívar
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Bolívar', 'PARROQUIA', 327);
+
+#Bruzual
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Chivacoa', 'PARROQUIA', 328);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Campo Elías', 'PARROQUIA', 328);
+
+#Cocorote
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cocorote', 'PARROQUIA', 329);
+
+#Independencia
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Independencia', 'PARROQUIA', 330);
+
+#José Antonio Páez
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'José Antonio Páez', 'PARROQUIA', 331);
+
+#La Trinidad
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Trinidad', 'PARROQUIA', 332);
+
+#Manuel Monge
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Manuel Monge', 'PARROQUIA', 333);
+
+#Nirgua
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Salóm', 'PARROQUIA', 334);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Temerla', 'PARROQUIA', 334);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Nirgua', 'PARROQUIA', 334);
+
+#Peña
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Andrés', 'PARROQUIA', 335);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Yaritagua', 'PARROQUIA', 335);
+
+#San Felipe
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Javier', 'PARROQUIA', 326);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Albarico', 'PARROQUIA', 326);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Felipe', 'PARROQUIA', 326);
+
+#Sucre
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Sucre', 'PARROQUIA', 336);
+
+#Urachiche
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Urachiche', 'PARROQUIA', 337);
+
+#Veroes
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Guayabo', 'PARROQUIA', 338);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Farriar', 'PARROQUIA', 338);
+
+#Zulia
+#municipios
+
+#Almirante Padilla
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Isla de Toas', 'PARROQUIA', 340);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Monagas', 'PARROQUIA', 340);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Fernando', 'PARROQUIA', 340);
+
+#Baralt
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Timoteo', 'PARROQUIA', 341);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'General Urdaneta', 'PARROQUIA', 341);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Libertador', 'PARROQUIA', 341);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Marcelino Briceño', 'PARROQUIA', 341);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Nuevo', 'PARROQUIA', 341);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Manuel Guanipa Matos', 'PARROQUIA', 341);
+
+#Cabimas
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Ambrosio', 'PARROQUIA', 342);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Carmen Herrera', 'PARROQUIA', 342);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Rosa', 'PARROQUIA', 342);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Germán Ríos Linares', 'PARROQUIA', 342);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Benito', 'PARROQUIA', 342);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Rómulo Betancourt', 'PARROQUIA', 342);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Jorge Hernández', 'PARROQUIA', 342);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Punta Gorda', 'PARROQUIA', 342);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Arístides Calvani', 'PARROQUIA', 342);
+
+#Catatumbo
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Encontrados', 'PARROQUIA', 343);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Udón Pérez', 'PARROQUIA', 343);
+
+#Colón
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Moralito', 'PARROQUIA', 344);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Carlos del Zulia', 'PARROQUIA', 344);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa Cruz del Zulia', 'PARROQUIA', 344);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa Bárbara', 'PARROQUIA', 344);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Urribarrí', 'PARROQUIA', 344);
+
+#Francisco Javier Pulgar
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Agustín Codazzi', 'PARROQUIA', 345);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Carlos Quevedo', 'PARROQUIA', 345);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Francisco Javier Pulgar', 'PARROQUIA', 345);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Simón Rodríguez', 'PARROQUIA', 345);
+
+#Lossada
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Concepción', 'PARROQUIA', 348);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San José', 'PARROQUIA', 348);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Mariano Parra León', 'PARROQUIA', 348);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'José Ramón Yépez', 'PARROQUIA', 348);
+
+#Jesús María Semprún
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Jesús María Semprún', 'PARROQUIA', 347);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Barí', 'PARROQUIA', 347);
+
+#La Cañada de Urdaneta
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Concepción', 'PARROQUIA', 349);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Andrés Bello', 'PARROQUIA', 349);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Chiquinquirá', 'PARROQUIA', 349);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Carmelo', 'PARROQUIA', 349);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Potreritos', 'PARROQUIA', 349);
+
+#Lagunillas
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Libertad', 'PARROQUIA', 350);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Alonso de Ojeda', 'PARROQUIA', 350);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Venezuela', 'PARROQUIA', 350);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Eleazar López Contreras', 'PARROQUIA', 350);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Campo Lara', 'PARROQUIA', 350);
+
+#Machiques de Perijá
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Bartolomé de las Casas', 'PARROQUIA', 351);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Libertad', 'PARROQUIA', 351);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Río Negro', 'PARROQUIA', 351);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San José de Perijá', 'PARROQUIA', 351);
+
+#Mara
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Rafael', 'PARROQUIA', 352);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Sierrita', 'PARROQUIA', 352);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Las Parcelas', 'PARROQUIA', 352);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Luis De Vicente', 'PARROQUIA', 352);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Monseñor Marcos Sergio Godoy', 'PARROQUIA', 352);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Ricaurte', 'PARROQUIA', 352);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Tamare', 'PARROQUIA', 352);
+
+#Maracaibo
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Antonio Borjas Romero', 'PARROQUIA', 339);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Bolívar', 'PARROQUIA', 339);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cacique Mara', 'PARROQUIA', 339);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Carracciolo Parra Pérez', 'PARROQUIA', 339);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cecilio Acosta', 'PARROQUIA', 339);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Cristo de Aranza', 'PARROQUIA', 339);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Coquivacoa', 'PARROQUIA', 339);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Chiquinquirá', 'PARROQUIA', 339);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Francisco Eugenio Bustamante', 'PARROQUIA', 339);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Idelfonzo Vásquez', 'PARROQUIA', 339);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Juana de Ávila', 'PARROQUIA', 339);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Luis Hurtado Higuera', 'PARROQUIA', 339);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Manuel Dagnino', 'PARROQUIA', 339);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Olegario Villalobos', 'PARROQUIA', 339);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Raúl Leoni', 'PARROQUIA', 339);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa Lucía', 'PARROQUIA', 339);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Isidro', 'PARROQUIA', 339);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Venancio Pulgar', 'PARROQUIA', 339);
+
+#Miranda
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Altagracia', 'PARROQUIA', 353);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Faría', 'PARROQUIA', 353);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Ana María Campos', 'PARROQUIA', 353);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Antonio', 'PARROQUIA', 353);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San José', 'PARROQUIA', 353);
+
+#Guajira
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Sinamaica', 'PARROQUIA', 346);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Alta Guajira', 'PARROQUIA', 346);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Elías Sánchez Rubio', 'PARROQUIA', 346);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Guajira', 'PARROQUIA', 346);
+
+#Rosario de Perijá
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Donaldo García', 'PARROQUIA', 354);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Rosario', 'PARROQUIA', 354);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Sixto Zambrano', 'PARROQUIA', 354);
+
+#San Francisco
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'San Francisco', 'PARROQUIA', 355);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Bajo', 'PARROQUIA', 355);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Domitila Flores', 'PARROQUIA', 355);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Francisco Ochoa', 'PARROQUIA', 355);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Los Cortijos', 'PARROQUIA', 355);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Marcial Hernández', 'PARROQUIA', 355);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'José Domingo Rus', 'PARROQUIA', 355);
+
+#Santa Rita
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Santa Rita', 'PARROQUIA', 356);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Mene', 'PARROQUIA', 356);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Pedro Lucas Urribarrí', 'PARROQUIA', 356);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'José Cenobio Urribarrí', 'PARROQUIA', 356);
+
+#Simón Bolívar
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Rafael Maria Baralt', 'PARROQUIA', 357);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Manuel Manrique', 'PARROQUIA', 357);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Rafael Urdaneta', 'PARROQUIA', 357);
+
+#Sucre
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Bobures', 'PARROQUIA', 358);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Gibraltar', 'PARROQUIA', 358);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Heras', 'PARROQUIA', 358);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Monseñor Arturo Álvarez', 'PARROQUIA', 358);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Rómulo Gallegos', 'PARROQUIA', 358);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'El Batey', 'PARROQUIA', 358);
+
+#Valmore Rodríguez
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Rafael Urdaneta', 'PARROQUIA', 359);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'La Victoria', 'PARROQUIA', 359);
+insert into LUGAR(id_lugar, nombre_lugar, tipo_lugar, fk_lugar) value(null, 'Raúl Cuenca', 'PARROQUIA', 359);
+
+insert into RELIGION(id_religion, nombre_religion) values (null,'Cristianismo');
+insert into RELIGION(id_religion, nombre_religion) values (null,'Judaismo');
+insert into RELIGION(id_religion, nombre_religion) values (null,'Budismo');
+insert into RELIGION(id_religion, nombre_religion) values (null,'Hinduismo');
+insert into RELIGION(id_religion, nombre_religion) values (null,'Islam');
+
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765334, 'Liam', 'Smith', 'LiamSmith6@gmail.com', 391);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765335, 'Noah', 'Johnson', 'NoahJohnson2@gmail.com', 392);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765336, 'William', 'Williams', 'null', 393);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765337, 'James', 'Brown', 'JamesBrown6@yahoo.com', 394);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765338, 'Oliver', 'Jones', 'null', 382);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765339, 'Emma', 'Garcia', 'EmmaGarcia6@gmail.com', 383);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765340, 'Olivia', 'Miller', 'null', 384);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765341, 'Ava', 'Davis', 'null', 385);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765342, 'Isabella', 'Rodriguez', 'IsabellaRodriguez8@yahoo.com', 386);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765343, 'Sophia', 'Martinez', 'null', 387);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765344, 'Benjamin', 'Hernandez', 'BenjaminHernandez8@yahoo.com', 411);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765345, 'Elijah', 'Lopez', 'null', 411);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765346, 'Lucas', 'Gonzalez', 'LucasGonzalez6@yahoo.com', 411);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765347, 'Mason', 'Wilson', 'null', 412);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765348, 'Logan', 'Anderson', 'LoganAnderson4@yahoo.com', 413);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765349, 'Mia', 'Thomas', 'null', 414);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765350, 'Amelia', 'Taylor', 'null', 415);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765351, 'Harper', 'Moore', 'null', 416);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765352, 'Evelyn', 'Jackson', 'EvelynJackson2@yahoo.com', 417);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765353, 'Abigail', 'Martin', 'null', 418);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765354, 'Alexander', 'Lee', 'null', 469);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765355, 'Ethan', 'Perez', 'null', 469);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765356, 'Jacob', 'Thompson', 'null', 470);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765357, 'Michael', 'White', 'MichaelWhite2@gmail.com', 471);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765358, 'Daniel', 'Harris', 'DanielHarris8@yahoo.com', 472);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765359, 'Charlotte', 'Sanchez', 'null', 473);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765360, 'Emily', 'Clark', 'null', 474);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765361, 'Elizabeth', 'Ramirez', 'null', 475);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765362, 'Mila', 'Lewis', 'null', 476);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765363, 'Ella', 'Robinson', 'null', 477);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765364, 'Henry', 'Walker', 'null', 495);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765365, 'Jackson', 'Young', 'JacksonYoung8@yahoo.com', 496);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765366, 'Sebastian', 'Allen', 'null', 497);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765367, 'Aiden', 'King', 'null', 498);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765368, 'Matthew', 'Wright', 'null', 498);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765369, 'Avery', 'Scott', 'AveryScott8@gmail.com', 499);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765370, 'Sofia', 'Torres', 'SofiaTorres8@yahoo.com', 500);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765371, 'Camila', 'Nguyen', 'null', 501);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765372, 'Aria', 'Hill', 'AriaHill6@yahoo.com', 502);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765373, 'Scarlett', 'Flores', 'ScarlettFlores4@yahoo.com', 503);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765374, 'Samuel', 'Green', 'null', 546);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765375, 'David', 'Adams', 'DavidAdams2@gmail.com', 546);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765376, 'Joseph', 'Nelson', 'null', 547);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765377, 'Carter', 'Baker', 'CarterBaker8@yahoo.com', 548);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765378, 'Owen', 'Hall', 'OwenHall4@yahoo.com', 549);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765379, 'Victoria', 'Rivera', 'null', 550);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765380, 'Madison', 'Campbell', 'MadisonCampbell6@gmail.com', 551);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765381, 'Luna', 'Mitchell', 'null', 552);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765382, 'Grace', 'Carter', 'null', 553);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765383, 'Chloe', 'Roberts', 'ChloeRoberts4@yahoo.com', 554);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765384, 'Wyatt', 'Gomez', 'null', 600);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765385, 'John', 'Phillips', 'null', 600);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765386, 'Jack', 'Evans', 'null', 601);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765387, 'Luke', 'Turner', 'null', 602);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765388, 'Jayden', 'Diaz', 'JaydenDiaz6@yahoo.com', 603);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765389, 'Penelope', 'Parker', 'null', 604);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765390, 'Layla', 'Cruz', 'null', 605);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765391, 'Riley', 'Edwards', 'null', 606);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765392, 'Zoey', 'Collins', 'ZoeyCollins8@gmail.com', 607);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765393, 'Nora', 'Reyes', 'null', 608);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765394, 'Dylan', 'Stewart', 'DylanStewart6@yahoo.com', 648);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765395, 'Grayson', 'Morris', 'null', 649);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765396, 'Levi', 'Morales', 'null', 650);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765397, 'Isaac', 'Murphy', 'IsaacMurphy4@gmail.com', 651);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765398, 'Gabriel', 'Cook', 'null', 652);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765399, 'Lily', 'Rogers', 'null', 653);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765400, 'Eleanor', 'Gutierrez', 'null', 654);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765401, 'Hannah', 'Ortiz', 'null', 655);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765402, 'Lillian', 'Morgan', 'null', 656);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765403, 'Addison', 'Cooper', 'AddisonCooper6@gmail.com', 657);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765404, 'Julian', 'Peterson', 'null', 685);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765405, 'Mateo', 'Bailey', 'null', 686);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765406, 'Anthony', 'Reed', 'null', 696);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765407, 'Jaxon', 'Kelly', 'null', 697);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765408, 'Lincoln', 'Howard', 'null', 698);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765409, 'Aubrey', 'Ramos', 'null', 689);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765410, 'Ellie', 'Kim', 'EllieKim4@gmail.com', 690);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765411, 'Stella', 'Cox', 'StellaCox2@yahoo.com', 691);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765412, 'Natalie', 'Ward', 'null', 692);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765413, 'Zoe', 'Richardson', 'null', 687);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765414, 'Joshua', 'Watson', 'JoshuaWatson6@yahoo.com', 700);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765415, 'Christopher', 'Brooks', 'null', 701);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765416, 'Andrew', 'Chavez', 'null', 702);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765417, 'Theodore', 'Wood', 'null', 700);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765418, 'Caleb', 'James', 'CalebJames4@yahoo.com', 703);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765419, 'Leah', 'Bennett', 'null', 704);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765420, 'Hazel', 'Gray', 'null', 705);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765421, 'Violet', 'Mendoza', 'VioletMendoza2@yahoo.com', 706);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765422, 'Aurora', 'Ruiz', 'null', 707);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765423, 'Savannah', 'Hughes', 'SavannahHughes4@gmail.com', 708);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765424, 'Ozzy', 'Price', 'null', 360);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765425, 'Lars', 'Alvarez', 'LarsAlvarez8@gmail.com', 361);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765426, 'Corey', 'Castillo', 'null', 362);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765427, 'Harry', 'Sanders', 'HarrySanders4@yahoo.com', 363);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765428, 'Brandon', 'Patel', 'BrandonPatel8@yahoo.com', 364);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765429, 'Janis', 'Myers', 'null', 365);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765430, 'Natasha', 'Long', 'null', 366);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765431, 'Ella', 'Ross', 'null', 367);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765432, 'Luna', 'Foster', 'LunaFoster6@gmail.com', 368);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765433, 'Barbara', 'Jimenez', 'null', 369);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765434, 'Isaiah', 'Powell', 'IsaiahPowell4@gmail.com', 720);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765435, 'Charles', 'Jenkins', 'CharlesJenkins4@yahoo.com', 721);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765436, 'Josiah', 'Perry', 'null', 722);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765437, 'Hudson', 'Russell', 'null', 723);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765438, 'Christian', 'Sullivan', 'null', 724);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765439, 'Lucy', 'Bell', 'LucyBell2@gmail.com', 725);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765440, 'Paisley', 'Coleman', 'null', 726);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765441, 'Everly', 'Butler', 'null', 727);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765442, 'Anna', 'Henderson', 'AnnaHenderson8@yahoo.com', 728);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765443, 'Caroline', 'Barnes', 'null', 729);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765444, 'Hunter', 'Gonzales', 'null', 804);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765445, 'Connor', 'Fisher', 'null', 805);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765446, 'Eli', 'Vasquez', 'EliVasquez8@gmail.com', 806);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765447, 'Ezra', 'Simmons', 'null', 807);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765448, 'Aaron', 'Romero', 'null', 808);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765449, 'Nova', 'Jordan', 'null', 809);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765450, 'Genesis', 'Patterson', 'null', 810);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765451, 'Emilia', 'Alexander', 'EmiliaAlexander6@yahoo.com', 811);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765452, 'Kennedy', 'Hamilton', 'KennedyHamilton6@yahoo.com', 812);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765453, 'Samantha', 'Graham', 'SamanthaGraham8@gmail.com', 813);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765454, 'Landon', 'Reynolds', 'null', 1364);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765455, 'Adrian', 'Griffin', 'AdrianGriffin6@yahoo.com', 1365);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765456, 'Jonathan', 'Wallace', 'JonathanWallace4@yahoo.com', 1366);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765457, 'Nolan', 'Moreno', 'NolanMoreno6@yahoo.com', 1367);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765458, 'Jeremiah', 'West', 'null', 1368);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765459, 'Maya', 'Cole', 'null', 1369);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765460, 'Willow', 'Hayes', 'WillowHayes8@gmail.com', 1370);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765461, 'Kinsley', 'Bryant', 'null', 1371);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765462, 'Naomi', 'Herrera', 'null', 1372);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765463, 'Aaliyah', 'Gibson', 'null', 1373);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765464, 'Easton', 'Ellis', 'null', 843);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765465, 'Elias', 'Tran', 'EliasTran4@yahoo.com', 844);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765466, 'Colton', 'Medina', 'null', 845);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765467, 'Cameron', 'Aguilar', 'CameronAguilar8@gmail.com', 846);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765468, 'Carson', 'Stevens', 'CarsonStevens4@yahoo.com', 847);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765469, 'Elena', 'Murray', 'null', 848);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765470, 'Sarah', 'Ford', 'SarahFord6@yahoo.com', 849);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765471, 'Ariana', 'Castro', 'null', 850);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765472, 'Allison', 'Marshall', 'AllisonMarshall6@yahoo.com', 851);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765473, 'Gabriella', 'Owens', 'GabriellaOwens4@gmail.com', 852);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765474, 'Robert', 'Harrison', 'null', 901);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765475, 'Angel', 'Fernandez', 'null', 902);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765476, 'Maverick', 'Mcdonald', 'MaverickMcdonald8@gmail.com', 903);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765477, 'Nicholas', 'Woods', 'NicholasWoods4@yahoo.com', 904);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765478, 'Dominic', 'Washington', 'null', 905);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765479, 'Alice', 'Kennedy', 'null', 906);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765480, 'Madelyn', 'Wells', 'MadelynWells4@gmail.com', 907);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765481, 'Cora', 'Vargas', 'CoraVargas4@gmail.com', 908);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765482, 'Ruby', 'Henry', 'null', 909);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765483, 'Eva', 'Chen', 'EvaChen2@yahoo.com', 910);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765484, 'Jaxson', 'Freeman', 'JaxsonFreeman2@yahoo.com', 987);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765485, 'Greyson', 'Webb', 'null', 988);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765486, 'Adam', 'Tucker', 'null', 989);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765487, 'Ian', 'Guzman', 'null', 990);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765488, 'Austin', 'Burns', 'AustinBurns8@gmail.com', 991);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765489, 'Serenity', 'Crawford', 'null', 992);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765490, 'Autumn', 'Olson', 'null', 993);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765491, 'Adeline', 'Simpson', 'null', 994);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765492, 'Hailey', 'Porter', 'HaileyPorter6@yahoo.com', 995);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765493, 'Gianna', 'Hunter', 'null', 996);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765494, 'Santiago', 'Gordon', 'SantiagoGordon2@gmail.com', 1041);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765495, 'Jordan', 'Mendez', 'JordanMendez2@gmail.com', 1042);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765496, 'Cooper', 'Silva', 'null', 1043);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765497, 'Brayden', 'Shaw', 'BraydenShaw2@gmail.com', 1044);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765498, 'Roman', 'Snyder', 'null', 1045);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765499, 'Valentina', 'Mason', 'null', 1046);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765500, 'Isla', 'Dixon', 'IslaDixon4@yahoo.com', 1047);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765501, 'Eliana', 'Munoz', 'null', 1048);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765502, 'Quinn', 'Hunt', 'null', 1049);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765503, 'Nevaeh', 'Hicks', 'NevaehHicks2@gmail.com', 1050);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765504, 'Evan', 'Holmes', 'null', 1085);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765505, 'Ezekiel', 'Palmer', 'EzekielPalmer6@yahoo.com', 1086);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765506, 'Xavier', 'Wagner', 'XavierWagner8@yahoo.com', 1087);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765507, 'Jose', 'Black', 'JoseBlack8@gmail.com', 1088);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765508, 'Jace', 'Robertson', 'JaceRobertson2@yahoo.com', 1089);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765509, 'Ivy', 'Boyd', 'IvyBoyd2@gmail.com', 1090);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765510, 'Sadie', 'Rose', 'SadieRose2@yahoo.com', 1091);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765511, 'Piper', 'Stone', 'PiperStone6@yahoo.com', 1092);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765512, 'Lydia', 'Salazar', 'null', 1093);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765513, 'Alexa', 'Fox', 'null', 1094);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765514, 'Jameson', 'Warren', 'null', 1107);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765515, 'Leonardo', 'Mills', 'null', 1108);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765516, 'Bryson', 'Meyer', 'BrysonMeyer2@gmail.com', 1109);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765517, 'Axel', 'Rice', 'AxelRice6@yahoo.com', 1110);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765518, 'Everett', 'Schmidt', 'EverettSchmidt2@gmail.com', 1111);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765519, 'Josephine', 'Garza', 'JosephineGarza2@yahoo.com', 1112);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765520, 'Emery', 'Daniels', 'EmeryDaniels8@yahoo.com', 1113);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765521, 'Julia', 'Ferguson', 'JuliaFerguson4@gmail.com', 1114);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765522, 'Delilah', 'Nichols', 'null', 1115);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765523, 'Arianna', 'Stephens', 'AriannaStephens2@gmail.com', 1116);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765524, 'Parker', 'Soto', 'null', 1148);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765525, 'Kayden', 'Weaver', 'null', 1149);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765526, 'Miles', 'Ryan', 'MilesRyan2@gmail.com', 1150);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765527, 'Sawyer', 'Gardner', 'SawyerGardner6@gmail.com', 1151);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765528, 'Jason', 'Payne', 'null', 1152);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765529, 'Vivian', 'Grant', 'VivianGrant8@gmail.com', 1153);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765530, 'Kaylee', 'Dunn', 'null', 1154);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765531, 'Sophie', 'Kelley', 'SophieKelley8@yahoo.com', 1155);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765532, 'Brielle', 'Spencer', 'null', 1156);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765533, 'Madeline', 'Hawkins', 'null', 1157);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765534, 'Declan', 'Arnold', 'DeclanArnold8@yahoo.com', 1207);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765535, 'Weston', 'Pierce', 'null', 1208);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765536, 'Micah', 'Vazquez', 'MicahVazquez4@yahoo.com', 1209);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765537, 'Ayden', 'Hansen', 'null', 1210);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765538, 'Wesley', 'Peters', 'WesleyPeters2@yahoo.com', 1211);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765539, 'Peyton', 'Santos', 'null', 1212);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765540, 'Rylee', 'Hart', 'RyleeHart8@gmail.com', 1213);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765541, 'Clara', 'Bradley', 'null', 1214);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765542, 'Hadley', 'Knight', 'HadleyKnight2@yahoo.com', 1215);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765543, 'Melanie', 'Elliott', 'MelanieElliott6@gmail.com', 1216);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765544, 'Luca', 'Cunningham', 'LucaCunningham2@yahoo.com', 1271);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765545, 'Vincent', 'Duncan', 'null', 1272);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765546, 'Damian', 'Armstrong', 'DamianArmstrong4@gmail.com', 1273);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765547, 'Zachary', 'Hudson', 'null', 1274);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765548, 'Silas', 'Carroll', 'null', 1275);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765549, 'Mackenzie', 'Lane', 'null', 1276);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765550, 'Reagan', 'Riley', 'null', 1277);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765551, 'Adalynn', 'Andrews', 'null', 1278);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765552, 'Liliana', 'Alvarado', 'null', 1279);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765553, 'Aubree', 'Ray', 'null', 1280);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765554, 'Gavin', 'Delgado', 'null', 1375);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765555, 'Chase', 'Berry', 'null', 1389);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765556, 'Kai', 'Perkins', 'null', 1390);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765557, 'Emmett', 'Hoffman', 'null', 1391);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765558, 'Harrison', 'Johnston', 'null', 1376);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765559, 'Jade', 'Matthews', 'JadeMatthews4@gmail.com', 1377);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765560, 'Katherine', 'Pena', 'KatherinePena4@yahoo.com', 1378);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765561, 'Isabelle', 'Richards', 'IsabelleRichards4@yahoo.com', 1379);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765562, 'Natalia', 'Contreras', 'NataliaContreras8@gmail.com', 1380);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765563, 'Raelynn', 'Willis', 'null', 1380);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765564, 'Nathaniel', 'Carpenter', 'NathanielCarpenter6@gmail.com', 1452);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765565, 'Kingston', 'Lawrence', 'null', 1453);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765566, 'Cole', 'Sandoval', 'ColeSandoval6@gmail.com', 1454);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765567, 'Tyler', 'Guerrero', 'null', 1455);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765568, 'Bennett', 'George', 'BennettGeorge6@gmail.com', 1456);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765569, 'Maria', 'Chapman', 'MariaChapman6@yahoo.com', 1457);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765570, 'Athena', 'Rios', 'AthenaRios8@yahoo.com', 1458);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765571, 'Ximena', 'Estrada', 'null', 1459);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765572, 'Arya', 'Ortega', 'AryaOrtega8@yahoo.com', 1460);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765573, 'Leilani', 'Watkins', 'LeilaniWatkins6@yahoo.com', 1461);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780890, 'Asdruval', 'Perez', 'asdruvalperez5@yahoo.com', 368);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780891, 'Arisobulo', 'Gonzalez', 'aristobulogonzalez5@yahoo.com', 382);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780892, 'Delcys', 'Navarra', 'delcysn5@yahoo.com', 415);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780893, 'Daniel', 'Zamora', 'danielzamora5@yahoo.com', 484);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780894, 'Agustin', 'Soto', 'agustinsoto313@yahoo.com', 519);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780895, 'Erika', 'Farias', 'erikafarias80@yahoo.com', 578);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780896, 'Asdruval', 'Chavez', 'asdruvalchaves45@yahoo.com', 600);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780897, 'Hugo', 'Sanchez', 'hugosanz=chez@yahoo.com', 676);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780898, 'Wilker', 'Perez', 'wilkerperez5@yahoo.com', 699);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780899, 'Leonardo', 'Chirinos', 'leochirinos23@yahoo.com', 719);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780900, 'Elsan', 'Guchito', 'elsanguchito@yahoo.com', 789);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780901, 'Elsa', 'patito', 'elsapatitos@yahoo.com', 823);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780902, 'Alan', 'Brito', 'alanbritogonzales@yahoo.com', 852);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780903, 'Nicolas', 'Perez', 'nicoperez5@yahoo.com', 901);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780904, 'Franco', 'Cumares', 'francocumares@yahoo.com', 997);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780905, 'Diego', 'Gavidia', 'diegogavidia@yahoo.com', 1055);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780906, 'Armando', 'Paredes', 'armandoparedes@yahoo.com', 1085);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780907, 'Cecilio', 'Perez', 'cecilioperez5@yahoo.com', 1110);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780908, 'Astrid', 'Nieves', 'astridnieves@yahoo.com', 1183);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780909, 'Cesar', 'Gonzales', 'cesargonza@yahoo.com', 1258);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780910, 'Cornelio', 'Perez', 'cornelioperez@yahoo.com', 1351);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780911, 'Francisco', 'Franco', 'franciscofranco@yahoo.com', 1371);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780912, 'Cesar', 'Soto', 'sotocesar@yahoo.com', 1388);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780913, 'Daniel', 'Perez', 'danielperez@yahoo.com', 1453);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27880890, 'Asdruval', 'Perez', 'asdruvalperez5@yahoo.com', 368);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27880891, 'Arisobulo', 'Gonzalez', 'aristobulogonzalez5@yahoo.com', 382);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27880892, 'Delcys', 'Navarra', 'delcysn5@yahoo.com', 415);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27880893, 'Daniel', 'Zamora', 'danielzamora5@yahoo.com', 484);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27880894, 'Agustin', 'Soto', 'agustinsoto313@yahoo.com', 519);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27880895, 'Erika', 'Farias', 'erikafarias80@yahoo.com', 578);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27880896, 'Asdruval', 'Chavez', 'asdruvalchaves45@yahoo.com', 600);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27880897, 'Hugo', 'Sanchez', 'hugosanz=chez@yahoo.com', 676);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27880898, 'Wilker', 'Perez', 'wilkerperez5@yahoo.com', 699);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27880899, 'Leonardo', 'Chirinos', 'leochirinos23@yahoo.com', 719);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27880900, 'Elsan', 'Guchito', 'elsanguchito@yahoo.com', 789);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27880901, 'Elsa', 'patito', 'elsapatitos@yahoo.com', 823);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27880902, 'Alan', 'Brito', 'alanbritogonzales@yahoo.com', 852);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27880903, 'Nicolas', 'Perez', 'nicoperez5@yahoo.com', 901);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27880904, 'Franco', 'Cumares', 'francocumares@yahoo.com', 997);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27880905, 'Diego', 'Gavidia', 'diegogavidia@yahoo.com', 1055);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27880906, 'Armando', 'Paredes', 'armandoparedes@yahoo.com', 1085);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27880907, 'Cecilio', 'Perez', 'cecilioperez5@yahoo.com', 1110);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27880908, 'Astrid', 'Nieves', 'astridnieves@yahoo.com', 1183);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27880909, 'Cesar', 'Gonzales', 'cesargonza@yahoo.com', 1258);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27880910, 'Cornelio', 'Perez', 'cornelioperez@yahoo.com', 1351);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27880911, 'Francisco', 'Franco', 'franciscofranco@yahoo.com', 1371);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27880912, 'Cesar', 'Soto', 'sotocesar@yahoo.com', 1388);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27880913, 'Daniel', 'Perez', 'danielperez@yahoo.com', 1453);
+
+#usuarios
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'LiamSmit9', 'Kicker88$$', 25765334);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'NoaJohn7', 'Kicker88$$', 25765335);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'WillWil5', 'Kicker88$$', 25765336);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'JameBrow1', 'Kicker88$$', 25765337);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'OliJone6', 'Kicker88$$', 25765338);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'EmmGar5', 'Kicker88$$', 25765339);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'OliMil2', 'Kicker88$$', 25765340);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'AvaDav5', 'Kicker88$$', 25765341);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'IsabRodr6', 'Kicker88$$', 25765342);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'SophMart2', 'Kicker88$$', 25765343);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'BenHern4', 'Kicker88$$', 25765344);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'EliLope7', 'Kicker88$$', 25765345);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'LucGon8', 'Kicker88$$', 25765346);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'MasoWil3', 'Kicker88$$', 25765347);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'LogAnd1', 'Kicker88$$', 25765348);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'MiaTho6', 'Kicker88$$', 25765349);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'AmeTay9', 'Kicker88$$', 25765350);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'HarpMoor1', 'Kicker88$$', 25765351);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'EveJac3', 'Kicker88$$', 25765352);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'AbigMart8', 'Kicker88$$', 25765353);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'AlexLee4', 'Kicker88$$', 25765354);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'EthaPere4', 'Kicker88$$', 25765355);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'JacThom7', 'Kicker88$$', 25765356);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'MicWhi2', 'Kicker88$$', 25765357);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'DanHarr5', 'Kicker88$$', 25765358);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'ChaSan8', 'Kicker88$$', 25765359);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'EmiClar8', 'Kicker88$$', 25765360);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'EliRami9', 'Kicker88$$', 25765361);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'MilLew5', 'Kicker88$$', 25765362);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'EllRobi7', 'Kicker88$$', 25765363);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'HenWal3', 'Kicker88$$', 25765364);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'JacYoun2', 'Kicker88$$', 25765365);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'SebaAlle9', 'Kicker88$$', 25765366);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'AideKin5', 'Kicker88$$', 25765367);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'MatWrig2', 'Kicker88$$', 25765368);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'AverSco6', 'Kicker88$$', 25765369);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'SofTor8', 'Kicker88$$', 25765370);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'CamiNguy2', 'Kicker88$$', 25765371);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'AriaHill2', 'Kicker88$$', 25765372);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'ScarFlo9', 'Kicker88$$', 25765373);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'SamGre7', 'Kicker88$$', 25765374);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'DaviAda1', 'Kicker88$$', 25765375);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'JoseNel8', 'Kicker88$$', 25765376);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'CarBake5', 'Kicker88$$', 25765377);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'OweHal9', 'Kicker88$$', 25765378);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'VicRive1', 'Kicker88$$', 25765379);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'MadiCamp1', 'Kicker88$$', 25765380);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'LunMitc7', 'Kicker88$$', 25765381);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'GracCar5', 'Kicker88$$', 25765382);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'ChloRobe5', 'Kicker88$$', 25765383);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'WyatGom1', 'Kicker88$$', 25765384);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'JohnPhil9', 'Kicker88$$', 25765385);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'JacEvan6', 'Kicker88$$', 25765386);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'LukeTurn9', 'Kicker88$$', 25765387);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'JayDiaz3', 'Kicker88$$', 25765388);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'PenePark2', 'Kicker88$$', 25765389);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'LayCruz5', 'Kicker88$$', 25765390);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'RileEdw5', 'Kicker88$$', 25765391);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'ZoeyColl1', 'Kicker88$$', 25765392);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'NoraRey4', 'Kicker88$$', 25765393);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'DylSte8', 'Kicker88$$', 25765394);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'GrayMor6', 'Kicker88$$', 25765395);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'LeviMor8', 'Kicker88$$', 25765396);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'IsaaMur9', 'Kicker88$$', 25765397);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'GabCook7', 'Kicker88$$', 25765398);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'LilRoge9', 'Kicker88$$', 25765399);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'EleaGut3', 'Kicker88$$', 25765400);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'HanOrt2', 'Kicker88$$', 25765401);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'LillMorg5', 'Kicker88$$', 25765402);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'AddCoo1', 'Kicker88$$', 25765403);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'JuliPete1', 'Kicker88$$', 25765404);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'MateBai8', 'Kicker88$$', 25765405);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'AnthRee9', 'Kicker88$$', 25765406);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'JaxoKell4', 'Kicker88$$', 25765407);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'LincHowa1', 'Kicker88$$', 25765408);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'AubRam2', 'Kicker88$$', 25765409);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'ElliKim4', 'Kicker88$$', 25765410);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'SteCox6', 'Kicker88$$', 25765411);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'NatWard4', 'Kicker88$$', 25765412);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'ZoeRich3', 'Kicker88$$', 25765413);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'JosWats8', 'Kicker88$$', 25765414);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'ChrBro8', 'Kicker88$$', 25765415);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'AndrChav7', 'Kicker88$$', 25765416);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'TheoWood9', 'Kicker88$$', 25765417);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'CalJam6', 'Kicker88$$', 25765418);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'LeaBen6', 'Kicker88$$', 25765419);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'HazGra9', 'Kicker88$$', 25765420);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'ViolMen4', 'Kicker88$$', 25765421);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'AurRui3', 'Kicker88$$', 25765422);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'SavHug3', 'Kicker88$$', 25765423);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'OzzyPric8', 'Kicker88$$', 25765424);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'LarsAlva4', 'Kicker88$$', 25765425);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'CoreCast3', 'Kicker88$$', 25765426);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'HarrSand4', 'Kicker88$$', 25765427);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'BraPat3', 'Kicker88$$', 25765428);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'JanMyer4', 'Kicker88$$', 25765429);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'NatLon2', 'Kicker88$$', 25765430);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'EllRoss8', 'Kicker88$$', 25765431);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'LunFos2', 'Kicker88$$', 25765432);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'BarJim8', 'Kicker88$$', 25765433);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'IsaPow3', 'Kicker88$$', 25765434);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'ChaJenk5', 'Kicker88$$', 25765435);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'JosiPerr1', 'Kicker88$$', 25765436);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'HudRus7', 'Kicker88$$', 25765437);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'ChrSul3', 'Kicker88$$', 25765438);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'LucBell1', 'Kicker88$$', 25765439);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'PaiCole1', 'Kicker88$$', 25765440);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'EveButl3', 'Kicker88$$', 25765441);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'AnnaHen6', 'Kicker88$$', 25765442);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'CarBarn2', 'Kicker88$$', 25765443);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'HuntGon5', 'Kicker88$$', 25765444);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'ConnFish9', 'Kicker88$$', 25765445);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'EliVasq5', 'Kicker88$$', 25765446);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'EzraSimm3', 'Kicker88$$', 25765447);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'AarRome4', 'Kicker88$$', 25765448);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'NovaJor3', 'Kicker88$$', 25765449);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'GenPatt8', 'Kicker88$$', 25765450);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'EmiAlex9', 'Kicker88$$', 25765451);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'KennHam9', 'Kicker88$$', 25765452);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'SamGra2', 'Kicker88$$', 25765453);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'LanReyn7', 'Kicker88$$', 25765454);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'AdrGri1', 'Kicker88$$', 25765455);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'JonaWall7', 'Kicker88$$', 25765456);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'NolaMor6', 'Kicker88$$', 25765457);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'JereWest6', 'Kicker88$$', 25765458);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'MayCol4', 'Kicker88$$', 25765459);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'WilHaye7', 'Kicker88$$', 25765460);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'KinBry4', 'Kicker88$$', 25765461);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'NaoHer3', 'Kicker88$$', 25765462);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'AalGibs8', 'Kicker88$$', 25765463);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'EastElli1', 'Kicker88$$', 25765464);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'EliaTra4', 'Kicker88$$', 25765465);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'ColMedi4', 'Kicker88$$', 25765466);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'CamAgui1', 'Kicker88$$', 25765467);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'CarStev1', 'Kicker88$$', 25765468);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'EleMurr5', 'Kicker88$$', 25765469);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'SaraFord1', 'Kicker88$$', 25765470);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'AriaCast3', 'Kicker88$$', 25765471);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'AlliMars2', 'Kicker88$$', 25765472);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'GabOwen8', 'Kicker88$$', 25765473);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'RobHar4', 'Kicker88$$', 25765474);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'AngFern5', 'Kicker88$$', 25765475);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'MaveMcd9', 'Kicker88$$', 25765476);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'NichWood7', 'Kicker88$$', 25765477);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'DomiWash3', 'Kicker88$$', 25765478);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'AlicKen9', 'Kicker88$$', 25765479);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'MadeWell7', 'Kicker88$$', 25765480);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'CoraVar7', 'Kicker88$$', 25765481);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'RubyHen9', 'Kicker88$$', 25765482);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'EvaChe9', 'Kicker88$$', 25765483);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'JaxsFree8', 'Kicker88$$', 25765484);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'GreWebb3', 'Kicker88$$', 25765485);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'AdaTuck7', 'Kicker88$$', 25765486);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'IanGuz2', 'Kicker88$$', 25765487);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'AusBur1', 'Kicker88$$', 25765488);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'SereCraw6', 'Kicker88$$', 25765489);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'AutOls6', 'Kicker88$$', 25765490);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'AdelSimp6', 'Kicker88$$', 25765491);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'HaiPor7', 'Kicker88$$', 25765492);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'GianHun8', 'Kicker88$$', 25765493);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'SanGord6', 'Kicker88$$', 25765494);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'JordMend3', 'Kicker88$$', 25765495);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'CoopSil8', 'Kicker88$$', 25765496);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'BraySha4', 'Kicker88$$', 25765497);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'RomaSny6', 'Kicker88$$', 25765498);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'ValeMas2', 'Kicker88$$', 25765499);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'IslaDix2', 'Kicker88$$', 25765500);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'EliaMun3', 'Kicker88$$', 25765501);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'QuiHun4', 'Kicker88$$', 25765502);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'NevaHick9', 'Kicker88$$', 25765503);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'EvanHol4', 'Kicker88$$', 25765504);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'EzePal7', 'Kicker88$$', 25765505);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'XaviWagn3', 'Kicker88$$', 25765506);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'JoseBlac3', 'Kicker88$$', 25765507);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'JaceRobe5', 'Kicker88$$', 25765508);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'IvyBoy1', 'Kicker88$$', 25765509);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'SadRos6', 'Kicker88$$', 25765510);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'PipeSto3', 'Kicker88$$', 25765511);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'LydiSala2', 'Kicker88$$', 25765512);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'AlexFox5', 'Kicker88$$', 25765513);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'JamWarr5', 'Kicker88$$', 25765514);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'LeonMil3', 'Kicker88$$', 25765515);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'BryMeye2', 'Kicker88$$', 25765516);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'AxeRice3', 'Kicker88$$', 25765517);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'EverSch1', 'Kicker88$$', 25765518);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'JosGarz2', 'Kicker88$$', 25765519);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'EmeDan1', 'Kicker88$$', 25765520);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'JuliFer8', 'Kicker88$$', 25765521);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'DelNic7', 'Kicker88$$', 25765522);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'AriaStep6', 'Kicker88$$', 25765523);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'ParkSoto5', 'Kicker88$$', 25765524);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'KayWea1', 'Kicker88$$', 25765525);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'MilRyan1', 'Kicker88$$', 25765526);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'SawyGard1', 'Kicker88$$', 25765527);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'JasoPayn3', 'Kicker88$$', 25765528);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'VivGran4', 'Kicker88$$', 25765529);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'KayDun6', 'Kicker88$$', 25765530);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'SopKel9', 'Kicker88$$', 25765531);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'BriSpen8', 'Kicker88$$', 25765532);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'MadHawk2', 'Kicker88$$', 25765533);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'DecArno8', 'Kicker88$$', 25765534);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'WesPie7', 'Kicker88$$', 25765535);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'MicaVazq5', 'Kicker88$$', 25765536);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'AydeHan2', 'Kicker88$$', 25765537);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'WesPet3', 'Kicker88$$', 25765538);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'PeySant1', 'Kicker88$$', 25765539);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'RylHar9', 'Kicker88$$', 25765540);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'ClarBrad5', 'Kicker88$$', 25765541);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'HadlKnig4', 'Kicker88$$', 25765542);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'MelaElli5', 'Kicker88$$', 25765543);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'LucaCun3', 'Kicker88$$', 25765544);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'VincDunc9', 'Kicker88$$', 25765545);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'DamiArms9', 'Kicker88$$', 25765546);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'ZachHud8', 'Kicker88$$', 25765547);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'SilCarr7', 'Kicker88$$', 25765548);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'MackLane2', 'Kicker88$$', 25765549);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'ReaRil7', 'Kicker88$$', 25765550);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'AdaAnd8', 'Kicker88$$', 25765551);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'LilAlv1', 'Kicker88$$', 25765552);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'AubrRay2', 'Kicker88$$', 25765553);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'GaviDel5', 'Kicker88$$', 25765554);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'ChasBerr8', 'Kicker88$$', 25765555);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'KaiPer8', 'Kicker88$$', 25765556);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'EmmHof1', 'Kicker88$$', 25765557);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'HarrJoh9', 'Kicker88$$', 25765558);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'JadMat6', 'Kicker88$$', 25765559);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'KathPena4', 'Kicker88$$', 25765560);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'IsaRich6', 'Kicker88$$', 25765561);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'NataCont4', 'Kicker88$$', 25765562);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'RaeWill4', 'Kicker88$$', 25765563);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'NatCar3', 'Kicker88$$', 25765564);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'KingLaw3', 'Kicker88$$', 25765565);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'ColSan1', 'Kicker88$$', 25765566);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'TylGuer4', 'Kicker88$$', 25765567);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'BennGeo5', 'Kicker88$$', 25765568);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'MarChap3', 'Kicker88$$', 25765569);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'AtheRios5', 'Kicker88$$', 25765570);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'XimEst5', 'Kicker88$$', 25765571);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'AryaOrte6', 'Kicker88$$', 25765572);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'LeilWatk5', 'Kicker88$$', 25765573);
+
+#directores de templos
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837347, 'Benjamín', 'Rodríguez', 'null', 391);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837348, 'Bautista', 'Gómez', 'BautistaGómez2@yahoo.com', 392);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837349, 'Felipe', 'Fernández', 'FelipeFernández4@yahoo.com', 393);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837350, 'Isabella', 'López', 'null', 394);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837351, 'Martina', 'Díaz', 'null', 382);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837352, 'Valentino', 'Martínez', 'ValentinoMartínez2@yahoo.com', 411);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837353, 'Benicio', 'Pérez', 'null', 412);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837354, 'Catalina', 'García', 'null', 412);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837355, 'Sofía', 'Sánchez', 'null', 413);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837356, 'Olivia', 'Romero', 'null', 411);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837357, 'Joaquín', 'Sosa', 'null', 469);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837358, 'Lorenzo', 'Torres', 'null', 470);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837359, 'Santino', 'Álvarez', 'SantinoÁlvarez2@yahoo.com', 471);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837360, 'Juan Ignacio', 'Ruiz', 'Juan IgnacioRuiz8@yahoo.com', 472);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837361, 'Mateo', 'Ramírez', 'null', 472);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837362, 'Francisco', 'Flores', 'FranciscoFlores6@gmail.com', 495);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837363, 'Thiago Benjamín', 'Benítez', 'Thiago BenjamínBenítez8@gmail.com', 496);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837364, 'Santiago', 'Acosta', 'null', 497);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837365, 'Emma', 'Medina', 'null', 498);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837366, 'Delfina', 'Herrera', 'null', 498);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837367, 'Tomás', 'Suárez', 'null', 546);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837368, 'Agustín', 'Aguirre', 'null', 547);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837369, 'Francesca', 'Giménez', 'null', 548);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837370, 'Valentina', 'Gutiérrez', 'ValentinaGutiérrez4@yahoo.com', 549);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837371, 'Victoria', 'Pereyra', 'null', 550);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837372, 'Alma', 'Rojas', 'AlmaRojas6@gmail.com', 600);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837373, 'Juana', 'Molina', 'JuanaMolina8@yahoo.com', 600);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837374, 'Julieta', 'Castro', 'null', 601);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837375, 'Morena', 'Ortiz', 'MorenaOrtiz4@gmail.com', 602);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837376, 'Josefina', 'Silva', 'JosefinaSilva2@yahoo.com', 603);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837377, 'Juan Carlos', 'Núñez', 'null', 648);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837378, 'José Luis', 'Luna', 'José LuisLuna6@gmail.com', 649);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837379, 'Marco Antonio', 'Juárez', 'null', 650);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837380, 'Miguel Ángel', 'Cabrera', 'null', 651);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837381, 'Juan', 'Ríos', 'JuanRíos4@yahoo.com', 651);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837382, 'Mario', 'Morales', 'MarioMorales2@yahoo.com', 685);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837383, 'David', 'Godoy', 'null', 686);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837384, 'Fernando', 'Moreno', 'FernandoMoreno4@yahoo.com', 696);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837385, 'Víctor Hugo', 'Ferreyra', 'null', 697);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837386, 'Jorge', 'Domínguez', 'null', 698);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837387, 'Hugo', 'Carrizo', 'null', 700);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837388, 'Antonio', 'Peralta', 'null', 701);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837389, 'Pablo', 'Castillo', 'PabloCastillo6@yahoo.com', 702);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837390, 'Mario', 'Ledesma', 'MarioLedesma8@yahoo.com', 702);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837391, 'José Manuel', 'Quiroga', 'null', 703);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837392, 'Lucía', 'Vega', 'LucíaVega4@yahoo.com', 360);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837393, 'Paula', 'Vera', 'null', 361);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837394, 'Silvia', 'Muñoz', 'null', 362);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837395, 'María', 'Ojeda', 'MaríaOjeda8@yahoo.com', 363);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837396, 'Víctor', 'Ponce', 'VíctorPonce8@gmail.com', 364);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837397, 'Maximiliano', 'Villalba', 'MaximilianoVillalba2@gmail.com', 720);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837398, 'Alonso', 'Cardozo', 'null', 721);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837399, 'Martín', 'Navarro', 'MartínNavarro6@gmail.com', 722);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837400, 'Tomás', 'Coronel', 'null', 723);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837401, 'Matías', 'Vázquez', 'MatíasVázquez6@gmail.com', 724);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837402, 'Cristóbal', 'Ramos', 'CristóbalRamos2@yahoo.com', 804);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837403, 'José', 'Vargas', 'JoséVargas8@gmail.com', 805);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837404, 'Diego', 'Cáceres', 'null', 806);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837405, 'Sebastián', 'Arias', 'null', 807);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837406, 'Gaspar', 'Figueroa', 'null', 808);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837407, 'Matías', 'Córdoba', 'MatíasCórdoba4@gmail.com', 1364);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837408, 'Samuel', 'Correa', 'SamuelCorrea8@gmail.com', 1365);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837409, 'Jerónimo', 'Maldonado', 'JerónimoMaldonado6@gmail.com', 1366);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837410, 'Emmanuel', 'Paz', 'null', 1367);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837411, 'Emiliano', 'Rivero', 'EmilianoRivero4@gmail.com', 1368);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837412, 'Juan David', 'Miranda', 'Juan DavidMiranda8@yahoo.com', 843);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837413, 'Samuel David', 'Mansilla', 'null', 844);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837414, 'Juan Pablo', 'Farias', 'Juan PabloFarias6@gmail.com', 845);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837415, 'Andrés Felipe', 'Roldán', 'Andrés FelipeRoldán4@gmail.com', 846);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837416, 'Juan Esteban', 'Méndez', 'null', 846);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837417, 'Dylan', 'Guzmán', 'DylanGuzmán2@gmail.com', 901);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837418, 'Luis', 'Agüero', 'null', 902);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837419, 'José', 'Hernández', 'JoséHernández8@yahoo.com', 903);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837420, 'Juan', 'Lucero', 'null', 904);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837421, 'Thiago', 'Cruz', 'ThiagoCruz8@yahoo.com', 905);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837422, 'Iker', 'Páez', 'null', 987);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837423, 'Maykel', 'Escobar', 'MaykelEscobar4@yahoo.com', 988);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837424, 'Justin', 'Mendoza', 'JustinMendoza6@gmail.com', 989);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837425, 'Jeremy', 'Barrios', 'null', 990);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837426, 'David', 'Bustos', 'DavidBustos6@yahoo.com', 991);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837427, 'Camila', 'Ávila', 'CamilaÁvila8@gmail.com', 1041);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837428, 'Brithany', 'Ayala', 'BrithanyAyala4@gmail.com', 1042);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837429, 'Daniela', 'Blanco', 'DanielaBlanco4@yahoo.com', 1043);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837430, 'Samantha', 'Soria', 'null', 1044);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837431, 'Daniela', 'Maidana', 'null', 1045);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837432, 'Ramón', 'Acuña', 'null', 1085);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837433, 'Juan', 'Leiva', 'null', 1086);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837434, 'José', 'Duarte', 'JoséDuarte2@yahoo.com', 1087);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837435, 'Antonio', 'Moyano', 'null', 1088);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837436, 'Carlos', 'Campos', 'null', 1089);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837437, 'César', 'Soto', 'CésarSoto4@gmail.com', 1107);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837438, 'Diego', 'Martín', 'DiegoMartín2@gmail.com', 1108);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837439, 'Arturo', 'Valdez', 'null', 1109);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837440, 'Franco', 'Bravo', 'FrancoBravo8@gmail.com', 1110);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837441, 'Daniel', 'Chávez', 'null', 1111);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837442, 'Thiago', 'Velázquez', 'ThiagoVelázquez6@yahoo.com', 1148);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837443, 'Liam', 'Olivera', 'LiamOlivera4@gmail.com', 1149);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837444, 'Dilan', 'Toledo', 'null', 1150);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837445, 'Luis', 'Franco', 'LuisFranco4@yahoo.com', 1151);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837446, 'Juan', 'Rodríguez', 'null', 1152);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837447, 'Rául', 'Gómez', 'null', 1207);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837448, 'Juan', 'Fernández', 'JuanFernández6@gmail.com', 1208);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837449, 'Luis', 'López', 'null', 1209);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837450, 'Oswaldo', 'Díaz', 'OswaldoDíaz2@yahoo.com', 1210);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837451, 'Víctor', 'Martínez', 'VíctorMartínez2@gmail.com', 1211);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837452, 'Germán', 'Pérez', 'null', 1271);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837453, 'Antonio', 'García', 'null', 1272);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837454, 'Rafael', 'Sánchez', 'RafaelSánchez8@gmail.com', 1273);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837455, 'Ernesto', 'Romero', 'null', 1274);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837456, 'Renzo', 'Sosa', 'RenzoSosa4@yahoo.com', 1275);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837457, 'Juan Carlos', 'Álvarez', 'Juan CarlosÁlvarez6@gmail.com', 1375);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837458, 'José Gregorio', 'Torres', 'null', 1389);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837459, 'José Luis', 'Ruiz', 'null', 1390);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837460, 'Miguel Ángel', 'Ramírez', 'Miguel ÁngelRamírez4@yahoo.com', 1391);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837461, 'José Antonio', 'Flores', 'null', 1376);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837462, 'Armando', 'Acosta', 'ArmandoAcosta4@yahoo.com', 1452);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837463, 'Esteban', 'Benítez', 'EstebanBenítez8@gmail.com', 1453);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837464, 'Carlos', 'Medina', 'null', 1454);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837465, 'Agustín', 'Sepúlveda', 'AgustínSepúlveda6@yahoo.com', 1455);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (14837466, 'Pietro', 'Morales', 'null', 1456);
+
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Basílica de Santa Teresa', 'www.Basílica_de_Santa_Teresa.com', 'Basílica.de.Santa.Teresa@gmail.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Basílica de Santa Teresa', 14837347, 1, 391);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Kol Israel Shearit templo', 'www.Kol_Israel_Shearit_templo.bet', 'Kol.Israel.Shearit.templo@yahoo.com', 'null', 14837348, 2, 392);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Wat Arun', 'www.Wat_Arun.com', 'Wat.Arun@gmail.com', 'null', 14837349, 3, 393);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Templo Airavatesvara', 'www.Templo_Airavatesvara.com', 'Templo.Airavatesvara@yahoo.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Templo Airavatesvara', 14837350, 4, 394);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Mezquita Pul-e Khishti', 'www.Mezquita_Pul-e_Khishti.ve', 'Mezquita.Pul-e.Khishti@yahoo.com', 'null', 14837351, 5, 395);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Catedral Basílica de Santa Ana', 'www.Catedral_Basílica_de_Santa_Ana.ve', 'Catedral.Basílica.de.Santa.Ana@yahoo.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Catedral Basílica de Santa Ana', 14837352, 1, 411);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Shevet Achim sinagoga', 'www.Shevet_Achim_sinagoga.com', 'Shevet.Achim.sinagoga@gmail.com', 'null', 14837353, 2, 412);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Tōdai-ji', 'www.Tōdai-ji.ve', 'Tōdai-ji@gmail.com', 'null', 14837354, 3, 413);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Akshardham', 'www.Akshardham.com', 'Akshardham@gmail.com', 'null', 14837355, 4, 414);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Mezquita de Haji Abdul Rahman', 'www.Mezquita_de_Haji_Abdul_Rahman.ve', 'Mezquita.de.Haji.Abdul.Rahman@yahoo.com', 'null', 14837356, 5, 415);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Catedral de Nuestra Señora del Pilar', 'www.Catedral_de_Nuestra_Señora_del_Pilar.org', 'Catedral.de.Nuestra.Señora.del.Pilar@yahoo.com', 'null', 14837357, 1, 469);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Beth El Sinagoga', 'www.Beth_El_Sinagoga.bet', 'Beth.El.Sinagoga@gmail.com', 'null', 14837358, 2, 470);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Borobudur', 'www.Borobudur.com', 'Borobudur@gmail.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Borobudur', 14837359, 3, 471);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Amritapuri', 'www.Amritapuri.ve', 'Amritapuri@yahoo.com', 'null', 14837360, 4, 472);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Santuario del Manto del Profeta', 'www.Santuario_del_Manto_del_Profeta.bet', 'Santuario.del.Manto.del.Profeta@yahoo.com', 'null', 14837361, 5, 473);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Catedral de Nuestra Señora del Carmen', 'www.Catedral_de_Nuestra_Señora_del_Carmen.bet', 'Catedral.de.Nuestra.Señora.del.Carmen@gmail.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Catedral de Nuestra Señora del Carmen', 14837362, 1, 495);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Chesed-El Sinagoga', 'www.Chesed-El_Sinagoga.ve', 'Chesed-El.Sinagoga@yahoo.com', 'null', 14837363, 2, 496);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Mahabodhi', 'www.Mahabodhi.ve', 'Mahabodhi@yahoo.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Mahabodhi', 14837364, 3, 497);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Templo Ananta Vasudeva', 'www.Templo_Ananta_Vasudeva.org', 'Templo.Ananta.Vasudeva@gmail.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Templo Ananta Vasudeva', 14837365, 4, 498);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Mezquita Aljama de Herat', 'www.Mezquita_Aljama_de_Herat.bet', 'Mezquita.Aljama.de.Herat@yahoo.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Mezquita Aljama de Herat', 14837366, 5, 499);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Catedral de Nuestra Señora del Rosario', 'www.Catedral_de_Nuestra_Señora_del_Rosario.ve', 'Catedral.de.Nuestra.Señora.del.Rosario@gmail.com', 'null', 14837367, 1, 546);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Maghain Aboth Sinagoga', 'www.Maghain_Aboth_Sinagoga.com', 'Maghain.Aboth.Sinagoga@yahoo.com', 'null', 14837368, 2, 547);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Wat Benchamabophit', 'www.Wat_Benchamabophit.com', 'Wat.Benchamabophit@gmail.com', 'null', 14837369, 3, 548);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Templo Brihadisvara', 'www.Templo_Brihadisvara.com', 'Templo.Brihadisvara@gmail.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Templo Brihadisvara', 14837370, 4, 549);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Santuario de Hazrat Ali', 'www.Santuario_de_Hazrat_Ali.bet', 'Santuario.de.Hazrat.Ali@gmail.com', 'null', 14837371, 5, 550);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Catedral de Todos Los Santos', 'www.Catedral_de_Todos_Los_Santos.com', 'Catedral.de.Todos.Los.Santos@yahoo.com', 'null', 14837372, 1, 600);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Bet Elisheva Sinagoga', 'www.Bet_Elisheva_Sinagoga.org', 'Bet.Elisheva.Sinagoga@yahoo.com', 'null', 14837373, 2, 601);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Seiganto-ji', 'www.Seiganto-ji.ve', 'Seiganto-ji@yahoo.com', 'null', 14837374, 3, 602);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Templo de la Cueva de Varaha', 'www.Templo_de_la_Cueva_de_Varaha.bet', 'Templo.de.la.Cueva.de.Varaha@yahoo.com', 'null', 14837375, 4, 603);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Mezquita Ethem Bey', 'www.Mezquita_Ethem_Bey.ve', 'Mezquita.Ethem.Bey@yahoo.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Mezquita Ethem Bey', 14837376, 5, 604);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Catedral Metropolitana de Santa Ana', 'www.Catedral_Metropolitana_de_Santa_Ana.com', 'Catedral.Metropolitana.de.Santa.Ana@gmail.com', 'null', 14837377, 1, 648);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Asociación Israelita de Valencia', 'www.Asociación_Israelita_de_Valencia.ve', 'Asociación.Israelita.de.Valencia@yahoo.com', 'null', 14837378, 2, 649);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Wat Rong Khun', 'www.Wat_Rong_Khun.org', 'Wat.Rong.Khun@gmail.com', 'null', 14837379, 3, 650);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Templo Gangaikondacholisvaram', 'www.Templo_Gangaikondacholisvaram.bet', 'Templo.Gangaikondacholisvaram@gmail.com', 'null', 14837380, 4, 651);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Mezquita Khadija', 'www.Mezquita_Khadija.com', 'Mezquita.Khadija@yahoo.com', 'null', 14837381, 5, 652);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Catedral de San Jorge', 'www.Catedral_de_San_Jorge.org', 'Catedral.de.San.Jorge@yahoo.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Catedral de San Jorge', 14837382, 1, 685);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Sinagoga de El Ghriba', 'www.Sinagoga_de_El_Ghriba.bet', 'Sinagoga.de.El.Ghriba@yahoo.com', 'null', 14837383, 2, 686);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Paro Taktsang', 'www.Paro_Taktsang.org', 'Paro.Taktsang@yahoo.com', 'null', 14837384, 3, 696);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Templo de Kailāsanātha', 'www.Templo_de_Kailāsanātha.com', 'Templo.de.Kailāsanātha@gmail.com', 'null', 14837385, 4, 697);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Mezquita del Rey Saúd', 'www.Mezquita_del_Rey_Saúd.com', 'Mezquita.del.Rey.Saúd@gmail.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Mezquita del Rey Saúd', 14837386, 5, 698);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Catedral de Santa Elena', 'www.Catedral_de_Santa_Elena.com', 'Catedral.de.Santa.Elena@yahoo.com', 'null', 14837387, 1, 700);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Zarzis Sinagoga', 'www.Zarzis_Sinagoga.com', 'Zarzis.Sinagoga@yahoo.com', 'null', 14837388, 2, 701);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Taung Kalat', 'www.Taung_Kalat.org', 'Taung.Kalat@yahoo.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Taung Kalat', 14837389, 3, 702);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Kalighat', 'www.Kalighat.org', 'Kalighat@gmail.com', 'null', 14837390, 4, 700);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Al-Masjid al-Nabawi', 'www.Al-Masjid_al-Nabawi.bet', 'Al-Masjid.al-Nabawi@gmail.com', 'null', 14837391, 5, 703);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Catedral de San Juan Bautista', 'www.Catedral_de_San_Juan_Bautista.ve', 'Catedral.de.San.Juan.Bautista@gmail.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Catedral de San Juan Bautista', 14837392, 1, 360);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Unión Israelita de Caracas', 'www.Unión_Israelita_de_Caracas.bet', 'Unión.Israelita.de.Caracas@yahoo.com', 'null', 14837393, 2, 361);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Wat Xieng Thong', 'www.Wat_Xieng_Thong.org', 'Wat.Xieng.Thong@gmail.com', 'null', 14837394, 3, 362);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Templo de Kalikamata', 'www.Templo_de_Kalikamata.bet', 'Templo.de.Kalikamata@gmail.com', 'null', 14837395, 4, 363);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Masjid al-Haram', 'www.Masjid_al-Haram.bet', 'Masjid.al-Haram@gmail.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Masjid al-Haram', 14837396, 5, 364);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Catedral Santa Rosa de Lima', 'www.Catedral_Santa_Rosa_de_Lima.org', 'Catedral.Santa.Rosa.de.Lima@gmail.com', 'null', 14837397, 1, 720);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Hogar Jabad Lubavitch de Venezuela', 'www.Hogar_Jabad_Lubavitch_de_Venezuela.com', 'Hogar.Jabad.Lubavitch.de.Venezuela@gmail.com', 'null', 14837398, 2, 721);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Man Mo', 'www.Man_Mo.bet', 'Man.Mo@gmail.com', 'null', 14837399, 3, 722);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Kalkaji Mandir', 'www.Kalkaji_Mandir.org', 'Kalkaji.Mandir@yahoo.com', 'null', 14837400, 4, 723);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Gran Mezquita de Argel', 'www.Gran_Mezquita_de_Argel.ve', 'Gran.Mezquita.de.Argel@yahoo.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Gran Mezquita de Argel', 14837401, 5, 724);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Catedral de Santo Tomás', 'www.Catedral_de_Santo_Tomás.com', 'Catedral.de.Santo.Tomás@gmail.com', 'null', 14837402, 1, 804);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Tiferet Israel', 'www.Tiferet_Israel.com', 'Tiferet.Israel@yahoo.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Tiferet Israel', 14837403, 2, 805);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Trấn Quốc', 'www.Trấn_Quốc.com', 'Trấn.Quốc@yahoo.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Trấn Quốc', 14837404, 3, 806);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Templo de Liṅgarāja', 'www.Templo_de_Liṅgarāja.com', 'Templo.de.Liṅgarāja@gmail.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Templo de Liṅgarāja', 14837405, 4, 807);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Mezquita de Ketchaoua', 'www.Mezquita_de_Ketchaoua.com', 'Mezquita.de.Ketchaoua@yahoo.com', 'null', 14837406, 5, 808);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Basílica Menor Santa Capilla', 'www.Basílica_Menor_Santa_Capilla.org', 'Basílica.Menor.Santa.Capilla@yahoo.com', 'null', 14837407, 1, 1364);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Asociación de Bet El', 'www.Asociación_de_Bet_El.com', 'Asociación.de.Bet.El@yahoo.com', 'null', 14837408, 2, 1365);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Kye Gompa', 'www.Kye_Gompa.com', 'Kye.Gompa@yahoo.com', 'null', 14837409, 3, 1366);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Templo Manakula Vinayagar', 'www.Templo_Manakula_Vinayagar.ve', 'Templo.Manakula.Vinayagar@gmail.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Templo Manakula Vinayagar', 14837410, 4, 1367);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Centro Cultural Islámico Rey Fahd', 'www.Centro_Cultural_Islámico_Rey_Fahd.org', 'Centro.Cultural.Islámico.Rey.Fahd@yahoo.com', 'null', 14837411, 5, 1368);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Basílica Catedral de Nuestra Señora de Coromoto', 'www.Basílica_Catedral_de_Nuestra_Señora_de_Coromoto.ve', 'Basílica.Catedral.de.Nuestra.Señora.de.Coromoto@yahoo.com', 'null', 14837412, 1, 843);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Congregación Bet Aharón', 'www.Congregación_Bet_Aharón.org', 'Congregación.Bet.Aharón@gmail.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Congregación Bet Aharón', 14837413, 2, 844);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Buu Long', 'www.Buu_Long.bet', 'Buu.Long@yahoo.com', 'null', 14837414, 3, 845);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Templo de la Orilla', 'www.Templo_de_la_Orilla.ve', 'Templo.de.la.Orilla@gmail.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Templo de la Orilla', 14837415, 4, 846);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Mezquita Azul', 'www.Mezquita_Azul.bet', 'Mezquita.Azul@yahoo.com', 'null', 14837416, 5, 847);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Basílica de Nuestra Señora de la Consolación', 'www.Basílica_de_Nuestra_Señora_de_la_Consolación.com', 'Basílica.de.Nuestra.Señora.de.la.Consolación@yahoo.com', 'null', 14837417, 1, 901);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Tiferet Israel del Este Keter Torá', 'www.Tiferet_Israel_del_Este_Keter_Torá.bet', 'Tiferet.Israel.del.Este.Keter.Torá@gmail.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Tiferet Israel del Este Keter Torá', 14837418, 2, 902);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Byodo-In', 'www.Byodo-In.com', 'Byodo-In@gmail.com', 'null', 14837419, 3, 903);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Templo Paramekkavu Bagavathi', 'www.Templo_Paramekkavu_Bagavathi.bet', 'Templo.Paramekkavu.Bagavathi@gmail.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Templo Paramekkavu Bagavathi', 14837420, 4, 904);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Mezquita Auburn Gallipoli', 'www.Mezquita_Auburn_Gallipoli.org', 'Mezquita.Auburn.Gallipoli@gmail.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Mezquita Auburn Gallipoli', 14837421, 5, 905);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Basílica Catedral de Nuestra Señora del Socorro', 'www.Basílica_Catedral_de_Nuestra_Señora_del_Socorro.bet', 'Basílica.Catedral.de.Nuestra.Señora.del.Socorro@gmail.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Basílica Catedral de Nuestra Señora del Socorro', 14837422, 1, 987);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Centro de apuesta Semuel', 'www.Centro_de_apuesta_Semuel.org', 'Centro.de.apuesta.Semuel@gmail.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Centro de apuesta Semuel', 14837423, 2, 988);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Angkor Wat', 'www.Angkor_Wat.ve', 'Angkor.Wat@gmail.com', 'null', 14837424, 3, 989);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Sabarimala', 'www.Sabarimala.ve', 'Sabarimala@yahoo.com', 'null', 14837425, 4, 990);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Mezquita Lakemba', 'www.Mezquita_Lakemba.org', 'Mezquita.Lakemba@gmail.com', 'null', 14837426, 5, 991);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Basílica de San Pedro Apóstol', 'www.Basílica_de_San_Pedro_Apóstol.com', 'Basílica.de.San.Pedro.Apóstol@yahoo.com', 'null', 14837427, 1, 1041);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Shaare Shalom', 'www.Shaare_Shalom.bet', 'Shaare.Shalom@yahoo.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Shaare Shalom', 14837428, 2, 1042);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Gyeongbokgung', 'www.Gyeongbokgung.org', 'Gyeongbokgung@gmail.com', 'null', 14837429, 3, 1043);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Shringeri', 'www.Shringeri.ve', 'Shringeri@yahoo.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Shringeri', 14837430, 4, 1044);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Mezquita de Telfs', 'www.Mezquita_de_Telfs.org', 'Mezquita.de.Telfs@gmail.com', 'null', 14837431, 5, 1045);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Diócesis de Guanare', 'www.Diócesis_de_Guanare.bet', 'Diócesis.de.Guanare@yahoo.com', 'null', 14837432, 1, 1085);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Centro Apuesta Semuel del Este', 'www.Centro_Apuesta_Semuel_del_Este.com', 'Centro.Apuesta.Semuel.del.Este@gmail.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Centro Apuesta Semuel del Este', 14837433, 2, 1086);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Datsan Gunzechoinei', 'www.Datsan_Gunzechoinei.bet', 'Datsan.Gunzechoinei@gmail.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Datsan Gunzechoinei', 14837434, 3, 1087);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Templo de Suria', 'www.Templo_de_Suria.com', 'Templo.de.Suria@gmail.com', 'null', 14837435, 4, 1088);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Mezquita Raschid', 'www.Mezquita_Raschid.ve', 'Mezquita.Raschid@gmail.com', 'null', 14837436, 5, 1089);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Basílica del Espíritu Santo', 'www.Basílica_del_Espíritu_Santo.com', 'Basílica.del.Espíritu.Santo@yahoo.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Basílica del Espíritu Santo', 14837437, 1, 1107);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Beit Kneset Cohanim HaDintreisa', 'www.Beit_Kneset_Cohanim_HaDintreisa.org', 'Beit.Kneset.Cohanim.HaDintreisa@gmail.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Beit Kneset Cohanim HaDintreisa', 14837438, 2, 1108);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Gangtey', 'www.Gangtey.org', 'Gangtey@yahoo.com', 'null', 14837439, 3, 1109);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Teli ka Mandir', 'www.Teli_ka_Mandir.org', 'Teli.ka.Mandir@yahoo.com', 'null', 14837440, 4, 1110);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Mezquita de Bad Vöslau', 'www.Mezquita_de_Bad_Vöslau.bet', 'Mezquita.de.Bad.Vöslau@gmail.com', 'null', 14837441, 5, 1111);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Catedral de San Cristóbal', 'www.Catedral_de_San_Cristóbal.ve', 'Catedral.de.San.Cristóbal@yahoo.com', 'null', 14837442, 1, 1148);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Luis de Torres Sinagoga', 'www.Luis_de_Torres_Sinagoga.org', 'Luis.de.Torres.Sinagoga@yahoo.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Luis de Torres Sinagoga', 14837443, 2, 1149);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Kopan', 'www.Kopan.com', 'Kopan@yahoo.com', 'null', 14837444, 3, 1150);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Templo Birla', 'www.Templo_Birla.bet', 'Templo.Birla@yahoo.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Templo Birla', 14837445, 4, 1151);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Mezquita Bibi-Heybet', 'www.Mezquita_Bibi-Heybet.ve', 'Mezquita.Bibi-Heybet@gmail.com', 'null', 14837446, 5, 1152);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Catedral Basílica Menor de la Inmaculada Concepción', 'www.Catedral_Basílica_Menor_de_la_Inmaculada_Concepción.ve', 'Catedral.Basílica.Menor.de.la.Inmaculada.Concepción@gmail.com', 'null', 14837447, 1, 1207);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('O Meir', 'www.O_Meir.org', 'O.Meir@gmail.com', 'null', 14837448, 2, 1208);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Thean Hou', 'www.Thean_Hou.ve', 'Thean.Hou@yahoo.com', 'null', 14837449, 3, 1209);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Templo de Brahma', 'www.Templo_de_Brahma.com', 'Templo.de.Brahma@yahoo.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Templo de Brahma', 14837450, 4, 1210);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Bibi-Heybet Məscidi', 'www.Bibi-Heybet_Məscidi.org', 'Bibi-Heybet.Məscidi@yahoo.com', 'null', 14837451, 5, 1211);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Basílica del Santo Cristo de la Gracia', 'www.Basílica_del_Santo_Cristo_de_la_Gracia.com', 'Basílica.del.Santo.Cristo.de.la.Gracia@gmail.com', 'null', 14837452, 1, 1271);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Mishkán - Centro de Espiritualidad Judía', 'www.Mishkán_-_Centro_de_Espiritualidad_Judía.org', 'Mishkán.-.Centro.de.Espiritualidad.Judía@gmail.com', 'null', 14837453, 2, 1272);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Shwedagon pagoda', 'www.Shwedagon_pagoda.org', 'Shwedagon.pagoda@yahoo.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Shwedagon pagoda', 14837454, 3, 1273);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Templo de Chaturbhuj', 'www.Templo_de_Chaturbhuj.com', 'Templo.de.Chaturbhuj@gmail.com', 'null', 14837455, 4, 1274);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Mezquita Imamzadeh', 'www.Mezquita_Imamzadeh.org', 'Mezquita.Imamzadeh@yahoo.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Mezquita Imamzadeh', 14837456, 5, 1275);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Basílica menor de Nuestra Señora del Valle', 'www.Basílica_menor_de_Nuestra_Señora_del_Valle.bet', 'Basílica.menor.de.Nuestra.Señora.del.Valle@gmail.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Basílica menor de Nuestra Señora del Valle', 14837457, 1, 1375);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Templo Libertad', 'www.Templo_Libertad.org', 'Templo.Libertad@gmail.com', 'null', 14837458, 2, 1389);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Wat Huai Pla Kung', 'www.Wat_Huai_Pla_Kung.ve', 'Wat.Huai.Pla.Kung@gmail.com', 'null', 14837459, 3, 1390);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Templo de Mumba Devi', 'www.Templo_de_Mumba_Devi.ve', 'Templo.de.Mumba.Devi@gmail.com', 'null', 14837460, 4, 1391);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Mezquita Juma', 'www.Mezquita_Juma.org', 'Mezquita.Juma@yahoo.com', 'null', 14837461, 5, 1376);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Basílica de Santa Lucía', 'www.Basílica_de_Santa_Lucía.bet', 'Basílica.de.Santa.Lucía@yahoo.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Basílica de Santa Lucía', 14837462, 1, 1452);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Sociedad Israelita de Maracaibo', 'www.Sociedad_Israelita_de_Maracaibo.org', 'Sociedad.Israelita.de.Maracaibo@gmail.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Sociedad Israelita de Maracaibo', 14837463, 2, 1453);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Pha That Luang', 'www.Pha_That_Luang.org', 'Pha.That.Luang@gmail.com', 'null', 14837464, 3, 1454);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Templos de Bhutanatha', 'www.Templos_de_Bhutanatha.org', 'Templos.de.Bhutanatha@gmail.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Templos de Bhutanatha', 14837465, 4, 1455);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Mezquita del Shah Abbás', 'www.Mezquita_del_Shah_Abbás.com', 'Mezquita.del.Shah.Abbás@gmail.com', 'null', 14837466, 5, 1456);
+
+INSERT INTO JEFATURA VALUES (null, 'Jefatura El Recreo', 368, 27780890);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_jefatura) VALUES (10.4930189, -66.8772809, 1);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_jefatura) VALUES (null, 0212, 5687456, 1);
+INSERT INTO JEFATURA VALUES (null, 'Registro Civil Alto Orinoco', 382, 27780891);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_jefatura) VALUES (2.8251034, -65.815327, 2);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_jefatura) VALUES (null, 0248, 5210393, 2);
+INSERT INTO JEFATURA VALUES (null, 'Registro Principal del Estado Anzoategui', 415, 27780892);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_jefatura) VALUES (9.455348, -64.8366309, 3);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_jefatura) VALUES (null, 0424, 8718544, 3);
+INSERT INTO JEFATURA VALUES (null, 'Registro Principal del Estado Apure', 484, 27780893);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_jefatura) VALUES (7.8726693, -67.4819329, 4);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_jefatura) VALUES (null, 0247, 3410571, 4);
+INSERT INTO JEFATURA VALUES (null, 'Registro Civil de Maracay', 519, 27780894);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_jefatura) VALUES (10.2566733, -67.6353261, 5);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_jefatura) VALUES (null, 0416, 6536392, 5);
+INSERT INTO JEFATURA VALUES (null, 'Registro Civil del Municipio Ezequial Zamora', 578, 27780895);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_jefatura) VALUES (7.8161475, -71.1923721, 6);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_jefatura) VALUES (null, 0277, 3116884, 6);
+INSERT INTO JEFATURA VALUES (null, 'Registro Civil Caroni', 600, 27780896);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_jefatura) VALUES (8.3380964, -62.7573422, 7);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_jefatura) VALUES (null, 0286, 9249163, 7);
+INSERT INTO JEFATURA VALUES (null, 'Registro Civil Parroquia La Candelaria', 676, 27780897);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_jefatura) VALUES (10.1762326, -68.009385, 8);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_jefatura) VALUES (null, 0412, 4741456, 8);
+INSERT INTO JEFATURA VALUES (null, 'Registro Civil de Tinaco', 699, 27780898);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_jefatura) VALUES (9.7009161, -68.4404681, 9);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_jefatura) VALUES (null, 0258, 4332789, 9);
+INSERT INTO JEFATURA VALUES (null, 'Oficina de RegistroCivil Municipal', 719, 27780899);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_jefatura) VALUES (8.414314, -62.50333, 10);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_jefatura) VALUES (null, 0257, 4741456, 10);
+INSERT INTO JEFATURA VALUES (null, 'Registro Civil Tucacas', 789, 27780900);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_jefatura) VALUES (10.7932821, -68.3174357, 11);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_jefatura) VALUES (null, 0259, 9325240, 11);
+INSERT INTO JEFATURA VALUES (null, 'Registro Principal de San Juan de los Morros', 823, 27780901);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_jefatura) VALUES (9.923292, -67.3545804, 12);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_jefatura) VALUES (null, 0245, 4741456, 12);
+INSERT INTO JEFATURA VALUES (null, 'Registro Civil Parroquia El Cují', 852, 27780902);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_jefatura) VALUES (10.1505684, -69.3174819, 13);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_jefatura) VALUES (null, 0248, 4598626, 13);
+INSERT INTO JEFATURA VALUES (null, 'Registro Principal del Estado Miranda', 901, 27780903);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_jefatura) VALUES (8.5898937, -71.1580845, 14);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_jefatura) VALUES (null, 0274, 2638510, 14);
+INSERT INTO JEFATURA VALUES (null, 'Registro Civil El Cafetal', 997, 27780904);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_jefatura) VALUES (10.52222, -66.9617332, 15);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_jefatura) VALUES (null, 0212, 9855854, 15);
+INSERT INTO JEFATURA VALUES (null, 'Registro Civil Los Godos', 1055, 27780905);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_jefatura) VALUES (9.7238993, -63.2055017, 16);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_jefatura) VALUES (null, 0291, 6429474, 16);
+INSERT INTO JEFATURA VALUES (null, 'Registro Público del Municipio Arismendi y Antolin', 1085, 27780906);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_jefatura) VALUES (11.030166, -63.8698533, 17);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_jefatura) VALUES (null, 0295, 2422244, 17);
+INSERT INTO JEFATURA VALUES (null, 'Registro Civil de Municipio Esteller', 1110, 27780907);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_jefatura) VALUES (9.4731075, -69.3122716, 18);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_jefatura) VALUES (null, 0296, 4700025, 18);
+INSERT INTO JEFATURA VALUES (null, 'Registro Principal Cumaná', 1183, 27780908);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_jefatura) VALUES (10.4641341, -64.178308, 19);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_jefatura) VALUES (null, 0293, 4313705, 19);
+INSERT INTO JEFATURA VALUES (null, 'Registro Principal de San Cristóbal', 1258, 27780909);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_jefatura) VALUES (7.759261, -72.2345659, 20);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_jefatura) VALUES (null, 0414, 3616825, 20);
+INSERT INTO JEFATURA VALUES (null, 'Registro Principal del Estado Trujillo', 1351, 27780910);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_jefatura) VALUES (9.349141, -70.4373408, 21);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_jefatura) VALUES (null, 0272, 2364177, 21);
+INSERT INTO JEFATURA VALUES (null, 'Registro Civil Macuto', 1371, 27780911);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_jefatura) VALUES (10.6092946, -656.8871273, 22);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_jefatura) VALUES (null, 0212, 3375852, 22);
+INSERT INTO JEFATURA VALUES (null, 'Registro Civil del Municipio Peña', 1388, 27780912);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_jefatura) VALUES (10.0781772, -69.1313462, 23);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_jefatura) VALUES (null, 0254, 42317784, 23);
+INSERT INTO JEFATURA VALUES (null, 'Registro Principal del Estado Zulia', 1453, 27780913);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_jefatura) VALUES (10.6222767, -71.636843, 24);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_jefatura) VALUES (null, 0261, 7226319, 24);
+#NOTARIAS
+INSERT INTO NOTARIA VALUES (null, 'Notaria El Recreo', 368, 27780890);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_notaria) VALUES (10.4930200, -66.8772900, 1);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_notaria) VALUES (null, 0212, 5687456, 1);
+INSERT INTO NOTARIA VALUES (null, 'Notaria Alto Orinoco', 382, 27780891);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_notaria) VALUES (2.8251100, -65.815450, 2);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_notaria) VALUES (null, 0248, 5210393, 2);
+INSERT INTO NOTARIA VALUES (null, 'Notaria Principal del Estado Anzoategui', 415, 27780892);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_notaria) VALUES (9.455450, -64.8366400, 3);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_notaria) VALUES (null, 0424, 8718544, 3);
+INSERT INTO NOTARIA VALUES (null, 'Notaria Principal del Estado Apure', 484, 27780893);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_notaria) VALUES (7.8726693, -67.4819329, 4);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_notaria) VALUES (null, 0247, 3410571, 4);
+INSERT INTO JEFATURA VALUES (null, 'Registro Civil de Maracay', 519, 27780894);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_notaria) VALUES (10.2566733, -67.6353261, 5);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_notaria) VALUES (null, 0416, 6536392, 5);
+INSERT INTO NOTARIA VALUES (null, 'Notaria del Municipio Ezequial Zamora', 578, 27880895);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_notaria) VALUES (7.8161600, -71.1923900, 6);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_notaria) VALUES (null, 0277, 3116884, 6);
+INSERT INTO NOTARIA VALUES (null, 'Notaria Caroni', 600, 27880896);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_notaria) VALUES (8.3380800, -62.7573200, 7);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_notaria) VALUES (null, 0286, 9249163, 7);
+INSERT INTO NOTARIA VALUES (null, 'Notaria Parroquia La Candelaria', 676, 27880897);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_notaria) VALUES (10.1762500, -68.009500, 8);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_notaria) VALUES (null, 0412, 4741456, 8);
+INSERT INTO NOTARIA VALUES (null, 'Notaria de Tinaco', 699, 27880898);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_notaria) VALUES (9.7009300, -68.4404400, 9);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_notaria) VALUES (null, 0258, 4332789, 9);
+INSERT INTO NOTARIA VALUES (null, 'Notaria Municipal', 719, 27880899);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_notaria) VALUES (8.41435, -62.50335, 10);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_notaria) VALUES (null, 0257, 4741456, 10);
+INSERT INTO NOTARIA VALUES (null, 'Notaria Tucacas', 789, 27880900);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_notaria) VALUES (10.793285, -68.317431, 11);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_notaria) VALUES (null, 0259, 9325240, 11);
+INSERT INTO NOTARIA VALUES (null, 'Notaria de San Juan de los Morros', 823, 27880901);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_notaria) VALUES (9.923295, -67.354583, 12);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_notaria) VALUES (null, 0245, 4741456, 12);
+INSERT INTO NOTARIA VALUES (null, 'Notaria Parroquia El Cují', 852, 27880902);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_notaria) VALUES (10.1505686, -69.317483, 13);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_notaria) VALUES (null, 0248, 4598626, 13);
+INSERT INTO NOTARIA VALUES (null, 'Notaria del Estado Miranda', 901, 27880903);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_notaria) VALUES (8.5898939, -71.1580849, 14);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_notaria) VALUES (null, 0274, 2638510, 14);
+INSERT INTO NOTARIA VALUES (null, 'Notaria El Cafetal', 997, 27880904);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_notaria) VALUES (10.52225, -66.9617345, 15);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_notaria) VALUES (null, 0212, 9855854, 15);
+INSERT INTO NOTARIA VALUES (null, 'Notaria Los Godos', 1055, 27880905);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_notaria) VALUES (9.72389, -63.205503, 16);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_notaria) VALUES (null, 0291, 6429474, 16);
+INSERT INTO NOTARIA VALUES (null, 'Notaria del Municipio Arismendi y Antolin', 1085, 27880906);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_notaria) VALUES (11.030165, -63.869855, 17);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_notaria) VALUES (null, 0295, 2422244, 17);
+INSERT INTO NOTARIA VALUES (null, 'Notaria de Municipio Esteller', 1110, 27880907);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_notaria) VALUES (9.47310759, -69.3122717, 18);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_notaria) VALUES (null, 0296, 4700025, 18);
+INSERT INTO NOTARIA VALUES (null, 'Notaria Principal Cumaná', 1183, 27880908);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_notaria) VALUES (10.4641349, -64.1783089, 19);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_notaria) VALUES (null, 0293, 4313705, 19);
+INSERT INTO NOTARIA VALUES (null, 'Notaria Principal de San Cristóbal', 1258, 27880909);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_notaria) VALUES (7.7592619, -72.234567, 20);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_notaria) VALUES (null, 0414, 3616825, 20);
+INSERT INTO NOTARIA VALUES (null, 'Notaria Principal del Estado Trujillo', 1351, 27880910);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_notaria) VALUES (9.3491419, -70.437342, 21);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_notaria) VALUES (null, 0272, 2364177, 21);
+INSERT INTO NOTARIA VALUES (null, 'Notaria Macuto', 1371, 27880911);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_notaria) VALUES (10.6092949, -656.8871233, 22);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_notaria) VALUES (null, 0212, 3375852, 22);
+INSERT INTO NOTARIA VALUES (null, 'Notaria del Municipio Peña', 1388, 27880912);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_notaria) VALUES (10.0781779, -69.1313469, 23);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_notaria) VALUES (null, 0254, 42317784, 23);
+INSERT INTO NOTARIA VALUES (null, 'Notaria Principal del Estado Zulia', 1453, 27880913);
+INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_notaria) VALUES (10.622277, -71.6368439, 24);
+INSERT INTO TELEFONO (id_telefono, codigo_area_telefono, numero_telefono, fk_notaria) VALUES (null, 0261, 7226319, 24);
+
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Comercializadora Martinez', 'OTRO' ,1);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Asociación Cargo Venezuela', 'OTRO' ,1);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Mayoristas Brothers Company', 'OTRO' ,2);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Asociación Tu Producto C.A.', 'OTRO' ,2);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Distribuidora Te lo tengo VE', 'OTRO' ,3);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Distribuidora Amigos y Familia inc.', 'OTRO' ,3);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Comercializadora Precios Alfa', 'OTRO' ,4);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Comercializadora Vete De Compras', 'OTRO' ,4);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Distribuidora Resuelve', 'OTRO' ,5);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'No Busques Más', 'OTRO' ,5);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Master Festejos', 'OTRO' ,6);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Mayoristas Don Obsequio', 'OTRO' ,6);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Distribuidora Santo Remedio', 'OTRO' ,7);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Comercializadora A Tu Alcance C.A.', 'OTRO' ,7);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Asociación Mar y Sol', 'OTRO' ,8);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Mayoristas Doña Milly', 'OTRO' ,8);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Mayoristas Parties International', 'OTRO' ,9);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Sirvete Un Trago', 'ALIMENTOS' ,9);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Ponle Hielo', 'OTRO' ,10);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Asociación Moving Food', 'ALIMENTOS' ,10);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Distribuidora Hasta El Final', 'OTRO' ,11);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'El Último Chicharrón', 'OTRO' ,11);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Comercializadora Mar y Tierra', 'OTRO' ,12);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Asociación Damar', 'OTRO' ,12);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Asociación Come Con Calma', 'ALIMENTOS' ,13);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Mayoristas Te Lo LLevamos', 'OTRO' ,13);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Comercializadora Tú Primero', 'OTRO' ,14);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Mayoristas La Victoria', 'OTRO' ,14);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Mayoristas Los Chinos', 'OTRO' ,15);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Mayoristas Dragón De Oro', 'OTRO' ,15);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Mayoristas Botellón', 'OTRO' ,16);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'El Lugar De Las Telas', 'OTRO' ,16);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Comercializadora Fabricantes Venezuela', 'OTRO' ,17);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Los Primos', 'OTRO' ,17);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Distribuidora La Curvita', 'OTRO' ,18);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Comercializadora Prado Azul', 'OTRO' ,18);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Los Valles', 'OTRO' ,19);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Comercializadora La Casa de Maíta', 'OTRO' ,19);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'El Sueño', 'OTRO' ,20);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Distribuidora Te Lo Armo', 'OTRO' ,20);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Comercializadora Bahías', 'OTRO' ,21);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Comercializadora La Churuata', 'OTRO' ,21);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Comercializadora No Te Estreses', 'OTRO' ,22);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Así De Fácil', 'OTRO' ,22);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Mayoristas El Rincón De Sarah', 'OTRO' ,23);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Catering Venezuela', 'ALIMENTOS' ,23);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Marisol 2', 'OTRO' ,24);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Asociación Los Fernández', 'OTRO' ,24);
+
+#floristerias
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'El jardín de la nena' , 'FLORES', 1);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Floristería Marisol' , 'FLORES', 2);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Floristería Arreglos Rosa María' , 'FLORES', 3);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Flores Capital' , 'FLORES', 4);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Floristería Rodríguez' , 'FLORES', 5);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Rosas negras' , 'FLORES', 6);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Lirio del valle' , 'FLORES', 7);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Floristería Echale agua' , 'FLORES', 8);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Floristería Jardín místico' , 'FLORES', 9);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Hiedra Venenosa' , 'FLORES', 10);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Floristería Las flores de Ivy' , 'FLORES', 11);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Floristería Ciudad Gótica' , 'FLORES', 12);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Las rosas de Martha' , 'FLORES', 13);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Súper arreglos' , 'FLORES', 14);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Tú arreglo floral' , 'FLORES', 15);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Floristería Doña Tita' , 'FLORES', 16);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Las 3 Rosas' , 'FLORES', 17);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Los crisántemos' , 'FLORES', 18);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Floristería Flor para llevar' , 'FLORES', 19);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Floristería Semilla de amapola' , 'FLORES', 20);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'La gran orquídea' , 'FLORES', 21);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Jardín del edén' , 'FLORES', 22);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Floristería Mi jardín' , 'FLORES', 23);
+insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Floristería Fruto prohibido' , 'FLORES', 24);
+
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Invitaciones', 'En lugar de las clásicas invitaciones impresas, puedes preparar un bonito video de dos o tres minutos. Puede ser romántico, musical, divertido o en el estilo que más te guste, con fotos de ustedes y los datos de la fiesta. Resultará sorpresivo, económico y mucho más cálido que un sobre recibido por correo.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Vestido', 'No busques vestido de novia. En el momento en que mencionas vestido de novia, los precios suben. ¡Y por vestidos tremendamente similares! Si quieres ahorrar en tu vestido sin sacrificar tu look, busca vestidos en color blanco o marfil ¡o en el color que más desees! Hasta los diseñadores tienen precios más bajos cuando de vestidos se trata. Te sorprenderás de los exquisitos modelos que encontrarás.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Mesa', 'Mientras más grande la mesa, menor la cantidad de centros de mesa o decoración de mesa que se precisará. En lugar de mesas de seis personas, escoge las de 8.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Invitados', 'Si a la mayoría de tus invitados les gusta la parranda, su intensidad y volumen irán en aumento y gradualmente la fiesta es un descontrol. Del mismo modo, si los más callados no se sientan junto a invitados más animados, tu recepción será sumamente aburrida. Para lograr una recepción divertida y agradable intenta equilibrar ambas personalidades en las mesas.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Mesa Principal', 'La mesa principal debe colocarse donde la puedan ver el mayor número posible de invitados. Recuerda que ustedes son los protagonistas de esta celebración, y todos querrán verlos y tenerlos cerca.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Invitados jovenes', 'Sienta a los invitados más jóvenes cerca de los parlantes y de la pista de baile y a los invitados mayores un poco más lejos, así se sentirán más cómodos.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Recuerdos', 'A veces se nos olvida de que aquellos que asisten a la boda merecen ser atendidos de la mejor forma y nada mejor que dejar un recuerdo inolvidable en sus mentes por acompañarlos en uno de los días más importantes de sus vidas.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Luna de miel', '¿No saben cómo elegir destino para tu luna de miel?. Pues estamos seguros que siempre han soñado con algún lugar al cual ir y este es el mejor momento para conocerlo.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Número de invitados', 'Haz un cálculo aproximado de los invitados que quieres que asistan a tu boda antes de contratar el banquete. Esto asegurará que haya espacio suficiente para que se encuentren cómodos.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Lugar de celebración', 'Asegúrate de que los invitados estén bien informados del lugar de la ceremonia, es decir ubicación exacta, los horarios y el transporte.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Fotografo', 'Seguro que no quieres perderte ningún detalle del día de tu boda, por ello, es importante que cuentes con la presencia de un profesional de la fotografía, y que escojas según su estilo a la hora de inmortalizar cada momento.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Comida y bebida', 'Si se dan cuenta, cada evento especial se suele celebrar acompañándolo de bebidas deliciosas y de alimentos de calidad. Su boda no iba a ser diferente, haz que tus invitados la recuerden como una experiencia para los sentidos.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Detalle para invitados', 'Nada les dice a tus invitados que los conoces y son realmente importantes para ti como prepararles un detalle personalizado en sus mesas.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Música', 'La música ambienta, le da colorido a un evento y hace que los pies y los corazones recuerden, se muevan y se conmuevan. Tu selección de conjunto musical es muy importante pues uno bueno logrará ver a tus invitados, descubrir qué les gusta y hallar la melodía perfecta para cada momento de la boda, así que no olvides consultar y escuchar varias opciones antes de elegir uno.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Tarjetas de agradecimiento', 'Otro detalle increíble y de mucha personalidad que puedes tener con tus invitados es entregarles tarjetas de agradecimiento personalizadas. Tanto el mensaje como los diseños pueden variar ligeramente y eso las haría incluso más únicas y representativas del afecto que sientes por cada uno de ellos.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Día de la boda', 'Pensemos en el momento que todas ustedes vivirán: me refiero al instante en que despierten y piensen: “¡Hoy me caso!”. Para disfrutar la boda al máximo es importante que descansen bien, que pongan en práctica técnicas de relajación, no se desvelen y, por supuesto, que no lleguen a la boda con el estómago vacío.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Vestimenta', 'Para comenzar ese día con el pie derecho es importante que ambos novios se arreglen con tiempo para evitar contratiempos y prisas, que generarán estrés y mal humor.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Momentos previos a la boda', 'Cuando lleguen al lugar donde se celebrará la boda, busquen un momento para estar en privado, respiren hondo, caminen, muevan los brazos, griten… lo que les funcione para deshacerse de los nervios y la tensión.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Zapatos', 'Les aseguro que unos zapatos incómodos restarán diversión a la boda. Por nada del mundo elijan unos zapatos increíbles, pero igualmente incómodos. Asimismo, no olviden un cambio de zapatos para la hora de la fiesta y baile.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Tiempo de pareja', 'Pasen tiempo juntos. No olviden que ustedes son la razón de la fiesta, así que concéntrense en disfrutar como pareja de su gran día y no se pierdan entre los amigos, amigas y compromisos.');
+
+#quinces
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Tema', 'Elige un tema o motivo para consolidar la idea para tu fiesta de Quinceañera. Esto hará que planear una Quinceañera sea mucho más fácil.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Flores', 'Si tienes un color específico en mente, investiga cuáles flores están disponibles durante la temporada de tu fiesta.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Invitados mayores', 'Si piensas invitar a personas mayores a tu fiesta, asegúrate de que haya suficientes lugares para poder sentarse.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Restricciones en la comida', 'Recuerda que algunas personas tienen restricciones dietéticas como alergias. De ser posible, asegúrate de que el menú incluya algo que todos puedan comer.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Compatibilidad de invitados', 'Junta a personas con intereses similares y de la misma edad en la misma mesa. Asegúrate de que cada mesa tenga un número par de personas ya que los invitados tienden a platicar en pares. No quisieras dejar alguien fuera.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Agradecimientos', 'Las notas de agradecimiento son tan importantes como las invitaciones. El día después de tu Quinceañera es el momento perfecto para escribirlas, ya que tu memoria aún está fresca.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Tiempo de planificación', 'Es necesario que cuentes con bastante tiempo para planificar, así te ahorras estrés  y puedes reservar servicios con más tranquilidad.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Peinado y maquillaje', 'Visita expertos en Hair & Make-up y separa el que se ajuste a tu presupuesto y te guste como te arregló.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Colores', 'Escoge un color o un par de colores que te gusten especialmente y que no desentonen con la temática de la fiesta, un color que tenga algún significado especial para ti. Los puedes llevar en el vestido, en las guirnaldas que adornen el salón, las cortinas, el mantel, la vajilla... Combina como más te guste.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Usar rojo', 'El tono más audaz como el rojo se encuentran en un esquema elegante para aquellas que buscan un look más atrevido.');
+
+#decoracion
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Pizarras de gis', 'Una idea para darle al evento un toque bohemio, artesanal y divertido es incluir la tendencia de imitar las pizarras y escribir mensajes con gis. Algo diferente que vale la pena intentar, aunque sea en algún detalle para tu fiesta.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Colores naranja y rosa', 'La combinacion de naranja y el rosa crearán un ambiente divertido en tu fiesta. ¡Incorpora centros de mesa con flores de colores vivos para animar el lugar!');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Flores tropicales', '¡Las flores tropicales y las tonalidades inspiradas en el océano le darán vida a tu fiesta!');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Accesorios básicos', 'Siempre se debe contar con los accesorios básicos; los globos y las serpentinas son elementales y nunca estarán de más en una fiesta.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Vajilla colorida', 'Elige platos, vasos, servilletas y cubiertos de papel en base a tu paleta de color.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Jerarquía en la mesa', 'Mantén un orden jerárquico en la mesa, ubicando los elementos protagonistas y más voluminosos en el centro y parte posterior, dejando los más pequeñitos en la parte frontal.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Fiest infantil', 'En caso de ser una fiesta infantil, es importante que la decoración sea adecuada a la edad de los invitados.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Banderines y guirnaldas', 'Personaliza tus propios banderines y guirnaldas para decorar tu fiestan Este tipo de elementos alegran cualquier evento, sobre todo cuando se trata de cumpleaños o fiestas de bienvenidas.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Luces', 'Las luces son un factor muy importante que no siempre se tiene en cuenta a la hora de preparar la decoración de una fiesta. Si disponemos de focos de distintos colores, podremos jugar con distintos efectos sobre globos u otros elementos.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Velas', 'Si la fiesta es para adultos, una posibilidad es optar por una decoración con velas. Este tipo de iluminación queda especialmente llamativa por la noche.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Telas', 'La decoración con telas, se ha convertido en una de las favoritas en las fiestas.Principalmente la decoración de telas se realiza en los techos, por lo que debemos utilizar telas no muy pesadas para no tener problemas y que su peso las tire.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Luces nocturnas', 'Las bolsas de luz, tiras y guirnaldas de luces quedarán preciosas al anochecer. Usalas para rodear columnas, decorar árboles y arbustos, disimular paredes feas o sosas, bordear caminos, iluminar rincones oscuros, decorar la parte trasera del bar o buffet... y llenarlo todas las mesas con destellos de velitas.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Carteles', 'Si quieres que nadie se pierda en ese día tan especial no dejes de señalizar colgando carteles en árboles, paredes, columnas etc.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Bebidas', 'Anima tu fiesta con un rincón de bebidas o Corner Bar. Selecciona entre nuestros productos todo lo que necesitas para decorarlo con mucho estilo.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Sillas y mesas', 'Viste las mesas y las sillas a juego, para un resultado uniforme y coherente que dará mucha calidez a tu evento.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Flores', '¡La belleza de las flores es insuperable! llena tu fiesta o evento de pétalos, flores flotantes, rosas adhesivas entre otras para engalanar tu celebración.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Banderines', 'La forma más popular de decorar tu fiesta es usando banderines de colores. ¡Cunden muchísimo!.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Tiras y colgantes', 'Decora tus paredes, puertas y techos con tiras y colgantes que le vayan a tu fiesta. Puedes usarlos en la entrada para crear expectación o en la sala para separar ambientes. También quedan perfectos como fondos de escaparates o de mesas de buffet.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Tonos pastel', 'Los colores más utilizados para decorar una fiesta de 15 años son las tonalidades pastel, colores claros o en todos rosados. Lo importante es que transmita delicadeza y frescura en el espacio. Deberá reflejar la jovialidad de la anfitriona y el resto de los invitados adolescentes.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Combinacion de colores', 'Todos los objetos que elijas para decorar el espacio deberán respetar la combinación de colores que hayas elegido. Jamás te limites a incorporar un solo color, ya que sobrecargarás el espacio y será molesto a la vista. Deberás combinar tu color principal con un color claro u oscuro para equilibrar los tonos en el espacio.');
+
+#Recomendaciones
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'El pastel', 'El Pastel, es un elemento muy importante en cualquier celebración. No puede faltar en tan importante evento.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Invitaciones con anticipación', 'Enviar con tiempo las invitaciones. Los invitados agradecerán ese tiempo para prepararse, ahorrar y cómo no, reservar ese día.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Lista de cosas', 'lista todas las cosas que tienes que hacer para que no se te escape nada y para que no quede nada imprevisto para el último momento.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Día de la celebración', '¿Cuándo celebrar tu fiesta? Generalmente los viernes y sábados por la tarde noche son los mejores días para organizar una fiesta.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Clima', 'Aunque parezca una obviedad, la climatología puede fastidiarnos completamente un evento, así que esto debes tenerlo en cuenta.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Decoración personalizada', 'La decoración personalizada va a jugar un papel fundamental en tu fiestas, así que no renuncies a ella y destina parte del presupuesto a personalizarla o tematizarla.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Espacio para invitados', 'En función del número de invitados, escoger un lugar en el que entren todos de forma cómoda.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Epoca de celebración', 'La época del año en la que organices la fiesta marcará completamente esta decisión. Si es en primavera o en verano, un lugar con espacios al aire libre resulta de lo más agradable.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Estacionamiento', 'Es importante que compruebes si el sitio cuenta con parking propio o tiene cercano un parking público o incluso servicio de aparcacoches. Es posible que muchos invitados opten por acudir al evento en su coche y si el estacionamiento no es fácil, puede suponer un problema.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Normas del Salón', 'Cuando escojas el espacio, asegúrate de preguntar primero lo que puedes y no puedes hacer.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Comida tipo coctel', 'Para una fiesta, lo ideal es que opten por un montaje tipo cóctel con aperitivos fáciles de comer. Este formato es más informal y permite a los invitados relacionarse entre ellos más libremente.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Puestos de comida', 'Los puestos de comida y los showcookings son una tendencia que está muy de moda y aportan originalidad y diversión al catering. El éxito está asegurado si los incluyes en tu fiesta.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Canciones especiales', 'En cualquier fiesta hay momentos álgidos que requieren de canciones especiales. Haz una lista de canciones para la llegada del homenajeado o para una entrega de premios o de regalos y pídele al responsable de la música que los ponga en ese momento.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Actividades de la fiesta', 'Amenizar la fiesta con propuesta y actividades divertidas es un acierto seguro y ayudarán a crear un ambiente desenfadado y divertido en el que todo el mundo lo va a pasar fenomenal.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Seguridad', 'Contrata seguridad o ten en cuenta cualquier elemento de seguridad que necesite tu fiesta.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Personal de limpieza', 'Recuerda reservar un equipo de limpieza para cuando tu fiesta haya terminado.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Mesa central', 'Una mesa en el centro del salón o bien en un extremo de este con diversos bocadillos que puedan servir de tentempié es muy buena opción.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Importancia de la mesa', 'La mesa es el punto fuerte de la fiesta y el foco principal al que prestar atención. No nos engañemos, por muy bonito que queramos dejar el espacio donde se celebre, la magia sucede en la mesa.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Mesa para regalos', 'A lado de la mesa de bocadillos se puede colocar una mesa más para los regalos, esta debe estar decorada también con algún mantel distintivo, la pared también debe estar decorada con figuras que representen esa celebración.');
+insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Música acorde', 'Elige música que vaya acorde con lo que se está celebrando, respetar los motivos de la celebración es vital.');

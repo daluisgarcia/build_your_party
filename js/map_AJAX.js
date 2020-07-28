@@ -102,13 +102,13 @@ document.getElementById('search-btn').addEventListener('click', function (event)
                 makeMarker({lat: latitud, lng: longitud});
                 //Estructura del HTML
                 let row = document.createElement('div');
-                row.classList.add('row');
+                row.classList.add('container-fluid');
                 let name = document.createElement('div');
                 name.classList.add("h2", "mx-auto", "my-3");
                 name.innerText = data[0].nombre;
                 let dat = document.createElement('div');
-                dat.classList.add("h5", "mx-auto", "mb-3");
-                dat.innerText = data[0].persona;
+                dat.classList.add("mx-auto", "mb-3");
+                dat.innerHTML = '<b>Responsable</b>: '+data[0].persona;
                 row.appendChild(name);
                 row.appendChild(dat);
                 let btnContainer = document.createElement('div');
@@ -148,7 +148,36 @@ function selectDrops(){
 }
 
 function selectReligion(){
+    let peticion = new XMLHttpRequest()
+    let params = `religion=all`   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
+    peticion.open('GET', `./getSites.php?${params}`)
 
+    peticion.send()
+
+    //loader.classList.add('active');
+
+    peticion.onreadystatechange = function () {
+        if (peticion.readyState == 4 && peticion.status == 200) {
+            //loader.classList.remove('active')
+        }
+    }
+
+    peticion.onload = function () {
+        let data = JSON.parse(peticion.responseText)
+        if(!data.error) {
+            let dropReligion = document.getElementById('religion-select');
+            removeAllChilds(dropReligion);
+            for(d in data){
+                let op = document.createElement('option');
+                op.value = data[d].id;
+                op.innerText = data[d].nombre;
+                dropReligion.appendChild(op);
+            }
+            selectMunicipio();
+        }else{
+            alert('Error al cargar las religiones');
+        }
+    }
 }
 
 function selectEstado(){

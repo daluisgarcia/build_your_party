@@ -45,6 +45,17 @@ if(!empty($id) and empty($tipo)){
         }catch (PDOException $e){
             $answer =  ['error' => NO_CONTENT_FOUND];
         }
+    }elseif (!empty($religion) and $religion === 'all'){
+        try {
+            include_once 'model/MapSQL.php';
+            $connect = new MapSQL();
+
+            $religion = SANITIZE_STRING(strtolower($religion));
+            $answer = $connect->get_religions();
+
+        }catch (PDOException $e){
+            $answer =  ['error' => NO_CONTENT_FOUND];
+        }
     }else{
         $answer = ['error' => NO_CONTENT_FOUND];
     }

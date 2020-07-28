@@ -38,9 +38,7 @@
                     </div>
                     <label id="religion-label" for="religion-select" class="m-1 d-none">Religión</label>
                     <select id="religion-select" class="form-control d-none">
-                        <option selected>Católica</option>
-                        <option>Islamismo</option>
-                        <option>Judaismo</option>
+
                     </select>
                     <label for="estado-select" class="m-1 ml-2">Estado</label>
                     <select id="estado-select" class="form-control" onchange="selectMunicipio()">
@@ -63,10 +61,8 @@
                     <div id="map"></div>
                 </div>
                 <div id="site-info" class="col-5">
-                    <div class="row">
-                        <div class="h2 mx-auto my-3">
-                            Selecciona tu lugar más cercano
-                        </div>
+                    <div class="container-fluid">
+                        <div class="h2 mx-auto my-3">Selecciona tu lugar más cercano</div>
                     </div>
                 </div>
             </div>
@@ -75,7 +71,7 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <script onload="selectEstado()" src="./js/map_AJAX.js"></script>
+    <script onload="selectDrops()" src="./js/map_AJAX.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClfbbh8JE6nwS1RGlIPO2djKvqUFZ-Vhk&callback=initMap" type="text/javascript"></script>
 </body>
 </html>

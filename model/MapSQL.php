@@ -34,10 +34,19 @@ class MapSQL extends Connection
         //PREPARACION DEL QUERY
         $statement = '';
         if($religion === ''){
-            $statement = $this->con->prepare("SELECT a.id_$table as id, a.nombre_$table as nombre, c.x_coordenada as latitud, c.y_coordenada as longitud, p.nombre_persona as persona FROM $table AS a JOIN COORDENADA AS c ON c.id_coordenada=a.id_$table JOIN PERSONA AS p ON a.fk_persona=p.cedula_persona WHERE a.fk_lugar=$id_site;");
+            $statement = $this->con->prepare("SELECT a.id_$table as id, a.nombre_$table as nombre, c.x_coordenada as latitud, c.y_coordenada as longitud, concat(p.nombre_persona, ' ',p.apellido_persona) as persona FROM $table AS a JOIN COORDENADA AS c ON c.id_coordenada=a.id_$table JOIN PERSONA AS p ON a.fk_persona=p.cedula_persona WHERE a.fk_lugar=$id_site;");
         }else{
             $statement = $this->con->prepare("SELECT id_lugar as id, nombre_lugar as nombre FROM $this->site_table WHERE fk_lugar=$id_site");
         }
+        //EJECUCION DEL QUERY
+        $statement->execute();
+        // El metodo fetch nos va a devolver el resultado o false en caso de que no haya resultado.
+        return $statement->fetchAll();
+    }
+
+    public function get_religions(){
+        //PREPARACION DEL QUERY
+        $statement = $this->con->prepare("SELECT id_religion as id, nombre_religion as nombre FROM $this->religion_table");
         //EJECUCION DEL QUERY
         $statement->execute();
         // El metodo fetch nos va a devolver el resultado o false en caso de que no haya resultado.
