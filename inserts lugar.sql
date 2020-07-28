@@ -2047,3 +2047,6 @@ SELECT lpp.nombre_lugar as 'Nombre Estado',
 
 use atf;
 select * from lugar where tipo_lugar = 'ESTADO';
+
+select l.id_lugar as i_parr, l.nombre_lugar as parroquia, l2.nombre_lugar as estado from lugar l, lugar l2, lugar l3 where l.fk_lugar = l3.id_lugar and l3.fk_lugar = l2.id_lugar order by l2.nombre_lugar;
+select distinct count(l.nombre_lugar) as cant_parr, l2.nombre_lugar as estado from lugar l, lugar l2, lugar l3 where l.fk_lugar = l3.id_lugar and l3.fk_lugar = l2.id_lugar group by l2.nombre_lugar;

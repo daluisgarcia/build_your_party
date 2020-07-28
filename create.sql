@@ -119,6 +119,7 @@ CREATE TABLE IF NOT EXISTS TEMPLO(
 CREATE TABLE IF NOT EXISTS PROVEEDOR(
     id_proveedor INT NOT NULL auto_increment,
     nombre_proveedor VARCHAR(50) NOT NULL,
+    tipo_proveedor varchar(15) not null check(tipo_proveedor IN ('FLORES', 'ALIMENTOS', 'OTRO')),
     fk_lugar INT NOT NULL,
     PRIMARY KEY(id_proveedor),
     FOREIGN KEY(fk_lugar) REFERENCES LUGAR(id_lugar)
