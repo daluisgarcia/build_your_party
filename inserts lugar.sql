@@ -2046,4 +2046,5 @@ SELECT lpp.nombre_lugar as 'Nombre Estado',
        GROUP BY lpp.nombre_lugar;
 
 use atf;
-select * from lugar where tipo_lugar = 'ESTADO';
+select l.id_lugar as ID, l.nombre_lugar as Nombre, l.tipo_lugar as TIPO, ld.nombre_lugar as 'Nombre Superior', ld.tipo_lugar as 'Tipo Superior', ldd.nombre_lugar as 'Nombre Mas Superior', ldd.tipo_lugar as 'Tipo Mas Superior' from lugar as l join lugar as ld on l.fk_lugar=ld.id_lugar left join lugar as ldd on ld.fk_lugar=ldd.id_lugar where l.nombre_lugar LIKE '%bolivar%';
+select l.id_lugar as ID, l.nombre_lugar as Nombre, l.tipo_lugar as TIPO from lugar as l where l.nombre_lugar LIKE '%tinaco%';

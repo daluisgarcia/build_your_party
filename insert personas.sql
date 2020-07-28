@@ -238,6 +238,31 @@ insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_per
 insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765571, 'Ximena', 'Estrada', 'null', 24);
 insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765572, 'Arya', 'Ortega', 'AryaOrtega8@yahoo.com', 24);
 insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (25765573, 'Leilani', 'Watkins', 'LeilaniWatkins6@yahoo.com', 24);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780890, 'Asdruval', 'Perez', 'asdruvalperez5@yahoo.com', 368);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780891, 'Arisobulo', 'Gonzalez', 'aristobulogonzalez5@yahoo.com', 382);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780892, 'Delcys', 'Navarra', 'delcysn5@yahoo.com', 415);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780893, 'Daniel', 'Zamora', 'danielzamora5@yahoo.com', 484);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780894, 'Agustin', 'Soto', 'agustinsoto313@yahoo.com', 519);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780895, 'Erika', 'Farias', 'erikafarias80@yahoo.com', 578);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780896, 'Asdruval', 'Chavez', 'asdruvalchaves45@yahoo.com', 600);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780897, 'Hugo', 'Sanchez', 'hugosanz=chez@yahoo.com', 676);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780898, 'Wilker', 'Perez', 'wilkerperez5@yahoo.com', 699);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780899, 'Leonardo', 'Chirinos', 'leochirinos23@yahoo.com', 719);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780900, 'Elsan', 'Guchito', 'elsanguchito@yahoo.com', 789);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780901, 'Elsa', 'patito', 'elsapatitos@yahoo.com', 823);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780902, 'Alan', 'Brito', 'alanbritogonzales@yahoo.com', 852);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780903, 'Nicolas', 'Perez', 'nicoperez5@yahoo.com', 901);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780904, 'Franco', 'Cumares', 'francocumares@yahoo.com', 997);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780905, 'Diego', 'Gavidia', 'diegogavidia@yahoo.com', 1055);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780906, 'Armando', 'Paredes', 'armandoparedes@yahoo.com', 1085);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780907, 'Cecilio', 'Perez', 'cecilioperez5@yahoo.com', 1110);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780908, 'Astrid', 'Nieves', 'astridnieves@yahoo.com', 1183);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780909, 'Cesar', 'Gonzales', 'cesargonza@yahoo.com', 1258);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780910, 'Cornelio', 'Perez', 'cornelioperez@yahoo.com', 1351);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780911, 'Francisco', 'Franco', 'franciscofranco@yahoo.com', 1371);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780912, 'Cesar', 'Soto', 'sotocesar@yahoo.com', 1388);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27780913, 'Daniel', 'Perez', 'danielperez@yahoo.com', 1453);
+
 
 #usuarios
 insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'LiamSmit9', 'Kicker88$$', 25765334);

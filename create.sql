@@ -246,8 +246,8 @@ constraint fk_lugar_notaria foreign key (fk_lugar) references LUGAR (id_lugar));
 
 create table if not exists COORDENADA (
 id_coordenada int not null auto_increment,
-x_coordenada int not null,
-y_coordenada int not null,
+x_coordenada float not null,
+y_coordenada float not null,
 fk_jefatura int,
 fk_templo int,
 fk_notaria int,
