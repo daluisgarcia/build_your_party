@@ -494,8 +494,8 @@ constraint fk3 FOREIGN KEY (fk_detalle_compra_3) REFERENCES DETALLE_COMPRA (fk_o
 
 CREATE TABLE IF NOT EXISTS TELEFONO(
     id_telefono INT NOT NULL auto_increment,
-    codigo_area_telefono TINYINT NOT NULL,
-    numero_telefono TINYINT NOT NULL,
+    codigo_area_telefono INT NOT NULL,
+    numero_telefono LONG NOT NULL,
     fk_templo INT,
     fk_notaria INT,
     fk_jefatura INT,
