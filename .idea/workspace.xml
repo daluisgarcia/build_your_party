@@ -20,13 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3d9412f-d832-42ed-9e83-6e44df7bd0b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/products_AJAX.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_search.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/dist/img/person_outline-white.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inserts lugar.sql" beforeDir="false" afterPath="$PROJECT_DIR$/inserts lugar.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products.php" beforeDir="false" afterPath="$PROJECT_DIR$/products.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/products.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/products.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/index2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/index3.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,8 +159,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\build_your_party\view" />
+      <recent name="C:\wamp64\www\build_your_party\admin\dist\img" />
       <recent name="C:\wamp64\www\build_your_party" />
+      <recent name="C:\wamp64\www\build_your_party\view" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -183,7 +182,12 @@
       <workItem from="1595276461077" duration="285000" />
       <workItem from="1595340918097" duration="3542000" />
       <workItem from="1595457094644" duration="631000" />
-      <workItem from="1595532780494" duration="13844000" />
+      <workItem from="1595532780494" duration="14726000" />
+      <workItem from="1595607105717" duration="20676000" />
+      <workItem from="1595724286796" duration="1070000" />
+      <workItem from="1595811343205" duration="756000" />
+      <workItem from="1595858324322" duration="19146000" />
+      <workItem from="1595951940279" duration="3032000" />
     </task>
     <servers />
   </component>
@@ -210,22 +214,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1594872479621" />
+    <state x="108" y="13" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1595900497721">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="108" y="13" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1595900497721" />
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595953129522">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1595953129522" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1594871948615">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594871948615" />
-    <state x="486" y="87" key="NewPhpClassDialog" timestamp="1595097252085">
+    <state x="486" y="87" key="NewPhpClassDialog" timestamp="1595901570194">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="486" y="87" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1595097252085" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1595562518339">
+    <state x="486" y="87" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1595901570194" />
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1595901589375">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1595562518339" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1595535498034">
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1595901589375" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1595634896503">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1595535498034" />
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1595634896503" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1595120437812">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
