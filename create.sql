@@ -77,6 +77,7 @@ CREATE TABLE IF NOT EXISTS SALON_FIESTA(
     id_servicio INT NOT NULL auto_increment,
  	capacidad_salon_fiesta INT NOT NULL,
  	vigilancia_salon_fiesta VARCHAR(20),
+    tipo_salon_fiesta varchar(15) check(tipo_salon_fiesta IN('RESTAURANT','SALON','OTRO')),
   	fk_lugar INT NOT NULL,
   	PRIMARY KEY(id_servicio),
  	FOREIGN KEY(fk_lugar) REFERENCES LUGAR(id_lugar),
@@ -245,7 +246,7 @@ fk_lugar int not null,
 fk_persona int not null,
 primary key (id_notaria),
 constraint fk_lugar_notaria foreign key (fk_lugar) references LUGAR (id_lugar),
-constraint fk_persona_jefatura foreign key (fk_persona) references PERSONA (cedula_persona));
+constraint fk_persona_notaria foreign key (fk_persona) references PERSONA (cedula_persona));
 
 create table if not exists COORDENADA (
 id_coordenada int not null auto_increment,
@@ -503,7 +504,7 @@ CREATE TABLE IF NOT EXISTS TELEFONO(
     fk_salon INT,
     PRIMARY KEY(id_telefono),
     FOREIGN KEY(fk_templo) REFERENCES TEMPLO(id_templo),
-    FOREIGN KEY(fk_notaria) REFERENCES JEFATURA(id_notaria),
+    FOREIGN KEY(fk_notaria) REFERENCES NOTARIA(id_notaria),
     FOREIGN KEY(fk_jefatura) REFERENCES JEFATURA(id_jefatura),
     FOREIGN KEY(fk_persona) REFERENCES PERSONA(cedula_persona),
     FOREIGN KEY(fk_proveedor) REFERENCES PROVEEDOR(id_proveedor),
