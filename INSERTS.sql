@@ -2697,7 +2697,7 @@ insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_t
 insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Mezquita Pul-e Khishti', 'www.Mezquita_Pul-e_Khishti.ve', 'Mezquita.Pul-e.Khishti@yahoo.com', 'null', 14837351, 5, 395);
 insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Catedral Basílica de Santa Ana', 'www.Catedral_Basílica_de_Santa_Ana.ve', 'Catedral.Basílica.de.Santa.Ana@yahoo.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Catedral Basílica de Santa Ana', 14837352, 1, 411);
 insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Shevet Achim sinagoga', 'www.Shevet_Achim_sinagoga.com', 'Shevet.Achim.sinagoga@gmail.com', 'null', 14837353, 2, 412);
-insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Tōdai-ji', 'www.Tōdai-ji.ve', 'Tōdai-ji@gmail.com', 'null', 14837354, 3, 413);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Todaiji', 'www.Todai-ji.ve', 'Todai-ji@gmail.com', 'null', 14837354, 3, 413);
 insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Akshardham', 'www.Akshardham.com', 'Akshardham@gmail.com', 'null', 14837355, 4, 414);
 insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Mezquita de Haji Abdul Rahman', 'www.Mezquita_de_Haji_Abdul_Rahman.ve', 'Mezquita.de.Haji.Abdul.Rahman@yahoo.com', 'null', 14837356, 5, 415);
 insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Catedral de Nuestra Señora del Pilar', 'www.Catedral_de_Nuestra_Señora_del_Pilar.org', 'Catedral.de.Nuestra.Señora.del.Pilar@yahoo.com', 'null', 14837357, 1, 469);
@@ -2728,7 +2728,7 @@ insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_t
 insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Catedral de San Jorge', 'www.Catedral_de_San_Jorge.org', 'Catedral.de.San.Jorge@yahoo.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Catedral de San Jorge', 14837382, 1, 685);
 insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Sinagoga de El Ghriba', 'www.Sinagoga_de_El_Ghriba.bet', 'Sinagoga.de.El.Ghriba@yahoo.com', 'null', 14837383, 2, 686);
 insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Paro Taktsang', 'www.Paro_Taktsang.org', 'Paro.Taktsang@yahoo.com', 'null', 14837384, 3, 696);
-insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Templo de Kailāsanātha', 'www.Templo_de_Kailāsanātha.com', 'Templo.de.Kailāsanātha@gmail.com', 'null', 14837385, 4, 697);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Templo de Kailasanatha', 'www.Templo_de_Kailasanatha.com', 'Templo.de.Kailasanatha@gmail.com', 'null', 14837385, 4, 697);
 insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Mezquita del Rey Saúd', 'www.Mezquita_del_Rey_Saúd.com', 'Mezquita.del.Rey.Saúd@gmail.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Mezquita del Rey Saúd', 14837386, 5, 698);
 insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Catedral de Santa Elena', 'www.Catedral_de_Santa_Elena.com', 'Catedral.de.Santa.Elena@yahoo.com', 'null', 14837387, 1, 700);
 insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Zarzis Sinagoga', 'www.Zarzis_Sinagoga.com', 'Zarzis.Sinagoga@yahoo.com', 'null', 14837388, 2, 701);
@@ -2747,8 +2747,8 @@ insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_t
 insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Gran Mezquita de Argel', 'www.Gran_Mezquita_de_Argel.ve', 'Gran.Mezquita.de.Argel@yahoo.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Gran Mezquita de Argel', 14837401, 5, 724);
 insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Catedral de Santo Tomás', 'www.Catedral_de_Santo_Tomás.com', 'Catedral.de.Santo.Tomás@gmail.com', 'null', 14837402, 1, 804);
 insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Tiferet Israel', 'www.Tiferet_Israel.com', 'Tiferet.Israel@yahoo.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Tiferet Israel', 14837403, 2, 805);
-insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Trấn Quốc', 'www.Trấn_Quốc.com', 'Trấn.Quốc@yahoo.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Trấn Quốc', 14837404, 3, 806);
-insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Templo de Liṅgarāja', 'www.Templo_de_Liṅgarāja.com', 'Templo.de.Liṅgarāja@gmail.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Templo de Liṅgarāja', 14837405, 4, 807);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Tran Quoc', 'www.Tran_Quoc.com', 'Tran.Quoc@yahoo.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Tran Quoc', 14837404, 3, 806);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Templo de Lingaraja', 'www.Templo_de_Lingaraja.com', 'Templo.de.Lija@gmail.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Templo de Lingaraja', 14837405, 4, 807);
 insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Mezquita de Ketchaoua', 'www.Mezquita_de_Ketchaoua.com', 'Mezquita.de.Ketchaoua@yahoo.com', 'null', 14837406, 5, 808);
 insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Basílica Menor Santa Capilla', 'www.Basílica_Menor_Santa_Capilla.org', 'Basílica.Menor.Santa.Capilla@yahoo.com', 'null', 14837407, 1, 1364);
 insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Asociación de Bet El', 'www.Asociación_de_Bet_El.com', 'Asociación.de.Bet.El@yahoo.com', 'null', 14837408, 2, 1365);
@@ -2782,9 +2782,28 @@ insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_t
 insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Mezquita Raschid', 'www.Mezquita_Raschid.ve', 'Mezquita.Raschid@gmail.com', 'null', 14837436, 5, 1089);
 insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Basílica del Espíritu Santo', 'www.Basílica_del_Espíritu_Santo.com', 'Basílica.del.Espíritu.Santo@yahoo.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Basílica del Espíritu Santo', 14837437, 1, 1107);
 insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Beit Kneset Cohanim HaDintreisa', 'www.Beit_Kneset_Cohanim_HaDintreisa.org', 'Beit.Kneset.Cohanim.HaDintreisa@gmail.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Beit Kneset Cohanim HaDintreisa', 14837438, 2, 1108);
-insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Gangtey', 'www.Gangtey.org', 'Gangtey@yahoo.com', 'null', 14837439, 3, 1109);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Gangtey', 'www.Gangtey.org', 'Gangtey@yahoo.com', 'null', 14837439, 3, 1109);#PERSONAS DISEÑADORAS
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27123555, 'Edna', 'Moda', 'null', 1);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27123554, 'Randy', 'Gómez', 'randygomez2@yahoo.com', 2);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27123553, 'Pnina', 'Tornai', 'pninatornai@pininadresses.com', 3);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27123552, 'Susana', 'Horia', 'null', 4);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (27123551, 'Francisco', 'Sorano', 'null', 5);
+
+#CORTE Y COSTURA (CONVIERTE A LAS PERSONAS EN DISEÑADORES)
+insert into CORTE_Y_COSTURA(cedula_persona, rol_cyc) value (27123555, 'disenador');
+insert into CORTE_Y_COSTURA(cedula_persona, rol_cyc) value (27123554, 'disenador');
+insert into CORTE_Y_COSTURA(cedula_persona, rol_cyc) value (27123553, 'disenador');
+insert into CORTE_Y_COSTURA(cedula_persona, rol_cyc) value (27123552, 'disenador');
+insert into CORTE_Y_COSTURA(cedula_persona, rol_cyc) value (27123551, 'disenador');
+
+#TRABAJO_CYC
+insert into TRABAJO_CYC(id_trabajo_cyc, nombre_trabajo_cyc, tiempo_realizacion_trabajo_cyc, tipo_tela_trabajo_cyc, fk_cyc) value (null, 'Super Traje', 3, 'Poliester' , 27123555);
+insert into TRABAJO_CYC(id_trabajo_cyc, nombre_trabajo_cyc, tiempo_realizacion_trabajo_cyc, tipo_tela_trabajo_cyc, fk_cyc) value (null, 'Sofia', 5, 'Organza' , 27123554);
+insert into TRABAJO_CYC(id_trabajo_cyc, nombre_trabajo_cyc, tiempo_realizacion_trabajo_cyc, tipo_tela_trabajo_cyc, fk_cyc) value (null, 'Atena', 4, 'Organza' , 27123553);
+insert into TRABAJO_CYC(id_trabajo_cyc, nombre_trabajo_cyc, tiempo_realizacion_trabajo_cyc, tipo_tela_trabajo_cyc, fk_cyc) value (null, 'Anays', 5, 'Seda' , 27123552);
+insert into TRABAJO_CYC(id_trabajo_cyc, nombre_trabajo_cyc, tiempo_realizacion_trabajo_cyc, tipo_tela_trabajo_cyc, fk_cyc) value (null, 'Artemisa', 8, 'Pashmina' , 27123551);
 insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Teli ka Mandir', 'www.Teli_ka_Mandir.org', 'Teli.ka.Mandir@yahoo.com', 'null', 14837440, 4, 1110);
-insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Mezquita de Bad Vöslau', 'www.Mezquita_de_Bad_Vöslau.bet', 'Mezquita.de.Bad.Vöslau@gmail.com', 'null', 14837441, 5, 1111);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Mezquita de Bad Voslau', 'www.Mezquita_de_Bad_Vlau.bet', 'Mezquita.de.Bad.Vlau@gmail.com', 'null', 14837441, 5, 1111);
 insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Catedral de San Cristóbal', 'www.Catedral_de_San_Cristóbal.ve', 'Catedral.de.San.Cristóbal@yahoo.com', 'null', 14837442, 1, 1148);
 insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Luis de Torres Sinagoga', 'www.Luis_de_Torres_Sinagoga.org', 'Luis.de.Torres.Sinagoga@yahoo.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Luis de Torres Sinagoga', 14837443, 2, 1149);
 insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Kopan', 'www.Kopan.com', 'Kopan@yahoo.com', 'null', 14837444, 3, 1150);
@@ -2794,7 +2813,7 @@ insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_t
 insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('O Meir', 'www.O_Meir.org', 'O.Meir@gmail.com', 'null', 14837448, 2, 1208);
 insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Thean Hou', 'www.Thean_Hou.ve', 'Thean.Hou@yahoo.com', 'null', 14837449, 3, 1209);
 insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Templo de Brahma', 'www.Templo_de_Brahma.com', 'Templo.de.Brahma@yahoo.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Templo de Brahma', 14837450, 4, 1210);
-insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Bibi-Heybet Məscidi', 'www.Bibi-Heybet_Məscidi.org', 'Bibi-Heybet.Məscidi@yahoo.com', 'null', 14837451, 5, 1211);
+insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Bibi-Heybet Mescidi', 'www.Bibi-Heybet_Mescidi.org', 'Bibi-Heybet.Mescidi@yahoo.com', 'null', 14837451, 5, 1211);
 insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Basílica del Santo Cristo de la Gracia', 'www.Basílica_del_Santo_Cristo_de_la_Gracia.com', 'Basílica.del.Santo.Cristo.de.la.Gracia@gmail.com', 'null', 14837452, 1, 1271);
 insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Mishkán - Centro de Espiritualidad Judía', 'www.Mishkán_-_Centro_de_Espiritualidad_Judía.org', 'Mishkán.-.Centro.de.Espiritualidad.Judía@gmail.com', 'null', 14837453, 2, 1272);
 insert into TEMPLO(nombre_templo, pagina_web_templo, email_templo, descripcion_templo, fk_persona, fk_religion, fk_lugar) value ('Shwedagon pagoda', 'www.Shwedagon_pagoda.org', 'Shwedagon.pagoda@yahoo.com', 'Celebra con tus seres queridos y encuentrate a ti mismo en Shwedagon pagoda', 14837454, 3, 1273);
@@ -3108,3 +3127,998 @@ insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, '
 insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Importancia de la mesa', 'La mesa es el punto fuerte de la fiesta y el foco principal al que prestar atención. No nos engañemos, por muy bonito que queramos dejar el espacio donde se celebre, la magia sucede en la mesa.');
 insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Mesa para regalos', 'A lado de la mesa de bocadillos se puede colocar una mesa más para los regalos, esta debe estar decorada también con algún mantel distintivo, la pared también debe estar decorada con figuras que representen esa celebración.');
 insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Música acorde', 'Elige música que vaya acorde con lo que se está celebrando, respetar los motivos de la celebración es vital.');
+
+#CATEGORIA
+insert into CATEGORIA(id_categoria, nombre_categoria, fk_categoria) value(null, 'Tarjeteria', null);
+insert into CATEGORIA(id_categoria, nombre_categoria, fk_categoria) value(null, 'Accesorios', null);
+insert into CATEGORIA(id_categoria, nombre_categoria, fk_categoria) value(null, 'Recuerdos', null);
+insert into CATEGORIA(id_categoria, nombre_categoria, fk_categoria) value(null, 'Musica', null);
+insert into CATEGORIA(id_categoria, nombre_categoria, fk_categoria) value(null, 'Comida', null);
+insert into CATEGORIA(id_categoria, nombre_categoria, fk_categoria) value(null, 'Bebida', null);
+insert into CATEGORIA(id_categoria, nombre_categoria, fk_categoria) value(null, 'Mobiliario', null);
+insert into CATEGORIA(id_categoria, nombre_categoria, fk_categoria) value(null, 'Utileria', null);
+insert into CATEGORIA(id_categoria, nombre_categoria, fk_categoria) value(null, 'Flores', null);
+insert into CATEGORIA(id_categoria, nombre_categoria, fk_categoria) value(null, 'Decoracion', null);
+insert into CATEGORIA(id_categoria, nombre_categoria, fk_categoria) value(null, 'Entretenimiento', null);
+insert into CATEGORIA(id_categoria, nombre_categoria, fk_categoria) value(null, 'Salones de Fiesta', null);
+insert into CATEGORIA(id_categoria, nombre_categoria, fk_categoria) value(null, 'Fotografia', null);
+insert into CATEGORIA(id_categoria, nombre_categoria, fk_categoria) value(null, 'Protocolo', null);
+insert into CATEGORIA(id_categoria, nombre_categoria, fk_categoria) value(null, 'Transporte', null);
+insert into CATEGORIA(id_categoria, nombre_categoria, fk_categoria) value(null, 'Otros', null);
+insert into CATEGORIA(id_categoria, nombre_categoria, fk_categoria) value(null, 'Accesorios para novia', 2);
+insert into CATEGORIA(id_categoria, nombre_categoria, fk_categoria) value(null, 'Accesorios para XV', 2);
+insert into CATEGORIA(id_categoria, nombre_categoria, fk_categoria) value(null, 'Bandas', 4);
+insert into CATEGORIA(id_categoria, nombre_categoria, fk_categoria) value(null, 'DJ', 4);
+insert into CATEGORIA(id_categoria, nombre_categoria, fk_categoria) value(null, 'Pianista', 4);
+insert into CATEGORIA(id_categoria, nombre_categoria, fk_categoria) value(null, 'Mariachis', 4);
+insert into CATEGORIA(id_categoria, nombre_categoria, fk_categoria) value(null, 'Mesas', 7);
+insert into CATEGORIA(id_categoria, nombre_categoria, fk_categoria) value(null, 'Sillas', 7);
+insert into CATEGORIA(id_categoria, nombre_categoria, fk_categoria) value(null, 'Bouquets', 10);
+insert into CATEGORIA(id_categoria, nombre_categoria, fk_categoria) value(null, 'Boutonnieres', 10);
+insert into CATEGORIA(id_categoria, nombre_categoria, fk_categoria) value(null, 'Vestidos', 10);
+insert into CATEGORIA(id_categoria, nombre_categoria, fk_categoria) value(null, 'Mobiliario de festejo', 7);
+insert into CATEGORIA(id_categoria, nombre_categoria, fk_categoria) value(null, 'Mobiliario Longue', 7);
+insert into CATEGORIA(id_categoria, nombre_categoria, fk_categoria) value(null, 'Pasapalo', 5);
+insert into CATEGORIA(id_categoria, nombre_categoria, fk_categoria) value(null, 'Mini Dulces', 5);
+insert into CATEGORIA(id_categoria, nombre_categoria, fk_categoria) value(null, 'Mobiliario de acrílico y cristal', 7);
+insert into CATEGORIA(id_categoria, nombre_categoria, fk_categoria) value(null, 'Toldos, pistas, tarimas y baños', null);
+insert into CATEGORIA(id_categoria, nombre_categoria, fk_categoria) value(null, 'Restaurantes', 12);
+
+#PRODUCTO
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Perro Caliente', 246000, 560, 'NO', null, 5);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Ron Cacique', 6589670, 130, 'NO', null, 6);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Cerveza Polar', 7589670, 130, 'NO', null, 6);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Rumbaron', 4589670, 130, 'NO', null, 6);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Anis Cartujo', 2000000, 130, 'NO', null, 6);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Vodka Glacial', 2000000, 130, 'NO', null, 6);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Hielo', 2192670, 130, 'NO', null, 6);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Silla Tiffanny', 3692670, 783, 'SI', null, 24);
+#COMIDA
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Perro Caliente', 246, 560, 'NO', null, 5);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Rol de sushi', 230, 560, 'NO', null, 5);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Hamburguesa tradicional', 80, 560, 'NO', null, 5);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Hamburguesa plus', 100, 560, 'NO', null, 5);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Sandwich deli', 80, 560, 'NO', null, 5);
+#MOBILIARIO DE FESTEJO
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mesa redonda 8 puestos', 90, 120, 'SI', null, 28);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Manteleria base y topes unicolores para infantiles', 120, 150, 'SI', null, 28);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Manteleria base y topes der lujo', 150, 150, 'SI', null, 28);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mesa cuadrada de teka 8 personas 1.20x1.20', 320, 150, 'SI', null, 28);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mesa cuadrada revestida de telas de colores', 350, 150, 'SI', null, 28);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Alquiler y montaje ganchos y apliques para mantelería triple', 80, 440, 'SI', null, 28);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Alquiler caminos de mesa para mesas cuadradas', 70, 150, 'SI', null, 28);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Alquiler caminos de mesa para mesas rectangulares', 75, 150, 'SI', null, 28);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mesa redonda para torta y dulces', 75, 150, 'SI', null, 28);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mantelería base y topes para mesa de torta infantiles', 120, 150, 'SI', null, 28);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Manteleria base y topes de lujo para mesas de torta', 150, 150, 'SI', null, 28);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mesón tradicional rectangular', 110, 150, 'SI', null, 28);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mantel y faldón para mesón rectangular', 150, 150, 'SI', null, 28);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Silla parís sola', 8, 150, 'SI', null, 28);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Silla parís con forro', 15, 150, 'SI', null, 28);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Silla parís con forro y lazo', 20, 150, 'SI', null, 28);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Silla tiffany dorada sin lazo', 22, 150, 'SI', null, 28);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Silla tiffany plateada sin lazo', 35, 150, 'SI', null, 28);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Silla tiffany blanca sin lazo', 40, 150, 'SI', null, 28);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Lazo de razo para sillas tiffany', 10, 150, 'SI', null, 28);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Trenzado o montaje especial lazos sillas Tiffany', 6, 150, 'SI', null, 28);
+#Mobiliario Longe
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mesón rectangular blanco con la base marrón tabaco', 300, 150, 'SI', null, 29);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mesón rectangular revestido de telas', 450, 150, 'SI', null, 29);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mesa de estilo ultra lounge de madera colonial', 600, 150, 'SI', null, 29);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Puff elite semicuero blanco 1 sin espaldar', 60, 150, 'SI', null, 29);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Puff elite semicuero blanco 1 con espaldar', 70, 150, 'SI', null, 29);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Puff elite semicuero blanco 2 sin espaldar', 130, 150, 'SI', null, 29);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Puff elite redondo (4 puestos)', 350, 150, 'SI', null, 29);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Cama en semicuero blanca capitoneada', 380, 150, 'SI', null, 29);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mesa baja no iluminada color café', 80, 150, 'SI', null, 29);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mesa baja de madera wengue o blancas', 80, 150, 'SI', null, 29);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Divan en semicuero blanco para set fotográfico', 1200000, 150, 'SI', null, 29);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Barra de tragos iluminada blanca', 990, 150, 'SI', null, 29);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Barra de tragos iluminada luces led de colores', 1200000, 150, 'SI', null, 29);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mesa coctelera de aluminio', 95, 150, 'SI', null, 29);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Butacas', 180, 150, 'SI', null, 29);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Butacas Lounge con respaldar', 180, 150, 'SI', null, 29);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Chalse ultra lounge', 180, 150, 'SI', null, 29);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Sillas de estilo', 300, 150, 'SI', null, 29);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Puff clásico multiformas', 80, 150, 'SI', null, 29);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Puff clásico', 180, 150, 'SI', null, 29);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Maesa alta tipo coctel vestida con mantel y lazo', 180, 150, 'SI', null, 29);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mesa coctelera iluminada de 6 y 8 puestos', 750, 150, 'SI', null, 29);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Silla de altura tipo banqueta blanca', 100, 150, 'SI', null, 29);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Sombrilla 2,5x2,5 sin puerto de luz', 250, 150, 'SI', null, 29);
+#Pasapalos
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Tequeños doble queso', 7, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Tequeños capresa', 9, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Tequeños ricotta y espinaca', 9, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Tequeños salchichón y queso crema', 9, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Tequeños jamón y queso', 9, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Tequeños guayaba y queso', 9, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Tequeños plátano con queso', 9, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Tequeños manzana caramelizada con queso', 9, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Tequeños chocolate', 9, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Tequeños de nutella', 12, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Croqueta de papa', 6, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Croqueta de pescado', 7, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Croqueta de camarón', 9, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Croqueta de pollo', 7, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Croqueta de atún', 8.5, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Croqueta de salmón', 12, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Croqueta de cerdo y pistacho', 9, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Tartaleta de ajoporro', 6, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Tartaleta de crema de pimentón asado', 7, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Tartaleta de champiñones', 8, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Tartaleta de camarón', 9.5, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Tartaleta de atún', 8, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Tartaleta de anchoa', 9.5, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Tartaleta de salchichón', 6.5, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Shot de ceviche con fruta exótica', 12, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Shot de salpicón de mariscos', 12, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Shot de vieiras a la naranja', 13, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Shot de pescado thai', 12, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Shot de coctel de camarones', 12, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Shot de antipasto de berenjena', 10, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Shot de antipasto de pimentón', 10, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Shot de vegetales mixtos', 10, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Bolitas de queso con salsa de papelón', 10, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Kibbe frito', 7.5, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Falafel', 12, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Nugget de poññp', 12, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Salsa pequeña para 50 pasapalos', 50, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Salsa mediana para 100 pasapalos', 70, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Salsa grande para 200 pasapalos', 130, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mini pincho de jamón serrano y bolitas de melón', 14, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mini pincho de salmón y crujiente de yuca', 11, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mini pincho de jamón serrano y queso manchego', 8, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mini pincho de lomito', 8, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mini pincho de pollo', 9, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mini pincho mixto (carne y pollo)', 13, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mini pincho de langostino tempurizado', 12, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mini pincho de camarón y crujiente de arroz japonés', 6, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mini filet mignon', 8, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mini filet mignon de pollo', 7, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Bolitas de carne con centro de queso mozarella', 6, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Bolitas de pollo con centro de pistacho', 8, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Bolitas de carne de cerdo con centro de nuez', 12, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Bolitas de cangrejo', 9, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Bolitas de yuca y ricota', 10, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Champiñones rellenos de chorizo y aceitunas', 9, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Champiñones crocantes', 13, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Tomeates cherrys rellenos de mouse de atún', 13, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Tomates cherrys rellonos de mouse de camarones', 13, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mini Lumpias', 12, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mini cachapitas con queso', 6.5, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mini cachapitas con pernil', 7, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mini arepitas crujientes de reina', 7, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mini arepitas crujientes de pollo', 7, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mini arepitas crujientes de queso palmita', 7, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mini arepitas crujientes de queso gouda amarillo', 7, 150, 'SI', null, 30);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mini arepitas crujientes con carne mechada', 7, 150, 'SI', null, 30);
+#Mini Dulces
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mini Brownies', 12, 150, 'SI', null, 31);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mini tartaleta de frutas con crema pastelera', 14, 150, 'SI', null, 31);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mini tartaleta de frutas con chocolate', 14, 150, 'SI', null, 31);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mini tartaleta de limón', 15, 150, 'SI', null, 31);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mini tartaleta de nutella y fresas', 14, 150, 'SI', null, 31);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mini tartaleta de nutella o arequipe y almendras caramelizadas', 14, 150, 'SI', null, 31);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mini tartaleta de mouse de chocolate con merengue y pirulín', 15, 150, 'SI', null, 31);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mini shot de mouse de chocolate con merengue y pirulín', 15, 150, 'SI', null, 31);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mini shot de biscocho con culis de fresa y chantilly', 9, 150, 'SI', null, 31);
+#Mobiliario de acrílico y cristal
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mesa de vidrio cuadrada sin iluminación', 580, 600, 'SI', null, 32);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mesa de vidrio cuadrada iluminada', 650, 600, 'SI', null, 32);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mesa de vidrio rectangular sin iluminación', 600, 600, 'SI', null, 32);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mesa de vidrio rectangular iluminada', 700, 600, 'SI', null, 32);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mesa baja de acrílico transparente', 85, 600, 'SI', null, 32);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mesa coctelera de acrílico transparente con pasta cromada ajustable', 250, 600, 'SI', null, 32);
+#Utilería
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Platos planos redondos para buffet', 9, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Platos planos redondos de postre', 9, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Platos planos cuadrados para buffet', 9, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Platos planos cuadrados para postre', 9, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Bowl redondo tipo ensaladera o sopera', 9, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Taza para consomé o chupe con plato de base', 9, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Taza para café o té pequeñas', 9, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Vaso de vidrio 12 onzas', 8, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Copa de vino tinto o agua', 9, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Copa de vino blanco', 9, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Copa de champaña', 9, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Vaso tequilero', 5, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Copa de martini', 10, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Chiller para ceviche', 9, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Tenedor tamaño regular', 6, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Tenedor pequeño tipo lunch', 6, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Cuchillo', 6, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Cuchillo para quesos', 6, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Cuchara', 6, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Cucharilla de postre', 6, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Trinche para torta', 15, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Trinche para servir 3 cucharones 1 pinza', 15, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Cesta para pan de banquete con servilleta de tela', 15, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Hielera con pinzas', 40, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Jarra para agua o jugo', 15, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Cenicero', 5, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Cocina completa con utensillos sin aceite', 9, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Cocina completacon utensillos doble hornilla sin aceite', 260, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Depósito de hielo', 300, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Depósito de basura', 30, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Bandeja de pasapalos de porcelana', 20, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Bandeja para llevar 30 pasapalos', 50, 150, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Bandeja de servicio', 20, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mesonero, barman, cocinero por 7 horas', 750, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Chafing dish de acero sin quemadores', 200, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Termos dispensadores para jugos y bebidas transparentes', 200, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Vidrios, torres y cilindros para dulces y cupcakes', 50, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Tabla para queso', 15, 600, 'SI', null, 8);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Rejillas tipo parabán para delimitar área', 150, 600, 'SI', null, 8);
+#Toldos, pistas, tarimas y baños
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Toldo convencional liso 8x12', 4900, 600, 'SI', null, 33);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Toldo convencional liso 12x12', 9970, 600, 'SI', null, 33);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Toldo convencional liso 5x10', 3500, 600, 'SI', null, 33);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Toldo convencional liso 8x8', 3900, 600, 'SI', null, 33);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Toldo convencional liso 6x12', 4500, 600, 'SI', null, 33);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Toldo pequeño', 2500, 600, 'SI', null, 33);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Toldo convencional drapeado 8x12', 6900, 600, 'SI', null, 33);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Toldo convencional drapeado 12x12', 13800, 600, 'SI', null, 33);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Toldo convencional drapeado 5x12', 5800, 600, 'SI', null, 33);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Toldo convencional drapeado 8x8', 6000, 600, 'SI', null, 33);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Toldo convencional drapeado 6x12', 6900, 600, 'SI', null, 33);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Toldo convencional tipo gazebo', 5000, 600, 'SI', null, 33);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Toldo convencional tipo gazebo drapeado', 5000, 600, 'SI', null, 33);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Toldo transparente', 6000, 600, 'SI', null, 33);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Luces indirectas para toldos', 180, 600, 'SI', null, 33);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Luces tipo navidad para toldo transparente', 200, 600, 'SI', null, 33);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Canales para toldo', 200, 600, 'SI', null, 33);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Galones de colores para toldo', 250, 600, 'SI', null, 33);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Metro cuadrado de pista de baile', 280, 600, 'SI', null, 33);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Tarima 75 cm de altura', 280, 600, 'SI', null, 33);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Lonas laterales para toldos', 300, 600, 'SI', null, 33);
+#OTROS
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Mesonero', 850, 600, 'NO', null, 16);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Cocinero', 850, 600, 'NO', null, 16);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Sushero', 1000, 600, 'NO', null, 16);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Barman', 900, 600, 'NO', null, 16);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Operador de estación o carrito fiestero', 850, 600, 'NO', null, 16);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Agente de seguridad y vigilancia', 4500, 600, 'NO', null, 16);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Protocolo', 2500, 600, 'NO', null, 16);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Asesoría general del evento', 4000, 600, 'NO', null, 16);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Coordinador de montaje y desmontaje', 3500, 600, 'NO', null, 16);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Transporte de catering', 500, 600, 'NO', null, 16);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Transporte de festejo', 1000, 600, 'NO', null, 16);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Transporte de mobiliario ultra lounge (vidrio, acrílico y teka)', 1000, 600, 'NO', null, 16);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Transporte de toldos, pistas de baile y tarimas', 800, 600, 'NO', null, 16);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Recarga de transporte por ZONA FORÁNEA', 500, 600, 'NO', null, 16);
+insert into PRODUCTO(id_producto, nombre_producto, precio_producto, cantidad_disponible_producto, venta_ind_producto, descuento_producto, fk_categoria) value (null, 'Montaje y desmontaje', 400, 600, 'NO', null, 16);
+#SERVICIOS
+insert into SERVICIO(id_servicio, nombre_servicio, modalidad_pago_servicio, costo_servicio, precio_servicio, descuento_servicio, requiere_cita_servicio, detalles_servicio, fk_categoria) value(null, 'Carrito de Perros Calientes', 'CANTIDAD', 250000, 500000, null, 0, 'Los más increíbles perros calientes de Venezuela! Pide ya tu carrito', 5);
+insert into SERVICIO(id_servicio, nombre_servicio, modalidad_pago_servicio, costo_servicio, precio_servicio, descuento_servicio, requiere_cita_servicio, detalles_servicio, fk_categoria) value(null, 'Barra de bebidas', 'CANTIDAD', 580000, 700000, null, 0, 'La barra de bebidas perfecta para encender tu fiesta', 17);
+insert into SERVICIO(id_servicio, nombre_servicio, modalidad_pago_servicio, costo_servicio, precio_servicio, descuento_servicio, requiere_cita_servicio, detalles_servicio, fk_categoria) value(null, 'DJolman', 'HORA', 2500000, 3500000,  null, 0, 'DJolman le pondrá ritmo a tu fiesta! Con más de 10 años de experiencia en bodas', 20);
+insert into SERVICIO(id_servicio, nombre_servicio, modalidad_pago_servicio, costo_servicio, precio_servicio, descuento_servicio, requiere_cita_servicio, detalles_servicio, fk_categoria) value(null, 'Realiza tu vestido con Edna Moda', 'HORA', 0, 350000,  null, 1, 'De las diseñadoras más capaces a tu servicio, reserva tu cita ya!', 27);
+insert into SERVICIO(id_servicio, nombre_servicio, modalidad_pago_servicio, costo_servicio, precio_servicio, descuento_servicio, requiere_cita_servicio, detalles_servicio, fk_categoria) value(null, 'Payasita Lulu', 'HORA', 470000, 680000,  null, 0, 'La payasita más entretinida! Perfecta para fiestas infantiles', 11);
+insert into SERVICIO(id_servicio, nombre_servicio, modalidad_pago_servicio, costo_servicio, precio_servicio, descuento_servicio, requiere_cita_servicio, detalles_servicio, fk_categoria) value(null, 'Pianista Nadia', 'HORA', 470000, 680000,  null, 0, 'Pianista con más de 5 años de experiencia en bodas', 21);
+insert into SERVICIO(id_servicio, nombre_servicio, modalidad_pago_servicio, costo_servicio, precio_servicio, descuento_servicio, requiere_cita_servicio, detalles_servicio, fk_categoria) value(null, 'Limusina', 'NA', 1470000, 1680000,  null, 0, 'Perfecta para llevar a la novia o quinceañera!', 15);
+insert into SERVICIO(id_servicio, nombre_servicio, modalidad_pago_servicio, costo_servicio, precio_servicio, descuento_servicio, requiere_cita_servicio, detalles_servicio, fk_categoria) value(null, 'Robot bailarin hora loca', 'HORA', 470000, 680000,  null, 0, 'Para todo tipo de celebración, haz de la hora loca inolvidable!', 11);
+insert into SERVICIO(id_servicio, nombre_servicio, modalidad_pago_servicio, costo_servicio, precio_servicio, descuento_servicio, requiere_cita_servicio, detalles_servicio, fk_categoria) value(null, 'Estación de arepas', 'CANTIDAD', 0, 80, null, 0, 'Precio por persona. Incluye 2 arepas por persona', 5);
+insert into SERVICIO(id_servicio, nombre_servicio, modalidad_pago_servicio, costo_servicio, precio_servicio, descuento_servicio, requiere_cita_servicio, detalles_servicio, fk_categoria) value(null, 'Estación de cachapas', 'CANTIDAD', 0, 80, null, 0, 'Precio por persona. Incluye 2 cachapas por persona', 5);
+insert into SERVICIO(id_servicio, nombre_servicio, modalidad_pago_servicio, costo_servicio, precio_servicio, descuento_servicio, requiere_cita_servicio, detalles_servicio, fk_categoria) value(null, 'Estación de arepas y cachapas', 'CANTIDAD', 0, 180, null, 0, 'Precio por persona. Incluye 2 arepas y 1 cachapa por pesona', 5);
+insert into SERVICIO(id_servicio, nombre_servicio, modalidad_pago_servicio, costo_servicio, precio_servicio, descuento_servicio, requiere_cita_servicio, detalles_servicio, fk_categoria) value(null, 'Estación de pizzas', 'CANTIDAD', 0, 180, null, 0, 'Precio por persona. Incluye 2 pizzas 8" por persona', 5);
+insert into SERVICIO(id_servicio, nombre_servicio, modalidad_pago_servicio, costo_servicio, precio_servicio, descuento_servicio, requiere_cita_servicio, detalles_servicio, fk_categoria) value(null, 'Estación del mar', 'CANTIDAD', 0, 180, null, 0, 'Precio por persona', 5);
+insert into SERVICIO(id_servicio, nombre_servicio, modalidad_pago_servicio, costo_servicio, precio_servicio, descuento_servicio, requiere_cita_servicio, detalles_servicio, fk_categoria) value(null, 'Estación Thai', 'CANTIDAD', 0, 250, null, 0, 'Precio por persona', 5);
+insert into SERVICIO(id_servicio, nombre_servicio, modalidad_pago_servicio, costo_servicio, precio_servicio, descuento_servicio, requiere_cita_servicio, detalles_servicio, fk_categoria) value(null, 'Estación de sushi básica', 'NA', 0, 0, null, 0, 'Precio por rol', 5);
+insert into SERVICIO(id_servicio, nombre_servicio, modalidad_pago_servicio, costo_servicio, precio_servicio, descuento_servicio, requiere_cita_servicio, detalles_servicio, fk_categoria) value(null, 'Montaje de mesa mini dulces', 'NA', 0, 900, null, 0, '', 5);
+insert into SERVICIO(id_servicio, nombre_servicio, modalidad_pago_servicio, costo_servicio, precio_servicio, descuento_servicio, requiere_cita_servicio, detalles_servicio, fk_categoria) value(null, 'Estación de hamburguesas', 'NA', 0, 0, null, 0, 'Precio por hamburguesa', 5);
+insert into SERVICIO(id_servicio, nombre_servicio, modalidad_pago_servicio, costo_servicio, precio_servicio, descuento_servicio, requiere_cita_servicio, detalles_servicio, fk_categoria) value(null, 'Estación de hamburguesas plus', 'NA', 0, 0, null, 0, 'Precio por hamburguesa', 5);
+insert into SERVICIO(id_servicio, nombre_servicio, modalidad_pago_servicio, costo_servicio, precio_servicio, descuento_servicio, requiere_cita_servicio, detalles_servicio, fk_categoria) value(null, 'Estación de Sandwiches deli', 'NA', 0, 0, null, 0, 'Precio por sandwich', 5);
+insert into SERVICIO(id_servicio, nombre_servicio, modalidad_pago_servicio, costo_servicio, precio_servicio, descuento_servicio, requiere_cita_servicio, detalles_servicio, fk_categoria) value(null, 'Estación de Crepes', 'CANTIDAD', 0, 180, null, 0, 'Precio por persona. Incluye 2 crepes por persona', 5);
+insert into SERVICIO(id_servicio, nombre_servicio, modalidad_pago_servicio, costo_servicio, precio_servicio, descuento_servicio, requiere_cita_servicio, detalles_servicio, fk_categoria) value(null, 'Realiza tu vestido con Randi Gómez', 'HORA', 0, 350000,  null, 1, 'De los diseñadores más capaces a tu servicio, reserva tu cita ya!', 27);
+insert into SERVICIO(id_servicio, nombre_servicio, modalidad_pago_servicio, costo_servicio, precio_servicio, descuento_servicio, requiere_cita_servicio, detalles_servicio, fk_categoria) value(null, 'Realiza tu vestido con Pnina Tornai', 'HORA', 0, 350000,  null, 1, 'De las diseñadoras más capaces a tu servicio, reserva tu cita ya!', 27);
+insert into SERVICIO(id_servicio, nombre_servicio, modalidad_pago_servicio, costo_servicio, precio_servicio, descuento_servicio, requiere_cita_servicio, detalles_servicio, fk_categoria) value(null, 'Realiza tu vestido con Susana Horia', 'HORA', 0, 350000,  null, 1, 'De las diseñadoras más capaces a tu servicio, reserva tu cita ya!', 27);
+insert into SERVICIO(id_servicio, nombre_servicio, modalidad_pago_servicio, costo_servicio, precio_servicio, descuento_servicio, requiere_cita_servicio, detalles_servicio, fk_categoria) value(null, 'Realiza tu vestido con Gusgus', 'HORA', 0, 350000,  null, 1, 'De los diseñadores más capaces a tu servicio, reserva tu cita ya!', 27);
+insert into SERVICIO(id_servicio, nombre_servicio, modalidad_pago_servicio, costo_servicio, precio_servicio, descuento_servicio, requiere_cita_servicio, detalles_servicio, fk_categoria) value(null, 'Servicio de decoracion', 'NA', 0, 350000,  null, 1, null, 10);
+
+#PRODUCTO_PROVEEDOR
+insert into PRODUCTO_PROVEEDOR(fk_proveedor, fk_producto, costo_und_producto_proveedor) value (1, 1, 150000);
+insert into PRODUCTO_PROVEEDOR(fk_proveedor, fk_producto, costo_und_producto_proveedor) value (18, 2, 1589670);
+insert into PRODUCTO_PROVEEDOR(fk_proveedor, fk_producto, costo_und_producto_proveedor) value (18, 3, 1847670);
+insert into PRODUCTO_PROVEEDOR(fk_proveedor, fk_producto, costo_und_producto_proveedor) value (18, 4, 3549670);
+insert into PRODUCTO_PROVEEDOR(fk_proveedor, fk_producto, costo_und_producto_proveedor) value (18, 5, 1339670);
+insert into PRODUCTO_PROVEEDOR(fk_proveedor, fk_producto, costo_und_producto_proveedor) value (18, 6, 1589629);
+insert into PRODUCTO_PROVEEDOR(fk_proveedor, fk_producto, costo_und_producto_proveedor) value (19, 7, 1192670);
+insert into PRODUCTO_PROVEEDOR(fk_proveedor, fk_producto, costo_und_producto_proveedor) value (11, 8, 219670);
+
+#PRODUCTO_SERVICIO
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (1,1);
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (2,2);
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (2,3);
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (2,4);
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (2,5);
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (2,6);
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (2,7);
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (9,36); #Mesa
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (9,204); #Operador
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (9,209); #transporte
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (9,184); #Toldo pequeño
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (10,36); #Mesa
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (10,204); #Operador
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (10,209); #transporte
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (10,184); #Toldo pequeño
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (11,36); #Mesa
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (11,204); #Operador
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (11,209); #transporte
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (11,184); #Toldo pequeño
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (12,36); #Mesa
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (12,204); #Operador
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (12,209); #transporte
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (12,184); #Toldo pequeño
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (13,36); #Mesa
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (13,204); #Operador
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (13,209); #transporte
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (13,184); #Toldo pequeño
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (14,36); #Mesa
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (14,200); #Mesonero
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (14,201); #Cocinero
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (14,209); #transporte
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (14,184); #Toldo pequeño
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (14,166); #Cocina completa con utensillos sin aceite
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (14,156); #Cuchillo
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (14,158); #Cuchara
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (14,154); #Tenedor
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (15,36); #Mesa
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (15,46); #Barra iluiminada
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (15,202); #Sushero
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (15,209); #transporte
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (15,184); #Toldo pequeño
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (16,36); #Mesa
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (16,209); #transporte
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (16,184); #Toldo pequeño
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (16,125); #Mini dulces
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (16,126);
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (16,127);
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (16,128);
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (16,129);
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (16,130);
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (16,131);
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (16,132);
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (16,133);
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (17,36); #Mesa
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (17,204); #Operador
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (17,209); #transporte
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (17,184); #Toldo pequeño
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (18,36); #Mesa
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (18,204); #Operador
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (18,209); #transporte
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (18,184); #Toldo pequeño
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (19,36); #Mesa
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (19,204); #Operador
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (19,209); #transporte
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (19,184); #Toldo pequeño
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (20,204); #Operador
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (20,209); #transporte
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (20,184); #Toldo pequeño
+#HORARIO
+insert into HORARIO(id_horario, hora_inicio_horario, hora_final_horario, dia_semana_hoario) value (null, '10:00:00', '18:00:00', 'LUNES');
+insert into HORARIO(id_horario, hora_inicio_horario, hora_final_horario, dia_semana_hoario) value (null, '09:00:00', '18:00:00', 'MARTES');
+insert into HORARIO(id_horario, hora_inicio_horario, hora_final_horario, dia_semana_hoario) value (null, '09:00:00', '18:00:00', 'MIERCOLES');
+insert into HORARIO(id_horario, hora_inicio_horario, hora_final_horario, dia_semana_hoario) value (null, '08:00:00', '18:00:00', 'JUEVES');
+insert into HORARIO(id_horario, hora_inicio_horario, hora_final_horario, dia_semana_hoario) value (null, '08:00:00', '23:00:00', 'VIERNES');
+insert into HORARIO(id_horario, hora_inicio_horario, hora_final_horario, dia_semana_hoario) value (null, '08:00:00', '23:00:00', 'SABADO');
+insert into HORARIO(id_horario, hora_inicio_horario, hora_final_horario, dia_semana_hoario) value (null, '08:00:00', '23:00:00', 'DOMINGO');
+#HORARIO_SERVICIO
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (1,1);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (2,1);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (4,1);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (2,2);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (3,2);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (7,2);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (5,2);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (2,3);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (6,3);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (4,3);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (4,4);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (1,4);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (2,4);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (1,5);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (2,5);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (3,5);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (7,5);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (7,6);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (5,7);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (6,7);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (7,7);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (5,8);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (6,8);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (7,8);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (5,9);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (6,9);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (7,9);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (5,10);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (6,10);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (7,10);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (5,11);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (6,11);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (7,11);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (5,12);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (6,12);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (7,12);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (5,13);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (6,13);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (7,13);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (5,14);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (6,14);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (7,14);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (5,15);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (6,15);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (7,15);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (5,16);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (6,16);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (7,16);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (5,17);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (6,17);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (7,17);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (5,18);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (6,18);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (7,18);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (5,19);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (6,19);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (7,19);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (5,20);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (6,20);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (7,20);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (5,21);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (6,21);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (7,21);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (5,22);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (6,22);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (7,22);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (5,23);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (6,23);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (7,23);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (5,24);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (6,24);
+insert into HORARIO_SERVICIO(fk_horario, fk_servicio) value (7,24);
+#PERSONAS DEL SERVICIO TERCERIZADO
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (29999331, 'Jolman', 'Music', 'null', 1);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (29999332, 'Lupita', 'Gomez', 'null', 1);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (29999333, 'Selena', 'Soarez', 'null', 1);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (29999334, 'Luis', 'Ramirez', 'null', 1);
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (29999335, 'Gustavo', 'Quintana', 'null', 1);
+#SERVICIO_TERCERIZADO
+insert into SERVICIO_TERCERIZADO(id_servicio, fk_persona, tipo_servicio_tercerizado) value (3,29999331,'');
+insert into SERVICIO_TERCERIZADO(id_servicio, fk_persona, tipo_servicio_tercerizado) value (5,29999332,'');
+insert into SERVICIO_TERCERIZADO(id_servicio, fk_persona, tipo_servicio_tercerizado) value (6,29999333,'');
+insert into SERVICIO_TERCERIZADO(id_servicio, fk_persona, tipo_servicio_tercerizado) value (7,29999334,'');
+insert into SERVICIO_TERCERIZADO(id_servicio, fk_persona, tipo_servicio_tercerizado) value (8,29999335,'');
+insert into SERVICIO_TERCERIZADO(id_servicio, fk_persona, tipo_servicio_tercerizado) value (4,27123555,'');
+insert into SERVICIO_TERCERIZADO(id_servicio, fk_persona, tipo_servicio_tercerizado) value (21,27123554,'');
+insert into SERVICIO_TERCERIZADO(id_servicio, fk_persona, tipo_servicio_tercerizado) value (22,27123553,'');
+insert into SERVICIO_TERCERIZADO(id_servicio, fk_persona, tipo_servicio_tercerizado) value (23,27123552,'');
+insert into SERVICIO_TERCERIZADO(id_servicio, fk_persona, tipo_servicio_tercerizado) value (24,27123551,'');
+
+#TEMATICA
+insert into TEMATICA(id_tematica, nombre_tematica, descripcion_tematica) value (null, 'Amor en Paris', null);
+insert into TEMATICA(id_tematica, nombre_tematica, descripcion_tematica) value (null, 'Gótico', null); 
+insert into TEMATICA(id_tematica, nombre_tematica, descripcion_tematica) value (null, 'Hippie', null); 
+insert into TEMATICA(id_tematica, nombre_tematica, descripcion_tematica) value (null, 'Hawaii', null); 
+insert into TEMATICA(id_tematica, nombre_tematica, descripcion_tematica) value (null, 'Clásico', null); 
+
+#TIPO_FIESTA
+insert into TIPO_FIESTA(id_tipo_fiesta, nombre_tipo_fiesta, descripcion_tipo_fiesta) value (null, 'Boda', null);
+insert into TIPO_FIESTA(id_tipo_fiesta, nombre_tipo_fiesta, descripcion_tipo_fiesta) value (null, 'Formal', null);
+insert into TIPO_FIESTA(id_tipo_fiesta, nombre_tipo_fiesta, descripcion_tipo_fiesta) value (null, 'XV Años', null);
+insert into TIPO_FIESTA(id_tipo_fiesta, nombre_tipo_fiesta, descripcion_tipo_fiesta) value (null, 'Infantil', null);
+insert into TIPO_FIESTA(id_tipo_fiesta, nombre_tipo_fiesta, descripcion_tipo_fiesta) value (null, 'Informal', null);
+ 
+#FIESTA
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-1','16:00:00', '18:00:00', 200, 1, 5,5);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-2','16:00:00', '18:00:00', 200, 2, 4,2);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-3','16:00:00', '18:00:00', 200, 3, 5,3);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-4','16:00:00', '18:00:00', 200, 4, 2,5);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-5','16:00:00', '18:00:00', 200, 5, 3,1);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-6','16:00:00', '18:00:00', 200, 6, 3,2);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-7','16:00:00', '18:00:00', 200, 7, 1,1);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-8','16:00:00', '18:00:00', 200, 8, 1,4);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-9','16:00:00', '18:00:00', 200, 9, 4,3);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-10','16:00:00', '18:00:00', 200, 10, 4,5);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-11','16:00:00', '18:00:00', 200, 11, 3,2);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-12','16:00:00', '18:00:00', 200, 12, 3,4);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-13','16:00:00', '18:00:00', 200, 13, 3,5);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-14','16:00:00', '18:00:00', 200, 14, 4,2);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-15','16:00:00', '18:00:00', 200, 15, 3,1);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-16','16:00:00', '18:00:00', 200, 16, 5,1);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-17','16:00:00', '18:00:00', 200, 17, 2,3);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-18','16:00:00', '18:00:00', 200, 18, 4,3);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-19','16:00:00', '18:00:00', 200, 19, 3,1);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-20','16:00:00', '18:00:00', 200, 20, 5,4);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-21','16:00:00', '18:00:00', 200, 21, 5,2);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-22','16:00:00', '18:00:00', 200, 22, 1,1);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-23','16:00:00', '18:00:00', 200, 23, 4,2);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-24','16:00:00', '18:00:00', 200, 24, 2,3);
+
+#PRESUPUESTO
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-1',25765334, 1);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-2',25765335, 2);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-3',25765336, 3);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-4',25765337, 4);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-5',25765338, 5);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-6',25765339, 6);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-7',25765340, 7);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-8',25765341, 8);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-9',25765342, 9);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-10',25765343, 10);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-11',25765344, 11);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-12',25765345, 12);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-13',25765346, 13);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-14',25765347, 14);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-15',25765348, 15);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-16',25765349, 16);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-17',25765350, 17);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-18',25765351, 18);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-19',25765352, 19);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-20',25765353, 20);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-21',25765354, 21);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-22',25765355, 22);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-23',25765356, 23);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-24',25765357, 24);
+
+#SERVICIO_PRESUPUESTO
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 592, null, 1,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 330, null, 2,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 691, null, 3,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 698, null, 4,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 476, null, 5,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 333, null, 6,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 234, null, 7,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 386, null, 8,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 559, null, 9,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 363, null, 10,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 343, null, 11,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 257, null, 12,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 628, null, 13,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 208, null, 14,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 234, null, 15,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 679, null, 16,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 405, null, 17,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 484, null, 18,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 229, null, 19,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 644, null, 20,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 468, null, 21,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 409, null, 22,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 411, null, 23,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 474, null, 24,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 14563,null,1,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 9150,null,2,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 11920,null,3,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 12680,null,4,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 11404,null,5,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 9934,null,6,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 13061,null,7,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 12291,null,8,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 11791,null,9,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 14094,null,10,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 5510,null,11,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 9865,null,12,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 9866,null,13,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 14772,null,14,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6795,null,15,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 5936,null,16,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 13938,null,17,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 13055,null,18,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 9693,null,19,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 10784,null,20,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 7525,null,21,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 14128,null,22,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 11832,null,23,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 10760,null,24,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 882,null,1,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 945,null,2,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 723,null,3,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 785,null,4,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 775,null,5,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 652,null,6,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 669,null,7,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 617,null,8,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 699,null,9,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 931,null,10,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 837,null,11,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 935,null,12,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 863,null,13,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 871,null,14,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 747,null,15,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 906,null,16,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 729,null,17,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 643,null,18,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 638,null,19,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 756,null,20,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 810,null,21,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 928,null,22,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 650,null,23,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 926,null,24,null);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 5000,5,null,1,3);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 5000,5,null,2,3);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 5000,5,null,3,3);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 5000,5,null,4,3);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 5000,5,null,5,3);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 5000,5,null,6,3);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 5000,5,null,7,3);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 5000,5,null,8,3);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 5000,5,null,9,3);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 5000,5,null,10,3);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 5000,5,null,11,3);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 5000,5,null,12,3);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 68000,5,null,13,6);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 68000,5,null,14,6);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 68000,5,null,15,6);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 68000,5,null,16,6);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 68000,5,null,17,6);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 68000,5,null,18,6);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 68000,5,null,19,6);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 68000,5,null,20,6);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 68000,5,null,21,6);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 68000,5,null,22,6);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 68000,5,null,23,6);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 68000,5,null,24,6);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,120,null,1,12);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,120,null,2,12);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,120,null,3,12);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,120,null,4,12);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,120,null,5,12);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,120,null,6,12);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,120,null,7,12);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,120,null,8,12);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,120,null,9,12);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,120,null,10,12);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,120,null,11,12);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,120,null,12,12);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,120,null,13,12);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,120,null,14,12);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,120,null,15,12);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,120,null,16,12);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,120,null,17,12);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,120,null,18,12);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,120,null,19,12);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,120,null,20,12);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,120,null,21,12);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,120,null,22,12);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,120,null,23,12);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,120,null,24,12);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,1,null,1,25);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,1,null,2,25);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,1,null,3,25);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,1,null,4,25);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,1,null,5,25);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,1,null,6,25);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,1,null,7,25);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,1,null,8,25);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,1,null,9,25);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,1,null,10,25);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,1,null,11,25);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,1,null,12,25);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,1,null,13,25);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,1,null,14,25);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,1,null,15,25);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,1,null,16,25);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,1,null,17,25);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,1,null,18,25);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,1,null,19,25);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,1,null,20,25);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,1,null,21,25);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,1,null,22,25);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,1,null,23,25);
+insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,cantidad_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 6830,1,null,24,25);
+
+#PRODUCTO_PEDIDO
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (39,47,1);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (24,19,2);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (37,40,3);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (34,42,4);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (28,52,5);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (25,18,6);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (17,40,7);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (18,36,8);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (35,28,9);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (26,18,10);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (32,18,11);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (16,23,12);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (29,53,13);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (27,22,14);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (17,44,15);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (16,36,16);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (34,27,17);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (29,26,18);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (24,22,19);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (18,42,20);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (26,17,21);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (38,42,22);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (18,40,23);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (36,14,24);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (2,188,25);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (2,183,26);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (3,190,27);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (3,179,28);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (3,185,29);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (3,186,30);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (2,192,31);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (3,183,32);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (2,189,33);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (2,185,34);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (2,190,35);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (1,188,36);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (2,180,37);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (1,182,38);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (1,192,39);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (3,185,40);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (3,183,41);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (3,181,42);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (2,179,43);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (2,184,44);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (1,181,45);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (3,187,46);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (2,191,47);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (1,181,48);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (99,78,49);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (127,71,50);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (117,109,51);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (112,93,52);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (86,88,53);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (90,77,54);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (111,75,55);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (110,90,56);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (90,78,57);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (117,105,58);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (101,64,59);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (86,94,60);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (117,75,61);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (112,97,62);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (108,103,63);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (98,75,64);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (104,75,65);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (129,88,66);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (133,60,67);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (137,85,68);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (137,97,69);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (126,78,70);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (116,88,71);
+insert into producto_pedido(cantidad_producto_pedido,fk_producto, fk_servicio_presupuesto) value (94,109,72);
+
+#CONTRATO
+insert into CONTRATO (id_contrato,fecha_aprobado_contrato,fecha_pagado_contrato,monto_total_contrato,fk_usuario,fk_presupuesto) value (null,'2021-01-1', '2021-03-1',152776,1,1 );
+insert into CONTRATO (id_contrato,fecha_aprobado_contrato,fecha_pagado_contrato,monto_total_contrato,fk_usuario,fk_presupuesto) value (null,'2021-01-2', '2021-03-2',152776,2,2 );
+insert into CONTRATO (id_contrato,fecha_aprobado_contrato,fecha_pagado_contrato,monto_total_contrato,fk_usuario,fk_presupuesto) value (null,'2021-01-3', '2021-03-3',152776,3,3 );
+insert into CONTRATO (id_contrato,fecha_aprobado_contrato,fecha_pagado_contrato,monto_total_contrato,fk_usuario,fk_presupuesto) value (null,'2021-01-4', '2021-03-4',152776,4,4 );
+insert into CONTRATO (id_contrato,fecha_aprobado_contrato,fecha_pagado_contrato,monto_total_contrato,fk_usuario,fk_presupuesto) value (null,'2021-01-5', '2021-03-5',152776,5,5 );
+insert into CONTRATO (id_contrato,fecha_aprobado_contrato,fecha_pagado_contrato,monto_total_contrato,fk_usuario,fk_presupuesto) value (null,'2021-01-6', '2021-03-6',152776,6,6 );
+insert into CONTRATO (id_contrato,fecha_aprobado_contrato,fecha_pagado_contrato,monto_total_contrato,fk_usuario,fk_presupuesto) value (null,'2021-01-7', '2021-03-7',152776,7,7 );
+insert into CONTRATO (id_contrato,fecha_aprobado_contrato,fecha_pagado_contrato,monto_total_contrato,fk_usuario,fk_presupuesto) value (null,'2021-01-8', '2021-03-8',152776,8,8 );
+insert into CONTRATO (id_contrato,fecha_aprobado_contrato,fecha_pagado_contrato,monto_total_contrato,fk_usuario,fk_presupuesto) value (null,'2021-01-9', '2021-03-9',152776,9,9 );
+insert into CONTRATO (id_contrato,fecha_aprobado_contrato,fecha_pagado_contrato,monto_total_contrato,fk_usuario,fk_presupuesto) value (null,'2021-01-10', '2021-03-10',152776,10,10 );
+insert into CONTRATO (id_contrato,fecha_aprobado_contrato,fecha_pagado_contrato,monto_total_contrato,fk_usuario,fk_presupuesto) value (null,'2021-01-11', '2021-03-11',152776,11,11 );
+insert into CONTRATO (id_contrato,fecha_aprobado_contrato,fecha_pagado_contrato,monto_total_contrato,fk_usuario,fk_presupuesto) value (null,'2021-01-12', '2021-03-12',152776,12,12 );
+insert into CONTRATO (id_contrato,fecha_aprobado_contrato,fecha_pagado_contrato,monto_total_contrato,fk_usuario,fk_presupuesto) value (null,'2021-01-13', '2021-03-13',152776,13,13 );
+insert into CONTRATO (id_contrato,fecha_aprobado_contrato,fecha_pagado_contrato,monto_total_contrato,fk_usuario,fk_presupuesto) value (null,'2021-01-14', '2021-03-14',152776,14,14 );
+insert into CONTRATO (id_contrato,fecha_aprobado_contrato,fecha_pagado_contrato,monto_total_contrato,fk_usuario,fk_presupuesto) value (null,'2021-01-15', '2021-03-15',152776,15,15 );
+insert into CONTRATO (id_contrato,fecha_aprobado_contrato,fecha_pagado_contrato,monto_total_contrato,fk_usuario,fk_presupuesto) value (null,'2021-01-16', '2021-03-16',152776,16,16 );
+insert into CONTRATO (id_contrato,fecha_aprobado_contrato,fecha_pagado_contrato,monto_total_contrato,fk_usuario,fk_presupuesto) value (null,'2021-01-17', '2021-03-17',152776,17,17 );
+insert into CONTRATO (id_contrato,fecha_aprobado_contrato,fecha_pagado_contrato,monto_total_contrato,fk_usuario,fk_presupuesto) value (null,'2021-01-18', '2021-03-18',152776,18,18 );
+insert into CONTRATO (id_contrato,fecha_aprobado_contrato,fecha_pagado_contrato,monto_total_contrato,fk_usuario,fk_presupuesto) value (null,'2021-01-19', '2021-03-19',152776,19,19 );
+insert into CONTRATO (id_contrato,fecha_aprobado_contrato,fecha_pagado_contrato,monto_total_contrato,fk_usuario,fk_presupuesto) value (null,'2021-01-20', '2021-03-20',152776,20,20 );
+insert into CONTRATO (id_contrato,fecha_aprobado_contrato,fecha_pagado_contrato,monto_total_contrato,fk_usuario,fk_presupuesto) value (null,'2021-01-21', '2021-03-21',152776,21,21 );
+insert into CONTRATO (id_contrato,fecha_aprobado_contrato,fecha_pagado_contrato,monto_total_contrato,fk_usuario,fk_presupuesto) value (null,'2021-01-22', '2021-03-22',152776,22,22 );
+insert into CONTRATO (id_contrato,fecha_aprobado_contrato,fecha_pagado_contrato,monto_total_contrato,fk_usuario,fk_presupuesto) value (null,'2021-01-23', '2021-03-23',152776,23,23 );
+insert into CONTRATO (id_contrato,fecha_aprobado_contrato,fecha_pagado_contrato,monto_total_contrato,fk_usuario,fk_presupuesto) value (null,'2021-01-24', '2021-03-24',152776,24,24 );
+
+
+#RESERVA
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-1' ,5,1,3,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-2' ,5,2,3,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-3' ,5,3,3,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-4' ,5,4,3,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-5' ,5,5,3,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-6' ,5,6,3,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-7' ,5,7,3,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-8' ,5,8,3,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-9' ,5,9,3,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-10' ,5,10,3,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-11' ,5,11,3,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-12' ,5,12,3,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-13',5,13,6,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-14',5,14,6,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-15',5,15,6,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-16',5,16,6,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-17',5,17,6,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-18',5,18,6,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-19',5,19,6,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-20',5,20,6,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-21',5,21,6,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-22',5,22,6,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-23',5,23,6,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-24',5,24,6,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-1',5,1,12,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-2',5,2,12,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-3',5,3,12,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-4',5,4,12,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-5',5,5,12,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-6',5,6,12,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-7',5,7,12,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-8',5,8,12,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-9',5,9,12,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-10',5,10,12,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-11',5,11,12,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-12',5,12,12,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-13',5,13,12,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-14',5,14,12,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-15',5,15,12,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-16',5,16,12,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-17',5,17,12,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-18',5,18,12,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-19',5,19,12,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-20',5,20,12,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-21',5,21,12,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-22',5,22,12,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-23',5,23,12,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-24',5,24,12,null,null);
+
+#CONTRATO_TERCERO
+insert into CONTRATO_TERCERO(id_contrato_tercero,fecha_aprobado_contrato_tercero,fecha_pagado_contrato_tercero,fk_contrato,fk_servicio_presupuesto) values (null,'2021-01-30',null,1,73);
+insert into CONTRATO_TERCERO(id_contrato_tercero,fecha_aprobado_contrato_tercero,fecha_pagado_contrato_tercero,fk_contrato,fk_servicio_presupuesto) values (null,'2021-01-30',null,2,74);
+insert into CONTRATO_TERCERO(id_contrato_tercero,fecha_aprobado_contrato_tercero,fecha_pagado_contrato_tercero,fk_contrato,fk_servicio_presupuesto) values (null,'2021-01-30',null,3,75);
+insert into CONTRATO_TERCERO(id_contrato_tercero,fecha_aprobado_contrato_tercero,fecha_pagado_contrato_tercero,fk_contrato,fk_servicio_presupuesto) values (null,'2021-01-30',null,4,76);
+insert into CONTRATO_TERCERO(id_contrato_tercero,fecha_aprobado_contrato_tercero,fecha_pagado_contrato_tercero,fk_contrato,fk_servicio_presupuesto) values (null,'2021-01-30',null,5,77);
+insert into CONTRATO_TERCERO(id_contrato_tercero,fecha_aprobado_contrato_tercero,fecha_pagado_contrato_tercero,fk_contrato,fk_servicio_presupuesto) values (null,'2021-01-30',null,6,78);
+insert into CONTRATO_TERCERO(id_contrato_tercero,fecha_aprobado_contrato_tercero,fecha_pagado_contrato_tercero,fk_contrato,fk_servicio_presupuesto) values (null,'2021-01-30',null,7,79);
+insert into CONTRATO_TERCERO(id_contrato_tercero,fecha_aprobado_contrato_tercero,fecha_pagado_contrato_tercero,fk_contrato,fk_servicio_presupuesto) values (null,'2021-01-30',null,8,80);
+insert into CONTRATO_TERCERO(id_contrato_tercero,fecha_aprobado_contrato_tercero,fecha_pagado_contrato_tercero,fk_contrato,fk_servicio_presupuesto) values (null,'2021-01-30',null,9,81);
+insert into CONTRATO_TERCERO(id_contrato_tercero,fecha_aprobado_contrato_tercero,fecha_pagado_contrato_tercero,fk_contrato,fk_servicio_presupuesto) values (null,'2021-01-30',null,10,82);
+insert into CONTRATO_TERCERO(id_contrato_tercero,fecha_aprobado_contrato_tercero,fecha_pagado_contrato_tercero,fk_contrato,fk_servicio_presupuesto) values (null,'2021-01-30',null,11,83);
+insert into CONTRATO_TERCERO(id_contrato_tercero,fecha_aprobado_contrato_tercero,fecha_pagado_contrato_tercero,fk_contrato,fk_servicio_presupuesto) values (null,'2021-01-30',null,12,84);
+insert into CONTRATO_TERCERO(id_contrato_tercero,fecha_aprobado_contrato_tercero,fecha_pagado_contrato_tercero,fk_contrato,fk_servicio_presupuesto) values (null,'2021-01-30',null,13,85);
+insert into CONTRATO_TERCERO(id_contrato_tercero,fecha_aprobado_contrato_tercero,fecha_pagado_contrato_tercero,fk_contrato,fk_servicio_presupuesto) values (null,'2021-01-30',null,14,86);
+insert into CONTRATO_TERCERO(id_contrato_tercero,fecha_aprobado_contrato_tercero,fecha_pagado_contrato_tercero,fk_contrato,fk_servicio_presupuesto) values (null,'2021-01-30',null,15,87);
+insert into CONTRATO_TERCERO(id_contrato_tercero,fecha_aprobado_contrato_tercero,fecha_pagado_contrato_tercero,fk_contrato,fk_servicio_presupuesto) values (null,'2021-01-30',null,16,88);
+insert into CONTRATO_TERCERO(id_contrato_tercero,fecha_aprobado_contrato_tercero,fecha_pagado_contrato_tercero,fk_contrato,fk_servicio_presupuesto) values (null,'2021-01-30',null,17,89);
+insert into CONTRATO_TERCERO(id_contrato_tercero,fecha_aprobado_contrato_tercero,fecha_pagado_contrato_tercero,fk_contrato,fk_servicio_presupuesto) values (null,'2021-01-30',null,18,90);
+insert into CONTRATO_TERCERO(id_contrato_tercero,fecha_aprobado_contrato_tercero,fecha_pagado_contrato_tercero,fk_contrato,fk_servicio_presupuesto) values (null,'2021-01-30',null,19,91);
+insert into CONTRATO_TERCERO(id_contrato_tercero,fecha_aprobado_contrato_tercero,fecha_pagado_contrato_tercero,fk_contrato,fk_servicio_presupuesto) values (null,'2021-01-30',null,20,92);
+insert into CONTRATO_TERCERO(id_contrato_tercero,fecha_aprobado_contrato_tercero,fecha_pagado_contrato_tercero,fk_contrato,fk_servicio_presupuesto) values (null,'2021-01-30',null,21,93);
+insert into CONTRATO_TERCERO(id_contrato_tercero,fecha_aprobado_contrato_tercero,fecha_pagado_contrato_tercero,fk_contrato,fk_servicio_presupuesto) values (null,'2021-01-30',null,22,94);
+insert into CONTRATO_TERCERO(id_contrato_tercero,fecha_aprobado_contrato_tercero,fecha_pagado_contrato_tercero,fk_contrato,fk_servicio_presupuesto) values (null,'2021-01-30',null,23,95);
+insert into CONTRATO_TERCERO(id_contrato_tercero,fecha_aprobado_contrato_tercero,fecha_pagado_contrato_tercero,fk_contrato,fk_servicio_presupuesto) values (null,'2021-01-30',null,24,96);
+
+#DECORADOR
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (66666666, 'Oscar', 'Su', 'null', 1);
+
+#DECORACION
+insert into DECORACION (id_servicio, fk_tematica,fk_persona) value (25,3,66666666);
+
+#PAG
+#METODO_PAGO
+insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Fondo Comun',1234561,'2050-08-1', null,null, 'TDC');
+insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Nacional de Credito',1234562,'2050-08-2', null,null, 'TDC');
+insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Fondo Comun',1234563,'2050-08-3', null,null, 'TDC');
+insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco BOD',1234564,'2050-08-4', null,null, 'TDC');
+insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Mercantil',1234565,'2050-08-5', null,null, 'TDC');
+insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco BOD',1234566,'2050-08-6', null,null, 'TDC');
+insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banesco',1234567,'2050-08-7', null,null, 'TDC');
+insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Nacional de Credito',1234568,'2050-08-8', null,null, 'TDC');
+insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Fondo Comun',1234569,'2050-08-9', null,null, 'TDC');
+insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Nacional de Credito',12345610,'2050-08-10', null,null, 'TDC');
+insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Nacional de Credito',null,null,12345611,null, 'TDD');
+insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banesco',null,null,12345612,null, 'TDD');
+insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Nacional de Credito',null,null,12345613,null, 'TDD');
+insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Nacional de Credito',null,null,12345614,null, 'TDD');
+insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Nacional de Credito',null,null,12345615,null, 'TDD');
+insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Fondo Comun',null,null,12345616,null, 'TDD');
+insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco BOD',null,null,12345617,null, 'TDD');
+insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco BOD',null,null,12345618,null, 'TDD');
+insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Fondo Comun',null,null,12345619,null, 'TDD');
+insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco BOD',null,null,12345620,null, 'TDD');
+insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banesco',null,null,null,12345621,'TRANSFERENCIA');
+insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banesco',null,null,null,12345622, 'TRANSFERENCIA');
+insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Nacional de Credito',null,null,null,12345623, 'TRANSFERENCIA');
+insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banesco',null,null,null,12345624, 'TRANSFERENCIA');
+#PAGO
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 121000,'2021-01-30',1,1);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 51776, '2021-03-1',1,1);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 121000,'2021-01-30',2,2);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 51776, '2021-03-2',2,2);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 121000,'2021-01-30',3,3);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 51776, '2021-03-3',3,3);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 121000,'2021-01-30',4,4);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 51776, '2021-03-4',4,4);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 121000,'2021-01-30',5,5);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 51776, '2021-03-5',5,5);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 121000,'2021-01-30',6,6);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 51776, '2021-03-6',6,6);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 121000,'2021-01-30',7,7);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 51776, '2021-03-7',7,7);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 121000,'2021-01-30',8,8);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 51776, '2021-03-8',8,8);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 121000,'2021-01-30',9,9);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 51776, '2021-03-9',9,9);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 121000,'2021-01-30',10,10);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 51776, '2021-03-10',10,10);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 121000,'2021-01-30',11,11);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 51776, '2021-03-11',11,11);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 121000,'2021-01-30',12,12);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 51776, '2021-03-12',12,12);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 121000,'2021-01-30',13,13);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 51776, '2021-03-13',13,13);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 121000,'2021-01-30',14,14);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 51776, '2021-03-14',14,14);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 121000,'2021-01-30',15,15);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 51776, '2021-03-15',15,15);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 121000,'2021-01-30',16,16);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 51776, '2021-03-16',16,16);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 121000,'2021-01-30',17,17);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 51776, '2021-03-17',17,17);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 121000,'2021-01-30',18,18);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 51776, '2021-03-18',18,18);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 121000,'2021-01-30',19,19);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 51776, '2021-03-19',19,19);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 121000,'2021-01-30',20,20);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 51776, '2021-03-20',20,20);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 121000,'2021-01-30',21,21);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 51776, '2021-03-21',21,21);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 121000,'2021-01-30',22,22);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 51776, '2021-03-22',22,22);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 121000,'2021-01-30',23,23);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 51776, '2021-03-23',23,23);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 121000,'2021-01-30',24,24);
+insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 51776, '2021-03-24',24,24);
+#ESTADO
+insert into ESTADO(id_estado,nombre_estado) value (null,'Aprobado');
+insert into ESTADO(id_estado,nombre_estado) value (null,'En espera');
+insert into ESTADO(id_estado,nombre_estado) value (null,'Rechazado');
+insert into ESTADO(id_estado,nombre_estado) value (null,'Enviado');
+insert into ESTADO(id_estado,nombre_estado) value (null,'Recibido');
+insert into ESTADO(id_estado,nombre_estado) value (null,'Listo para enviar');
+insert into ESTADO(id_estado,nombre_estado) value (null,'En camino');
+#ESTADO_CONTRATO
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (2,1,'2021-12-20','2021-01-30');
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (1,1,'2021-01-30',null);
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (2,2,'2021-12-20','2021-01-30');
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (1,2,'2021-01-30',null);
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (2,3,'2021-12-20','2021-01-30');
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (1,3,'2021-01-30',null);
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (2,4,'2021-12-20','2021-01-30');
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (1,4,'2021-01-30',null);
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (2,5,'2021-12-20','2021-01-30');
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (1,5,'2021-01-30',null);
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (2,6,'2021-12-20','2021-01-30');
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (1,6,'2021-01-30',null);
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (2,7,'2021-12-20','2021-01-30');
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (1,7,'2021-01-30',null);
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (2,8,'2021-12-20','2021-01-30');
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (1,8,'2021-01-30',null);
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (2,9,'2021-12-20','2021-01-30');
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (1,9,'2021-01-30',null);
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (2,10,'2021-12-20','2021-01-30');
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (1,10,'2021-01-30',null);
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (2,11,'2021-12-20','2021-01-30');
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (1,11,'2021-01-30',null);
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (2,12,'2021-12-20','2021-01-30');
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (1,12,'2021-01-30',null);
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (2,13,'2021-12-20','2021-01-30');
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (1,13,'2021-01-30',null);
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (2,14,'2021-12-20','2021-01-30');
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (1,14,'2021-01-30',null);
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (2,15,'2021-12-20','2021-01-30');
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (1,15,'2021-01-30',null);
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (2,16,'2021-12-20','2021-01-30');
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (1,16,'2021-01-30',null);
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (2,17,'2021-12-20','2021-01-30');
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (1,17,'2021-01-30',null);
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (2,18,'2021-12-20','2021-01-30');
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (1,18,'2021-01-30',null);
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (2,19,'2021-12-20','2021-01-30');
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (1,19,'2021-01-30',null);
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (2,20,'2021-12-20','2021-01-30');
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (1,20,'2021-01-30',null);
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (2,21,'2021-12-20','2021-01-30');
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (1,21,'2021-01-30',null);
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (2,22,'2021-12-20','2021-01-30');
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (1,22,'2021-01-30',null);
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (2,23,'2021-12-20','2021-01-30');
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (1,23,'2021-01-30',null);
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (2,24,'2021-12-20','2021-01-30');
+insert into ESTADO_CONTRATO(fk_estado,fk_contrato,fecha_inicio_estado_contrato, fecha_fin_estado_contrato) value (1,24,'2021-01-30',null);
+
+

@@ -85,4 +85,4 @@ insert into SALON_FIESTA(id_servicio, nombre_servicio, modalidad_pago_servicio, 
 insert into SALON_FIESTA(id_servicio, nombre_servicio, modalidad_pago_servicio, costo_servicio, precio_servicio, descuento_servicio, requiere_cita_servicio, detalles_servicio, capacidad_salon_fiesta, vigilancia_salon_fiesta, fk_lugar, fk_categoria) value (null, 'Tasca Alto Casino', 'NA', null, null, null, 0, null, 85, 'camaras de seguridad', 358, 34);
 insert into SALON_FIESTA(id_servicio, nombre_servicio, modalidad_pago_servicio, costo_servicio, precio_servicio, descuento_servicio, requiere_cita_servicio, detalles_servicio, capacidad_salon_fiesta, vigilancia_salon_fiesta, fk_lugar, fk_categoria) value (null, 'Bistro & Bar Martín y Martín', 'NA', null, null, null, 0, null, 50, 'camaras de seguridad', 359, 34);
 
-select count(s.nombre_servicio), l.nombre_lugar from salon_fiesta s, lugar l, lugar l2 where s.fk_lugar = l2.id_lugar and l2.fk_lugar = l.id_lugar group by l.nombre_;
+select count(s.nombre_servicio), l.nombre_lugar from salon_fiesta s, lugar l, lugar l2 where s.fk_lugar = l2.id_lugar and l2.fk_lugar = l.id_lugar group by l.nombre_lugar;

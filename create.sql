@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS HORARIO(
     id_horario INT NOT NULL auto_increment,
     hora_inicio_horario TIME NOT NULL,
     hora_final_horario TIME NOT NULL,
-    dia_semana_hoario VARCHAR(9) NOT NULL CHECK(dia_semana_hoario IN('LUNES', 'MARTES', 'MIERCOLES', 'JUEVES', 'VIERNES')),
+    dia_semana_hoario VARCHAR(9) NOT NULL CHECK(dia_semana_hoario IN('LUNES', 'MARTES', 'MIERCOLES', 'JUEVES', 'VIERNES', 'SABADO', 'DOMINGO')),
     PRIMARY KEY(id_horario)
 );
 
@@ -85,7 +85,7 @@ CREATE TABLE IF NOT EXISTS SALON_FIESTA(
 
 CREATE TABLE IF NOT EXISTS METODO_PAGO(
     id_metodo_pago INT NOT NULL auto_increment,
-    descripcion_metodo_pago VARCHAR(100) NOT NULL,
+    descripcion_metodo_pago VARCHAR(100),
     banco_metodo_pago VARCHAR(30) NOT NULL,
     numero_tdc int(16),
     fecha_vencimiento_tdc DATE,
@@ -134,7 +134,7 @@ CREATE TABLE IF NOT EXISTS ORDEN_COMPRA(
 
 CREATE TABLE IF NOT EXISTS PRODUCTO(
     id_producto INT NOT NULL auto_increment,
-    nombre_producto VARCHAR(20) NOT NULL,
+    nombre_producto VARCHAR(70) NOT NULL,
     precio_producto DOUBLE NOT NULL,
     cantidad_disponible_producto INT NOT NULL,
     venta_ind_producto VARCHAR(2) NOT NULL CHECK(venta_ind_producto IN ('SI', 'NO')),
@@ -285,10 +285,10 @@ create table if not exists RESERVA (
 id_reserva int not null auto_increment,
 fecha_reserva date not null,
 tiempo_reserva int not null,
-fk_contrato int not null,
-fk_servicio int not null,
-fk_jefatura int not null,
-fk_templo int not null,
+fk_contrato int,
+fk_servicio int,
+fk_jefatura int,
+fk_templo int,
 primary key (id_reserva, fk_contrato),
 constraint fk_contrato foreign key (fk_contrato) references CONTRATO (id_contrato),
 constraint fk_servicio_reserva foreign key (fk_servicio) references SERVICIO (id_servicio),
@@ -331,7 +331,7 @@ precio_total_servicio_presupuesto int not null,
 cantidad_servicio_presupuesto int,
 detalles_servicio_presupuesto varchar(100),
 fk_presupuesto int not null,
-fk_servicio int not null,
+fk_servicio int,
 primary key (id_servicio_presupuesto),
 constraint fk_presupuesto_servicio foreign key (fk_presupuesto) references PRESUPUESTO (id_presupuesto),
 constraint fk_servicio_presupuesto foreign key (fk_servicio) references SERVICIO (id_servicio));
