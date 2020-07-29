@@ -75,20 +75,12 @@ CREATE TABLE IF NOT EXISTS POST(
 
 CREATE TABLE IF NOT EXISTS SALON_FIESTA(
 	id_servicio int not null auto_increment,
-	nombre_servicio varchar(110) not null,
-	modalidad_pago_servicio enum('HORA','CANTIDAD','NA') not null,
-	costo_servicio int,
-	precio_servicio int,
-	descuento_servicio int,
-	requiere_cita_servicio int not null,
-	detalles_servicio varchar(100),
  	capacidad_salon_fiesta INT NOT NULL,
  	vigilancia_salon_fiesta VARCHAR(60),
   	fk_lugar INT NOT NULL,
-    fk_categoria int not null,
   	PRIMARY KEY(id_servicio),
  	FOREIGN KEY(fk_lugar) REFERENCES LUGAR(id_lugar),
-    FOREIGN KEY(fk_categoria) REFERENCES CATEGORIA(id_categoria)
+    FOREIGN KEY (id_servicio) REFERENCES SERVICIO(id_servicio)
 );
 
 CREATE TABLE IF NOT EXISTS METODO_PAGO(
