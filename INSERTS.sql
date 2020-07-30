@@ -6013,3 +6013,10 @@ insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'salon.jpg
 insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'salon.jpg', 261);
 insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'salon.jpg', 262);
 insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'salon.jpg', 263);
+
+INSERT INTO ESTACIONAMIENTO VALUES(null, 10, 'Altura suficiente para vehiculos de gran tamaño', 240);
+INSERT INTO ESTACIONAMIENTO VALUES(null, 5, 'Espacio para vehiculos personales de cuatro puertas', 245);
+INSERT INTO ESTACIONAMIENTO VALUES(null, 20, 'Estacionamiento industrial', 248);
+INSERT INTO ESTACIONAMIENTO VALUES(null, 3, 'Estacionamiento residencial', 260);
+INSERT INTO ESTACIONAMIENTO VALUES(null, 12, 'Estacionamiento espacioso', 261);
+INSERT INTO ESTACIONAMIENTO VALUES(null, 2, 'Estacionamiento residencial', 263);
