@@ -393,7 +393,7 @@ CREATE TABLE IF NOT EXISTS CONTRATO_TERCERO(
 
 CREATE TABLE IF NOT EXISTS SERVICIO_TIPO_FIESTA(
     id_servicio_tipo_fiesta INT NOT NULL auto_increment,
- 	nombre_servicio_tipo_fiesta VARCHAR(20) NOT NULL,
+ 	nombre_servicio_tipo_fiesta VARCHAR(80) NOT NULL,
     descripcion_servicio_tipo_fiesta VARCHAR(100),
     fk_tipo_fiesta INT NOT NULL,
  	fk_servicio INT NOT NULL,

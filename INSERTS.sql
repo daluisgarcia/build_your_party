@@ -7571,3 +7571,10 @@ insert into ESTADO_DETALLE (fk_estado,fk_detalle_compra_1 ,fk_detalle_compra_2,f
 insert into ESTADO_DETALLE (fk_estado,fk_detalle_compra_1 ,fk_detalle_compra_2,fk_detalle_compra_3,fecha_inicio_detalle,fecha_fin_detalle) value (6,13,20,358,'2020-08-1', null);
 insert into ESTADO_DETALLE (fk_estado,fk_detalle_compra_1 ,fk_detalle_compra_2,fk_detalle_compra_3,fecha_inicio_detalle,fecha_fin_detalle) value (6,13,25,359,'2020-08-1', null);
 insert into ESTADO_DETALLE (fk_estado,fk_detalle_compra_1 ,fk_detalle_compra_2,fk_detalle_compra_3,fecha_inicio_detalle,fecha_fin_detalle) value (6,13,46,360,'2020-08-1', null);
+
+#servicios tipo fiesta
+insert into servicio_tipo_fiesta(id_servicio_tipo_fiesta, nombre_servicio_tipo_fiesta, descripcion_servicio_tipo_fiesta, fk_tipo_fiesta, fk_servicio) values (null, 'payasitas pinta caras', null, 4, 5);
+insert into servicio_tipo_fiesta(id_servicio_tipo_fiesta, nombre_servicio_tipo_fiesta, descripcion_servicio_tipo_fiesta, fk_tipo_fiesta, fk_servicio) values (null, 'Robot de hora loca', null, 5, 8);
+insert into servicio_tipo_fiesta(id_servicio_tipo_fiesta, nombre_servicio_tipo_fiesta, descripcion_servicio_tipo_fiesta, fk_tipo_fiesta, fk_servicio) values (null, 'transporte lujoso', null, 3, 7);
+insert into servicio_tipo_fiesta(id_servicio_tipo_fiesta, nombre_servicio_tipo_fiesta, descripcion_servicio_tipo_fiesta, fk_tipo_fiesta, fk_servicio) values (null, 'bebidas para adultos', null, 1, 2);
+insert into servicio_tipo_fiesta(id_servicio_tipo_fiesta, nombre_servicio_tipo_fiesta, descripcion_servicio_tipo_fiesta, fk_tipo_fiesta, fk_servicio) values (null, 'dulces para niños', null, 4, 16);
