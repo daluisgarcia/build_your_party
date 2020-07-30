@@ -219,7 +219,6 @@ FOREIGN KEY (cedula_persona) REFERENCES PERSONA(cedula_persona),
 CONSTRAINT CHECK(rol_cyc='modista' OR rol_cyc='diseñador' OR rol_cyc='costurera')
 );
 
-
 create table if not exists TRABAJO_CYC ( 
 id_trabajo_cyc INT NOT NULL auto_increment,
 nombre_trabajo_cyc varchar(200) not null,
@@ -255,6 +254,9 @@ fk_jefatura int,
 fk_templo int,
 fk_notaria int,
 primary key (id_coordenada),
+constraint check ((fk_jefatura IS NOT NULL AND fk_templo IS NULL AND fk_notaria IS NULL) OR
+				  (fk_jefatura IS NULL AND fk_templo IS NOT NULL AND fk_notaria IS NULL) OR
+                  (fk_jefatura IS NULL AND fk_templo IS NULL AND fk_notaria IS NOT NULL)),
 constraint fk_jefatura foreign key (fk_jefatura) references JEFATURA (id_jefatura),
 constraint fk_templo foreign key (fk_templo) references TEMPLO (id_templo),
 constraint fk_notaria foreign key (fk_notaria) references NOTARIA (id_notaria));
@@ -502,6 +504,12 @@ CREATE TABLE IF NOT EXISTS TELEFONO(
     fk_proveedor INT,
     fk_salon INT,
     PRIMARY KEY(id_telefono),
+    CONSTRAINT CHECK ((fk_templo IS NOT NULL AND fk_notaria IS NULL AND fk_jefatura IS NULL AND fk_persona IS NULL AND fk_proveedor IS NULL AND fk_salon IS NULL) OR
+					  (fk_templo IS NULL AND fk_notaria IS NOT NULL AND fk_jefatura IS NULL AND fk_persona IS NULL AND fk_proveedor IS NULL AND fk_salon IS NULL) OR
+                      (fk_templo IS NULL AND fk_notaria IS NULL AND fk_jefatura IS NOT NULL AND fk_persona IS NULL AND fk_proveedor IS NULL AND fk_salon IS NULL) OR
+                      (fk_templo IS NULL AND fk_notaria IS NULL AND fk_jefatura IS NULL AND fk_persona IS NOT NULL AND fk_proveedor IS NULL AND fk_salon IS NULL) OR
+                      (fk_templo IS NULL AND fk_notaria IS NULL AND fk_jefatura IS NULL AND fk_persona IS NULL AND fk_proveedor IS NOT NULL AND fk_salon IS NULL) OR
+                      (fk_templo IS NULL AND fk_notaria IS NULL AND fk_jefatura IS NULL AND fk_persona IS NULL AND fk_proveedor IS NULL AND fk_salon IS NOT NULL)),
     FOREIGN KEY(fk_templo) REFERENCES TEMPLO(id_templo),
     FOREIGN KEY(fk_notaria) REFERENCES NOTARIA(id_notaria),
     FOREIGN KEY(fk_jefatura) REFERENCES JEFATURA(id_jefatura),
@@ -522,6 +530,13 @@ CREATE TABLE IF NOT EXISTS IMAGEN(
     fk_servicio INT,
     fk_post INT,
     PRIMARY KEY(id_imagen),
+    CONSTRAINT CHECK ((fk_templo IS NOT NULL AND fk_trabajo_cyc IS NULL AND fk_trabajo_cyc_2 IS NULL AND fk_jefatura IS NULL AND fk_persona IS NULL AND fk_producto IS NULL AND fk_servicio IS NULL AND fk_post IS NULL) OR
+					  (fk_templo IS NULL AND fk_trabajo_cyc IS NOT NULL AND fk_trabajo_cyc_2 IS NOT NULL AND fk_jefatura IS NULL AND fk_persona IS NULL AND fk_producto IS NULL AND fk_servicio IS NULL AND fk_post IS NULL) OR
+                      (fk_templo IS NULL AND fk_trabajo_cyc IS NULL AND fk_trabajo_cyc_2 IS NULL AND fk_jefatura IS NOT NULL AND fk_persona IS NULL AND fk_producto IS NULL AND fk_servicio IS NULL AND fk_post IS NULL) OR
+                      (fk_templo IS NULL AND fk_trabajo_cyc IS NULL AND fk_trabajo_cyc_2 IS NULL AND fk_jefatura IS NULL AND fk_persona IS NOT NULL AND fk_producto IS NULL AND fk_servicio IS NULL AND fk_post IS NULL) OR
+                      (fk_templo IS NULL AND fk_trabajo_cyc IS NULL AND fk_trabajo_cyc_2 IS NULL AND fk_jefatura IS NULL AND fk_persona IS NULL AND fk_producto IS NOT NULL AND fk_servicio IS NULL AND fk_post IS NULL) OR
+                      (fk_templo IS NULL AND fk_trabajo_cyc IS NULL AND fk_trabajo_cyc_2 IS NULL AND fk_jefatura IS NULL AND fk_persona IS NULL AND fk_producto IS NULL AND fk_servicio IS NOT NULL AND fk_post IS NULL) OR
+                      (fk_templo IS NULL AND fk_trabajo_cyc IS NULL AND fk_trabajo_cyc_2 IS NULL AND fk_jefatura IS NULL AND fk_persona IS NULL AND fk_producto IS NULL AND fk_servicio IS NULL AND fk_post IS NOT NULL)),
     FOREIGN KEY(fk_templo) REFERENCES TEMPLO(id_templo),
     FOREIGN KEY(fk_trabajo_cyc) REFERENCES TRABAJO_CYC(id_trabajo_cyc),
     FOREIGN KEY(fk_trabajo_cyc_2) REFERENCES TRABAJO_CYC(fk_cyc),
