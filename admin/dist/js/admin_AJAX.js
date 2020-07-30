@@ -170,6 +170,11 @@ for (let i = 0; i < menuOption.length; i++) {
     let op = event.target.id;
     page = op;
 
+    document.getElementById('table_id').classList.remove('d-none');
+    if(document.getElementById('addTuple')) {
+      document.getElementById('addTuple').remove();
+    }
+
     document.getElementById('add-btn').classList.remove('disabled');
     document.getElementById('delete-btn').classList.add('disabled');
     document.getElementById('submit-btn').classList.add('disabled');
@@ -446,4 +451,135 @@ document.getElementById('delete-btn').addEventListener('click', function (event)
       getNotaries('notaria');
     }
   }
+})
+
+document.getElementById('add-btn').addEventListener('click', function (event) {
+
+  let tableDiv = document.getElementById('table_id');
+  dataT.destroy();
+  removeAllChilds(tableDiv);
+  tableDiv.classList.add('d-none');
+
+  event.preventDefault() //IMPIDE QUE SE ENVIE EN FORMULARIO AUTOMATICAMENTE
+
+  let form = document.createElement('form');
+  form.id = 'addTuple';
+  let nameLabel = document.createElement('label');
+  nameLabel.setAttribute('for', 'nombre-notaria');
+  nameLabel.innerText = 'Nombre notaria';
+  form.appendChild(nameLabel);
+  let name = document.createElement('input');
+  name.id='nombre-notaria';
+  name.name = 'nombre-notaria';
+  form.appendChild(name);
+  let cedulaLabel = document.createElement('label');
+  cedulaLabel.setAttribute('for', 'cedula');
+  cedulaLabel.innerText = 'Cedula Notario';
+  form.appendChild(cedulaLabel);
+  let cedula = document.createElement('input');
+  cedula.id='cedula';
+  cedula.name = 'cedula';
+  form.appendChild(cedula);
+  let codigoALabel = document.createElement('label');
+  codigoALabel.setAttribute('for', 'codigo-area');
+  codigoALabel.innerText = 'Código de área';
+  form.appendChild(codigoALabel);
+  let codigoA = document.createElement('input');
+  codigoA.id='codigo-area';
+  codigoA.name = 'codigo-area';
+  form.appendChild(codigoA);
+  let telefonoLabel = document.createElement('label');
+  telefonoLabel.setAttribute('for', 'telefono');
+  telefonoLabel.innerText = 'Número de teléfono';
+  form.appendChild(telefonoLabel);
+  let telefono = document.createElement('input');
+  telefono.id='telefono';
+  telefono.name = 'telefono';
+  form.appendChild(telefono);
+  let latitudLabel = document.createElement('label');
+  latitudLabel.setAttribute('for', 'latitud');
+  latitudLabel.innerText = 'Latitud';
+  form.appendChild(latitudLabel);
+  let latitud = document.createElement('input');
+  latitud.id='latitud';
+  latitud.name = 'latitud';
+  form.appendChild(latitud);
+  let longitudLabel = document.createElement('label');
+  longitudLabel.setAttribute('for', 'longitud');
+  longitudLabel.innerText = 'Longitud';
+  form.appendChild(longitudLabel);
+  let longitud = document.createElement('input');
+  longitud.id='longitud';
+  longitud.name = 'longitud';
+  form.appendChild(longitud);
+  let input3Label = document.createElement('label');
+  input3Label.setAttribute('for', 'estado-select');
+  input3Label.innerText = 'Estado';
+  form.appendChild(input3Label);
+  let input3 = document.createElement('select');
+  input3.id = 'estado-select';
+  input3.name = 'estado';
+  input3.setAttribute('onchange','selectMunicipio()');
+  form.appendChild(input3);
+  let input2Label = document.createElement('label');
+  input2Label.setAttribute('for', 'municipio-select');
+  input2Label.innerText = 'Municipio';
+  form.appendChild(input2Label);
+  let input2 = document.createElement('select');
+  input2.id = 'municipio-select';
+  input2.name = 'municipio';
+  input2.setAttribute('onchange','selectParroquia()');
+  form.appendChild(input2);
+  let input1Label = document.createElement('label');
+  input1Label.setAttribute('for', 'parroquia-select');
+  input1Label.innerText = 'Parroquia';
+  form.appendChild(input1Label);
+  let input1 = document.createElement('select');
+  input1.id = 'parroquia-select';
+  input1.name = 'parroquia';
+  form.appendChild(input1);
+  selectEstado();
+  let submit = document.createElement('button');
+  submit.id = 'submit-change';
+  submit.classList.add('btn', 'btn-primary');
+  form.appendChild(submit);
+  document.getElementById('container').appendChild(form);
+
+  submit.addEventListener('click', function () {
+
+    let name = document.getElementById('nombre-notaria').value,
+        cedula = document.getElementById('cedula').value,
+        codigo = document.getElementById('codigo-area').value,
+        telefono = document.getElementById('telefono').value,
+        latitud = document.getElementById('latitud').value,
+        longitud = document.getElementById('longitud').value,
+        parroquia = document.getElementById('parroquia-select').value;
+
+    let peticion = new XMLHttpRequest()
+    let params = `option=create&name=${name}&fklugar=${parroquia}&latitud=${latitud}&longitud=${longitud}&personid=${cedula}&codigoarea=${codigo}&telefono=${telefono}`;
+
+    peticion.open('GET', `./update.php?${params}`)
+
+    peticion.send()
+
+    //loader.classList.add('active');
+
+    peticion.onreadystatechange = function(){
+      if(peticion.readyState == 4 && peticion.status == 200){
+        //loader.classList.remove('active')
+      }
+    }
+
+    peticion.onload = function(){
+      let data = JSON.parse(peticion.responseText)
+      if(data.error){
+        alert('Error al introducir datos');
+      }else{
+        document.getElementById('table_id').classList.remove('d-none');
+        document.getElementById('addTuple').remove();
+        getNotaries('notaria');
+      }
+    }
+  })
+
 })

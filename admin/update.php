@@ -8,8 +8,8 @@
 
 include '../config.php';
 
-error_reporting(0);	//EVITAR MUESTRA DE ERRORES
-header('Content-type: application/json; charset=utf-8');    //ESTABLECE LA PAGINA COMO UN VISOR DE JSON
+//error_reporting(0);	//EVITAR MUESTRA DE ERRORES
+//header('Content-type: application/json; charset=utf-8');    //ESTABLECE LA PAGINA COMO UN VISOR DE JSON
 
 define('NO_CONTENT_FOUND', 'No se se han encontrado resultados.');
 
@@ -23,6 +23,8 @@ $longitud = isset($_GET['longitud']) ? $_GET['longitud'] : '';
 $personID = isset($_GET['personid']) ? $_GET['personid'] : '';
 $personname1 = isset($_GET['personname1']) ? $_GET['personname1'] : '';
 $personname2 = isset($_GET['personname2']) ? $_GET['personname2'] : '';
+$codigo_area = isset($_GET['codigoarea']) ? $_GET['codigoarea'] : '';
+$telefono = isset($_GET['telefono']) ? $_GET['telefono'] : '';
 
 $answer = '';
 
@@ -47,7 +49,7 @@ if ($answer == '') {
     }elseif($option === 'delete'){
       $answer = $connect->delete_notary($id, $coordID, $personID);
     }else{
-      $answer = $connect->add_notary('Notaria de mierda', 484, 27880895, 9.99, -70.20, 0212, 5455995);
+      $answer = $connect->add_notary($name, $fklugar, $personID, $latitud, $longitud, $codigo_area,$telefono);
     }
 
   } catch (PDOException $e) {

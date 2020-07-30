@@ -737,7 +737,7 @@
 
     <!-- Main content -->
     <section class="content">
-      <div class="container-fluid">
+      <div id="container" class="container-fluid">
         <table id="table_id" class="display">
 <!--          INFO DE LAS TABLAS AQUI-->
         </table>
