@@ -5018,3 +5018,83 @@ insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'sinagoga.jp
 insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'budista.jpg', 118);
 insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'hindu.jpg', 119);
 insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'mezquita.jpg', 120);
+
+#ambientes
+insert into AMBIENTE(id_ambiente, nombre_ambiente) values (null, 'fumadores');
+insert into AMBIENTE(id_ambiente, nombre_ambiente) values (null, 'musica techno');
+insert into AMBIENTE(id_ambiente, nombre_ambiente) values (null, 'Raspa canilla');
+insert into AMBIENTE(id_ambiente, nombre_ambiente) values (null, 'terraza');
+insert into AMBIENTE(id_ambiente, nombre_ambiente) values (null, 'jardin');
+insert into AMBIENTE(id_ambiente, nombre_ambiente) values (null, 'moderno');
+insert into AMBIENTE(id_ambiente, nombre_ambiente) values (null, 'retro');
+
+#ambientes salon
+insert into AMBIENTE_SALON(fk_salon_fiesta, fk_ambiente) values (258, 1);
+insert into AMBIENTE_SALON(fk_salon_fiesta, fk_ambiente) values (258, 2);
+insert into AMBIENTE_SALON(fk_salon_fiesta, fk_ambiente) values (260, 2);
+insert into AMBIENTE_SALON(fk_salon_fiesta, fk_ambiente) values (261, 3);
+insert into AMBIENTE_SALON(fk_salon_fiesta, fk_ambiente) values (263, 4);
+insert into AMBIENTE_SALON(fk_salon_fiesta, fk_ambiente) values (260, 5);
+
+#reservas disenadores
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-03-8',2,1,4,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-03-9',2,2,4,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-03-10',2,3,4,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-03-11',2,4,4,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-03-12',2,5,4,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-03-13',2,6,4,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-03-14',2,7,4,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-03-15',2,8,4,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-03-16',2,9,4,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-03-17',2,10,4,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-03-18',2,11,4,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-03-19',2,12,4,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-03-20',2,13,4,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-03-21',2,14,4,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-03-22',2,15,4,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-03-23',2,16,4,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-03-24',2,17,4,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-03-25',2,18,4,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-03-26',2,19,4,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-03-27',2,20,4,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-03-28',2,21,4,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-03-29',2,22,4,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-03-30',2,23,4,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-03-31',2,24,4,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-03-8',2,1,21,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-03-9',2,2,21,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-03-10',2,3,21,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-03-11',2,4,21,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-03-12',2,5,21,null,null);
+insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-03-13',2,6,21,null,null);
+#citas disenadores
+insert into CITA(id_reserva, id_reserva_2, fk_lugar) values (49,1,1);
+insert into CITA(id_reserva, id_reserva_2, fk_lugar) values (50,2,1);
+insert into CITA(id_reserva, id_reserva_2, fk_lugar) values (51,3,1);
+insert into CITA(id_reserva, id_reserva_2, fk_lugar) values (52,4,1);
+insert into CITA(id_reserva, id_reserva_2, fk_lugar) values (53,5,1);
+insert into CITA(id_reserva, id_reserva_2, fk_lugar) values (54,6,1);
+insert into CITA(id_reserva, id_reserva_2, fk_lugar) values (55,7,1);
+insert into CITA(id_reserva, id_reserva_2, fk_lugar) values (56,8,1);
+insert into CITA(id_reserva, id_reserva_2, fk_lugar) values (57,9,1);
+insert into CITA(id_reserva, id_reserva_2, fk_lugar) values (58,10,1);
+insert into CITA(id_reserva, id_reserva_2, fk_lugar) values (59,11,1);
+insert into CITA(id_reserva, id_reserva_2, fk_lugar) values (60,12,1);
+insert into CITA(id_reserva, id_reserva_2, fk_lugar) values (61,13,1);
+insert into CITA(id_reserva, id_reserva_2, fk_lugar) values (62,14,1);
+insert into CITA(id_reserva, id_reserva_2, fk_lugar) values (63,15,1);
+insert into CITA(id_reserva, id_reserva_2, fk_lugar) values (64,16,1);
+insert into CITA(id_reserva, id_reserva_2, fk_lugar) values (65,17,1);
+insert into CITA(id_reserva, id_reserva_2, fk_lugar) values (66,18,1);
+insert into CITA(id_reserva, id_reserva_2, fk_lugar) values (67,19,1);
+insert into CITA(id_reserva, id_reserva_2, fk_lugar) values (68,20,1);
+insert into CITA(id_reserva, id_reserva_2, fk_lugar) values (69,21,1);
+insert into CITA(id_reserva, id_reserva_2, fk_lugar) values (70,22,1);
+insert into CITA(id_reserva, id_reserva_2, fk_lugar) values (71,23,1);
+insert into CITA(id_reserva, id_reserva_2, fk_lugar) values (72,24,1);
+insert into CITA(id_reserva, id_reserva_2, fk_lugar) values (73,1,1);
+insert into CITA(id_reserva, id_reserva_2, fk_lugar) values (74,2,1);
+insert into CITA(id_reserva, id_reserva_2, fk_lugar) values (75,3,1);
+insert into CITA(id_reserva, id_reserva_2, fk_lugar) values (76,4,1);
+insert into CITA(id_reserva, id_reserva_2, fk_lugar) values (77,5,1);
+insert into CITA(id_reserva, id_reserva_2, fk_lugar) values (78,6,1);
