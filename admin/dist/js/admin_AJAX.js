@@ -164,7 +164,7 @@ function selectParroquia(){
 
 //SE LE ASIGNA A CADA OPCION DE LA BARRA VERTICAL IZQUIERA UN EVENTO PARA PODER CARGAR EL AJAX
 var menuOption = document.getElementsByClassName('option');
-for (let i = 0; i < option.length; i++) {
+for (let i = 0; i < menuOption.length; i++) {
   menuOption[i].addEventListener('click', function (event) {
 
     let op = event.target.id;
@@ -295,7 +295,7 @@ function getNotaries(op) {
 };
 
 //AÑADIR A LAS FILAS LA POSIBILIDAD DE CAMBIAR LOS DATOS
-async function setChangePosibility(){
+function setChangePosibility(){
   let rows = document.getElementsByTagName('tr');
   for (let i = 0; i < rows.length; i++){
     let element = rows[i];
@@ -310,6 +310,9 @@ async function setChangePosibility(){
               input.type = 'text';
               input.name = names[j];
               input.value = columns[j].innerText;
+              if(j === 0){
+                input.id = element.id;
+              }
               columns[j].innerText = '';
               if(columns[j].id){
                 input.id = columns[j].id;
@@ -373,19 +376,24 @@ document.getElementById('submit-btn').addEventListener('click', function (event)
 
   event.preventDefault() //IMPIDE QUE SE ENVIE EN FORMULARIO AUTOMATICAMENTE
 
-  let name = document.getElementsByName('nombre')[0].value,
-    latitud = document.getElementsByName("latitud"),
-    coordinatesID = returnIdNumber(latitud[0].id),
+  let name = document.getElementsByName('nombre')[0],
+    notaryID = name.id,
+    latitud = document.getElementsByName("latitud")[0],
+    coordinatesID = returnIdNumber(latitud.id),
     longitud = document.getElementsByName("longitud")[0].value,
-    persona = document.getElementsByName("persona"),
-    personaID = returnIdNumber(persona[0].id),
+    persona = document.getElementsByName("persona")[0],
+    personaID = returnIdNumber(persona.id),
     parroquiaID = document.getElementsByName("parroquia")[0].value;
 
-    latitud = latitud[0].value;
-    persona = persona[0].value;
+    latitud = latitud.value;
+    persona = persona.value;
+    let index = persona.indexOf(' ')+1;
+    let persona2 = persona.substr(index, persona.length-index);
+    persona = persona.substr(0, index);
+    name = name.value;
 
     let peticion = new XMLHttpRequest()
-    let params = `option=${page}&name=${name}&fklugar=${parroquiaID}&coordID=${coordinatesID}&latitud=${latitud}&longitud=${longitud}&personid=${personaID}&personname1=${persona}&personname2=${persona}`   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
+    let params = `option=update&id=${notaryID}&name=${name}&fklugar=${parroquiaID}&coordID=${coordinatesID}&latitud=${latitud}&longitud=${longitud}&personid=${personaID}&personname1=${persona}&personname2=${persona2}`;   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
     peticion.open('GET', `./update.php?${params}`)
 
     peticion.send()
@@ -400,21 +408,42 @@ document.getElementById('submit-btn').addEventListener('click', function (event)
 
     peticion.onload = function(){
       let data = JSON.parse(peticion.responseText)
-      let container = document.getElementById('content');
-      removeAllChilds(container);
       if(data.error){
-        let element = document.createElement('p')
-        element.innerText = data.error
-        document.getElementById('no-content').appendChild(element)
+        alert('Error al obtener datos de la Base');
       }else{
-        for(let i = 0; i < data.length; i++){
-          container.appendChild(showContent(data[i]))
-        }
+        getNotaries('notaria');
       }
-      document.getElementById("search").value = ""
-      document.getElementById("category").value = "default"
-      document.getElementById("feature").value = "default"
     }
+})
 
+document.getElementById('delete-btn').addEventListener('click', function (event) {
 
+  event.preventDefault() //IMPIDE QUE SE ENVIE EN FORMULARIO AUTOMATICAMENTE
+
+  let notaryID = document.getElementsByName('nombre')[0].id,
+    coordinatesID = document.getElementsByName("latitud")[0].id,
+    personaID = document.getElementsByName("persona")[0].id;
+
+  let peticion = new XMLHttpRequest()
+  let params = `option=delete&id=${notaryID}&coordID=${coordinatesID}&personid=${personaID}`;   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
+  peticion.open('GET', `./update.php?${params}`)
+
+  peticion.send()
+
+  //loader.classList.add('active');
+
+  peticion.onreadystatechange = function(){
+    if(peticion.readyState == 4 && peticion.status == 200){
+      //loader.classList.remove('active')
+    }
+  }
+
+  peticion.onload = function(){
+    let data = JSON.parse(peticion.responseText)
+    if(data.error){
+      alert('Error al obtener datos de la Base');
+    }else{
+      getNotaries('notaria');
+    }
+  }
 })
