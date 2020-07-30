@@ -1,4 +1,14 @@
-<?php
+<?php   session_start();
+
+//if(!isset($_SESSION["usuario"])){
+//    header("Location: index.php");
+//    die();
+//}
+
+error_reporting(0);	//EVITAR MUESTRA DE ERRORES
+header('Content-type: application/json; charset=utf-8');    //ESTABLECE LA PAGINA COMO UN VISOR DE JSON
+
+define('NO_CONTENT_FOUND', 'No se se han encontrado resultados.');
 
 include 'config.php';
 
