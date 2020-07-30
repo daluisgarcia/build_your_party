@@ -7573,3 +7573,10 @@ insert into servicio_tipo_fiesta(id_servicio_tipo_fiesta, nombre_servicio_tipo_f
 insert into servicio_tipo_fiesta(id_servicio_tipo_fiesta, nombre_servicio_tipo_fiesta, descripcion_servicio_tipo_fiesta, fk_tipo_fiesta, fk_servicio) values (null, 'transporte lujoso', null, 3, 7);
 insert into servicio_tipo_fiesta(id_servicio_tipo_fiesta, nombre_servicio_tipo_fiesta, descripcion_servicio_tipo_fiesta, fk_tipo_fiesta, fk_servicio) values (null, 'bebidas para adultos', null, 1, 2);
 insert into servicio_tipo_fiesta(id_servicio_tipo_fiesta, nombre_servicio_tipo_fiesta, descripcion_servicio_tipo_fiesta, fk_tipo_fiesta, fk_servicio) values (null, 'dulces para niños', null, 4, 16);
+
+#estado producto pedido
+insert into estado_p_p(fk_estado, fk_producto_pedido_1, fk_producto_pedido_2, fecha_inicio_estado_p_p, fecha_fin_estado_p_p) values (7, 14, 24, '2021-04-10','2021-04-12');
+insert into estado_p_p(fk_estado, fk_producto_pedido_1, fk_producto_pedido_2, fecha_inicio_estado_p_p, fecha_fin_estado_p_p) values (2, 17, 21, '2021-04-01','2021-04-03');
+insert into estado_p_p(fk_estado, fk_producto_pedido_1, fk_producto_pedido_2, fecha_inicio_estado_p_p, fecha_fin_estado_p_p) values (4, 18, 6, '2021-04-12','2021-04-13');
+insert into estado_p_p(fk_estado, fk_producto_pedido_1, fk_producto_pedido_2, fecha_inicio_estado_p_p, fecha_fin_estado_p_p) values (5, 18, 10, '2021-04-16','2021-04-18');
+insert into estado_p_p(fk_estado, fk_producto_pedido_1, fk_producto_pedido_2, fecha_inicio_estado_p_p, fecha_fin_estado_p_p) values (1, 18, 11, '2021-04-11','2021-04-13');
