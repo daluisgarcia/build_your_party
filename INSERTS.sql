@@ -3987,11 +3987,6 @@ insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_per
 
 #DECORACION
 insert into DECORACION (id_servicio, fk_tematica,fk_persona) value (25,3,66666666);
-INSERT INTO DECORACION VALUES (26, 1, 27780907);
-INSERT INTO DECORACION VALUES (27, 2, 27780908);
-INSERT INTO DECORACION VALUES (28, 3, 27780909);
-INSERT INTO DECORACION VALUES (29, 4, 27780910);
-INSERT INTO DECORACION VALUES (30, 5, 27780911);
 
 #PAG
 #METODO_PAGO
@@ -7585,3 +7580,23 @@ insert into estado_p_p(fk_estado, fk_producto_pedido_1, fk_producto_pedido_2, fe
 insert into estado_p_p(fk_estado, fk_producto_pedido_1, fk_producto_pedido_2, fecha_inicio_estado_p_p, fecha_fin_estado_p_p) values (4, 18, 6, '2021-04-12','2021-04-13');
 insert into estado_p_p(fk_estado, fk_producto_pedido_1, fk_producto_pedido_2, fecha_inicio_estado_p_p, fecha_fin_estado_p_p) values (5, 18, 10, '2021-04-16','2021-04-18');
 insert into estado_p_p(fk_estado, fk_producto_pedido_1, fk_producto_pedido_2, fecha_inicio_estado_p_p, fecha_fin_estado_p_p) values (1, 18, 11, '2021-04-11','2021-04-13');
+
+#estado presupuesto
+insert into estado_presupuesto(fk_estado, fk_presupuesto, fecha_inicio_estado_presupuesto, fecha_fin_estado_presupuesto) values (1, 1, '2021-04-02','2021-04-03');
+insert into estado_presupuesto(fk_estado, fk_presupuesto, fecha_inicio_estado_presupuesto, fecha_fin_estado_presupuesto) values (1, 2, '2021-04-03','2021-04-04');
+insert into estado_presupuesto(fk_estado, fk_presupuesto, fecha_inicio_estado_presupuesto, fecha_fin_estado_presupuesto) values (1, 3, '2021-04-04','2021-04-05');
+insert into estado_presupuesto(fk_estado, fk_presupuesto, fecha_inicio_estado_presupuesto, fecha_fin_estado_presupuesto) values (1, 4, '2021-04-05','2021-04-06');
+insert into estado_presupuesto(fk_estado, fk_presupuesto, fecha_inicio_estado_presupuesto, fecha_fin_estado_presupuesto) values (1, 5, '2021-04-06','2021-04-07');
+
+#servicios de decoracion
+insert into SERVICIO(id_servicio, nombre_servicio, modalidad_pago_servicio, costo_servicio, precio_servicio, descuento_servicio, requiere_cita_servicio, detalles_servicio, fk_categoria) value(null, 'pizarras de gis', 'CANTIDAD', 2500, 500000, null, 0, 'Pizarras para colocar mensajes personalizados', 5);
+insert into SERVICIO(id_servicio, nombre_servicio, modalidad_pago_servicio, costo_servicio, precio_servicio, descuento_servicio, requiere_cita_servicio, detalles_servicio, fk_categoria) value(null, 'flores', 'CANTIDAD', 250, 500000, null, 0, 'Rosas y margaritas arregladas', 5);
+insert into SERVICIO(id_servicio, nombre_servicio, modalidad_pago_servicio, costo_servicio, precio_servicio, descuento_servicio, requiere_cita_servicio, detalles_servicio, fk_categoria) value(null, 'columnas blancas', 'CANTIDAD', 250000, 500000, null, 0, 'Columnas de soporte color blanco', 5);
+insert into SERVICIO(id_servicio, nombre_servicio, modalidad_pago_servicio, costo_servicio, precio_servicio, descuento_servicio, requiere_cita_servicio, detalles_servicio, fk_categoria) value(null, 'globos', 'CANTIDAD', 250, 50, null, 0, 'Globos de colores', 5);
+insert into SERVICIO(id_servicio, nombre_servicio, modalidad_pago_servicio, costo_servicio, precio_servicio, descuento_servicio, requiere_cita_servicio, detalles_servicio, fk_categoria) value(null, 'velas', 'CANTIDAD', 25, 50, null, 0, 'Velas decorativas paromaticas', 5);
+#decoracion
+INSERT INTO DECORACION VALUES (385, 1, 27780907);
+INSERT INTO DECORACION VALUES (386, 2, 27780908);
+INSERT INTO DECORACION VALUES (387, 3, 27780909);
+INSERT INTO DECORACION VALUES (388, 4, 27780910);
+INSERT INTO DECORACION VALUES (389, 5, 27780911);
