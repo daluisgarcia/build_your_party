@@ -120,7 +120,7 @@ insert into TELEFONO(id_telefono, codigo_area_telefono, numero_telefono, fk_temp
 insert into TELEFONO(id_telefono, codigo_area_telefono, numero_telefono, fk_templo) value (null, 0212, 8754572, 119);
 insert into TELEFONO(id_telefono, codigo_area_telefono, numero_telefono, fk_templo) value (null, 0212, 8754573, 120);
 
-#coordenadas
+#coordenadas templos
 INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_templo) VALUES (5.681918, -67.583753, 1);
 INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_templo) VALUES (5.6683471,-67.6276311, 2);
 INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_templo) VALUES (5.8872778,-67.4100995, 3);

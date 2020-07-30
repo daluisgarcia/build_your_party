@@ -166,7 +166,7 @@ CREATE TABLE IF NOT EXISTS DETALLE_COMPRA(
 
 CREATE TABLE IF NOT EXISTS PUNTO_REFERENCIA(
     id_punto_refencia INT NOT NULL auto_increment,
-    descripcion_punto_refencia VARCHAR(50) NOT NULL,
+    descripcion_punto_refencia VARCHAR(150) NOT NULL,
     fk_salon_fiesta INT NOT NULL,
     PRIMARY KEY(id_punto_refencia),
     FOREIGN KEY(fk_salon_fiesta) REFERENCES SALON_FIESTA(id_servicio)
