@@ -20,12 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3d9412f-d832-42ed-9e83-6e44df7bd0b9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/model/register.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/register.view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/dist/js/admin_AJAX.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/dist/js/admin_AJAX.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/index.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/index.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/AdminSQL.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/AdminSQL.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/MapSQL.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/MapSQL.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,14 +162,14 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/admin" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\build_your_party\admin" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\build_your_party\view" />
       <recent name="C:\wamp64\www\build_your_party\admin\view" />
       <recent name="C:\wamp64\www\build_your_party\admin\dist\img" />
       <recent name="C:\wamp64\www\build_your_party" />
-      <recent name="C:\wamp64\www\build_your_party\view" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\build_your_party\admin" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -196,6 +199,8 @@
       <workItem from="1595979277156" duration="15404000" />
       <workItem from="1596036160566" duration="41394000" />
       <workItem from="1596120122141" duration="7130000" />
+      <workItem from="1596480946835" duration="658000" />
+      <workItem from="1596499657871" duration="10121000" />
     </task>
     <servers />
   </component>
@@ -234,21 +239,21 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594871948615" />
-    <state x="486" y="87" key="NewPhpClassDialog" timestamp="1595999097611">
+    <state x="486" y="87" key="NewPhpClassDialog" timestamp="1596501189318">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="486" y="87" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1595999097611" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1596067372513">
+    <state x="486" y="87" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1596501189318" />
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1596501287279">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1596067372513" />
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1596501287279" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1596045527942">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1596045527942" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1595120437812">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1596507886221">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1595120437812" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1596507886221" />
   </component>
 </project>

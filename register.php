@@ -1,63 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<?php
-    require 'navbar.php';
-?>
+<?php   session_start();
 
-<br>
-<br>
+if(isset($_SESSION['user'])){
+    header("Location: index.php");
+    die();
+}
 
-<div class="row register-img">
-    <section class="container-fluid">
-        <section class="row justify-content-md-center">
-            <section class="col-12 col-sm-6 col-md-3">
-                <form class="form-container-register">
-                    <div class="text-center">
-                        <h5>
-                            Ingresa tus datos
-                        </h5>
-                    </div>
-                    <br>
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputName" aria-describedby="emailHelp" placeholder="Nombre Completo">
-                    </div>
-                    <div class="form-group">
-                        <input type="password" class="form-control" id="exampleInputId" placeholder="Cédula">
-                    </div>
-                    <div class="form-group">
-                        <input type="password" class="form-control" id="exampleInputPhone" placeholder="Teléfono">
-                    </div>
-                    <div class="form-group">
-                        <input type="password" class="form-control" id="exampleInputEmail" placeholder="Correo electrónico">
-                    </div>
-                    <div class="form-group">
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
-                    </div>
-                    <div class="form-group">
-                        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Repetir contraseña">
-                    </div>
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-primary text-center">Registrarme</button>
-                    </div>
-                    <div class="text-center">
-                        <a href="login">¿Ya posees una cuenta?</a>
-                    </div>
 
-                </form>
-            </section>
-        </section>
-    </section>
+//chequea que sea un request tipo post
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+    require 'config.php';
 
-</div>
+    $name = $_POST['name'];
+    $last_name = $_POST['last_name'];
+    $id = $_POST['id'];
+    $phone = $_POST['phone'];
+    $email = $_POST['email'];
+    $usuario = SANITIZE_STRING($_POST['user']);
+    $pass = $_POST['pass'];
+    $pass_con = $_POST['pass_con'];
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="../../public/js/bootstrap.min.js"></script>
-</body>
-</html>
+    $reg_error = '';
+
+    if(empty($name)){
+        $reg_error .= '<li>Nombre no debe estar vacío</li>';
+    }
+    if(empty($last_name)){
+        $reg_error .= '<li>Apellido no debe estar vacío</li>';
+    }
+    if(empty($id)){
+        $reg_error .= '<li>Cédula no debe estar vacío</li>';
+    }
+    if(empty($phone)){
+        $reg_error .= '<li>Teléfono no debe estar vacío</li>';
+    }
+    if(empty($email)){
+        $reg_error .= '<li>Correo no debe estar vacío</li>';
+    }
+    if(empty($usuario)){
+        $reg_error .= '<li>Usuario no debe estar vacío</li>';
+    }
+    if(empty($pass)){
+        $reg_error .= '<li>Contraseña no debe estar vacío</li>';
+    }
+    if(empty($pass_con)){
+        $reg_error .= '<li>Repetir contraseña no debe estar vacío</li>';
+    }
+
+    if($pass != $pass_con){
+        $reg_error .= '<li>Las contraseñas deben coincidir</li>';
+    }
+
+
+    include_once './model/register.php';
+
+    if($reg_error == ''){
+        try{
+            $area_code = substr($phone, 0, 4);
+            $number = substr($phone, 4);
+            $conexion = new register();
+            $register = $conexion->create_user($name, $last_name, $id, $area_code, $number, $email, $usuario, $pass);
+
+            if(empty($register)){
+                $reg_error .= '<li>Datos inválidos</li>';
+            } else {
+                $_SESSION['user'] = $register['id_usuario'];
+                $_SESSION['user'] = $register['nombre_usuario'];
+                header("Location: index.php");
+                die();
+            }
+
+        } catch (PDOException $exc){
+            $reg_error .='<li>Error de conexión</li>';
+        }
+    }
+}
+include "view/register.view.php";

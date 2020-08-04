@@ -20,16 +20,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
     if(empty($pass)){
         $error .= '<li>contraseña no debe estar vacío</li>';
-    }else {
-        $pass = ENCRYPT($pass);
     }
+    include_once './model/user.php';
 
     if($error == ''){
         try{
-            require 'model/user.php';
 
-            $conexion = new user.php();
-
+            $conexion = new user();
             $login = $conexion->get_user_data($usuario,$pass);
 
             if(empty($login)){
