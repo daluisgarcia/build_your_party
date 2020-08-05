@@ -25,15 +25,21 @@ function removeAllChilds(element) {
     }
 }
 
+function getProductPrices(id){
+
+}
+
 function showContent(data){
     let col3 = document.createElement('div');
     if(data.CLASE === 'SERVICIO'){
         col3.classList.add('col-3');
-            let a = document.createElement('a');
-            a.classList.add('text-decoration-none', 'card');
-            a.href = `SERVICIO-${data.id}`;
+            let div = document.createElement('div');
+            div.classList.add('text-decoration-none', 'card', 'can-buy', 'hover-shadow');
+            div.id = `SERVICIO-${data.id}`;
                 let img = document.createElement('img');
                 img.classList.add('card-img-top');
+                img.src = IMG_FOLDER+data.imagen;
+                img.height = 200;
                 let body = document.createElement('div');
                 body.classList.add('card-body');
                     let title = document.createElement('h5');
@@ -41,7 +47,12 @@ function showContent(data){
                     title.innerHTML = `${data.nombre} <i>SERVICIO</i>`;
                     let p1 = document.createElement('p');
                     p1.classList.add('card-text');
-                    p1.innerHTML = `<b>Precio</b> ${data.precio}`;
+                    let precio = 0;
+                    if(data.modalidad_pago === 'CANTIDAD') {
+                        precio = checkForProducts(data.id);
+                    }
+                    precio = data.precio + precio;
+                    p1.innerHTML = `<b>Precio:</b> ${precio}`;
                     let p2 = document.createElement('p');
                     p2.classList.add('card-text');
                     p2.innerHTML = `<b>Modalidad de pago:</b> ${data.modalidad_pago}`;
@@ -52,16 +63,18 @@ function showContent(data){
                 body.appendChild(p1);
                 body.appendChild(p2);
                 body.appendChild(p3);
-            a.appendChild(img);
-            a.appendChild(body);
-        col3.appendChild(a);
+            div.appendChild(img);
+            div.appendChild(body);
+        col3.appendChild(div);
     }else{
         col3.classList.add('col-3');
-            let a = document.createElement('a');
-            a.classList.add('text-decoration-none', 'card');
-            a.href = `SERVICIO-${data.id}`;
+            let div = document.createElement('div');
+            div.classList.add('text-decoration-none', 'card', 'can-buy', 'hover-shadow');
+            div.id = `PRODUCTO-${data.id}`;
                 let img = document.createElement('img');
                 img.classList.add('card-img-top');
+                img.src = IMG_FOLDER+data.imagen;
+                img.height = 200;
                 let body = document.createElement('div');
                 body.classList.add('card-body');
                     let title = document.createElement('h5');
@@ -72,9 +85,9 @@ function showContent(data){
                     p1.innerHTML = `<b>Precio</b> ${data.precio}`;
                 body.appendChild(title);
                 body.appendChild(p1);
-            a.appendChild(img);
-            a.appendChild(body);
-        col3.appendChild(a);
+            div.appendChild(img);
+            div.appendChild(body);
+        col3.appendChild(div);
     }
 
     return col3;
