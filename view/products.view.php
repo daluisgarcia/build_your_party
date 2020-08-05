@@ -12,8 +12,8 @@
                 <?php foreach ($products as $p): ?>
                     <?php if ($p['CLASE']==='SERVICIO'): ?>
                         <div class="col-3">
-                            <a href="SERVICIO-<?php echo $p['id']; ?>" class="text-decoration-none card">
-                                <img src="" class="card-img-top" alt="...">
+                            <div href="SERVICIO-<?php echo $p['id']; ?>" class="text-decoration-none card hover-shadow can-buy">
+                                <img src="<?php echo IMG_FOLDER.$p['imagen']; ?>" class="card-img-top" alt="..." height="200px">
                                 <div class="card-body">
                                     <h5 class="card-title"><?php echo $p['nombre']; ?> <i>SERVICIO</i></h5>
                                     <p class="card-text"><b>Precio:</b> <?php echo $p['precio']; ?></p>
@@ -21,17 +21,17 @@
                                     <p class="card-text"><?php echo $p['detalles']; ?></p>
 
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     <?php else: ?>
                         <div class="col-3">
-                            <a href="PRODUCTO-<?php echo $p['id']; ?>" class="text-decoration-none card">
-                                <img src="" class="card-img-top" alt="...">
+                            <div id="PRODUCTO-<?php echo $p['id']; ?>" class="text-decoration-none card hover-shadow can-buy">
+                                <img src="<?php echo IMG_FOLDER.$p['imagen']; ?>" class="card-img-top" alt="..." height="200px">
                                 <div class="card-body">
                                     <h5 class="card-title"><?php echo $p['nombre'] ?> <i>PRODUCTO</i></h5>
                                     <p class="card-text"><b>Precio:</b> <?php echo $p['precio']; ?></p>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     <?php endif; ?>
                 <?php endforeach; ?>

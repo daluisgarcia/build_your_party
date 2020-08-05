@@ -28,7 +28,7 @@ function print_list($array){
         if (array_key_exists($i,$array)) {
             $a = $array[$i];
             echo "<li>";
-            echo "<a id='$a[$id]' href='#' class='category'>$a[$n]</a>";
+            echo "<div id='$a[$id]' href='#' class='category text-shadow'>$a[$n]</div>";
             $result = search_category($a['id'], $array);
             if (!empty($result)) {
                 print_list($result);
