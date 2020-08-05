@@ -51,14 +51,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
 
 
-    include_once './model/register.php';
+    include_once './model/user.php';
 
     if($reg_error == ''){
         try{
             $area_code = substr($phone, 0, 4);
             $number = substr($phone, 4);
-            $conexion = new register();
-            $register = $conexion->create_user($name, $last_name, $id, $area_code, $number, $email, $usuario, $pass);
+            $conexion = new user();
+            $register = $conexion->register_and_login($name, $last_name, $id, $area_code, $number, $email, $usuario, $pass);
 
             if(empty($register)){
                 $reg_error .= '<li>Datos inválidos</li>';
