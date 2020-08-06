@@ -12,11 +12,14 @@ header('Content-type: application/json; charset=utf-8');    //ESTABLECE LA PAGIN
 
 define('NO_CONTENT_FOUND', 'No se se han encontrado resultados.');
 
-$category_id = $_GET['category'];
+$category_id = isset($_GET['category']) ? $_GET['category'] : '';
+$service_id = isset($_GET['serviceid']) ? $_GET['serviceid'] : '';
 $answer = '';
 
 if ($category_id !== '') {
     $category_id = SANITIZE_STRING(strtolower($category_id));
+}elseif($service_id !== ''){
+    $service_id = SANITIZE_STRING(strtolower($service_id));
 }else{
     $answer = ['error' => NO_CONTENT_FOUND];
 }
@@ -26,14 +29,12 @@ include_once './model/Product.php';
 if ($answer == '') {
     try {
         $connect = new Product();
+        if($category_id !== '') {
 
-        $products = $connect->get_products_by_category($category_id);
-        $service = $connect->get_services_by_category($category_id);
+            $products = $connect->get_products_by_category($category_id);
+            $service = $connect->get_services_by_category($category_id);
 
-        if (empty($products) or empty($service)) {
-            $answer = ['error' => NO_CONTENT_FOUND];
-        }else{
-            foreach ($products as &$p){
+            foreach ($products as &$p) {
                 $arr = array('CLASE' => 'PRODUCTO');
                 $p = $p + $arr;
             }
@@ -42,9 +43,11 @@ if ($answer == '') {
                 $s = $s + $arr;
                 array_push($products, $s);
             }
-        }
 
-        $answer = $products;
+            $answer = $products;
+        }elseif($service_id !== ''){
+            $answer = $connect->get_products_by_service_id($service_id);
+        }
 
     } catch (PDOException $e) {
         $answer = ['error' => 'Error al conectar a la base de datos'];

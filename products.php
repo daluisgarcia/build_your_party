@@ -7,12 +7,10 @@
 
 function search_category($id, &$categories){
     $result = [];
-    $i = -1;
     foreach ($categories as $category){
-        $i++;
         if($category['fk'] == $id){
             array_push($result, $category);
-            unset($categories[$i]);
+            unset($categories[array_search($category, $categories)]);
         }
     }
     return $result;

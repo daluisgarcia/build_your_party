@@ -25,72 +25,174 @@ function removeAllChilds(element) {
     }
 }
 
-function getProductPrices(id){
+function getProduct(id){
+    return new Promise((resolve, reject) => {
+        let peticion = new XMLHttpRequest()
+        let params = `serviceid=${id}`   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
+        peticion.open('GET', `./product_search.php?${params}`)
 
+        peticion.send()
+
+        //loader.classList.add('active');
+
+        peticion.onreadystatechange = function () {
+            if (peticion.readyState == 4 && peticion.status == 200) {
+                //loader.classList.remove('active')
+            }
+        }
+
+        peticion.onload = function () {
+            let data = JSON.parse(peticion.responseText)
+            if (data.error) {
+                alert('ERROR: Recoleccion de productos para servicios fallida')
+                reject();
+            } else {
+                resolve(data);
+            }
+        }
+    })
+}
+
+function addToBudget(btn){
+    //AQUI VA EL PROCEDIMIENTO PARA AGREGAR PRODUCTOS A PRESUPUESTO
+    //AGREGAR DROPDOWNS AL PRINCIPIO DE LA VISTA PARA ESCOGER FIESTA Y PRESUPUESTO
+    //(VALIDAR SI EXISTEN PRESUPUESTO Y A QUE PRESUPUESTO SE DEBE AGREGAR)
+    alert('Agregado a presupuesto');
+    console.log(btn);
 }
 
 function showContent(data){
-    let col3 = document.createElement('div');
+    let col4 = document.createElement('div');
     if(data.CLASE === 'SERVICIO'){
-        col3.classList.add('col-3');
+        col4.classList.add('col-4');
             let div = document.createElement('div');
             div.classList.add('text-decoration-none', 'card', 'can-buy', 'hover-shadow');
-            div.id = `SERVICIO-${data.id}`;
                 let img = document.createElement('img');
                 img.classList.add('card-img-top');
                 img.src = IMG_FOLDER+data.imagen;
                 img.height = 200;
                 let body = document.createElement('div');
                 body.classList.add('card-body');
+                body.id = `SERVICIO-${data.id}`;
                     let title = document.createElement('h5');
                     title.classList.add('card-title');
                     title.innerHTML = `${data.nombre} <i>SERVICIO</i>`;
                     let p1 = document.createElement('p');
                     p1.classList.add('card-text');
-                    let precio = 0;
-                    if(data.modalidad_pago === 'CANTIDAD') {
-                        precio = checkForProducts(data.id);
-                    }
-                    precio = data.precio + precio;
-                    p1.innerHTML = `<b>Precio:</b> ${precio}`;
+                    p1.innerHTML = `<b>Precio:</b> ${data.precio}`;
+                    p1.name = 'PRECIO';
                     let p2 = document.createElement('p');
                     p2.classList.add('card-text');
                     p2.innerHTML = `<b>Modalidad de pago:</b> ${data.modalidad_pago}`;
+                    p2.name = 'MODALIDAD';
+                    body.appendChild(title);
+                    body.appendChild(p1);
+                    body.appendChild(p2);
                     let p3 = document.createElement('p');
                     p3.classList.add('card-text');
                     p3.innerHTML = `${data.detalles}`;
-                body.appendChild(title);
-                body.appendChild(p1);
-                body.appendChild(p2);
-                body.appendChild(p3);
+                    let btn = document.createElement('button');
+                    btn.classList.add('btn', 'btn-outline-primary', 'btn-add-pres');
+                    btn.innerText = 'Agregar a presupuesto';
+                    btn.name=`SERVICIO-${data.id}`;
+                    let label = null;
+                    let p11 = null;
+                    if(data.modalidad_pago === 'CANTIDAD') {
+                        let products = getProduct(data.id);
+                        products.then((prod)=>{
+                            console.log(prod);
+                            for (let i=0; i<prod.length; i++){
+                                console.log('Itero en productos');
+                                label = document.createElement('p');
+                                label.classList.add('card-text');
+                                label.innerHTML = `<b>Precio por unidad de ${prod[i].nombre_producto}:</b> ${prod[i].precio_producto}`;
+                                body.appendChild(label);
+                                p11 = document.createElement('p');
+                                p11.classList.add('card-text');
+                                let input = document.createElement('input');
+                                input.type='number';
+                                input.min = 40; //AQUI SE AGREGA EL ATRIBUTO DE CANTIDAD MINIMA
+                                input.value = input.min;
+                                input.max = 1000;
+                                input.step = 1;
+                                input.name=`QUANTP-${prod[i].id_producto}`;
+                                input.classList.add('form-inline');
+                                p11.innerHTML=`<b>Selecciona la cantidad de ${prod[i].nombre_producto}: </b>`;
+                                p11.appendChild(input);
+                                body.appendChild(p11);
+                            }
+                            body.appendChild(p3);
+                            body.appendChild(btn);
+                        }).catch(()=>{
+
+                        })
+                    }else if(data.modalidad_pago === 'HORA'){
+                        p11 = document.createElement('p');
+                        p11.classList.add('card-text');
+                        let input = document.createElement('input');
+                        input.type='number';
+                        input.min = 40; //AQUI SE AGREGA EL ATRIBUTO DE CANTIDAD MINIMA
+                        input.value = input.min;
+                        input.max = 1000;
+                        input.step = 1;
+                        input.name=`QUANTH-S`;
+                        input.classList.add('form-inline');
+                        p11.innerText='Selecciona la cantidad de horas:';
+                        p11.appendChild(input);
+                        body.appendChild(p11);
+                        body.appendChild(p3);
+                        body.appendChild(btn);
+                    }
+                    btn.addEventListener('click',function(event){addToBudget(event.target)});
             div.appendChild(img);
             div.appendChild(body);
-        col3.appendChild(div);
+        col4.appendChild(div);
     }else{
-        col3.classList.add('col-3');
+        col4.classList.add('col-4');
             let div = document.createElement('div');
             div.classList.add('text-decoration-none', 'card', 'can-buy', 'hover-shadow');
-            div.id = `PRODUCTO-${data.id}`;
                 let img = document.createElement('img');
                 img.classList.add('card-img-top');
                 img.src = IMG_FOLDER+data.imagen;
                 img.height = 200;
                 let body = document.createElement('div');
                 body.classList.add('card-body');
+                body.id = `PRODUCTO-${data.id}`;
                     let title = document.createElement('h5');
                     title.classList.add('card-title');
                     title.innerHTML = `${data.nombre} <i>PRODUCTO</i>`;
                     let p1 = document.createElement('p');
                     p1.classList.add('card-text');
                     p1.innerHTML = `<b>Precio</b> ${data.precio}`;
+                    p1.name = 'PRECIO';
+                    let p11 = document.createElement('p');
+                    p11.classList.add('card-text');
+                    let input = document.createElement('input');
+                    input.type='number';
+                    input.min = 1;
+                    input.value = input.min;
+                    input.max = 100;
+                    input.step = 1;
+                    input.name=`QUANTP-P`;
+                    input.classList.add('form-inline');
+                    p11.innerText='Selecciona la cantidad:';
+                    p11.appendChild(input);
+                    let btn = document.createElement('button');
+                    btn.classList.add('btn', 'btn-outline-primary', 'btn-add-pres');
+                    btn.innerText = 'Agregar a presupuesto';
+                    btn.name=`PRODUCTO-${data.id}`;
+                    btn.addEventListener('click',function(event){addToBudget(event.target)});
                 body.appendChild(title);
                 body.appendChild(p1);
+                if(p11 !== null) {
+                    body.appendChild(p11);
+                }
+                body.appendChild(btn);
             div.appendChild(img);
             div.appendChild(body);
-        col3.appendChild(div);
+        col4.appendChild(div);
     }
-
-    return col3;
+    return col4;
 }
 
 //var loader;
@@ -105,6 +207,8 @@ for (let i = 0; i < categories.length; i++) {
         removeAllChilds(document.getElementById('productos-row'))
 
         let idCat = event.target.id;
+
+        document.getElementById('products-title').innerText=`Categoria: ${event.target.innerText}`;
 
         let peticion = new XMLHttpRequest()
         let params = `category=${idCat}`   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
@@ -122,7 +226,6 @@ for (let i = 0; i < categories.length; i++) {
 
         peticion.onload = function () {
             let data = JSON.parse(peticion.responseText)
-            console.log(data)
             let container = document.getElementById('productos-row');
             removeAllChilds(container);
             if (data.error) {
@@ -130,7 +233,6 @@ for (let i = 0; i < categories.length; i++) {
                 element.innerText = data.error
                 document.getElementById('productos-row').appendChild(element)
             } else {
-                console.log(data.length);
                 for (let i = 0; i < data.length; i++) {
                     container.appendChild(showContent(data[i]))
                 }
