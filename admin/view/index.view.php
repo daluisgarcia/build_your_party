@@ -228,6 +228,15 @@
               </p>
             </a>
           </li>
+          <li class="nav-item option">
+            <a href="#" id="posts" class="nav-link">
+              <img src="./dist/img/notas.svg" class="nav-icon">
+              <p>
+                Posts
+                <!--                <span class="right badge badge-danger">New</span>-->
+              </p>
+            </a>
+          </li>
 <!--          <li class="nav-item has-treeview">-->
 <!--            <a href="#" class="nav-link">-->
 <!--              <i class="nav-icon fas fa-copy"></i>-->
@@ -809,6 +818,8 @@
 <script src="./dist/js/admin_AJAX.js"></script>
 <!-- CRUD Clientes-->
 <script src="./dist/js/admin_clients.js"></script>
+<!-- CRUD Posts-->
+<script src="./dist/js/admin_posts.js"></script>
 <!-- DataTables -->
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
 </body>

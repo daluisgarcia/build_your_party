@@ -85,4 +85,10 @@ class AdminSQL extends Connection
         return $statement->fetchAll();
     }
 
+    public function get_posts() {
+        $statement = $this->con->prepare("select i.id_imagen as id_imagen, i.ruta_imagen as ruta, p.id_post as id, p.seccion_post as seccion, p.titulo_post as titulo, p.cuerpo_post as cuerpo  from post p left join imagen i on i.fk_post=p.id_post;");
+        $statement->execute();
+        return $statement->fetchAll();
+    }
+
 }
