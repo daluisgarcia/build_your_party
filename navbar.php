@@ -18,7 +18,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="mainFifteen" id="xv-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="main_quinces" id="xv-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     XV's
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -63,11 +63,6 @@
             </li>
         </ul>
     </div>
-
-    <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
 
     <a href="register" class="btn btn-secondary mx-2">Arma Tu Fiesta</a>
 

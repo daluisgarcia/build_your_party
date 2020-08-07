@@ -142,6 +142,143 @@ document.getElementById('search-btn').addEventListener('click', function (event)
 
 });
 
+function searchCourses() {
+
+    let drop= document.getElementById('iglesia-select');
+
+    let index = drop.selectedIndex;
+    let id = drop[index].value;
+
+    let peticion = new XMLHttpRequest()
+    let params = `idchurch=${id}`   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
+    peticion.open('GET', `./get_church.php?${params}`)
+
+    peticion.send()
+
+    //loader.classList.add('active');
+
+    peticion.onreadystatechange = function () {
+        if (peticion.readyState == 4 && peticion.status == 200) {
+            //loader.classList.remove('active')
+        }
+    }
+
+    peticion.onload = function () {
+        let data = JSON.parse(peticion.responseText);
+        let container = document.getElementById('site-info');
+        removeAllChilds(container);
+        if(data.error){
+            let element = document.createElement('p')
+            element.innerText = data.error
+            document.getElementById('site-info').appendChild(element)
+        }else{
+            if (data.length > 0) {
+                latitud = parseFloat(data[0].latitud);
+                longitud = parseFloat(data[0].longitud);
+                zoomNum = 15;
+                //Se incia el mapa con los nuevos datos
+                initMap();
+                //Se coloca el marcador en el mapa
+                makeMarker({lat: latitud, lng: longitud});
+                //Estructura del HTML
+                let row = document.createElement('div');
+                row.classList.add('container-fluid');
+                let name = document.createElement('div');
+                name.classList.add("h2", "mx-auto", "my-3");
+                name.innerHTML = '<b>Templo</b>: '+data[0].nombre_templo;
+                let costo = document.createElement('div');
+                costo.classList.add("mx-auto", "mb-3");
+                costo.innerHTML = '<b>Precio del curso</b>: '+data[0].costo;
+                let fechai = document.createElement('div');
+                fechai.classList.add("mx-auto", "mb-3");
+                fechai.innerHTML = '<b>Fecha de inicio</b>: '+data[0].fecha_inicio;
+                let fechaf = document.createElement('div');
+                fechaf.classList.add("mx-auto", "mb-3");
+                fechaf.innerHTML = '<b>Fecha de final</b>: '+data[0].fecha_final;
+                let cupos = document.createElement('div');
+                cupos.classList.add("mx-auto", "mb-3");
+                cupos.innerHTML = '<b>Cupos disponibles:</b>: '+data[0].cupos;
+                let dat = document.createElement('div');
+                dat.classList.add("mx-auto", "mb-3");
+                dat.innerHTML = '<b>Responsable</b>: '+data[0].nombre_persona;
+                let telf = document.createElement('div');
+                telf.classList.add("mx-auto", "mb-3");
+                telf.innerHTML = '<b>Telefono: </b>: '+data[0].codigo+'-'+data[0].numero;
+                row.appendChild(name);
+                row.appendChild(costo);
+                row.appendChild(fechai);
+                row.appendChild(fechaf);
+                row.appendChild(cupos);
+                row.appendChild(dat);
+                row.appendChild(telf);
+                let btnContainer = document.createElement('div');
+                btnContainer.classList.add('row', 'm-auto');
+                let btn = document.createElement('a');
+                btn.classList.add('btn', 'btn-primary', 'btn-lg', 'm-auto');
+                btn.href = '#';
+                btn.innerText = 'Reservar';
+                btnContainer.appendChild(btn);
+                container.appendChild(row);
+                container.appendChild(btnContainer);
+            }else{  //EN CASO DE NO ENCONTRAR NADA REINICIA
+                latitud = 7.475430;
+                longitud = -64.211732;
+                zoomNum = 6;
+                //Se incia el mapa con los nuevos datos
+                initMap();
+                //Se coloca el marcador en el mapa
+                makeMarker({lat: latitud, lng: longitud});
+                //Estructura del HTML
+                let row = document.createElement('div');
+                row.classList.add('row');
+                let name = document.createElement('div');
+                name.classList.add("h2", "mx-auto", "my-3");
+                name.innerText = `No se han encontrado cursos`;
+                row.appendChild(name);
+                container.appendChild(row);
+            }
+        }
+    }
+};
+
+function selectChurch(){
+    let dropMunicipios = document.getElementById('parroquia-select');
+
+    let index = dropMunicipios.selectedIndex;
+    let id = dropMunicipios[index].value;
+
+    let peticion = new XMLHttpRequest()
+    let params = `idlugar=${id}`   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
+    peticion.open('GET', `./get_church.php?${params}`)
+
+    peticion.send()
+
+    //loader.classList.add('active');
+
+    peticion.onreadystatechange = function () {
+        if (peticion.readyState == 4 && peticion.status == 200) {
+            //loader.classList.remove('active')
+        }
+    }
+
+    peticion.onload = function () {
+        let data = JSON.parse(peticion.responseText)
+        if(!data.error){
+            let dropIglesias = document.getElementById('iglesia-select');
+            removeAllChilds(dropIglesias);
+            console.log(data);
+            for(d in data){
+                let op = document.createElement('option');
+                op.value = data[d].id_templo;
+                op.innerText = data[d].nombre_templo;
+                dropIglesias.appendChild(op);
+            }
+        }else{
+            alert('Error al cargar las parroquias');
+        }
+    }
+}
+
 function selectDrops(){
     selectEstado();
     selectReligion();
