@@ -80,7 +80,7 @@ class AdminSQL extends Connection
     }
 
     public function get_users_and_persons(){
-        $statement = $this->con->prepare("select p.cedula_persona as cedula, p.nombre_persona as nombre, p.apellido_persona as apellido, p.correo_persona as correo, t.codigo_area_telefono as codigo_de_area, t.numero_telefono as numero, u.nombre_usuario as usuario, est.nombre_lugar as estado, mun.nombre_lugar as municipio, parr.nombre_lugar as parroquia from telefono t right join persona p on t.fk_persona=p.cedula_persona, usuario u, lugar est, lugar mun, lugar parr where u.fk_persona=p.cedula_persona and parr.fk_lugar=mun.id_lugar and mun.fk_lugar=est.id_lugar and p.fk_lugar=parr.id_lugar;");
+        $statement = $this->con->prepare("select p.cedula_persona as cedula, p.nombre_persona as nombre, p.apellido_persona as apellido, p.correo_persona as correo, t.codigo_area_telefono as codigo_de_area, t.numero_telefono as numero, u.nombre_usuario as usuario, est.nombre_lugar as estado, mun.nombre_lugar as municipio, parr.nombre_lugar as parroquia, t.id_telefono as telefono_id, u.id_usuario as usuario_id, est.id_lugar as estado_id, mun.id_lugar as municipio_id, parr.id_lugar as parroquia_id from telefono t right join persona p on t.fk_persona=p.cedula_persona, usuario u, lugar est, lugar mun, lugar parr where u.fk_persona=p.cedula_persona and parr.fk_lugar=mun.id_lugar and mun.fk_lugar=est.id_lugar and p.fk_lugar=parr.id_lugar;");
         $statement->execute();
         return $statement->fetchAll();
     }
