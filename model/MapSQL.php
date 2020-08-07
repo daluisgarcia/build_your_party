@@ -53,4 +53,22 @@ class MapSQL extends Connection
         return $statement->fetchAll();
     }
 
+    public function get_chuchs_by_fk_for_courses($fk_lugar){
+        //PREPARACION DEL QUERY
+        $statement = $this->con->prepare("SELECT id_templo, nombre_templo FROM TEMPLO WHERE fk_lugar=$fk_lugar AND id_templo IN (SELECT fk_templo FROM CURSO_MATRIM);");
+        //EJECUCION DEL QUERY
+        $statement->execute();
+        // El metodo fetch nos va a devolver el resultado o false en caso de que no haya resultado.
+        return $statement->fetchAll();
+    }
+
+    public function get_chuch_and_courses_info($id_church){
+        //PREPARACION DEL QUERY
+        $statement = $this->con->prepare("SELECT t.nombre_templo, c.x_coordenada as latitud, c.y_coordenada as longitud, cu.costo_curso_matrim as costo, cu.fecha_inicio_curso_matrim as fecha_inicio, cu.fecha_final_curso_matrim as fecha_final, cu.descripcion_curso_matrim as descripcion, cu.cupos_curso_matrim as cupos, p.nombre_persona as nombre_persona, tf.codigo_area_telefono as codigo, tf.numero_telefono as numero FROM TEMPLO as t INNER JOIN CURSO_MATRIM as cu ON t.id_templo=cu.fk_templo LEFT JOIN TELEFONO as tf ON t.id_templo=tf.fk_templo INNER JOIN PERSONA as p ON t.fk_persona=p.cedula_persona INNER JOIN COORDENADA as c ON t.id_templo=c.fk_templo WHERE t.id_templo=$id_church;");
+        //EJECUCION DEL QUERY
+        $statement->execute();
+        // El metodo fetch nos va a devolver el resultado o false en caso de que no haya resultado.
+        return $statement->fetchAll();
+    }
+
 }
