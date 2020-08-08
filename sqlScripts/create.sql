@@ -197,10 +197,12 @@ CREATE TABLE IF NOT EXISTS FIESTA(
     fk_lugar INT NOT NULL,
     fk_tipo_fiesta INT NOT NULL,
 	fk_tematica INT,
+    fk_usuario INT NOT NULL,
     PRIMARY KEY(id_fiesta),
  	FOREIGN KEY(fk_lugar) REFERENCES LUGAR(id_lugar),
 	FOREIGN KEY(fk_tipo_fiesta) REFERENCES TIPO_FIESTA(id_tipo_fiesta),
- 	FOREIGN KEY(fk_tematica) REFERENCES TEMATICA(id_tematica)
+ 	FOREIGN KEY(fk_tematica) REFERENCES TEMATICA(id_tematica),
+    FOREIGN KEY(fk_usuario) REFERENCES USUARIO(id_usuario)
 );
 
 CREATE TABLE IF NOT EXISTS HORARIO_SERVICIO(
@@ -264,10 +266,8 @@ constraint fk_notaria foreign key (fk_notaria) references NOTARIA (id_notaria));
 CREATE TABLE IF NOT EXISTS PRESUPUESTO(
     id_presupuesto INT NOT NULL auto_increment,
     fecha_presupuesto DATE NOT NULL,
-    fk_persona INT NOT NULL,
     fk_fiesta INT NOT NULL,
     PRIMARY KEY(id_presupuesto),
-    FOREIGN KEY(fk_persona) REFERENCES PERSONA(cedula_persona),
     FOREIGN KEY(fk_fiesta) REFERENCES FIESTA(id_fiesta)
 );
 
@@ -310,6 +310,7 @@ CREATE TABLE IF NOT EXISTS CITA(
 create table if not exists PRODUCTO_SERVICIO (
 fk_servicio int not null,
 fk_producto int not null,
+cantidad_minima int not null,
 primary key (fk_servicio, fk_producto),
 constraint fk_servicio_producto_servicio foreign key (fk_servicio) references SERVICIO (id_servicio),
 constraint fk_producto_producto_servicio foreign key (fk_producto) references PRODUCTO (id_producto));
