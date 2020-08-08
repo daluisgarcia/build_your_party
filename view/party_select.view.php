@@ -7,8 +7,8 @@
     </style>
     <meta charset="UTF-8">
     <title>Inscripción Curso Matrimonial</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -58,10 +58,10 @@
                     <br>
                     <div class="row">
                         <div class="text-left col">
-                            <button type="submit" class="btn btn-danger">Cancelar</button>
+                            <a href="index" class="btn btn-danger">Cancelar</a>
                         </div>
                         <div class="text-right col">
-                            <button type="submit" class="btn btn-primary">Continuar</button>
+                            <a href="products" class="btn btn-primary">Continuar</a>
                         </div>
                     </div>
             </form>

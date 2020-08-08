@@ -1,9 +1,9 @@
 <?php   session_start();
 
-//if(!isset($_SESSION["usuario"])){
-//    header("Location: index.php");
-//    die();
-//}
+if(!isset($_SESSION["user"])){
+    header("Location: index.php");
+    die();
+}
 
 include 'config.php';
 

@@ -22,8 +22,8 @@ constraint fk_persona foreign key (fk_lugar) references LUGAR (id_lugar));
 
 CREATE TABLE IF NOT EXISTS USUARIO(
     id_usuario INT NOT NULL auto_increment,
-    nombre_usuario VARCHAR(10) NOT NULL UNIQUE,
-  	passw_usuario VARCHAR(10) NOT NULL,
+    nombre_usuario VARCHAR(20) NOT NULL UNIQUE,
+  	passw_usuario VARCHAR(20) NOT NULL,
     fk_persona INT NOT NULL,
     PRIMARY KEY(id_usuario),
     FOREIGN KEY(fk_persona) REFERENCES PERSONA(cedula_persona)

@@ -1,6 +1,7 @@
 
     <?php
-        require 'navbar.php';
+        session_start();
+        include 'navbar.php';
     ?>
 
     <br>

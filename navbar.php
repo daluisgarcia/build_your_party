@@ -64,7 +64,7 @@
         </ul>
     </div>
 
-    <a href="register" class="btn btn-secondary mx-2">Arma Tu Fiesta</a>
+    <a href="<?php echo isset($_SESSION['user']) ? 'party_select' : 'register' ?>" class="btn btn-secondary mx-2">Arma Tu Fiesta</a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
