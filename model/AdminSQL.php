@@ -103,8 +103,56 @@ class AdminSQL extends Connection
         $statement = $this->con->prepare("insert into post(seccion_post, titulo_post, cuerpo_post) values('$section', '$title', '$body');");
         $statement->execute();
         if(!empty($ruta_imagen)) {
-
+            $statement = $this->con->prepare("select id_post from post where seccion_post='$section' and titulo_post='$title' and cuerpo_post='$body';");
+            $statement->execute();
+            $id = $statement->fetchAll()[0][0];
+            $statement = $this->con->prepare("insert into imagen(ruta_imagen, fk_post) values('$ruta_imagen', '$id');");
+            $statement->execute();
         }
+        return $statement->fetchAll();
     }
+
+    public function delete_post($section, $title, $body) {
+        $statement = $this->con->prepare("select id_post from post where seccion_post='$section' and titulo_post='$title' and cuerpo_post='$body';");
+        $statement->execute();
+        $id = $statement->fetchAll()[0][0];
+        $statement = $this->con->prepare("delete from post where seccion_post='$section' and titulo_post='$title' and cuerpo_post='$body';");
+        $statement->execute();
+        $statement = $this->con->prepare("delete from imagen where fk_post=$id;");
+        $statement->execute();
+        return $statement->fetchAll();
+    }
+
+    public function update_client($cedula, $nombre, $apellido, $correo, $codigo, $numero, $id_telefono, $usuario, $id_usuario, $parroquia) {
+        $statement = $this->con->prepare("update persona set cedula_persona=$cedula, nombre_persona='$nombre', apellido_persona='$apellido', correo_persona='$correo', fk_lugar=$parroquia where cedula_persona=$cedula;");
+        $statement->execute();
+        $statement = $this->con->prepare("update usuario set nombre_usuario='$usuario' where id_usuario=$id_usuario;");
+        $statement->execute();
+        $statement = $this->con->prepare("update telefono set codigo_area_telefono=$codigo, numero_telefono=$numero, fk_persona=$cedula where id_telefono=$id_telefono;");
+        $statement->execute();
+        return $statement->fetchAll();
+    }
+
+    public function add_client($cedula, $nombre, $apellido, $correo, $codigo, $numero, $usuario, $parroquia) {
+        $statement = $this->con->prepare("insert into persona(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) values ($cedula, '$nombre', '$apellido', '$correo', $parroquia);");
+        $statement->execute();
+        $statement = $this->con->prepare("insert into usuario(nombre_usuario, passw_usuario, fk_persona) values ($usuario, '12345678', $cedula);");
+        $statement->execute();
+        $statement = $this->con->prepare("insert into telefono(codigo_area_telefono, numero_telefono, fk_persona) values ($codigo, $numero, $cedula);");
+        $statement->execute();
+        return $statement->fetchAll();
+    }
+
+    public function delete_client($cedula, $usuario) {
+        $statement = $this->con->prepare("delete from usuario where nombre_usuario='$usuario' and fk_persona='$cedula';");
+        $statement->execute();
+        $statement = $this->con->prepare("delete from persona where cedula_persona='$cedula';");
+        $statement->execute();
+        $statement = $this->con->prepare("delete from telefono where fk_persona='$cedula';");
+        $statement->execute();
+        return $statement->fetchAll();
+    }
+
+
 
 }
