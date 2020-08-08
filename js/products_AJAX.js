@@ -161,7 +161,7 @@ function showContent(data){
                                 p11.classList.add('card-text');
                                 let input = document.createElement('input');
                                 input.type='number';
-                                input.min = 40; //AQUI SE AGREGA EL ATRIBUTO DE CANTIDAD MINIMA
+                                input.min = parseInt(prod[i].cantidad_minima);
                                 input.value = input.min;
                                 input.max = 1000;
                                 input.step = 1;
@@ -182,7 +182,7 @@ function showContent(data){
                         p11.classList.add('card-text');
                         let input = document.createElement('input');
                         input.type='number';
-                        input.min = 40; //AQUI SE AGREGA EL ATRIBUTO DE CANTIDAD MINIMA
+                        input.min = 2;
                         input.value = input.min;
                         input.max = 1000;
                         input.step = 1;

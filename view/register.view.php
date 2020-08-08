@@ -51,7 +51,7 @@
                     </div>
                     <ul class="text-light bg-danger">
                         <?php
-                        echo (isset($error)) ? $error : '';
+                        echo (isset($reg_error)) ? $reg_error : '';
                         ?>
                     </ul>
                     <div class="text-center">

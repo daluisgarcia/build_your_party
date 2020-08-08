@@ -20,8 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3d9412f-d832-42ed-9e83-6e44df7bd0b9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/party_select.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/AdminSQL.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/AdminSQL.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getPartysAndBudget.php" beforeDir="false" afterPath="$PROJECT_DIR$/getPartysAndBudget.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/products_AJAX.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/products_AJAX.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_search.php" beforeDir="false" afterPath="$PROJECT_DIR$/product_search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products.php" beforeDir="false" afterPath="$PROJECT_DIR$/products.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seleccion_tipo_fiesta.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/party_select.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqlScripts/create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sqlScripts/create.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/register.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/register.view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,6 +163,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/sqlScripts" />
   </component>
@@ -159,8 +172,8 @@
       <recent name="C:\wamp64\www\build_your_party\admin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\build_your_party\sqlScripts" />
       <recent name="C:\wamp64\www\build_your_party\view" />
+      <recent name="C:\wamp64\www\build_your_party\sqlScripts" />
       <recent name="C:\wamp64\www\build_your_party\admin\view" />
       <recent name="C:\wamp64\www\build_your_party\admin\dist\img" />
       <recent name="C:\wamp64\www\build_your_party" />
@@ -198,7 +211,7 @@
       <workItem from="1596556212268" duration="9577000" />
       <workItem from="1596664579987" duration="18220000" />
       <workItem from="1596727901615" duration="7200000" />
-      <workItem from="1596829334422" duration="8655000" />
+      <workItem from="1596829334422" duration="16659000" />
     </task>
     <servers />
   </component>
@@ -241,10 +254,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="486" y="87" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1596834051608" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1596833561041">
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1596856872178">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1596833561041" />
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1596856872178" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1596729785296">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
