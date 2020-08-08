@@ -3426,74 +3426,74 @@ insert into PRODUCTO_PROVEEDOR(fk_proveedor, fk_producto, costo_und_producto_pro
 insert into PRODUCTO_PROVEEDOR(fk_proveedor, fk_producto, costo_und_producto_proveedor) value (11, 8, 219670);
 
 #PRODUCTO_SERVICIO
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (1,1);
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (2,2);
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (2,3);
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (2,4);
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (2,5);
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (2,6);
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (2,7);
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (9,36); #Mesa
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (9,204); #Operador
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (9,209); #transporte
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (9,184); #Toldo pequeño
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (10,36); #Mesa
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (10,204); #Operador
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (10,209); #transporte
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (10,184); #Toldo pequeño
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (11,36); #Mesa
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (11,204); #Operador
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (11,209); #transporte
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (11,184); #Toldo pequeño
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (12,36); #Mesa
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (12,204); #Operador
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (12,209); #transporte
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (12,184); #Toldo pequeño
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (13,36); #Mesa
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (13,204); #Operador
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (13,209); #transporte
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (13,184); #Toldo pequeño
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (14,36); #Mesa
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (14,200); #Mesonero
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (14,201); #Cocinero
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (14,209); #transporte
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (14,184); #Toldo pequeño
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (14,166); #Cocina completa con utensillos sin aceite
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (14,156); #Cuchillo
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (14,158); #Cuchara
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (14,154); #Tenedor
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (15,36); #Mesa
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (15,46); #Barra iluiminada
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (15,202); #Sushero
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (15,209); #transporte
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (15,184); #Toldo pequeño
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (16,36); #Mesa
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (16,209); #transporte
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (16,184); #Toldo pequeño
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (16,125); #Mini dulces
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (16,126);
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (16,127);
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (16,128);
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (16,129);
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (16,130);
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (16,131);
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (16,132);
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (16,133);
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (17,36); #Mesa
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (17,204); #Operador
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (17,209); #transporte
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (17,184); #Toldo pequeño
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (18,36); #Mesa
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (18,204); #Operador
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (18,209); #transporte
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (18,184); #Toldo pequeño
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (19,36); #Mesa
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (19,204); #Operador
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (19,209); #transporte
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (19,184); #Toldo pequeño
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (20,204); #Operador
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (20,209); #transporte
-insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto) value (20,184); #Toldo pequeño
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (1,1,0);
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (2,2,0);
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (2,3,0);
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (2,4,0);
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (2,5,0);
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (2,6,0);
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (2,7,0);
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (9,36,0); #Mesa
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (9,204,0); #Operador
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (9,209,0); #transporte
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (9,184,0); #Toldo pequeño
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (10,36,0); #Mesa
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (10,204,0); #Operador
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (10,209,0); #transporte
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (10,184,0); #Toldo pequeño
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (11,36,0); #Mesa
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (11,204,0); #Operador
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (11,209,0); #transporte
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (11,184,0); #Toldo pequeño
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (12,36,0); #Mesa
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (12,204,0); #Operador
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (12,209,0); #transporte
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (12,184,0); #Toldo pequeño
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (13,36,0); #Mesa
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (13,204,0); #Operador
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (13,209,0); #transporte
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (13,184,0); #Toldo pequeño
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (14,36,0); #Mesa
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (14,200,0); #Mesonero
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (14,201,0); #Cocinero
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (14,209,0); #transporte
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (14,184,0); #Toldo pequeño
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (14,166,0); #Cocina completa con utensillos sin aceite
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (14,156,0); #Cuchillo
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (14,158,0); #Cuchara
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (14,154,0); #Tenedor
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (15,36,0); #Mesa
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (15,46,0); #Barra iluiminada
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (15,202,0); #Sushero
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (15,209,0); #transporte
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (15,184,0); #Toldo pequeño
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (16,36,0); #Mesa
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (16,209,0); #transporte
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (16,184,0); #Toldo pequeño
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (16,125,0); #Mini dulces
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (16,126,0);
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (16,127,0);
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (16,128,0);
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (16,129,0);
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (16,130,0);
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (16,131,0);
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (16,132,0);
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (16,133,0);
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (17,36,0); #Mesa
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (17,204,0); #Operador
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (17,209,0); #transporte
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (17,184,0); #Toldo pequeño
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (18,36,0); #Mesa
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (18,204,0); #Operador
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (18,209,0); #transporte
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (18,184,0); #Toldo pequeño
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (19,36,0); #Mesa
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (19,204,0); #Operador
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (19,209,0); #transporte
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (19,184,0); #Toldo pequeño
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (20,204,0); #Operador
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (20,209,0); #transporte
+insert into PRODUCTO_SERVICIO(fk_servicio, fk_producto, cantidad_minima) value (20,184,0); #Toldo pequeño
 #HORARIO
 insert into HORARIO(id_horario, hora_inicio_horario, hora_final_horario, dia_semana_hoario) value (null, '10:00:00', '18:00:00', 'LUNES');
 insert into HORARIO(id_horario, hora_inicio_horario, hora_final_horario, dia_semana_hoario) value (null, '09:00:00', '18:00:00', 'MARTES');
@@ -3606,58 +3606,58 @@ insert into TIPO_FIESTA(id_tipo_fiesta, nombre_tipo_fiesta, descripcion_tipo_fie
 insert into TIPO_FIESTA(id_tipo_fiesta, nombre_tipo_fiesta, descripcion_tipo_fiesta) value (null, 'XV Años', null);
 insert into TIPO_FIESTA(id_tipo_fiesta, nombre_tipo_fiesta, descripcion_tipo_fiesta) value (null, 'Infantil', null);
 insert into TIPO_FIESTA(id_tipo_fiesta, nombre_tipo_fiesta, descripcion_tipo_fiesta) value (null, 'Informal', null);
- 
+
 #FIESTA
-insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-1','16:00:00', '18:00:00', 200, 1, 5,5);
-insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-2','16:00:00', '18:00:00', 200, 2, 4,2);
-insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-3','16:00:00', '18:00:00', 200, 3, 5,3);
-insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-4','16:00:00', '18:00:00', 200, 4, 2,5);
-insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-5','16:00:00', '18:00:00', 200, 5, 3,1);
-insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-6','16:00:00', '18:00:00', 200, 6, 3,2);
-insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-7','16:00:00', '18:00:00', 200, 7, 1,1);
-insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-8','16:00:00', '18:00:00', 200, 8, 1,4);
-insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-9','16:00:00', '18:00:00', 200, 9, 4,3);
-insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-10','16:00:00', '18:00:00', 200, 10, 4,5);
-insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-11','16:00:00', '18:00:00', 200, 11, 3,2);
-insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-12','16:00:00', '18:00:00', 200, 12, 3,4);
-insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-13','16:00:00', '18:00:00', 200, 13, 3,5);
-insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-14','16:00:00', '18:00:00', 200, 14, 4,2);
-insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-15','16:00:00', '18:00:00', 200, 15, 3,1);
-insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-16','16:00:00', '18:00:00', 200, 16, 5,1);
-insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-17','16:00:00', '18:00:00', 200, 17, 2,3);
-insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-18','16:00:00', '18:00:00', 200, 18, 4,3);
-insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-19','16:00:00', '18:00:00', 200, 19, 3,1);
-insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-20','16:00:00', '18:00:00', 200, 20, 5,4);
-insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-21','16:00:00', '18:00:00', 200, 21, 5,2);
-insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-22','16:00:00', '18:00:00', 200, 22, 1,1);
-insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-23','16:00:00', '18:00:00', 200, 23, 4,2);
-insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica) value(null, '2021-04-24','16:00:00', '18:00:00', 200, 24, 2,3);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica, fk_usuario) value(null, '2021-04-1','16:00:00', '18:00:00', 200, 1, 5,5,1);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica, fk_usuario) value(null, '2021-04-2','16:00:00', '18:00:00', 200, 2, 4,2,2);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica, fk_usuario) value(null, '2021-04-3','16:00:00', '18:00:00', 200, 3, 5,3,3);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica, fk_usuario) value(null, '2021-04-4','16:00:00', '18:00:00', 200, 4, 2,5,4);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica, fk_usuario) value(null, '2021-04-5','16:00:00', '18:00:00', 200, 5, 3,1,5);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica, fk_usuario) value(null, '2021-04-6','16:00:00', '18:00:00', 200, 6, 3,2,6);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica, fk_usuario) value(null, '2021-04-7','16:00:00', '18:00:00', 200, 7, 1,1,7);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica, fk_usuario) value(null, '2021-04-8','16:00:00', '18:00:00', 200, 8, 1,4,8);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica, fk_usuario) value(null, '2021-04-9','16:00:00', '18:00:00', 200, 9, 4,3,9);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica, fk_usuario) value(null, '2021-04-10','16:00:00', '18:00:00', 200, 10, 4,5,10);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica, fk_usuario) value(null, '2021-04-11','16:00:00', '18:00:00', 200, 11, 3,2,11);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica, fk_usuario) value(null, '2021-04-12','16:00:00', '18:00:00', 200, 12, 3,4,12);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica, fk_usuario) value(null, '2021-04-13','16:00:00', '18:00:00', 200, 13, 3,5,13);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica, fk_usuario) value(null, '2021-04-14','16:00:00', '18:00:00', 200, 14, 4,2,14);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica, fk_usuario) value(null, '2021-04-15','16:00:00', '18:00:00', 200, 15, 3,1,15);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica, fk_usuario) value(null, '2021-04-16','16:00:00', '18:00:00', 200, 16, 5,1,16);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica, fk_usuario) value(null, '2021-04-17','16:00:00', '18:00:00', 200, 17, 2,3,17);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica, fk_usuario) value(null, '2021-04-18','16:00:00', '18:00:00', 200, 18, 4,3,18);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica, fk_usuario) value(null, '2021-04-19','16:00:00', '18:00:00', 200, 19, 3,1,19);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica, fk_usuario) value(null, '2021-04-20','16:00:00', '18:00:00', 200, 20, 5,4,20);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica, fk_usuario) value(null, '2021-04-21','16:00:00', '18:00:00', 200, 21, 5,2,21);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica, fk_usuario) value(null, '2021-04-22','16:00:00', '18:00:00', 200, 22, 1,1,22);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica, fk_usuario) value(null, '2021-04-23','16:00:00', '18:00:00', 200, 23, 4,2,23);
+insert into FIESTA(id_fiesta, fecha_realizacion_fiesta, hora_inicio_fiesta, hora_final_fiesta, cantidad_invitados_fiesta, fk_lugar, fk_tipo_fiesta, fk_tematica, fk_usuario) value(null, '2021-04-24','16:00:00', '18:00:00', 200, 24, 2,3,24);
 
 #PRESUPUESTO
-insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-1',25765334, 1);
-insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-2',25765335, 2);
-insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-3',25765336, 3);
-insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-4',25765337, 4);
-insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-5',25765338, 5);
-insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-6',25765339, 6);
-insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-7',25765340, 7);
-insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-8',25765341, 8);
-insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-9',25765342, 9);
-insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-10',25765343, 10);
-insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-11',25765344, 11);
-insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-12',25765345, 12);
-insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-13',25765346, 13);
-insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-14',25765347, 14);
-insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-15',25765348, 15);
-insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-16',25765349, 16);
-insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-17',25765350, 17);
-insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-18',25765351, 18);
-insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-19',25765352, 19);
-insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-20',25765353, 20);
-insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-21',25765354, 21);
-insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-22',25765355, 22);
-insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-23',25765356, 23);
-insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_persona, fk_fiesta) value(null, '2021-04-24',25765357, 24);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_fiesta) value(null, '2021-04-1', 1);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_fiesta) value(null, '2021-04-2', 2);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_fiesta) value(null, '2021-04-3', 3);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_fiesta) value(null, '2021-04-4', 4);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_fiesta) value(null, '2021-04-5', 5);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_fiesta) value(null, '2021-04-6', 6);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_fiesta) value(null, '2021-04-7', 7);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_fiesta) value(null, '2021-04-8', 8);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_fiesta) value(null, '2021-04-9', 9);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_fiesta) value(null, '2021-04-10', 10);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_fiesta) value(null, '2021-04-11', 11);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_fiesta) value(null, '2021-04-12', 12);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_fiesta) value(null, '2021-04-13', 13);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_fiesta) value(null, '2021-04-14', 14);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_fiesta) value(null, '2021-04-15', 15);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_fiesta) value(null, '2021-04-16', 16);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_fiesta) value(null, '2021-04-17', 17);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_fiesta) value(null, '2021-04-18', 18);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_fiesta) value(null, '2021-04-19', 19);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_fiesta) value(null, '2021-04-20', 20);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_fiesta) value(null, '2021-04-21', 21);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_fiesta) value(null, '2021-04-22', 22);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_fiesta) value(null, '2021-04-23', 23);
+insert into PRESUPUESTO(id_presupuesto, fecha_presupuesto, fk_fiesta) value(null, '2021-04-24', 24);
 
 #SERVICIO_PRESUPUESTO
 insert into SERVICIO_PRESUPUESTO(id_servicio_presupuesto,precio_total_servicio_presupuesto,detalles_servicio_presupuesto, fk_presupuesto, fk_servicio) value(null, 592, null, 1,null);
