@@ -20,20 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3d9412f-d832-42ed-9e83-6e44df7bd0b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/party_select.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/AdminSQL.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/AdminSQL.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getPartysAndBudget.php" beforeDir="false" afterPath="$PROJECT_DIR$/getPartysAndBudget.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/products_AJAX.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/products_AJAX.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/navbar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product_search.php" beforeDir="false" afterPath="$PROJECT_DIR$/product_search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products.php" beforeDir="false" afterPath="$PROJECT_DIR$/products.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seleccion_tipo_fiesta.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/party_select.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqlScripts/create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sqlScripts/create.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/register.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/register.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/dist/js/admin_AJAX.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/dist/js/admin_notaries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/dist/js/admin_clients.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/dist/js/admin_clients.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/dist/js/admin_posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/dist/js/admin_posts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/index.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/index.view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,15 +159,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/sqlScripts" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\build_your_party\admin" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\build_your_party\view" />
       <recent name="C:\wamp64\www\build_your_party\sqlScripts" />
       <recent name="C:\wamp64\www\build_your_party\admin\view" />
       <recent name="C:\wamp64\www\build_your_party\admin\dist\img" />
       <recent name="C:\wamp64\www\build_your_party" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\build_your_party\admin" />
     </key>
   </component>
   <component name="SvnConfiguration">

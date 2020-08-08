@@ -1,5 +1,4 @@
 var dataT;
-var page;
 
 //INICIALIZACION DE DATATABLE
 function datatable() {
@@ -162,50 +161,39 @@ function selectParroquia(){
   })
 }
 
-//SE LE ASIGNA A CADA OPCION DE LA BARRA VERTICAL IZQUIERA UN EVENTO PARA PODER CARGAR EL AJAX
-var menuOption = document.getElementsByClassName('option');
-for (let i = 0; i < menuOption.length; i++) {
-  menuOption[i].addEventListener('click', function (event) {
-
-    let op = event.target.id;
-    page = op;
-
-    document.getElementById('table_id').classList.remove('d-none');
-    if(document.getElementById('addTuple')) {
-      document.getElementById('addTuple').remove();
-    }
-
-    document.getElementById('add-btn').classList.remove('disabled');
-    document.getElementById('delete-btn').classList.add('disabled');
-    document.getElementById('submit-btn').classList.add('disabled');
-
-    switch (op) {
-      case 'notaria':
-        getNotaries(op);
-        break;
-      case 'jefatura':
-        break;
-      case 'templo':
-        break;
-      default:
-
-    }
-
-  });
-}
-
-function getNotaries(op) {
-
+document.getElementById('notaria').addEventListener("click", function (event) {
   document.getElementById('title').innerText = 'Notarias';
 
-  let peticion = new XMLHttpRequest()
-  let params = '';
-
-  if(op === 'notaria'){
-    params = `option=${op}`   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
-  }else{
-    params = `option=`   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
+  if(dataT){
+    dataT.destroy();
   }
+
+  document.getElementById('table_id').classList.remove('d-none');
+  if(document.getElementById('addTuple')) {
+    document.getElementById('addTuple').remove();
+  }
+
+  let addBtn = document.getElementsByClassName('add-btn')[0];
+  addBtn.classList.remove('disabled');
+  addBtn.id='add-btn-notaries';
+  document.getElementById('add-btn-notaries').addEventListener('click', setAddNotaries);
+  let deleteBtn = document.getElementsByClassName('delete-btn')[0];
+  deleteBtn.classList.add('disabled');
+  deleteBtn.id='delete-btn-notaries';
+  document.getElementById('delete-btn-notaries').addEventListener('click', setDeleteNotaries);
+  let submitBtn = document.getElementsByClassName('submit-btn')[0];
+  submitBtn.classList.add('disabled');
+  submitBtn.id='submit-btn-notaries';
+  document.getElementById('submit-btn-notaries').addEventListener('click', setUpdateNotaries);
+  getNotaries();
+});
+
+function getNotaries(){
+
+  let peticion = new XMLHttpRequest();
+
+  let  params = `option=notaria`;   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
+
   peticion.open('GET', `./info_getter.php?${params}`)
 
   peticion.send()
@@ -252,33 +240,33 @@ function getNotaries(op) {
       for(d in data) {
         let tr2 = document.createElement('tr');
         tr2.id = data[d].id;
-        tr2.classList.add('clickeable');
+        tr2.classList.add('clickeable-notaries');
         let nombreC2 = document.createElement('td');
         nombreC2.innerText = data[d].nombre;
-        nombreC2.classList.add('clickeable');
+        nombreC2.classList.add('clickeable-notaries');
         let latC2 = document.createElement('td')
         latC2.innerText = data[d].latitud;
         latC2.id = `coord-${data[d].id_coordenada}`;
-        latC2.classList.add('clickeable');
+        latC2.classList.add('clickeable-notaries');
         let longC2 = document.createElement('td')
         longC2.innerText = data[d].longitud;
-        longC2.classList.add('clickeable');
+        longC2.classList.add('clickeable-notaries');
         let personC2 = document.createElement('td')
         personC2.innerText = data[d].persona;
         personC2.id = `person-${data[d].id_persona}`;
-        personC2.classList.add('clickeable');
+        personC2.classList.add('clickeable-notaries');
         let parroquiaC2 = document.createElement('td')
         parroquiaC2.innerText = data[d].nombre_parroquia;
         parroquiaC2.id = `parroquia-${data[d].id_parroquia}`;
-        parroquiaC2.classList.add('clickeable');
+        parroquiaC2.classList.add('clickeable-notaries');
         let municipioC2 = document.createElement('td')
         municipioC2.innerText = data[d].nombre_municipio;
         municipioC2.id = `municipio-${data[d].id_municipio}`;
-        municipioC2.classList.add('clickeable');
+        municipioC2.classList.add('clickeable-notaries');
         let estadoC2 = document.createElement('td')
         estadoC2.innerText = data[d].nombre_estado;
         estadoC2.id = `estado-${data[d].id_estado}`;
-        estadoC2.classList.add('clickeable');
+        estadoC2.classList.add('clickeable-notaries');
         tr2.appendChild(nombreC2);
         tr2.appendChild(latC2);
         tr2.appendChild(longC2);
@@ -293,20 +281,22 @@ function getNotaries(op) {
     container.appendChild(tbody);
     if(dataT) {
       dataT.destroy();
+      datatable();
+    }else{
+      datatable();
     }
-    datatable();
-    setChangePosibility();
+    setChangePosibilityNotaries();
   }
-};
+}
 
-//AÑADIR A LAS FILAS LA POSIBILIDAD DE CAMBIAR LOS DATOS
-function setChangePosibility(){
+//AÑADIR A LAS FILAS LA POSIBILIDAD DE CAMBIAR LOS DATOS (AGREGAR INPUTS)
+function setChangePosibilityNotaries(){
   let rows = document.getElementsByTagName('tr');
   for (let i = 0; i < rows.length; i++){
     let element = rows[i];
     if (element.id !== 'table-head'){
       element.addEventListener('click', function (event) {
-        if(event.target.classList.contains('clickeable')) {
+        if(event.target.classList.contains('clickeable-notaries')) {
           let columns = event.target.parentElement.children;
           let names = ['nombre', 'latitud', 'longitud', 'persona'];
           for (let j = 0; j < columns.length; j++) {
@@ -367,20 +357,17 @@ function setChangePosibility(){
               })
               j = j + 2;
             }
-
           }
-          document.getElementById('delete-btn').classList.remove('disabled');
-          document.getElementById('submit-btn').classList.remove('disabled');
+          document.getElementById('delete-btn-notaries').classList.remove('disabled');
+          document.getElementById('submit-btn-notaries').classList.remove('disabled');
         }
       })
     }
   }
 }
 
-document.getElementById('submit-btn').addEventListener('click', function (event) {
-
-  event.preventDefault() //IMPIDE QUE SE ENVIE EN FORMULARIO AUTOMATICAMENTE
-
+//FUNCION PARA HACER UPDATE DE UNA NOTARIA
+function setUpdateNotaries(){
   let name = document.getElementsByName('nombre')[0],
     notaryID = name.id,
     latitud = document.getElementsByName("latitud")[0],
@@ -390,41 +377,39 @@ document.getElementById('submit-btn').addEventListener('click', function (event)
     personaID = returnIdNumber(persona.id),
     parroquiaID = document.getElementsByName("parroquia")[0].value;
 
-    latitud = latitud.value;
-    persona = persona.value;
-    let index = persona.indexOf(' ')+1;
-    let persona2 = persona.substr(index, persona.length-index);
-    persona = persona.substr(0, index);
-    name = name.value;
+  latitud = latitud.value;
+  persona = persona.value;
+  let index = persona.indexOf(' ')+1;
+  let persona2 = persona.substr(index, persona.length-index);
+  persona = persona.substr(0, index);
+  name = name.value;
 
-    let peticion = new XMLHttpRequest()
-    let params = `option=update&id=${notaryID}&name=${name}&fklugar=${parroquiaID}&coordID=${coordinatesID}&latitud=${latitud}&longitud=${longitud}&personid=${personaID}&personname1=${persona}&personname2=${persona2}`;   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
-    peticion.open('GET', `./update.php?${params}`)
+  let peticion = new XMLHttpRequest()
+  let params = `option=update&id=${notaryID}&name=${name}&fklugar=${parroquiaID}&coordID=${coordinatesID}&latitud=${latitud}&longitud=${longitud}&personid=${personaID}&personname1=${persona}&personname2=${persona2}`;   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
+  peticion.open('GET', `./update.php?${params}`)
 
-    peticion.send()
+  peticion.send()
 
-    //loader.classList.add('active');
+  //loader.classList.add('active');
 
-    peticion.onreadystatechange = function(){
-      if(peticion.readyState == 4 && peticion.status == 200){
-        //loader.classList.remove('active')
-      }
+  peticion.onreadystatechange = function(){
+    if(peticion.readyState == 4 && peticion.status == 200){
+      //loader.classList.remove('active')
     }
+  }
 
-    peticion.onload = function(){
-      let data = JSON.parse(peticion.responseText)
-      if(data.error){
-        alert('Error al obtener datos de la Base');
-      }else{
-        getNotaries('notaria');
-      }
+  peticion.onload = function(){
+    let data = JSON.parse(peticion.responseText)
+    if(data.error){
+      alert('Error al obtener datos de la Base');
+    }else{
+      getNotaries();
     }
-})
+  }
+}
 
-document.getElementById('delete-btn').addEventListener('click', function (event) {
-
-  event.preventDefault() //IMPIDE QUE SE ENVIE EN FORMULARIO AUTOMATICAMENTE
-
+//FUNCION PARA ELIMINAR UNA NOTARIA
+function setDeleteNotaries(){
   let notaryID = document.getElementsByName('nombre')[0].id,
     coordinatesID = document.getElementsByName("latitud")[0].id,
     personaID = document.getElementsByName("persona")[0].id;
@@ -448,19 +433,17 @@ document.getElementById('delete-btn').addEventListener('click', function (event)
     if(data.error){
       alert('Error al obtener datos de la Base');
     }else{
-      getNotaries('notaria');
+      getNotaries();
     }
   }
-})
+}
 
-document.getElementById('add-btn').addEventListener('click', function (event) {
-
+//FUNCION PARA CREACION DE FORMULARIO Y AGREGAR UNA NOTARIA
+function setAddNotaries(){
   let tableDiv = document.getElementById('table_id');
   dataT.destroy();
   removeAllChilds(tableDiv);
   tableDiv.classList.add('d-none');
-
-  event.preventDefault() //IMPIDE QUE SE ENVIE EN FORMULARIO AUTOMATICAMENTE
 
   let form = document.createElement('form');
   form.id = 'addTuple';
@@ -542,18 +525,19 @@ document.getElementById('add-btn').addEventListener('click', function (event) {
   let submit = document.createElement('button');
   submit.id = 'submit-change';
   submit.classList.add('btn', 'btn-primary');
+  submit.innerText='Agregar Notaria';
   form.appendChild(submit);
   document.getElementById('container').appendChild(form);
 
   submit.addEventListener('click', function () {
 
     let name = document.getElementById('nombre-notaria').value,
-        cedula = document.getElementById('cedula').value,
-        codigo = document.getElementById('codigo-area').value,
-        telefono = document.getElementById('telefono').value,
-        latitud = document.getElementById('latitud').value,
-        longitud = document.getElementById('longitud').value,
-        parroquia = document.getElementById('parroquia-select').value;
+      cedula = document.getElementById('cedula').value,
+      codigo = document.getElementById('codigo-area').value,
+      telefono = document.getElementById('telefono').value,
+      latitud = document.getElementById('latitud').value,
+      longitud = document.getElementById('longitud').value,
+      parroquia = document.getElementById('parroquia-select').value;
 
     let peticion = new XMLHttpRequest()
     let params = `option=create&name=${name}&fklugar=${parroquia}&latitud=${latitud}&longitud=${longitud}&personid=${cedula}&codigoarea=${codigo}&telefono=${telefono}`;
@@ -577,9 +561,8 @@ document.getElementById('add-btn').addEventListener('click', function (event) {
       }else{
         document.getElementById('table_id').classList.remove('d-none');
         document.getElementById('addTuple').remove();
-        getNotaries('notaria');
+        getNotaries();
       }
     }
   })
-
-})
+}

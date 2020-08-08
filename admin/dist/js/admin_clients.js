@@ -1,53 +1,3 @@
-document.getElementById('cliente').addEventListener('click', function (event) {
-  //alert('Base');
-  let peticion = new XMLHttpRequest()
-  let params = `option=select`;   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
-  peticion.open('GET', `./consult_clients.php?${params}`)
-
-  peticion.send()
-
-  //loader.classList.add('active');
-
-  peticion.onreadystatechange = function(){
-    if(peticion.readyState == 4 && peticion.status == 200){
-      //loader.classList.remove('active')
-    }
-  }
-
-  peticion.onload = function(){
-    let data = JSON.parse(peticion.responseText)
-    if(data.error){
-      console.log('Error al obtener datos de la Base');
-    }else{
-      getClients('cliente');
-    }
-  }
-})
-
-var dataT;
-var page;
-
-//INICIALIZACION DE DATATABLE
-function datatable() {
-  $(document).ready(function () {
-    dataT = $('#table_id').DataTable({
-      "language": {
-        "lengthMenu": "Motrar _MENU_ registros",
-        "zeroRecords": "No se encontraron resultados",
-        "info": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-        "infoFiltered": "(filtrado de un total de _MAX_ registros)",
-        "sSearch": "Buscar",
-        "oPaginate": {
-          "sFirst": "Primero",
-          "sLast": "Último",
-          "sNext": "Siguiente",
-          "sPrevious": "Anterior"
-        },
-        "sProcessing": "Procesando..."
-      }
-    });
-  });
-}
 
 function removeAllChilds(element) {
   let child = element.lastChild;
@@ -188,50 +138,34 @@ function selectParroquia(){
   })
 }
 
-//SE LE ASIGNA A CADA OPCION DE LA BARRA VERTICAL IZQUIERA UN EVENTO PARA PODER CARGAR EL AJAX
-var menuOption = document.getElementsByClassName('option');
-for (let i = 0; i < menuOption.length; i++) {
-  menuOption[i].addEventListener('click', function (event) {
-
-    let op = event.target.id;
-    page = op;
-
-    document.getElementById('table_id').classList.remove('d-none');
-    if(document.getElementById('addTuple')) {
-      document.getElementById('addTuple').remove();
-    }
-
-    document.getElementById('add-btn').classList.remove('disabled');
-    document.getElementById('delete-btn').classList.add('disabled');
-    document.getElementById('submit-btn').classList.add('disabled');
-
-    switch (op) {
-      case 'notaria':
-        getNotaries(op);
-        break;
-      case 'jefatura':
-        break;
-      case 'templo':
-        break;
-      default:
-
-    }
-
-  });
-}
-
-function getClients(op) {
-
+document.getElementById('cliente').addEventListener('click', function (event) {
   document.getElementById('title').innerText = 'Clientes';
 
-  let peticion = new XMLHttpRequest()
-  let params = '';
-
-  if(op === 'cliente'){
-    params = `option=select`   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
-  }else{
-    params = `option=`   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
+  if(dataT){
+    dataT.destroy();
   }
+
+  document.getElementById('table_id').classList.remove('d-none');
+  if(document.getElementById('addTuple')) {
+    document.getElementById('addTuple').remove();
+  }
+
+  let addBtn = document.getElementsByClassName('add-btn')[0];
+  addBtn.classList.remove('disabled');
+  addBtn.id='add-btn-clients';
+  let deleteBtn = document.getElementsByClassName('delete-btn')[0];
+  deleteBtn.classList.add('disabled');
+  deleteBtn.id='delete-btn-clients';
+  let submitBtn = document.getElementsByClassName('submit-btn')[0];
+  submitBtn.classList.add('disabled');
+  submitBtn.id='submit-btn-clients';
+  getClients();
+});
+
+function getClients() {
+
+  let peticion = new XMLHttpRequest()
+  let params = `option=select`   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
   peticion.open('GET', `./consult_clients.php?${params}`)
 
   peticion.send()
@@ -287,54 +221,54 @@ function getClients(op) {
       for(d in data) {
         let tr2 = document.createElement('tr');
         tr2.id = data[d].cedula;
-        tr2.classList.add('clickeable');
+        tr2.classList.add('clickeable-clients');
 
         let cedulaC2 = document.createElement('td');
         cedulaC2.innerText = data[d].cedula;
         cedulaC2.id = `cedula-${data[d].cedula}`;
-        cedulaC2.classList.add('clickeable');
+        cedulaC2.classList.add('clickeable-clients');
 
         let nombreC2 = document.createElement('td')
         nombreC2.innerText = data[d].nombre;
-        nombreC2.classList.add('clickeable');
+        nombreC2.classList.add('clickeable-clients');
 
         let apellidoC2 = document.createElement('td')
         apellidoC2.innerText = data[d].apellido;
-        apellidoC2.classList.add('clickeable');
+        apellidoC2.classList.add('clickeable-clients');
 
         let correoC2 = document.createElement('td')
         correoC2.innerText = data[d].correo;
-        correoC2.classList.add('clickeable');
+        correoC2.classList.add('clickeable-clients');
 
         let codigoC2 = document.createElement('td')
         codigoC2.innerText = data[d].codigo_de_area;
         codigoC2.id = `codigo_area-${data[d].telefono_id}`;
-        codigoC2.classList.add('clickeable');
+        codigoC2.classList.add('clickeable-clients');
 
         let numeroC2 = document.createElement('td')
         numeroC2.innerText = data[d].numero;
         numeroC2.id = `numero-${data[d].telefono_id}`;
-        numeroC2.classList.add('clickeable');
+        numeroC2.classList.add('clickeable-clients');
 
         let usuarioC2 = document.createElement('td')
         usuarioC2.innerText = data[d].usuario;
         usuarioC2.id = `usuario-${data[d].usuario_id}`;
-        usuarioC2.classList.add('clickeable');
+        usuarioC2.classList.add('clickeable-clients');
 
         let parroquiaC2 = document.createElement('td')
         parroquiaC2.innerText = data[d].parroquia;
         parroquiaC2.id = `parroquia-${data[d].parroquia_id}`;
-        parroquiaC2.classList.add('clickeable');
+        parroquiaC2.classList.add('clickeable-clients');
 
         let municipioC2 = document.createElement('td')
         municipioC2.innerText = data[d].municipio;
         municipioC2.id = `municipio-${data[d].municipio_id}`;
-        municipioC2.classList.add('clickeable');
+        municipioC2.classList.add('clickeable-clients');
 
         let estadoC2 = document.createElement('td')
         estadoC2.innerText = data[d].estado;
         estadoC2.id = `estado-${data[d].estado_id}`;
-        estadoC2.classList.add('clickeable');
+        estadoC2.classList.add('clickeable-clients');
 
         tr2.appendChild(cedulaC2);
         tr2.appendChild(nombreC2);
@@ -353,20 +287,22 @@ function getClients(op) {
     container.appendChild(tbody);
     if(dataT) {
       dataT.destroy();
+      datatable();
+    }else{
+      datatable();
     }
-    datatable();
-    setChangePosibility();
+    setChangePosibilityClients();
   }
 };
 
 //AÑADIR A LAS FILAS LA POSIBILIDAD DE CAMBIAR LOS DATOS
-function setChangePosibility(){
+function setChangePosibilityClients(){
   let rows = document.getElementsByTagName('tr');
   for (let i = 0; i < rows.length; i++){
     let element = rows[i];
     if (element.id !== 'table-head'){
       element.addEventListener('click', function (event) {
-        if(event.target.classList.contains('clickeable')) {
+        if(event.target.classList.contains('clickeable-clients')) {
           let columns = event.target.parentElement.children;
           let names = ['cedula','nombre','apellido', 'correo', 'codigo', 'numero', 'usuario'];
           for (let j = 0; j < columns.length; j++) {
@@ -441,8 +377,8 @@ function setChangePosibility(){
             }
 
           }
-          document.getElementById('delete-btn').classList.remove('disabled');
-          document.getElementById('submit-btn').classList.remove('disabled');
+          document.getElementById('delete-btn-clients').classList.remove('disabled');
+          document.getElementById('submit-btn-clients').classList.remove('disabled');
         }
       })
     }

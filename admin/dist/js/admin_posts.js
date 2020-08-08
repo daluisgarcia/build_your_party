@@ -1,53 +1,3 @@
-document.getElementById('posts').addEventListener('click', function (event) {
-  //alert('Base');
-  let peticion = new XMLHttpRequest()
-  let params = `option=select`;   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
-  peticion.open('GET', `./consult_posts.php?${params}`)
-
-  peticion.send()
-
-  //loader.classList.add('active');
-
-  peticion.onreadystatechange = function(){
-    if(peticion.readyState == 4 && peticion.status == 200){
-      //loader.classList.remove('active')
-    }
-  }
-
-  peticion.onload = function(){
-    let data = JSON.parse(peticion.responseText)
-    if(data.error){
-      console.log('Error al obtener datos de la Base');
-    }else{
-      getPosts('post');
-    }
-  }
-})
-
-var dataT;
-var page;
-
-//INICIALIZACION DE DATATABLE
-function datatable() {
-  $(document).ready(function () {
-    dataT = $('#table_id').DataTable({
-      "language": {
-        "lengthMenu": "Motrar _MENU_ registros",
-        "zeroRecords": "No se encontraron resultados",
-        "info": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-        "infoFiltered": "(filtrado de un total de _MAX_ registros)",
-        "sSearch": "Buscar",
-        "oPaginate": {
-          "sFirst": "Primero",
-          "sLast": "Último",
-          "sNext": "Siguiente",
-          "sPrevious": "Anterior"
-        },
-        "sProcessing": "Procesando..."
-      }
-    });
-  });
-}
 
 function removeAllChilds(element) {
   let child = element.lastChild;
@@ -62,50 +12,35 @@ function returnIdNumber(id) {
   return id.substr(index, id.length-index);
 }
 
-//SE LE ASIGNA A CADA OPCION DE LA BARRA VERTICAL IZQUIERA UN EVENTO PARA PODER CARGAR EL AJAX
-var menuOption = document.getElementsByClassName('option');
-for (let i = 0; i < menuOption.length; i++) {
-  menuOption[i].addEventListener('click', function (event) {
-
-    let op = event.target.id;
-    page = op;
-
-    document.getElementById('table_id').classList.remove('d-none');
-    if(document.getElementById('addTuple')) {
-      document.getElementById('addTuple').remove();
-    }
-
-    document.getElementById('add-btn').classList.remove('disabled');
-    document.getElementById('delete-btn').classList.add('disabled');
-    document.getElementById('submit-btn').classList.add('disabled');
-
-    switch (op) {
-      case 'notaria':
-        getNotaries(op);
-        break;
-      case 'jefatura':
-        break;
-      case 'templo':
-        break;
-      default:
-
-    }
-
-  });
-}
-
-function getPosts(op) {
-
+document.getElementById('posts').addEventListener('click', function (event){
   document.getElementById('title').innerText = 'Posts';
 
-  let peticion = new XMLHttpRequest()
-  let params = '';
-
-  if(op === 'post'){
-    params = `option=select`   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
-  }else{
-    params = `option=`   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
+  if(dataT){
+    dataT.destroy();
   }
+
+  document.getElementById('table_id').classList.remove('d-none');
+  if(document.getElementById('addTuple')) {
+    document.getElementById('addTuple').remove();
+  }
+
+  let addBtn = document.getElementsByClassName('add-btn')[0];
+  addBtn.classList.remove('disabled');
+  addBtn.id='add-btn-posts';
+  let deleteBtn = document.getElementsByClassName('delete-btn')[0];
+  deleteBtn.classList.add('disabled');
+  deleteBtn.id='delete-btn-posts';
+  let submitBtn = document.getElementsByClassName('submit-btn')[0];
+  submitBtn.classList.add('disabled');
+  submitBtn.id='submit-btn-posts';
+
+  getPosts();
+});
+
+function getPosts() {
+
+  let peticion = new XMLHttpRequest()
+  let params = `option=select`   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
   peticion.open('GET', `./consult_posts.php?${params}`)
 
   peticion.send()
@@ -143,28 +78,28 @@ function getPosts(op) {
       for(d in data) {
         let tr2 = document.createElement('tr');
         tr2.id = data[d].id;
-        tr2.classList.add('clickeable');
+        tr2.classList.add('clickeable-posts');
 
         let imagenCol = document.createElement('td')
-        imagenCol.classList.add('clickeable');
+        imagenCol.classList.add('clickeable-posts');
 
         let imagenC2 = document.createElement('img');
         imagenC2.src = `../img/${data[d].ruta}`
         imagenC2.id = `imagen-${data[d].id_imagen}`;
         imagenC2.height = 75;
-        imagenC2.classList.add('clickeable');
+        imagenC2.classList.add('clickeable-posts');
 
         let seccionC2 = document.createElement('td')
         seccionC2.innerText = data[d].seccion;
-        seccionC2.classList.add('clickeable');
+        seccionC2.classList.add('clickeable-posts');
 
         let tituloC2 = document.createElement('td')
         tituloC2.innerText = data[d].titulo;
-        tituloC2.classList.add('clickeable');
+        tituloC2.classList.add('clickeable-posts');
 
         let cuerpoC2 = document.createElement('td')
         cuerpoC2.innerText = data[d].cuerpo;
-        cuerpoC2.classList.add('clickeable');
+        cuerpoC2.classList.add('clickeable-posts');
 
         tr2.appendChild(imagenCol);
         imagenCol.appendChild(imagenC2);
@@ -178,20 +113,22 @@ function getPosts(op) {
     container.appendChild(tbody);
     if(dataT) {
       dataT.destroy();
+      datatable();
+    }else{
+      datatable();
     }
-    datatable();
-    setChangePosibility();
+    setChangePosibilityPosts();
   }
 };
 
 //AÑADIR A LAS FILAS LA POSIBILIDAD DE CAMBIAR LOS DATOS
-function setChangePosibility(){
+function setChangePosibilityPosts(){
   let rows = document.getElementsByTagName('tr');
   for (let i = 0; i < rows.length; i++){
     let element = rows[i];
     if (element.id !== 'table-head'){
       element.addEventListener('click', function (event) {
-        if(event.target.classList.contains('clickeable')) {
+        if(event.target.classList.contains('clickeable-posts')) {
           let columns = event.target.parentElement.children;
           let names = ['imagen','seccion','titulo','cuerpo'];
           for (let j = 0; j < columns.length; j++) {
@@ -230,8 +167,8 @@ function setChangePosibility(){
             }
 
           }
-          document.getElementById('delete-btn').classList.remove('disabled');
-          document.getElementById('submit-btn').classList.remove('disabled');
+          document.getElementById('delete-btn-posts').classList.remove('disabled');
+          document.getElementById('submit-btn-posts').classList.remove('disabled');
         }
       })
     }

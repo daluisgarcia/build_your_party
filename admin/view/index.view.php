@@ -738,9 +738,9 @@
         <div class="row mb-2">
           <div class="col-sm-6">
             <h1 id="title" class="m-0 text-dark">Dashboard</h1>
-            <button id="submit-btn" type="submit" class="btn btn-warning disabled">Actualizar</button>
-            <button id="delete-btn" type="button" class="btn btn-danger disabled">Borrar</button>
-            <a id="add-btn" href="#" class="btn btn-success disabled">Agregar</a>
+            <button id="submit-btn" type="button" class="btn btn-warning submit-btn disabled">Actualizar</button>
+            <button id="delete-btn" type="button" class="btn btn-danger delete-btn disabled">Borrar</button>
+            <button id="add-btn" type="button" class="btn btn-success add-btn disabled">Agregar</button>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -814,8 +814,8 @@
 <script src="./dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="./dist/js/demo.js"></script>
-<!-- Codigo AJAX y DataTables-->
-<script src="./dist/js/admin_AJAX.js"></script>
+<!-- CRUD NOTARIAS-->
+<script src="./dist/js/admin_notaries.js"></script>
 <!-- CRUD Clientes-->
 <script src="./dist/js/admin_clients.js"></script>
 <!-- CRUD Posts-->
