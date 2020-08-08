@@ -14,7 +14,9 @@ header('Content-type: application/json; charset=utf-8');    //ESTABLECE LA PAGIN
 define('NO_CONTENT_FOUND', 'No se se han encontrado resultados.');
 
 $option = isset($_GET['option']) ? $_GET['option'] : '';
-$imagen = isset($_GET['imagen']) ? $_GET['imagen'] : '';
+$id_imagen = isset($_GET['id_imagen']) ? $_GET['id_imagen'] : '';
+$ruta = isset($_GET['ruta']) ? $_GET['ruta'] : '';
+$id = isset($_GET['id']) ? $_GET['id'] : '';
 $seccion = isset($_GET['seccion']) ? $_GET['seccion'] : '';
 $titulo = isset($_GET['titulo']) ? $_GET['titulo'] : '';
 $cuerpo = isset($_GET['cuerpo']) ? $_GET['cuerpo'] : '';

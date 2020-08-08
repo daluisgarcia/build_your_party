@@ -144,11 +144,14 @@ function getPosts(op) {
         let tr2 = document.createElement('tr');
         tr2.id = data[d].id;
         tr2.classList.add('clickeable');
-        console.log('RUTA DE LA IMAGEN');
-        console.log(data[d].ruta);
+
+        let imagenCol = document.createElement('td')
+        imagenCol.classList.add('clickeable');
+
         let imagenC2 = document.createElement('img');
-        imagenC2.src = `./img/${data[d].ruta}`
+        imagenC2.src = `../img/${data[d].ruta}`
         imagenC2.id = `imagen-${data[d].id_imagen}`;
+        imagenC2.height = 75;
         imagenC2.classList.add('clickeable');
 
         let seccionC2 = document.createElement('td')
@@ -163,7 +166,8 @@ function getPosts(op) {
         cuerpoC2.innerText = data[d].cuerpo;
         cuerpoC2.classList.add('clickeable');
 
-        tr2.appendChild(imagenC2);
+        tr2.appendChild(imagenCol);
+        imagenCol.appendChild(imagenC2);
         tr2.appendChild(seccionC2);
         tr2.appendChild(tituloC2);
         tr2.appendChild(cuerpoC2);
@@ -189,9 +193,18 @@ function setChangePosibility(){
       element.addEventListener('click', function (event) {
         if(event.target.classList.contains('clickeable')) {
           let columns = event.target.parentElement.children;
-          let names = ['seccion','titulo','cuerpo'];
+          let names = ['imagen','seccion','titulo','cuerpo'];
           for (let j = 0; j < columns.length; j++) {
-            if ((j > 0) && (j != 3)) {
+            if (j === 0) {
+              let input = document.createElement('input');
+              input.type = 'file';
+              input.name = names[j];
+              if(columns[j].id){
+                input.id = columns[j].id;
+              }
+              columns[j].appendChild(input);
+            }
+            if ((j > 0) && (j !== 3)) {
               let input = document.createElement('input');
               input.type = 'text';
               input.name = names[j];
@@ -204,9 +217,10 @@ function setChangePosibility(){
                 input.id = columns[j].id;
               }
               columns[j].appendChild(input);
-            } else if (j == 3) {
+            } else if (j === 3) {
               let textarea = document.createElement('textarea');
               textarea.name = names[j];
+              textarea.classList.add('w-100');
               textarea.value = columns[j].innerText;
               if(columns[j].id){
                 textarea.id = columns[j].id;

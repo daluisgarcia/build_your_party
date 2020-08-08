@@ -91,4 +91,20 @@ class AdminSQL extends Connection
         return $statement->fetchAll();
     }
 
+    public function update_post($id, $title, $section, $body,$id_imagen, $ruta) {
+        $statement = $this->con->prepare("update imagen set ruta_imagen='{$ruta}' where id_imagen='{$id_imagen}'");
+        $statement->execute();
+        $statement = $this->con->prepare("update post set seccion_post='{$section}', titulo_post='{$title}', cuerpo_post='{$body}' where id_post='{$id}'");
+        $statement->execute();
+        return $statement->fetchAll();
+    }
+
+    public function add_post($ruta_imagen, $section, $title, $body) {
+        $statement = $this->con->prepare("insert into post(seccion_post, titulo_post, cuerpo_post) values('$section', '$title', '$body');");
+        $statement->execute();
+        if(!empty($ruta_imagen)) {
+
+        }
+    }
+
 }

@@ -63,8 +63,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             if(empty($register)){
                 $reg_error .= '<li>Datos inválidos</li>';
             } else {
-                $_SESSION['user'] = $register['id_usuario'];
-                $_SESSION['user'] = $register['nombre_usuario'];
+                $_SESSION['id_user'] = $register[0]['id_usuario'];
+                $_SESSION['user'] = $register[0]['nombre_usuario'];
                 header("Location: index.php");
                 die();
             }

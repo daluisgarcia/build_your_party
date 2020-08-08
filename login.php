@@ -32,8 +32,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             if(empty($login)){
                 $error .= '<li>Datos inválidos</li>';
             } else {
-                $_SESSION['user'] = $login['id_usuario'];
-                $_SESSION['user'] = $login['nombre_usuario'];
+                $_SESSION['id_user'] = $login[0]['id_usuario'];
+                $_SESSION['user'] = $login[0]['nombre_usuario'];
                 header("Location: index.php");
                 die();
             }
