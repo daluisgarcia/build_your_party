@@ -147,7 +147,7 @@ function getPosts(op) {
         console.log('RUTA DE LA IMAGEN');
         console.log(data[d].ruta);
         let imagenC2 = document.createElement('img');
-        imagenC2.src = `../../img/${data[d].ruta}`
+        imagenC2.src = `./img/${data[d].ruta}`
         imagenC2.id = `imagen-${data[d].id_imagen}`;
         imagenC2.classList.add('clickeable');
 
