@@ -17,18 +17,12 @@
             <div class="form-group form-inline mx-auto my-3">
                 <label for="party-select" class="m-1 ml-2">Seleccione la fiesta</label>
                 <select id="party-select" class="form-control" onchange="selectBudgets()">
-                <!-- CARGAR AQUI LISTA DE FIESTAS-->
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
+                    <!-- CARGAR AQUI LISTA DE FIESTAS-->
                 </select>
-                <button type="button" id="add-party-btn" class="btn btn-primary ml-2">Añadir fiesta</button>
+                <a href="party_select" id="add-party-btn" class="btn btn-primary ml-2">Añadir fiesta</a>
                 <label for="budget-select" class="m-1 ml-2">Seleccione el presupuesto</label>
                 <select id="budget-select" class="form-control" >
                     <!-- CARGAR AQUI LISTA DE PRESUPUESTOS POR FIESTAS-->
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
                 </select>
                 <button type="button" id="add-budget-btn" class="btn btn-primary ml-2">Añadir nuevo presupuesto</button>
             </div>

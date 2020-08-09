@@ -23,7 +23,7 @@ if(empty($id_fiesta)){
         $connect = new PartySQL();
 
         //EN ESTE CASO SE PODRIA VALIDAR SI NO EXISTE EL ID SE REDIRIJA A OTRA PAGINA
-        $answer = $connect->get_users_partys($_SESSION["id"]);
+        $answer = $connect->get_users_partys($_SESSION["id_user"]);
 
     }catch (PDOException $e){
         $answer =  ['error' => NO_CONTENT_FOUND];

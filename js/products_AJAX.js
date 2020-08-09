@@ -75,13 +75,23 @@ function selectPartys() {
         } else {
             //LLENAR DROPDOWN DE FIESTAS
             let dropdown = document.getElementById('party-select');
+            removeAllChilds(dropdown);
+            for(d in data){
+                let opt = document.createElement('option');
+                opt.value = data[d].id;
+                opt.innerText = data[d].fecha;
+                dropdown.appendChild(opt);
+            }
+            selectBudgets();
         }
     }
 }
 
 function selectBudgets() {
-    let peticion = new XMLHttpRequest()
-    let partyId = document.getElementById('party-select').value;
+    let peticion = new XMLHttpRequest();
+    let partyId = document.getElementById('party-select');
+    let index = partyId.selectedIndex;
+    partyId = partyId[index].value;
     let params = `idfiesta=${partyId}`;
     peticion.open('GET', `./getPartysAndBudget.php?${params}`)
 
@@ -98,10 +108,19 @@ function selectBudgets() {
     peticion.onload = function () {
         let data = JSON.parse(peticion.responseText)
         if (data.error) {
-            alert('ERROR: Recoleccion de fiestas')
-        } else {
+            alert('ERROR: Recoleccion de fiestas');
+        } else if (data.length === 0){
+            alert('Debe crear un presupuesto para poder agregar productos');
+        }else{
             //LLENAR DROPDOWN DE PRESUPUESTOS
             let dropdown = document.getElementById('budget-select');
+            removeAllChilds(dropdown);
+            for(d in data){
+                let opt = document.createElement('option');
+                opt.value = data[d].id;
+                opt.innerText = data[d].fecha;
+                dropdown.appendChild(opt);
+            }
         }
     }
 }

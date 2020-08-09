@@ -24,6 +24,16 @@ if ($category_id !== '') {
     $answer = ['error' => NO_CONTENT_FOUND];
 }
 
+//SECCION PARA OBTENER FIESTAS DE UN USUARIO
+include_once 'model/PartySQL.php';
+$p_con = new PartySQL();
+$r = $p_con->get_users_partys($_SESSION["id_user"]);
+
+if(empty($r)){
+    header("Location: party_select.php");
+    die();
+}
+
 include_once './model/Product.php';
 
 if ($answer == '') {

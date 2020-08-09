@@ -21,10 +21,13 @@
   <component name="ChangeListManager">
     <list default="true" id="f3d9412f-d832-42ed-9e83-6e44df7bd0b9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/dist/js/admin_AJAX.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/dist/js/admin_notaries.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/dist/js/admin_clients.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/dist/js/admin_clients.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/dist/js/admin_posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/dist/js/admin_posts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/index.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/index.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getPartysAndBudget.php" beforeDir="false" afterPath="$PROJECT_DIR$/getPartysAndBudget.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/products_AJAX.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/products_AJAX.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/PartySQL.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/PartySQL.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/party_select.php" beforeDir="false" afterPath="$PROJECT_DIR$/party_select.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_search.php" beforeDir="false" afterPath="$PROJECT_DIR$/product_search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/party_select.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/party_select.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/products.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/products.view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,6 +206,7 @@
       <workItem from="1596664579987" duration="18220000" />
       <workItem from="1596727901615" duration="7200000" />
       <workItem from="1596829334422" duration="16659000" />
+      <workItem from="1596915378207" duration="11808000" />
     </task>
     <servers />
   </component>
