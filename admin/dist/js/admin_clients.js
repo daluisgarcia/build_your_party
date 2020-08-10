@@ -619,7 +619,7 @@ function setDeleteClients(){
     if(data.error){
       alert('Error al obtener datos de la Base');
     }else{
-      //getClients();
+      getClients();
     }
   }
 }
