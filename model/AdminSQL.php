@@ -91,7 +91,7 @@ class AdminSQL extends Connection
         return $statement->fetchAll();
     }
 
-    public function update_post($id, $title, $section, $body,$id_imagen, $ruta) {
+    public function update_post($id, $title, $section, $body, $id_imagen, $ruta) {
         $statement = $this->con->prepare("update imagen set ruta_imagen='{$ruta}' where id_imagen='{$id_imagen}'");
         $statement->execute();
         $statement = $this->con->prepare("update post set seccion_post='{$section}', titulo_post='{$title}', cuerpo_post='{$body}' where id_post='{$id}'");
@@ -112,11 +112,8 @@ class AdminSQL extends Connection
         return $statement->fetchAll();
     }
 
-    public function delete_post($section, $title, $body) {
-        $statement = $this->con->prepare("select id_post from post where seccion_post='$section' and titulo_post='$title' and cuerpo_post='$body';");
-        $statement->execute();
-        $id = $statement->fetchAll()[0][0];
-        $statement = $this->con->prepare("delete from post where seccion_post='$section' and titulo_post='$title' and cuerpo_post='$body';");
+    public function delete_post($id) {
+        $statement = $this->con->prepare("delete from post where id_post = $id;");
         $statement->execute();
         $statement = $this->con->prepare("delete from imagen where fk_post=$id;");
         $statement->execute();

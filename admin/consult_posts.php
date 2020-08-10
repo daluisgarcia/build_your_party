@@ -9,14 +9,14 @@
 include '../config.php';
 
 //error_reporting(0);	//EVITAR MUESTRA DE ERRORES
-header('Content-type: application/json; charset=utf-8');    //ESTABLECE LA PAGINA COMO UN VISOR DE JSON
+//header('Content-type: application/json; charset=utf-8');    //ESTABLECE LA PAGINA COMO UN VISOR DE JSON
 
 define('NO_CONTENT_FOUND', 'No se se han encontrado resultados.');
 
 $option = isset($_GET['option']) ? $_GET['option'] : '';
-$id_imagen = isset($_GET['id_imagen']) ? $_GET['id_imagen'] : '';
 $ruta = isset($_GET['ruta']) ? $_GET['ruta'] : '';
-$id = isset($_GET['id']) ? $_GET['id'] : '';
+$imagen = isset($_GET['id_imagen']) ? $_GET['id_imagen'] : '';
+$id = isset($_GET['id_post']) ? $_GET['id_post'] : '';
 $seccion = isset($_GET['seccion']) ? $_GET['seccion'] : '';
 $titulo = isset($_GET['titulo']) ? $_GET['titulo'] : '';
 $cuerpo = isset($_GET['cuerpo']) ? $_GET['cuerpo'] : '';
@@ -37,15 +37,13 @@ if ($answer == '') {
     $connect = new AdminSQL();
 
     if($option === 'update') {
-      //$answer1 = $connect->update_notary($id, $name, $fklugar);
-      //$answer2 = $connect->update_coordinates($coordID, $latitud, $longitud);
-      //$answer3 = $connect->update_person($personID, $personname1, $personname2);
-      //$answer = [$answer1, $answer2, $answer3];
-
+      $answer = $connect->update_post($id, $titulo, $seccion, $cuerpo, $imagen, $ruta);
     }elseif($option === 'delete'){
-      //$answer = $connect->delete_notary($id, $coordID, $personID);
+      $answer = $connect->delete_post($id);
     }else if($option === 'select'){
       $answer = $connect->get_posts();
+    } else {
+      $answer = $connect->add_post('', $seccion, $titulo, $cuerpo);
     }
 
   } catch (PDOException $e) {
