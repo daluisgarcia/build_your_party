@@ -20,14 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3d9412f-d832-42ed-9e83-6e44df7bd0b9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/logout.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/getPartysAndBudget.php" beforeDir="false" afterPath="$PROJECT_DIR$/getPartysAndBudget.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/products_AJAX.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/products_AJAX.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/PartySQL.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/PartySQL.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/party_select.php" beforeDir="false" afterPath="$PROJECT_DIR$/party_select.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product_search.php" beforeDir="false" afterPath="$PROJECT_DIR$/product_search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/party_select.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/party_select.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/products.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/products.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products.php" beforeDir="false" afterPath="$PROJECT_DIR$/products.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +205,9 @@
       <workItem from="1596664579987" duration="18220000" />
       <workItem from="1596727901615" duration="7200000" />
       <workItem from="1596829334422" duration="16659000" />
-      <workItem from="1596915378207" duration="11808000" />
+      <workItem from="1596915378207" duration="12410000" />
+      <workItem from="1596943118738" duration="4076000" />
+      <workItem from="1596987098625" duration="27836000" />
     </task>
     <servers />
   </component>
@@ -249,14 +250,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="486" y="87" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1596834051608" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1596856872178">
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1597021075392">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1596856872178" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1596729785296">
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1597021075392" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1597021476766">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1596729785296" />
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1597021476766" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1596834533512">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

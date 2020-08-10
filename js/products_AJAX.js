@@ -1,14 +1,13 @@
 const IMG_FOLDER = 'img/';
 
-function validate(search, category, feature){
-    if (search === ''){
-        return false
-    }else if(category === ''){
-        return false
-    }else if(feature === ''){
-        return false
-    }
-    return true
+function returnIdNumber(id) {
+    let index = id.indexOf('-')+1;
+    return id.substr(index, id.length-index);
+}
+
+function returnCode(id) {
+    let index = id.indexOf('-');
+    return id.substr(0, index);
 }
 
 function sanitize(string){
@@ -55,7 +54,7 @@ function getProduct(id){
 
 function selectPartys() {
     let peticion = new XMLHttpRequest()
-    let params = ``;
+    let params = `option=getPartys`;
     peticion.open('GET', `./getPartysAndBudget.php?${params}`)
 
     peticion.send()
@@ -92,7 +91,7 @@ function selectBudgets() {
     let partyId = document.getElementById('party-select');
     let index = partyId.selectedIndex;
     partyId = partyId[index].value;
-    let params = `idfiesta=${partyId}`;
+    let params = `idfiesta=${partyId}&option=getBudgets`;
     peticion.open('GET', `./getPartysAndBudget.php?${params}`)
 
     peticion.send()
@@ -125,11 +124,147 @@ function selectBudgets() {
     }
 }
 
+document.getElementById('add-budget-btn').addEventListener('click', function (event) {
+    let peticion = new XMLHttpRequest();
+    let partyId = document.getElementById('party-select');
+    let index = partyId.selectedIndex;
+    partyId = partyId[index].value;
+    let params = `idfiesta=${partyId}&option=addBudget`;
+    peticion.open('GET', `./getPartysAndBudget.php?${params}`)
+
+    peticion.send()
+
+    //loader.classList.add('active');
+
+    peticion.onreadystatechange = function () {
+        if (peticion.readyState == 4 && peticion.status == 200) {
+            //loader.classList.remove('active')
+        }
+    }
+
+    peticion.onload = function () {
+        let data = JSON.parse(peticion.responseText)
+        if (data.error) {
+            alert('ERROR: Recoleccion de fiestas');
+        }else{
+            //ACTUALIZAR DROPDOWN DE PRESUPUESTOS
+            selectBudgets();
+        }
+    }
+})
+
 function addToBudget(btn){
-    //AQUI VA EL PROCEDIMIENTO PARA AGREGAR PRODUCTOS A PRESUPUESTO
-    //(VALIDAR QUE EXISTA ALGUNA FIESTA Y ALGUN PRESUPUESTO SELECCIONADO EN LOS DROPDOWN)
-    alert('Agregado a presupuesto');
-    console.log(btn);
+    //PRIMERO SE INICIALIZA LA TUPLA EN PRODUCTO_PRESUPUESTO, LUEGO SE INTRODUCE CADA PRODUCTO CON SU CANTIDADD CON EL CODIGO DE ESA TUPLA EN LA ENTIDAD PUENTE
+    let budget = document.getElementById('budget-select');
+    let index = budget.selectedIndex;
+    //SE VALIDA SI EXISTE ALGUN ELEMENTO SELECCIONADO EN EL DROPDOWN DE PRESUPUESTOS
+    if(index === -1){
+        alert('ERROR: Debe agregar y seleccionar un presupuesto para poder agregar servicio a él.')
+    }else{
+        //EN CASO DE QUE EXISTA SE TOMA EL VALOR DE LA SELECCION
+        budget = budget[index].value;
+        //SE TOMA EL CODIGO Y ID DEL OBJETO A AGREGAR AL PRESUPUESTO
+        let code = returnCode(btn.name);
+        let ID = returnIdNumber(btn.name);
+
+        let peticion = new XMLHttpRequest();
+        let params='';
+        let container = document.getElementById(btn.name);
+        if (code === 'PRODUCTO'){
+            let quantity = container.getElementsByClassName('QUANTP')[0].value;
+            let price = container.getElementsByClassName('PRECIO')[0].innerText;
+
+            params = `option=addProductNoService&idbudget=${budget}&productprice=${price}&productquantity=${quantity}&productid=${ID}`;
+
+        }else if (code === 'SERVICIO'){
+            let modal = container.getElementsByClassName('MODALIDAD')[0].innerText;
+            if (modal === 'CANTIDAD'){
+                //PRIMERO CREAR EL SERVICIO_PRESUPUESTO Y LUEGO AGREGAR TODOS LOS PRODUCTOS
+                let prices = container.getElementsByClassName('PRECIO');
+                let quantities = container.getElementsByClassName('QUANTP');
+                let servicePrice = prices[0].innerText;
+                let totalPrice = 0;
+                for (let i=1; i<prices.length; i++){
+                    totalPrice += parseFloat(prices[i].innerText)*parseFloat(quantities[i-1].value);;
+                }
+                let id_reg = 0;
+                params = `option=addService&serviceprice=${servicePrice}&productprice=${totalPrice}&idbudget=${budget}&serviceid=${ID}`;
+                let promise = new Promise((resolve, reject) => {
+                    let peticion2 = new XMLHttpRequest();
+                    peticion2.open('GET', `./getPartysAndBudget.php?${params}`);
+                    peticion2.send()
+                    //loader.classList.add('active');
+                    peticion2.onreadystatechange = function () {
+                        if (peticion2.readyState == 4 && peticion2.status == 200) {
+                            //loader.classList.remove('active')
+                        }
+                    }
+                    peticion2.onload = function () {
+                        let data = JSON.parse(peticion2.responseText)
+                        if (data.error) {
+                            reject();
+                        }else{
+                            id_reg = data;
+                            resolve();
+                        }
+                    }
+                })
+                promise.then(()=>{
+                    for (let i=1; i<prices.length; i++){
+                        let quantity = parseFloat(quantities[i-1].value);
+                        let productId = returnIdNumber(quantities[i-1].id);
+                        let peticion2 = new XMLHttpRequest();
+                        params = `option=addServicesProduct&regid=${id_reg}&productid=${productId}&productquantity=${quantity}`;
+                        peticion2.open('GET', `./getPartysAndBudget.php?${params}`)
+                        peticion2.send()
+                        //loader.classList.add('active');
+                        peticion2.onreadystatechange = function () {
+                            if (peticion2.readyState == 4 && peticion2.status == 200) {
+                                //loader.classList.remove('active')
+                            }
+                        }
+                        peticion2.onload = function () {
+                            let data = JSON.parse(peticion2.responseText)
+                            if (data.error) {
+                                alert('ERROR al agregar producto');
+                                return;
+                            }
+                        }
+                    }
+                }).catch(()=>{
+                    alert('ERROR al agregar producto');
+                    return;
+                })
+                params = ``;
+            }else if(modal === 'HORA'){
+
+                let quantity = container.getElementsByClassName('QUANTH')[0].value;
+                let price = container.getElementsByClassName('PRECIO')[0].innerText;
+                params = `option=addServiceByHour&idbudget=${budget}&serviceprice=${price}&servicehours=${quantity}&serviceid=${ID}`;
+
+            }else if(modal === 'NA'){
+                let quantity = 1
+                let price = container.getElementsByClassName('PRECIO')[0].innerText;
+                params = `option=addServiceByHour&idbudget=${budget}&serviceprice=${price}&servicehours=${quantity}&serviceid=${ID}`;
+            }
+        }
+        peticion.open('GET', `./getPartysAndBudget.php?${params}`)
+        peticion.send()
+        //loader.classList.add('active');
+        peticion.onreadystatechange = function () {
+            if (peticion.readyState == 4 && peticion.status == 200) {
+                //loader.classList.remove('active')
+            }
+        }
+        peticion.onload = function () {
+            let data = JSON.parse(peticion.responseText)
+            if (data.error) {
+                alert('ERROR al agregar producto');
+            }else{
+                alert('Agregado exitosamente');
+            }
+        }
+    }
 }
 
 function showContent(data){
@@ -150,12 +285,10 @@ function showContent(data){
                     title.innerHTML = `${data.nombre} <i>SERVICIO</i>`;
                     let p1 = document.createElement('p');
                     p1.classList.add('card-text');
-                    p1.innerHTML = `<b>Precio:</b> ${data.precio}`;
-                    p1.name = 'PRECIO';
+                    p1.innerHTML = `<b>Precio:</b> <span class="PRECIO">${data.precio}</span>`;
                     let p2 = document.createElement('p');
                     p2.classList.add('card-text');
-                    p2.innerHTML = `<b>Modalidad de pago:</b> ${data.modalidad_pago}`;
-                    p2.name = 'MODALIDAD';
+                    p2.innerHTML = `<b>Modalidad de pago:</b><span class="MODALIDAD">${data.modalidad_pago}</span>`;
                     body.appendChild(title);
                     body.appendChild(p1);
                     body.appendChild(p2);
@@ -174,7 +307,7 @@ function showContent(data){
                             for (let i=0; i<prod.length; i++){
                                 label = document.createElement('p');
                                 label.classList.add('card-text');
-                                label.innerHTML = `<b>Precio por unidad de ${prod[i].nombre_producto}:</b> ${prod[i].precio_producto}`;
+                                label.innerHTML = `<b>Precio por unidad de ${prod[i].nombre_producto}:</b> <span class="PRECIO">${prod[i].precio_producto}</span>`;
                                 body.appendChild(label);
                                 p11 = document.createElement('p');
                                 p11.classList.add('card-text');
@@ -185,8 +318,7 @@ function showContent(data){
                                 input.max = 1000;
                                 input.step = 1;
                                 input.id =`QUANTP-${prod[i].id_producto}`;
-                                input.name = 'QUANTP';
-                                input.classList.add('form-inline');
+                                input.classList.add('form-inline', 'QUANTP');
                                 p11.innerHTML=`<b>Selecciona la cantidad de ${prod[i].nombre_producto}: </b>`;
                                 p11.appendChild(input);
                                 body.appendChild(p11);
@@ -205,12 +337,13 @@ function showContent(data){
                         input.value = input.min;
                         input.max = 1000;
                         input.step = 1;
-                        input.name=`QUANTH`;
-                        input.classList.add('form-inline');
+                        input.classList.add('form-inline', `QUANTH`);
                         p11.innerText='Selecciona la cantidad de horas:';
                         p11.appendChild(input);
                         body.appendChild(p11);
                         body.appendChild(p3);
+                        body.appendChild(btn);
+                    }else if(data.modalidad_pago === 'NA'){
                         body.appendChild(btn);
                     }
                     btn.addEventListener('click',function(event){addToBudget(event.target)});
@@ -233,8 +366,7 @@ function showContent(data){
                     title.innerHTML = `${data.nombre} <i>PRODUCTO</i>`;
                     let p1 = document.createElement('p');
                     p1.classList.add('card-text');
-                    p1.innerHTML = `<b>Precio</b> ${data.precio}`;
-                    p1.name = 'PRECIO';
+                    p1.innerHTML = `<b>Precio</b> <span class="PRECIO">${data.precio}</span>`;
                     let p11 = document.createElement('p');
                     p11.classList.add('card-text');
                     let input = document.createElement('input');
@@ -243,8 +375,7 @@ function showContent(data){
                     input.value = input.min;
                     input.max = 100;
                     input.step = 1;
-                    input.name=`QUANTP`;
-                    input.classList.add('form-inline');
+                    input.classList.add('form-inline', `QUANTP`);
                     p11.innerText='Selecciona la cantidad:';
                     p11.appendChild(input);
                     let btn = document.createElement('button');
