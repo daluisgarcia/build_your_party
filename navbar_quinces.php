@@ -8,7 +8,7 @@
             <div class="col-lg-1 col-sm-1">
             </div>
             <div class="col-lg-1 col-sm-1 header-category">
-                <a href=#>Tips</a>
+                <a href="tips_quinces">Tips</a>
             </div>
 
 

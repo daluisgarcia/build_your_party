@@ -3,6 +3,13 @@
     <br>
     <br>
     <br>
+    <?php
+    require 'navbar_bodas.php';
+?>
+
+<br>
+<br>
+<br>
 
     <section>
         <div class="container-fluid">
