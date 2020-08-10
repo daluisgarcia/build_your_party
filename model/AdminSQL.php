@@ -136,15 +136,15 @@ class AdminSQL extends Connection
     public function add_client($cedula, $nombre, $apellido, $correo, $codigo, $numero, $usuario, $parroquia) {
         $statement = $this->con->prepare("insert into persona(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) values ($cedula, '$nombre', '$apellido', '$correo', $parroquia);");
         $statement->execute();
-        $statement = $this->con->prepare("insert into usuario(nombre_usuario, passw_usuario, fk_persona) values ($usuario, '12345678', $cedula);");
+        $statement = $this->con->prepare("insert into usuario(nombre_usuario, passw_usuario, fk_persona) values ('$usuario', '12345678', $cedula);");
         $statement->execute();
         $statement = $this->con->prepare("insert into telefono(codigo_area_telefono, numero_telefono, fk_persona) values ($codigo, $numero, $cedula);");
         $statement->execute();
         return $statement->fetchAll();
     }
 
-    public function delete_client($cedula, $usuario) {
-        $statement = $this->con->prepare("delete from usuario where nombre_usuario='$usuario' and fk_persona='$cedula';");
+    public function delete_client($cedula, $id_usuario) {
+        $statement = $this->con->prepare("delete from usuario where id_usuario=$id_usuario and fk_persona='$cedula';");
         $statement->execute();
         $statement = $this->con->prepare("delete from persona where cedula_persona='$cedula';");
         $statement->execute();
