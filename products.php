@@ -42,6 +42,24 @@ require 'navbar.php';
 
 include 'config.php';
 
+try {
+    //SECCION PARA OBTENER FIESTAS DE UN USUARIO
+    include_once 'model/PartySQL.php';
+    $connect = new PartySQL();
+
+    //EN ESTE CASO SE PODRIA VALIDAR SI NO EXISTE EL ID SE REDIRIJA A OTRA PAGINA
+    $answer = $connect->get_users_partys($_SESSION["id_user"]);
+
+    if(sizeof($answer)===0){
+        header("Location: party_select.php");
+        die();
+    }
+
+}catch (PDOException $e){
+    header("Location: index.php");
+    die();
+}
+
 include_once 'model/Product.php';
 
 $not = '';
