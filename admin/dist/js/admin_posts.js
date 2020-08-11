@@ -137,6 +137,8 @@ function setChangePosibilityPosts(){
             if (j === 0) {
               let input = document.createElement('input');
               input.type = 'file';
+              input.accept=".jpg, .png"
+              input.id = 'upload'
               input.name = names[j];
               if(columns[j].id){
                 input.id = columns[j].id;
@@ -308,6 +310,8 @@ function setUpdatePosts(){
 
   postID = returnIdNumber(postID);
   imagenID = returnIdNumber(imagenID);
+
+  ajaxup();
 
   let peticion = new XMLHttpRequest()
   let params = `option=update&id_post=${postID}&seccion=${seccion}&titulo=${titulo}&cuerpo=${cuerpo}&id_imagen=${imagenID}&ruta=${ruta}`;   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
