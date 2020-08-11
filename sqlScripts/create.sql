@@ -547,3 +547,16 @@ CREATE TABLE IF NOT EXISTS IMAGEN(
     FOREIGN KEY(fk_servicio) REFERENCES SERVICIO(id_servicio),
     FOREIGN KEY(fk_post) REFERENCES POST(id_post)
 );
+
+create table if not exists descuento (
+	 id_descuento int auto_increment,
+     porcentaje_descuento int not null,
+     fk_producto int,
+     fk_servicio int,
+     fecha_inicio_descuento date not null,
+     fecha_fin_descuento date,
+     primary key(id_descuento),
+     constraint foreign key (fk_producto) references producto (id_producto),
+	 constraint foreign key (fk_servicio) references servicio (id_servicio)
+
+);
