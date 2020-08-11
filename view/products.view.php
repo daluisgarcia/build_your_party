@@ -64,6 +64,11 @@
                 <?php endforeach; ?>
             </div>
         </section>
+        <div class="fixed-bottom">
+            <a id="goToBudgets" href="" class="m-2 float-right btn btn-success">
+                Ver presupuestos
+            </a>
+        </div>
     </div>
 </div>
 

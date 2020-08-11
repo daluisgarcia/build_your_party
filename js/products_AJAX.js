@@ -80,6 +80,7 @@ function selectPartys() {
                 opt.value = data[d].id;
                 opt.innerText = data[d].fecha;
                 dropdown.appendChild(opt);
+                document.getElementById('goToBudgets').href = `budgets?idParty=${data[d].id}`;
             }
             selectBudgets();
         }

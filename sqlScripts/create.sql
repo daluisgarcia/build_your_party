@@ -58,7 +58,6 @@ nombre_servicio varchar(60) not null,
 modalidad_pago_servicio enum('HORA','CANTIDAD','NA') not null,
 costo_servicio double,
 precio_servicio double default 0,
-descuento_servicio int not null default 0,
 requiere_cita_servicio int not null,
 detalles_servicio varchar(100),
 fk_categoria int not null,
@@ -138,7 +137,6 @@ CREATE TABLE IF NOT EXISTS PRODUCTO(
     precio_producto DOUBLE NOT NULL,
     cantidad_disponible_producto INT NOT NULL,
     venta_ind_producto VARCHAR(2) NOT NULL CHECK(venta_ind_producto IN ('SI', 'NO')),
-	descuento_producto INT NOT NULL DEFAULT 0,
     fk_categoria INT,
     PRIMARY KEY(id_producto),
     FOREIGN KEY(fk_categoria) REFERENCES CATEGORIA(id_categoria)
@@ -550,13 +548,14 @@ CREATE TABLE IF NOT EXISTS IMAGEN(
 
 create table if not exists descuento (
 	 id_descuento int auto_increment,
-     porcentaje_descuento int not null,
+     porcentaje_descuento int not null default 0,
      fk_producto int,
      fk_servicio int,
      fecha_inicio_descuento date not null,
      fecha_fin_descuento date,
      primary key(id_descuento),
      constraint foreign key (fk_producto) references producto (id_producto),
-	 constraint foreign key (fk_servicio) references servicio (id_servicio)
-
+	 constraint foreign key (fk_servicio) references servicio (id_servicio),
+     constraint check (fk_servicio IS NOT NULL AND fk_producto IS NULL OR
+					   fk_servicio IS NULL AND fk_producto IS NOT NULL)
 );

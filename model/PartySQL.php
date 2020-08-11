@@ -17,9 +17,27 @@ class PartySQL extends Connection
         return $statement->fetchAll();
     }
 
+    public function get_party_by_id($id){
+        //PREPARACION DEL QUERY
+        $statement = $this->con->prepare("SELECT nombre_tipo_fiesta as nombre, fecha_realizacion_fiesta as fecha FROM FIESTA INNER JOIN TIPO_FIESTA ON fk_tipo_fiesta=id_tipo_fiesta WHERE id_fiesta=$id;");
+        //EJECUCION DEL QUERY
+        $statement->execute();
+        // El metodo fetch nos va a devolver el resultado o false en caso de que no haya resultado.
+        return $statement->fetchAll();
+    }
+
     public  function get_partys_budgets($party_id){
         //PREPARACION DEL QUERY
         $statement = $this->con->prepare("SELECT id_presupuesto as id, fecha_presupuesto as fecha FROM PRESUPUESTO WHERE fk_fiesta=$party_id;");
+        //EJECUCION DEL QUERY
+        $statement->execute();
+        // El metodo fetch nos va a devolver el resultado o false en caso de que no haya resultado.
+        return $statement->fetchAll();
+    }
+
+    public function get_budget_details($id_budget){
+        //PREPARACION DEL QUERY
+        $statement = $this->con->prepare("SELECT SP.id_servicio_presupuesto as id_reg,SP.precio_total_servicio_presupuesto as precio_total,SP.cantidad_servicio_presupuesto as cantidad_horas,SP.fk_servicio as id_servicio,S.nombre_servicio as nombre_servicio,S.modalidad_pago_servicio as modalidad,S.precio_servicio as precio_servicio,PP.fk_producto as id_producto,PP.cantidad_producto_pedido as cantidad_producto,P.nombre_producto as nombre_producto,P.precio_producto as precio_producto FROM SERVICIO_PRESUPUESTO AS SP LEFT JOIN SERVICIO AS S ON SP.fk_servicio=S.id_servicio LEFT JOIN PRODUCTO_PEDIDO AS PP ON SP.id_servicio_presupuesto=PP.fk_servicio_presupuesto LEFT JOIN PRODUCTO AS P ON PP.fk_producto=P.id_producto WHERE SP.fk_presupuesto=$id_budget;");
         //EJECUCION DEL QUERY
         $statement->execute();
         // El metodo fetch nos va a devolver el resultado o false en caso de que no haya resultado.
