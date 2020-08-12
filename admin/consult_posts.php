@@ -43,7 +43,7 @@ if ($answer == '') {
     }else if($option === 'select'){
       $answer = $connect->get_posts();
     } else {
-      $answer = $connect->add_post('', $seccion, $titulo, $cuerpo);
+      $answer = $connect->add_post($ruta, $seccion, $titulo, $cuerpo);
     }
 
   } catch (PDOException $e) {

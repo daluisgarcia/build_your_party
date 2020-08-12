@@ -528,7 +528,7 @@ CREATE TABLE IF NOT EXISTS TELEFONO(
 
 CREATE TABLE IF NOT EXISTS IMAGEN(
     id_imagen INT NOT NULL auto_increment,
-    ruta_imagen VARCHAR(200) NOT NULL,
+    ruta_imagen TEXT NOT NULL,
     fk_templo INT,
     fk_trabajo_cyc INT,
     fk_trabajo_cyc_2 INT,

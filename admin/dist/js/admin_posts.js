@@ -82,9 +82,10 @@ function getPosts() {
 
         let imagenCol = document.createElement('td')
         imagenCol.classList.add('clickeable-posts');
+        imagenCol.id = `${data[d].ruta}`;
 
         let imagenC2 = document.createElement('img');
-        imagenC2.src = `../img/${data[d].ruta}`
+        imagenC2.src = `${data[d].ruta}`
         imagenC2.id = `imagen-${data[d].id_imagen}`;
         imagenC2.setAttribute("route", `${data[d].ruta}`);
         imagenC2.setAttribute("name", `imagen`);
@@ -132,14 +133,13 @@ function setChangePosibilityPosts(){
       element.addEventListener('click', function (event) {
         if(event.target.classList.contains('clickeable-posts')) {
           let columns = event.target.parentElement.children;
-          let names = ['imagen','seccion','titulo','cuerpo'];
+          let names = ['imagenR','seccion','titulo','cuerpo'];
           for (let j = 0; j < columns.length; j++) {
             if (j === 0) {
               let input = document.createElement('input');
-              input.type = 'file';
-              input.accept=".jpg, .png"
-              input.id = 'upload'
-              input.name = names[j];
+              input.type = 'text';
+              input.name = `imagenR`;
+              input.value = columns[j].id;
               if(columns[j].id){
                 input.id = columns[j].id;
               }
@@ -222,7 +222,7 @@ function setAddPosts(){
   form.appendChild(imagenLabel);
 
   let imagen = document.createElement('input');
-  imagen.type = 'file';
+  imagen.type = 'text';
   imagen.id='imagen-post';
   imagen.name = 'imagen-post';
   form.appendChild(imagen);
@@ -273,7 +273,8 @@ function setAddPosts(){
       cuerpo = document.getElementById('cuerpo-post').value;
 
     let peticion = new XMLHttpRequest()
-    let params = `option=create&seccion=${seccion}&titulo=${titulo}&cuerpo=${cuerpo}`;
+    let params = `option=create&seccion=${seccion}&titulo=${titulo}&cuerpo=${cuerpo}&ruta=${imagen}`;
+    console.log(params);
     peticion.open('GET', `./consult_posts.php?${params}`)
 
     peticion.send()
@@ -306,15 +307,14 @@ function setUpdatePosts(){
     titulo = document.getElementsByName('titulo')[0].value,
     cuerpo = document.getElementsByName('cuerpo')[0].value,
     imagenID = document.getElementsByName('imagen')[0].id,
-    ruta = document.getElementsByName('imagen')[0].getAttribute("route")
+    ruta = document.getElementsByName('imagenR')[0].value;
 
   postID = returnIdNumber(postID);
   imagenID = returnIdNumber(imagenID);
 
-  ajaxup();
-
   let peticion = new XMLHttpRequest()
   let params = `option=update&id_post=${postID}&seccion=${seccion}&titulo=${titulo}&cuerpo=${cuerpo}&id_imagen=${imagenID}&ruta=${ruta}`;   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
+  console.log(params);
   peticion.open('GET', `./consult_posts.php?${params}`)
 
   peticion.send()
