@@ -63,6 +63,7 @@ try {
 include_once 'model/Product.php';
 
 $not = '';
+$products = '';
 
 try {
     $connect = new Product();
@@ -71,8 +72,8 @@ try {
     if (empty($categories)) {
         $not = 'ERROR';
     }
-    $products = $connect->get_products_by_category(0);
-    $service = $connect->get_services_by_category(0);
+    //$products = $connect->get_products_by_category(0);
+    //$service = $connect->get_services_by_category(0);
 
     if (empty($products) or empty($service)) {
         $not .= 'ERROR';

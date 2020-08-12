@@ -215,7 +215,7 @@ function searchCourses() {
                 btnContainer.classList.add('row', 'm-auto');
                 let btn = document.createElement('a');
                 btn.classList.add('btn', 'btn-primary', 'btn-lg', 'm-auto');
-                btn.href = '#';
+                btn.href = `procesar_pago?idCourse=${data[0].id}&idTemplo=${data[0].templo}`;
                 btn.innerText = 'Reservar';
                 btnContainer.appendChild(btn);
                 container.appendChild(row);

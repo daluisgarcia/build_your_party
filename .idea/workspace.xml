@@ -20,12 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3d9412f-d832-42ed-9e83-6e44df7bd0b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/budgets.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/budgets.view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contracts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/contracts.view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/products_AJAX.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/products_AJAX.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/form_inscripcion_cursos_matrimoniales.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/map_AJAX.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/map_AJAX.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/MapSQL.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/MapSQL.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/PartySQL.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/PartySQL.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products.php" beforeDir="false" afterPath="$PROJECT_DIR$/products.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sqlScripts/create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sqlScripts/create.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/budgets.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/budgets.view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/products.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/products.view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -161,15 +166,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/sqlScripts" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\build_your_party\admin" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\build_your_party\view" />
       <recent name="C:\wamp64\www\build_your_party\sqlScripts" />
       <recent name="C:\wamp64\www\build_your_party\admin\view" />
       <recent name="C:\wamp64\www\build_your_party\admin\dist\img" />
       <recent name="C:\wamp64\www\build_your_party" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\build_your_party\admin" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -210,7 +215,8 @@
       <workItem from="1596987098625" duration="29420000" />
       <workItem from="1597078332004" duration="11000" />
       <workItem from="1597111913225" duration="5706000" />
-      <workItem from="1597163832500" duration="17774000" />
+      <workItem from="1597163832500" duration="27822000" />
+      <workItem from="1597253828135" duration="13928000" />
     </task>
     <servers />
   </component>
@@ -253,10 +259,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="486" y="87" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1596834051608" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1597120173856">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="517" y="303" key="NewPhpFileDialog" timestamp="1597254956216">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1597120173856" />
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1597189261960" />
+    <state x="517" y="303" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1597254956216" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1597021476766">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

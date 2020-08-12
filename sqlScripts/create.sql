@@ -90,8 +90,10 @@ CREATE TABLE IF NOT EXISTS METODO_PAGO(
     fecha_vencimiento_tdc DATE,
     numero_tdd int(16),
     numero_transferencia VARCHAR(30),
+    fk_usuario int,
     tipo VARCHAR(13) NOT NULL CHECK(tipo IN('TDC','TDD','TRANSFERENCIA')),
-    PRIMARY KEY(id_metodo_pago)
+    PRIMARY KEY(id_metodo_pago),
+    foreign key (fk_usuario) references USUARIO(id_usuario)
 );
 
 CREATE TABLE IF NOT EXISTS RELIGION(
@@ -274,7 +276,7 @@ CREATE TABLE IF NOT EXISTS CONTRATO(
  	fecha_aprobado_contrato DATE NOT NULL,
     fecha_pagado_contrato DATE,
 	monto_total_contrato DOUBLE NOT NULL,
-    fk_presupuesto INT NOT NULL,
+    fk_presupuesto INT NOT NULL UNIQUE,
  	fk_usuario INT NOT NULL,
   	PRIMARY KEY(id_contrato),
     FOREIGN KEY(fk_presupuesto) REFERENCES PRESUPUESTO(id_presupuesto),
@@ -341,11 +343,19 @@ create table if not exists PAGO (
 id_pago int not null auto_increment,
 monto_pago int not null,
 fecha_realizacion_pago date not null,
-fk_contrato int not null,
+fk_contrato int,
 fk_metodo_de_pago int not null,
-primary key (id_pago, fk_contrato),
+fk_ins_cur_m1 int,
+fk_ins_cur_m2 int,
+fk_ins_cur_m3 int,
+primary key (id_pago),
 constraint fk_contrato_pago foreign key (fk_contrato) references CONTRATO (id_contrato),
-constraint fk_metodo_de_pago foreign key (fk_metodo_de_pago) references METODO_PAGO (id_metodo_pago));
+constraint fk_ins_cur_m1 foreign key (fk_ins_cur_m1) references INSCRIPCION_CUR_M (fk_curso_matrim_1),
+constraint fk_ins_cur_m2 foreign key (fk_ins_cur_m2) references INSCRIPCION_CUR_M (fk_curso_matrim_2),
+constraint fk_ins_cur_m3 foreign key (fk_ins_cur_m3) references INSCRIPCION_CUR_M (id_inscripcion),
+constraint fk_metodo_de_pago foreign key (fk_metodo_de_pago) references METODO_PAGO (id_metodo_pago),
+constraint check ((fk_contrato IS NOT NULL AND fk_ins_cur_m1 IS NULL AND fk_ins_cur_m2 IS NULL AND fk_ins_cur_m3 IS NULL) OR
+				  (fk_contrato IS NULL AND fk_ins_cur_m1 IS NOT NULL AND fk_ins_cur_m2 IS NOT NULL AND fk_ins_cur_m3 IS NOT NULL)));
 
 create table if not exists PRODUCTO_PEDIDO (
 cantidad_producto_pedido int not null,
@@ -431,13 +441,12 @@ primary key (id_curso_matrim, fk_templo),
 constraint fk_templo_curso foreign key (fk_templo) references TEMPLO (id_templo));
 
 CREATE TABLE IF NOT EXISTS INSCRIPCION_CUR_M(
+	id_inscripcion INT NOT NULL auto_increment,
     fk_curso_matrim_1 INT NOT NULL,
 	fk_curso_matrim_2 INT NOT NULL,
-	fk_presupuesto INT NOT NULL,
-    PRIMARY KEY(fk_curso_matrim_1, fk_curso_matrim_2, fk_presupuesto),
+    PRIMARY KEY(fk_curso_matrim_1, fk_curso_matrim_2, id_inscripcion),
     FOREIGN KEY(fk_curso_matrim_1) REFERENCES CURSO_MATRIM(id_curso_matrim),
-	FOREIGN KEY(fk_curso_matrim_2) REFERENCES CURSO_MATRIM(fk_templo),
-	FOREIGN KEY(fk_presupuesto) REFERENCES PRESUPUESTO(id_presupuesto)
+	FOREIGN KEY(fk_curso_matrim_2) REFERENCES CURSO_MATRIM(fk_templo)
 );
 
 CREATE TABLE IF NOT EXISTS ESTADO (
