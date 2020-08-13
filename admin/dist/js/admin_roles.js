@@ -12,12 +12,11 @@ function returnIdNumber(id) {
   return id.substr(index, id.length-index);
 }
 
-function selectPermisos(rol) {
+function selectPermisos(rol, drop) {
   return new Promise((resolve, reject) => {
     let peticion = new XMLHttpRequest()
     let params = `option=permisos&rol=${rol}`   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
-    console.log(params);
-    peticion.open('GET', `../consult_roles.php?${params}`)
+    peticion.open('GET', `./consult_roles.php?${params}`)
 
     peticion.send()
 
@@ -30,23 +29,19 @@ function selectPermisos(rol) {
     }
 
     peticion.onload = function () {
-      console.log('la peticion al menos'+peticion.responseText);
       let data = JSON.parse(peticion.responseText)
       if(!data.error) {
-        console.log('no error al menos');
-        let dropPermisos = document.getElementById('permisos-select');
+        let dropPermisos = document.getElementById(drop);
         removeAllChilds(dropPermisos);
         for(d in data){
           let op = document.createElement('option');
           op.value = data[d].id;
           op.innerText = data[d].nombre;
-          dropEstado.appendChild(op);
-          console.log(op);
+          dropPermisos.appendChild(op);
         }
         resolve();
       }else{
         //alert('Error al cargar los estados');
-        console.log('coño mala tuya manin');
         reject();
       }
     }
@@ -74,12 +69,10 @@ document.getElementById('roles').addEventListener('click', function (event){
   let submitBtn = document.getElementsByClassName('submit-btn')[0];
   submitBtn.classList.add('disabled');
   submitBtn.id='submit-btn-roles';
-  console.log('entra1');
   getRoles();
 });
 
 function getRoles() {
-  console.log('entra');
   let peticion = new XMLHttpRequest()
   let params = `option=select`   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
   peticion.open('GET', `./consult_roles.php?${params}`)
@@ -105,8 +98,11 @@ function getRoles() {
     rol.innerText = 'Rol';
     let permisos = document.createElement('td')
     permisos.innerText = 'Permisos';
-    let agregar = document.createElement('td')
-    agregar.innerText = 'Agregar';
+    let agregar = document.createElement('button')
+    agregar.id = 'check-permisos';
+    agregar.classList.add('btn', 'btn-primary', 'm-2');
+    agregar.innerText='Asignar Permiso';
+    agregar.addEventListener('click', newAssociation);
     tr1.appendChild(rol);
     tr1.appendChild(permisos);
     tr1.appendChild(agregar);
@@ -124,25 +120,17 @@ function getRoles() {
         rolC2.classList.add('clickeable-roles');
 
         let permisosC2 = document.createElement('select');
-        permisosC2.id = 'permisos-select';
+        permisosC2.id = `permiso-${data[d].id}`;
         permisosC2.name = 'permisos';
-        let selectedRole = returnIdNumber(data[d].id);
 
-        let promise = selectPermisos(data[d].id);
+        let promise = selectPermisos(data[d].id, permisosC2.id);
         promise.then(() => {
-          permisosC2.value = selectedRole;
         }).catch(() => {
           console.log('ERROR CON PERMISOS');
         })
 
-        let agregarC2 = document.createElement('button')
-        agregarC2.id = 'check-permisos';
-        agregarC2.classList.add('btn', 'btn-primary');
-        agregarC2.innerText='Agregar Permiso';
-
         tr2.appendChild(rolC2);
         tr2.appendChild(permisosC2);
-        tr2.appendChild(agregarC2);
         tbody.appendChild(tr2);
       }
     }
@@ -157,6 +145,163 @@ function getRoles() {
     //setChangePosibilityPosts();
   }
 };
+
+function newAssociation() {
+  let tableDiv = document.getElementById('table_id');
+  //dataT.destroy();
+  removeAllChilds(tableDiv);
+  tableDiv.classList.add('d-none');
+
+  let form = document.createElement('form');
+  form.id = 'addTuple';
+
+  let rolLabel = document.createElement('label');
+  rolLabel.setAttribute('for', 'role-to-select');
+  rolLabel.innerText = 'Rol';
+  form.appendChild(rolLabel);
+  let rol = document.createElement('select');
+  rol.id = 'select-rol';
+  rol.name = 'rol';
+  rol.setAttribute('onchange','selectParroquia()');
+  form.appendChild(rol);
+
+  let rolPromise = selectAllRoles();
+  rolPromise.then(() => {
+  }).catch(() => {
+    console.log('ERROR CON PERMISOS');
+  })
+
+  let permisoLabel = document.createElement('label');
+  permisoLabel.setAttribute('for', 'permiso-to-select');
+  permisoLabel.innerText = 'Permiso';
+  form.appendChild(permisoLabel);
+  let permiso = document.createElement('select');
+  permiso.id = 'select-permiso';
+  permiso.name = 'permiso';
+  form.appendChild(permiso);
+
+  let permisoPromise = selectAllPermissions();
+  permisoPromise.then(() => {
+  }).catch(() => {
+    console.log('ERROR CON PERMISOS');
+  })
+
+  let submit = document.createElement('button');
+  submit.id = 'submit-change-rp';
+  submit.classList.add('btn', 'btn-primary');
+  submit.innerText='Asociar';
+  form.appendChild(submit);
+  document.getElementById('container').appendChild(form);
+
+  submit.addEventListener('click', function () {
+
+    /*let cedula = document.getElementById('cedula').value,
+      nombre = document.getElementById('nombre-cliente').value,
+      apellido = document.getElementById('apellido-cliente').value,
+      correo = document.getElementById('correo-cliente').value,
+      codigo = document.getElementById('codigo-area').value,
+      telefono = document.getElementById('telefono').value,
+      usuario = document.getElementById('usuario').value,
+      parroquia = document.getElementById('parroquia-select').value;
+
+    let peticion = new XMLHttpRequest()
+    let params = `option=create&cedula=${cedula}&nombre=${nombre}&apellido=${apellido}&correo=${correo}&codigoarea=${codigo}&telefono=${telefono}&usuario=${usuario}&parroquia=${parroquia}`;
+    peticion.open('GET', `./consult_clients.php?${params}`)
+
+    peticion.send()
+
+    //loader.classList.add('active');
+
+    peticion.onreadystatechange = function(){
+      if(peticion.readyState == 4 && peticion.status == 200){
+        //loader.classList.remove('active')
+      }
+    }
+
+    peticion.onload = function(){
+      let data = JSON.parse(peticion.responseText)
+      if(data.error){
+        alert('Error al introducir datos');
+      }else{
+        document.getElementById('table_id').classList.remove('d-none');
+        document.getElementById('addTuple').remove();
+        getClients();
+      }
+    }*/
+  })
+}
+
+function selectAllRoles() {
+  return new Promise((resolve, reject) => {
+    let peticion = new XMLHttpRequest()
+    let params = `option=all-roles`   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
+    peticion.open('GET', `./consult_roles.php?${params}`)
+
+    peticion.send()
+
+    //loader.classList.add('active');
+
+    peticion.onreadystatechange = function () {
+      if (peticion.readyState == 4 && peticion.status == 200) {
+        //loader.classList.remove('active')
+      }
+    }
+
+    peticion.onload = function () {
+      let data = JSON.parse(peticion.responseText)
+      if(!data.error) {
+        let dropRoles = document.getElementById('select-rol');
+        removeAllChilds(dropRoles);
+        for(d in data){
+          let op = document.createElement('option');
+          op.value = data[d].id;
+          op.innerText = data[d].rol;
+          dropRoles.appendChild(op);
+        }
+        resolve();
+      }else{
+        //alert('Error al cargar los estados');
+        reject();
+      }
+    }
+  })
+}
+
+function selectAllPermissions() {
+  return new Promise((resolve, reject) => {
+    let peticion = new XMLHttpRequest()
+    let params = `option=all-permisos`   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
+    peticion.open('GET', `./consult_roles.php?${params}`)
+
+    peticion.send()
+
+    //loader.classList.add('active');
+
+    peticion.onreadystatechange = function () {
+      if (peticion.readyState == 4 && peticion.status == 200) {
+        //loader.classList.remove('active')
+      }
+    }
+
+    peticion.onload = function () {
+      let data = JSON.parse(peticion.responseText)
+      if(!data.error) {
+        let dropPermisos = document.getElementById('select-permiso');
+        removeAllChilds(dropPermisos);
+        for(d in data){
+          let op = document.createElement('option');
+          op.value = data[d].id;
+          op.innerText = data[d].permiso;
+          dropPermisos.appendChild(op);
+        }
+        resolve();
+      }else{
+        //alert('Error al cargar los estados');
+        reject();
+      }
+    }
+  })
+}
 
 //AÑADIR A LAS FILAS LA POSIBILIDAD DE CAMBIAR LOS DATOS
 function setChangePosibilityPosts(){

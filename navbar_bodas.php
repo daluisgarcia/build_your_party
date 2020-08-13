@@ -8,7 +8,7 @@
                
                 
                 <div class="col-lg-2 col-sm-5 header-category"> 
-                    <a href=#>Bodas católicas</a>
+                    <a href="bodas_catolicas">Bodas católicas</a>
                 </div>
                 
                 <div class="col-lg-3 col-sm-6 header-category"> 
