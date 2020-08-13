@@ -150,6 +150,18 @@ class AdminSQL extends Connection
         return $statement->fetchAll();
     }
 
+    public function getPermissionsForRole($role) {
+        $statement = $this->con->prepare("select p.id_permiso as id, p.nombre_permiso as nombre from permiso p, rol_permiso rp where rp.fk_permiso=p.id_permiso and rp.fk_rol=$role;");
+        $statement->execute();
+        return $statement->fetchAll();
+    }
+
+    public function getRoles() {
+        $statement = $this->con->prepare("select id_rol as id, nombre_rol as rol from rol;");
+        $statement->execute();
+        return $statement->fetchAll();
+    }
+
 
 
 }

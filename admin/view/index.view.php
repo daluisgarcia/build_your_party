@@ -239,9 +239,27 @@
           </li>
           <li class="nav-item option">
             <a href="view_reportes" id="reportes" class="nav-link">
-              <img src="./dist/img/notas.svg" class="nav-icon">
+              <img src="./dist/img/data.svg" class="nav-icon">
               <p>
                 Reportes
+                <!--                <span class="right badge badge-danger">New</span>-->
+              </p>
+            </a>
+          </li>
+          <li class="nav-item option">
+            <a href="#" id="roles" class="nav-link">
+              <img src="./dist/img/role.svg" class="nav-icon">
+              <p>
+                Roles
+                <!--                <span class="right badge badge-danger">New</span>-->
+              </p>
+            </a>
+          </li>
+          <li class="nav-item option">
+            <a href="#" id="permisos" class="nav-link">
+              <img src="./dist/img/benefit.svg" class="nav-icon">
+              <p>
+                Permisos
                 <!--                <span class="right badge badge-danger">New</span>-->
               </p>
             </a>
@@ -829,6 +847,8 @@
 <script src="./dist/js/admin_clients.js"></script>
 <!-- CRUD Posts-->
 <script src="./dist/js/admin_posts.js"></script>
+<!-- CRUD roles-->
+<script src="./dist/js/admin_roles.js"></script>
 <!-- DataTables -->
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
 </body>
