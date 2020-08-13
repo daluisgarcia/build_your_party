@@ -162,6 +162,9 @@ class AdminSQL extends Connection
         return $statement->fetchAll();
     }
 
-
-
+    public function getAllPermissions() {
+        $statement = $this->con->prepare("select id_permiso as id, nombre_permiso as permiso from permiso;");
+        $statement->execute();
+        return $statement->fetchAll();
+    }
 }

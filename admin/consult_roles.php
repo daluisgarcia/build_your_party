@@ -46,6 +46,10 @@ if ($answer == '') {
       //$answer = $connect->add_post($ruta, $seccion, $titulo, $cuerpo);
     } else if($option === 'permisos') {
       $answer = $connect->getPermissionsForRole($role);
+    } else if($option === 'all-permisos') {
+      $answer = $connect->getAllPermissions();
+    } else if($option === 'all-roles') {
+      $answer = $connect->getRoles();
     }
 
   } catch (PDOException $e) {
