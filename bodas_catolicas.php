@@ -1,99 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bodas catolicas</title>
+    <title>Tips para Bodas</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/carrusel.js"></script>
+	<?php
+		include_once 'model/tips.php';
+		$connect = new PostManagement();
+  		$posts = $connect->get_post_bodacat();
+	?>
+	
 </head>
 <body>
-<?php
-require 'navbar.php';
-?>
-
-<br>
-<br>
-<br>
 
 <?php
-require 'navbar_bodas.php';
-?>
-<br>
-<br>
-<br>
+		require 'navbar.php';
+	?>
 
-<h2 class="text-center">
-    Bodas católicas
-</h2>
-<br>
+	<br>
+	<br>
+    <br>
+    
 
-<div class="col-md-5">
-    <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F36%2F2018%2F04%2F12172602%2Fafton-travers-wedding-firstdance-115-6145834-0816.jpg&q=85" class="rounded float-left ml-1 mr-2" width="80%">
-</div>
-
-<div class="col-md-12">
-    <p class="ml-3 text-justify">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae porta arcu. Quisque tempor dictum mattis. Phasellus pretium dui a mauris ultrices mollis egestas sed ex. Aenean non orci placerat, euismod metus congue, ultrices diam. Nam aliquam lorem sit amet nisi ultricies, sit amet cursus dui sodales. Ut at ante arcu. Curabitur imperdiet accumsan ante quis vehicula. Praesent nibh diam, venenatis quis commodo ut, sagittis ut libero. Etiam hendrerit neque justo, eget mattis ante pellentesque ut. Proin vulputate aliquam iaculis. Etiam luctus arcu tellus, id convallis risus convallis in. Phasellus at rhoncus tortor. Nulla facilisi. Suspendisse tempor, leo sed sodales pharetra, tellus augue euismod sapien, vitae placerat velit mauris eu ipsum. Duis ut mauris eu enim gravida eleifend. Maecenas consectetur eros et mi accumsan, et eleifend enim aliquet.
-        Quisque placerat nunc gravida eros euismod posuere. Nulla tempus sapien ex, vel dapibus quam pellentesque quis. Nulla facilisi. Quisque pretium condimentum nibh sollicitudin convallis. Morbi non tristique lectus. Nunc ut lectus ut velit vehicula auctor id vel est. Nam maximus lobortis massa, sed ullamcorper purus elementum vitae. Vestibulum nec eros elit.
-        Quisque placerat nunc gravida eros euismod posuere. Nulla tempus sapien ex, vel dapibus quam pellentesque quis. Nulla facilisi. Quisque pretium condimentum nibh sollicitudin convallis. Morbi non tristique lectus. Nunc ut lectus ut velit vehicula auctor id vel est. Nam maximus lobortis massa, sed ullamcorper purus elementum vitae. Vestibulum nec eros elit.
-        Quisque placerat nunc gravida eros euismod posuere. Nulla tempus sapien ex, vel dapibus quam pellentesque quis. Nulla facilisi. Quisque pretium condimentum nibh sollicitudin convallis. Morbi non tristique lectus. Nunc ut lectus ut velit vehicula auctor id vel est. Nam maximus lobortis massa, sed ullamcorper purus elementum vitae. Vestibulum nec eros elit.
-        Quisque placerat nunc gravida eros euismod posuere. Nulla tempus sapien ex, vel dapibus quam pellentesque quis. Nulla facilisi. Quisque pretium condimentum nibh sollicitudin convallis. Morbi non tristique lectus. Nunc ut lectus ut velit vehicula auctor id vel est. Nam maximus lobortis massa, sed ullamcorper purus elementum vitae. Vestibulum nec eros elit.
-        Quisque placerat nunc gravida eros euismod posuere. Nulla tempus sapien ex, vel dapibus quam pellentesque quis. Nulla facilisi. Quisque pretium condimentum nibh sollicitudin convallis. Morbi non tristique lectus. Nunc ut lectus ut velit vehicula auctor id vel est. Nam maximus lobortis massa, sed ullamcorper purus elementum vitae. Vestibulum nec eros elit.
-        Quisque placerat nunc gravida eros euismod posuere. Nulla tempus sapien ex, vel dapibus quam pellentesque quis. Nulla facilisi. Quisque pretium condimentum nibh sollicitudin convallis. Morbi non tristique lectus. Nunc ut lectus ut velit vehicula auctor id vel est. Nam maximus lobortis massa, sed ullamcorper purus elementum vitae. Vestibulum nec eros elit.
-
-    </p>
-</div>
-
-<h2 class="text-left ml-4">
-    Requisitos para la ceremonia
-</h2>
-<div class="text-left ml-2">
-    <ul>
-        <li>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae porta arcu. Quisque tempor dictum mattis. Phasellus pretium dui a mauris ultrices mollis egestas sed ex. Aenean non orci
-        </li>
-        <li>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae porta arcu. Quisque tempor dictum mattis. Phasellus pretium.
-        </li>
-        <li>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae porta arcu. Quisque tempor dictum mattis. Phasellus pretium dui a mauris ultrices mollis egestas sed ex.
-        </li>
-        <li>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae porta arcu. Quisque tempor dictum mattis.
-        </li>
-        <li>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae porta arcu. Quisque tempor dictum mattis. Phasellus pretium dui a mauris ultrices
-        </li>
-        <li>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae porta arcu. Quisque tempor dictum mattis. Phasellus pretium dui a mauris ultrices mollis egestas sed ex. Aenean non orci Phasellus pretium dui a mauris ultrices mollis egestas sed ex. Aenean non orci
-        </li>
-    </ul>
-</div>
-<h2 class="text-left ml-4">
-    Cursos matrimoniales
-</h2>
-<div class="text-justify ml-4 mr-4">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae porta arcu. Quisque tempor dictum mattis. Phasellus pretium dui a mauris ultrices mollis egestas sed ex. Aenean non orci placerat, euismod metus congue, ultrices diam. Nam aliquam lorem sit amet nisi ultricies, sit amet cursus dui sodales. Ut at ante arcu. Curabitur imperdiet accumsan ante quis vehicula. Praesent nibh diam, venenatis quis commodo ut, sagittis ut libero. Etiam hendrerit neque justo, eget mattis ante pellentesque ut. Proin vulputate aliquam iaculis. Etiam luctus arcu tellus, id convallis risus convallis in. Phasellus at rhoncus tortor. Nulla facilisi. Suspendisse tempor, leo sed sodales pharetra, tellus augue euismod sapien, vitae placerat velit mauris eu ipsum. Duis ut mauris eu enim gravida eleifend. Maecenas consectetur eros et mi accumsan, et eleifend enim aliquet.
-    Quisque placerat nunc gravida eros euismod posuere. Nulla tempus sapien ex, vel dapibus quam pellentesque quis. Nulla facilisi. Quisque pretium condimentum nibh sollicitudin convallis. Morbi non tristique lectus. Nunc ut lectus ut velit vehicula auctor id vel est. Nam maximus lobortis massa, sed ullamcorper purus elementum vitae. Vestibulum nec eros elit.
-</div>
-
-<div class="text-center">
-    <button type="button" class="btn btn-link">Ver cursos matrimoniales</button>
-</div>
-<br>
-<br>
-<div class="col-md-4">
-    <h2 class="text-left">
-        Las iglesias mas populares
-    </h2>
-</div>
-
+	<?php
+		require 'navbar_bodas.php';
+            ?>
+            <br>
+            <br>
+            <?php
+		foreach ($posts as $post){
+            echo '<h1>'.$post['titulo'].'</h1>';	
+			if($post['imagen']!=null)
+                echo '<div class="header-img" style="background-image: url('.$post['imagen'].')"> </div>';
+			echo
+			'<div class="col-12 align-self-center">
+            <p class="display-6 text-dark bg-white text-justify ml-3 mr-3">
+            '.$post['cuerpo'].'
+            </p>
+            </div>  <br><hr>';
+            
+		}
+		    ?>
+			
 <div class="row">
-    <div class="text-justify col-md-6 ml-4 mr-1">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae porta arcu. Quisque tempor dictum mattis. Phasellus pretium dui a mauris ultrices mollis egestas sed ex. Aenean non orci placerat, euismod metus congue, ultrices diam. Nam aliquam lorem sit amet nisi ultricies, sit amet cursus dui sodales. Ut at ante arcu. Curabitur imperdiet accumsan ante quis vehicula. Praesent nibh diam, venenatis quis commodo ut, sagittis ut libero. Etiam hendrerit neque justo, eget mattis ante pellentesque ut. Proin vulputate aliquam iaculis. Etiam luctus arcu tellus, id convallis risus convallis in. Phasellus at rhoncus tortor. Nulla facilisi. Suspendisse tempor, leo sed sodales pharetra, tellus augue euismod sapien, vitae placerat velit mauris eu ipsum. Duis ut mauris eu enim gravida eleifend. Maecenas consectetur eros et mi accumsan, et eleifend enim aliquet.
-        Quisque placerat nunc gravida eros euismod posuere. Nulla tempus sapien ex, vel dapibus quam pellentesque quis. Nulla facilisi. Quisque pretium condimentum nibh sollicitudin convallis. Morbi non tristique lectus.
-    </div>
+
     <div class="contenedor-carrusel col-md-4">
         <div class="imagen-carrusel actual-carrusel">
             <img src="https://www.venezuelatuya.com/caracas/iglesias/santa_capilla_gde.jpg" />

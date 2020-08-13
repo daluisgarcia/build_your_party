@@ -64,10 +64,11 @@ fk_categoria int not null,
 primary key (id_servicio),
 constraint fk_servicio foreign key (fk_categoria) references CATEGORIA (id_categoria));
 
+
 CREATE TABLE IF NOT EXISTS POST(
     id_post INT NOT NULL auto_increment,
-    seccion_post VARCHAR(5) NOT NULL CHECK(seccion_post IN('BODA','XV','OTRO','DECORACION')),
-    titulo_post VARCHAR(40) NOT NULL,
+    seccion_post VARCHAR(10) NOT NULL CHECK(seccion_post IN('BODA','XV','OTRO','DECORACION','BODACAT')),
+    titulo_post VARCHAR(60) NOT NULL,
     cuerpo_post TEXT NOT NULL,
     PRIMARY KEY (id_post) 
 );

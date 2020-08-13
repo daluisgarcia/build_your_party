@@ -29,7 +29,7 @@
 	<br>
 
 	<h1>Tips para hacer de tus quince una noche mágica</h1>
-	<div class="header-img" style="background-image: url(https://tendenciasrd.com/wp-content/uploads/2020/03/BBVA-Boda-20012020-1024x576.jpg)"> </div>
+	<div class="header-img" style="background-image: url(https://www.hoteldemexico.com/wp-content/uploads/2018/07/xv-1080x540.jpg)"> </div>
 
 	<div class="col-12 align-self-center">
 		<p class="display-6 text-dark bg-white text-justify ml-3 mr-3">

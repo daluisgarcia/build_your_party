@@ -33,7 +33,7 @@
 		</p>
 		<ol>
 		<?php
-
+		
 		foreach ($posts as $post){
 			echo '<li><span class="titulo-lista">'.$post['titulo'].'</span>
 			<br><br>'.$post['cuerpo'].'<br><br>
