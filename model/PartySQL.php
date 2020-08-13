@@ -115,7 +115,7 @@ class PartySQL extends Connection
     }
 
     public function get_user_contracts($id_user){
-        $statement = $this->con->prepare("SELECT * FROM CONTRATO WHERE fk_usuario=$id_user;");
+        $statement = $this->con->prepare("SELECT id_contrato as id, fecha_aprobado_contrato as fecha_aprobado, fecha_pagado_contrato as pagado, monto_total_contrato as monto FROM CONTRATO WHERE fk_usuario=$id_user;");
         $statement->execute();
         return $statement->fetchAll();
     }

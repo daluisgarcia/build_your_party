@@ -5,8 +5,8 @@ if(!isset($_SESSION["user"])){
     die();
 }
 
-//error_reporting(0);	//EVITAR MUESTRA DE ERRORES
-//header('Content-type: application/json; charset=utf-8');    //ESTABLECE LA PAGINA COMO UN VISOR DE JSON
+error_reporting(0);	//EVITAR MUESTRA DE ERRORES
+header('Content-type: application/json; charset=utf-8');    //ESTABLECE LA PAGINA COMO UN VISOR DE JSON
 
 define('NO_CONTENT_FOUND', 'No se se han encontrado resultados.');
 

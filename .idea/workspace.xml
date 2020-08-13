@@ -20,18 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3d9412f-d832-42ed-9e83-6e44df7bd0b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/contracts.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/contracts.view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/PaymentSQL.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/form_inscripcion_cursos_matrimoniales.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/map_AJAX.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/map_AJAX.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/MapSQL.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/MapSQL.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts.php" beforeDir="false" afterPath="$PROJECT_DIR$/contracts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getPartysAndBudget.php" beforeDir="false" afterPath="$PROJECT_DIR$/getPartysAndBudget.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/products_AJAX.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/products_AJAX.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/PartySQL.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/PartySQL.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products.php" beforeDir="false" afterPath="$PROJECT_DIR$/products.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procesar_pago.php" beforeDir="false" afterPath="$PROJECT_DIR$/procesar_pago.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sqlScripts/create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sqlScripts/create.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/budgets.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/budgets.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/products.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/products.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/contracts.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/contracts.view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,7 +213,7 @@
       <workItem from="1597078332004" duration="11000" />
       <workItem from="1597111913225" duration="5706000" />
       <workItem from="1597163832500" duration="27822000" />
-      <workItem from="1597253828135" duration="13928000" />
+      <workItem from="1597253828135" duration="23319000" />
     </task>
     <servers />
   </component>
@@ -255,15 +252,16 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1596830832423" />
-    <state x="486" y="87" key="NewPhpClassDialog" timestamp="1596834051608">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="486" y="92" key="NewPhpClassDialog" timestamp="1597279815831">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="486" y="87" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1596834051608" />
-    <state x="517" y="303" key="NewPhpFileDialog" timestamp="1597254956216">
+    <state x="486" y="92" key="NewPhpClassDialog/0.0.1366.768@0.0.1366.768" timestamp="1597279815831" />
+    <state x="517" y="303" key="NewPhpFileDialog" timestamp="1597279793276">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1597189261960" />
-    <state x="517" y="303" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1597254956216" />
+    <state x="517" y="303" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1597279793276" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1597021476766">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -330,7 +330,7 @@ constraint fk_ambiente foreign key (fk_ambiente) references AMBIENTE (id_ambient
 
 create table if not exists SERVICIO_PRESUPUESTO (
 id_servicio_presupuesto int not null auto_increment,
-precio_total_servicio_presupuesto int not null,
+precio_total_servicio_presupuesto double not null,
 cantidad_servicio_presupuesto int,
 detalles_servicio_presupuesto varchar(100),
 fk_presupuesto int not null,
@@ -475,16 +475,6 @@ PRIMARY KEY (fk_estado, fk_producto_pedido_1, fk_producto_pedido_2),
 FOREIGN KEY (fk_estado) REFERENCES ESTADO(id_estado),
 FOREIGN KEY (fk_producto_pedido_1) REFERENCES PRODUCTO_PEDIDO(fk_producto),
 FOREIGN KEY (fk_producto_pedido_2) REFERENCES PRODUCTO_PEDIDO(fk_servicio_presupuesto)
-);
-
-CREATE TABLE IF NOT EXISTS ESTADO_PRESUPUESTO (
-fk_estado INT NOT NULL,
-fk_presupuesto INT NOT NULL,
-fecha_inicio_estado_presupuesto DATE NOT NULL,
-fecha_fin_estado_presupuesto DATE,
-PRIMARY KEY (fk_estado, fk_presupuesto),
-FOREIGN KEY (fk_estado) REFERENCES ESTADO(id_estado),
-FOREIGN KEY (fk_presupuesto) REFERENCES PRESUPUESTO(id_presupuesto)
 );
 
 CREATE TABLE IF NOT EXISTS ESTADO_DETALLE (

@@ -186,7 +186,7 @@ function addToBudget(btn){
                 let servicePrice = prices[0].innerText;
                 let totalPrice = 0;
                 for (let i=1; i<prices.length; i++){
-                    totalPrice += parseFloat(prices[i].innerText)*parseFloat(quantities[i-1].value);;
+                    totalPrice += parseFloat(prices[i].innerText)*parseFloat(quantities[i-1].value);
                 }
                 let id_reg = 0;
                 params = `option=addService&serviceprice=${servicePrice}&productprice=${totalPrice}&idbudget=${budget}&serviceid=${ID}`;
@@ -249,6 +249,7 @@ function addToBudget(btn){
                 params = `option=addServiceByHour&idbudget=${budget}&serviceprice=${price}&servicehours=${quantity}&serviceid=${ID}`;
             }
         }
+        console.log(params);
         peticion.open('GET', `./getPartysAndBudget.php?${params}`)
         peticion.send()
         //loader.classList.add('active');

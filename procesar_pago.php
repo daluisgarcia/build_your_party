@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="../../public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../public/css/style.css">
-    <script src="../../public/js/carrusel.js"></script>
-</head>
-<body>
 
 <?php
 require 'navbar.php';
@@ -21,67 +11,48 @@ require 'navbar.php';
 <br>
 <br>
 <div class="row">
-    <div class="col-md-6 text-right">
-        <p>
-            Tipo de pago
-        </p>
-        <br>
-        <p class="mt-3">
-            Numero de tarjeta
-        </p>
-        <br>
-        <p>
-            Fecha de vencimiento
-        </p>
-        <br>
-        <p>
-            CSC
-        </p>
-    </div>
-    <div class="col-md-3 text-left">
-        <div class="form-check for">
-            <input class="form-check-input mt-2" type="radio" name="visa_card" id="visa" value="visa">
-            <label class="form-check-label ml-3" for="inlineRadio1">Visa</label>
-            &nbsp
-            &nbsp
-            &nbsp
-            &nbsp
-            &nbsp
-            &nbsp
-            &nbsp
-            &nbsp
-            <img class="tab-icon" src="https://www.svgrepo.com/show/98426/visa-logo.svg" alt="icono de visa">
+    <form class="form-group">
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    Default radio
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                    Second default radio
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+                <label class="form-check-label" for="exampleRadios3">
+                    Disabled radio
+                </label>
+            </div>
         </div>
-        <div class="form-check ">
-            <input class="form-check-input mt-2" type="radio" name="mastercard_card" id="mastercard" value="mastercard">
-            <label class="form-check-label ml-3" for="mastercard">Mastercard</label>
-            &nbsp
-            &nbsp
-            <img class="tab-icon" src="https://image.flaticon.com/icons/svg/38/38943.svg" alt="icono de visa">
-        </div>
-        <br>
-        <div class="col-md-12 text-left">
+        <div class="form-group">
+            <label class="form-label">Numero de tarjeta</label>
             <input class="form-control " type="text" placeholder="#">
         </div>
-        <br>
-        <div class="col-md-8 text-left">
-            <input class="form-control mt-1" type="date" placeholder="#">
+        <div class="form-group">
+            <label class="form-label">Fecha de vencimiento</label>
+            <input class="form-control " type="date" placeholder="#">
         </div>
-        <br>
-        <div class="col-md-4 text-left">
-            <input class="form-control " type="text" placeholder="#">
+        <div class="form-group">
+            <label class="form-label">Fecha de vencimiento</label>
+            <input class="form-control " type="date" placeholder="#">
         </div>
-    </div>
-</div>
-<br>
-<br>
-<div class="row">
-    <div class="col-md-6 text-center">
-        <button type="button" class="btn btn-primary">Volver</button>
-    </div>
-    <div class="col-md-6 text-center">
-        <button type="button" class="btn btn-primary">Pagar</button>
-    </div>
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <button type="button" class="btn btn-primary">Volver</button>
+            </div>
+            <div class="col-md-6 text-center">
+                <button type="button" class="btn btn-primary">Pagar</button>
+            </div>
+        </div>
+    </form>
 </div>
 </body>
 </html>
