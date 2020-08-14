@@ -6029,13 +6029,13 @@ INSERT INTO CURSO_MATRIM VALUES (null, '20/08/20', '20/09/20', 100, 'Descripcion
 INSERT INTO CURSO_MATRIM VALUES (null, '21/08/20', '21/09/20', 200, 'Descripcion', 6, 116);
 INSERT INTO CURSO_MATRIM VALUES (null, '19/08/20', '20/09/20', 200, 'Descripcion', 6, 6);
 
-INSERT INTO INSCRIPCION_CUR_M VALUES (1,1,2);
-INSERT INTO INSCRIPCION_CUR_M VALUES (2,56,4);
-INSERT INTO INSCRIPCION_CUR_M VALUES (3,51,8);
-INSERT INTO INSCRIPCION_CUR_M VALUES (4,101,10);
-INSERT INTO INSCRIPCION_CUR_M VALUES (5,111,12);
-INSERT INTO INSCRIPCION_CUR_M VALUES (6,116,14);
-INSERT INTO INSCRIPCION_CUR_M VALUES (7,6,20);
+INSERT INTO INSCRIPCION_CUR_M VALUES (null,1,1,2);
+INSERT INTO INSCRIPCION_CUR_M VALUES (null,2,56,4);
+INSERT INTO INSCRIPCION_CUR_M VALUES (null,3,51,8);
+INSERT INTO INSCRIPCION_CUR_M VALUES (null,4,101,10);
+INSERT INTO INSCRIPCION_CUR_M VALUES (null,5,111,12);
+INSERT INTO INSCRIPCION_CUR_M VALUES (null,6,116,14);
+INSERT INTO INSCRIPCION_CUR_M VALUES (null,7,6,20);
 
 #reservas salones de fiesta
 insert into RESERVA (id_reserva,fecha_reserva,tiempo_reserva,fk_contrato,fk_servicio,fk_jefatura,fk_templo) value (null,'2021-04-1',15,1,240,null,null);
@@ -7580,13 +7580,6 @@ insert into estado_p_p(fk_estado, fk_producto_pedido_1, fk_producto_pedido_2, fe
 insert into estado_p_p(fk_estado, fk_producto_pedido_1, fk_producto_pedido_2, fecha_inicio_estado_p_p, fecha_fin_estado_p_p) values (4, 18, 6, '2021-04-12','2021-04-13');
 insert into estado_p_p(fk_estado, fk_producto_pedido_1, fk_producto_pedido_2, fecha_inicio_estado_p_p, fecha_fin_estado_p_p) values (5, 18, 10, '2021-04-16','2021-04-18');
 insert into estado_p_p(fk_estado, fk_producto_pedido_1, fk_producto_pedido_2, fecha_inicio_estado_p_p, fecha_fin_estado_p_p) values (1, 18, 11, '2021-04-11','2021-04-13');
-
-#estado presupuesto
-insert into estado_presupuesto(fk_estado, fk_presupuesto, fecha_inicio_estado_presupuesto, fecha_fin_estado_presupuesto) values (1, 1, '2021-04-02','2021-04-03');
-insert into estado_presupuesto(fk_estado, fk_presupuesto, fecha_inicio_estado_presupuesto, fecha_fin_estado_presupuesto) values (1, 2, '2021-04-03','2021-04-04');
-insert into estado_presupuesto(fk_estado, fk_presupuesto, fecha_inicio_estado_presupuesto, fecha_fin_estado_presupuesto) values (1, 3, '2021-04-04','2021-04-05');
-insert into estado_presupuesto(fk_estado, fk_presupuesto, fecha_inicio_estado_presupuesto, fecha_fin_estado_presupuesto) values (1, 4, '2021-04-05','2021-04-06');
-insert into estado_presupuesto(fk_estado, fk_presupuesto, fecha_inicio_estado_presupuesto, fecha_fin_estado_presupuesto) values (1, 5, '2021-04-06','2021-04-07');
 
 #servicios de decoracion
 insert into SERVICIO(id_servicio, nombre_servicio, modalidad_pago_servicio, costo_servicio, precio_servicio, requiere_cita_servicio, detalles_servicio, fk_categoria) value(null, 'pizarras de gis', 'CANTIDAD', 2500, 500000, 0, 'Pizarras para colocar mensajes personalizados', 5);
