@@ -48,30 +48,6 @@ function selectPermisos(rol, drop) {
   })
 }
 
-document.getElementById('roles').addEventListener('click', function (event){
-  document.getElementById('title').innerText = 'Roles';
-
-  if(dataT){
-    dataT.destroy();
-  }
-
-  document.getElementById('table_id').classList.remove('d-none');
-  if(document.getElementById('addTuple')) {
-    document.getElementById('addTuple').remove();
-  }
-
-  let addBtn = document.getElementsByClassName('add-btn')[0];
-  addBtn.classList.remove('disabled');
-  addBtn.id='add-btn-roles';
-  let deleteBtn = document.getElementsByClassName('delete-btn')[0];
-  deleteBtn.classList.add('disabled');
-  deleteBtn.id='delete-btn-roles';
-  let submitBtn = document.getElementsByClassName('submit-btn')[0];
-  submitBtn.classList.add('disabled');
-  submitBtn.id='submit-btn-roles';
-  getRoles();
-});
-
 function getRoles() {
   let peticion = new XMLHttpRequest()
   let params = `option=select`   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
@@ -142,7 +118,7 @@ function getRoles() {
     }else{
       datatable();
     }
-    //setChangePosibilityPosts();
+    setChangePosibilityRoles();
   }
 };
 
@@ -162,7 +138,6 @@ function newAssociation() {
   let rol = document.createElement('select');
   rol.id = 'select-rol';
   rol.name = 'rol';
-  rol.setAttribute('onchange','selectParroquia()');
   form.appendChild(rol);
 
   let rolPromise = selectAllRoles();
@@ -195,18 +170,13 @@ function newAssociation() {
 
   submit.addEventListener('click', function () {
 
-    /*let cedula = document.getElementById('cedula').value,
-      nombre = document.getElementById('nombre-cliente').value,
-      apellido = document.getElementById('apellido-cliente').value,
-      correo = document.getElementById('correo-cliente').value,
-      codigo = document.getElementById('codigo-area').value,
-      telefono = document.getElementById('telefono').value,
-      usuario = document.getElementById('usuario').value,
-      parroquia = document.getElementById('parroquia-select').value;
+    let rol = document.getElementById('select-rol').value,
+      permiso = document.getElementById('select-permiso').value;
 
     let peticion = new XMLHttpRequest()
-    let params = `option=create&cedula=${cedula}&nombre=${nombre}&apellido=${apellido}&correo=${correo}&codigoarea=${codigo}&telefono=${telefono}&usuario=${usuario}&parroquia=${parroquia}`;
-    peticion.open('GET', `./consult_clients.php?${params}`)
+    let params = `option=associate&rol=${rol}&permiso=${permiso}`;
+    console.log(params);
+    peticion.open('GET', `./consult_roles.php?${params}`)
 
     peticion.send()
 
@@ -225,9 +195,9 @@ function newAssociation() {
       }else{
         document.getElementById('table_id').classList.remove('d-none');
         document.getElementById('addTuple').remove();
-        getClients();
+        getRoles();
       }
-    }*/
+    }
   })
 }
 
@@ -304,62 +274,35 @@ function selectAllPermissions() {
 }
 
 //AÑADIR A LAS FILAS LA POSIBILIDAD DE CAMBIAR LOS DATOS
-function setChangePosibilityPosts(){
+function setChangePosibilityRoles(){
   let rows = document.getElementsByTagName('tr');
   for (let i = 0; i < rows.length; i++){
     let element = rows[i];
     if (element.id !== 'table-head'){
       element.addEventListener('click', function (event) {
-        if(event.target.classList.contains('clickeable-posts')) {
+        if(event.target.classList.contains('clickeable-roles')) {
           let columns = event.target.parentElement.children;
-          let names = ['imagenR','seccion','titulo','cuerpo'];
-          for (let j = 0; j < columns.length; j++) {
-            if (j === 0) {
-              let input = document.createElement('input');
-              input.type = 'text';
-              input.name = `imagenR`;
-              input.value = columns[j].id;
-              if(columns[j].id){
-                input.id = columns[j].id;
-              }
-              columns[j].appendChild(input);
+          for (let j = 0; j < columns.length - 1; j++) {
+            let input = document.createElement('input');
+            input.type = 'text';
+            input.name = `rol-input`;
+            input.value = columns[j].innerText;
+            columns[j].innerText = '';
+            if(columns[j].id){
+              input.id = columns[j].id;
             }
-            if ((j > 0) && (j !== 3)) {
-              let input = document.createElement('input');
-              input.type = 'text';
-              input.name = names[j];
-              input.value = columns[j].innerText;
-              if(j < 2){
-                input.id = element.id;
-              }
-              columns[j].innerText = '';
-              if(columns[j].id){
-                input.id = columns[j].id;
-              }
-              columns[j].appendChild(input);
-            } else if (j === 3) {
-              let textarea = document.createElement('textarea');
-              textarea.name = names[j];
-              textarea.classList.add('w-100');
-              textarea.value = columns[j].innerText;
-              if(columns[j].id){
-                textarea.id = columns[j].id;
-              }
-              columns[j].innerText = '';
-              columns[j].appendChild(textarea);
-            }
-
+            columns[j].appendChild(input);
           }
-          document.getElementById('delete-btn-posts').classList.remove('disabled');
-          document.getElementById('submit-btn-posts').classList.remove('disabled');
+          document.getElementById('delete-btn-roles').classList.remove('disabled');
+          document.getElementById('submit-btn-roles').classList.remove('disabled');
         }
       })
     }
   }
 }
 
-document.getElementById('posts').addEventListener("click", function (event) {
-  document.getElementById('title').innerText = 'Posts';
+document.getElementById('roles').addEventListener('click', function (event){
+  document.getElementById('title').innerText = 'Roles';
 
   if(dataT){
     dataT.destroy();
@@ -372,89 +315,55 @@ document.getElementById('posts').addEventListener("click", function (event) {
 
   let addBtn = document.getElementsByClassName('add-btn')[0];
   addBtn.classList.remove('disabled');
-  addBtn.id='add-btn-posts';
-  document.getElementById('add-btn-posts').addEventListener('click', setAddPosts);
+  addBtn.id='add-btn-roles';
+  document.getElementById('add-btn-roles').addEventListener('click', setAddRoles);
   let deleteBtn = document.getElementsByClassName('delete-btn')[0];
   deleteBtn.classList.add('disabled');
-  deleteBtn.id='delete-btn-posts';
-  document.getElementById('delete-btn-posts').addEventListener('click', setDeletePosts);
+  deleteBtn.id='delete-btn-roles';
+  document.getElementById('delete-btn-roles').addEventListener('click', setDeleteRoles);
   let submitBtn = document.getElementsByClassName('submit-btn')[0];
   submitBtn.classList.add('disabled');
-  submitBtn.id='submit-btn-posts';
-  document.getElementById('submit-btn-posts').addEventListener('click', setUpdatePosts);
-  getPosts();
+  submitBtn.id='submit-btn-roles';
+  document.getElementById('submit-btn-roles').addEventListener('click', setUpdateRoles);
+  getRoles();
 });
 
-//FUNCION PARA CREACION DE FORMULARIO Y AGREGAR UN CLIENTE
-function setAddPosts(){
+function setAddRoles(){
+  console.log('añadir roles coño');
   let tableDiv = document.getElementById('table_id');
-  dataT.destroy();
+  //dataT.destroy();
   removeAllChilds(tableDiv);
   tableDiv.classList.add('d-none');
 
   let form = document.createElement('form');
   form.id = 'addTuple';
 
-  let imagenLabel = document.createElement('label');
-  imagenLabel.setAttribute('for', 'imagen');
-  imagenLabel.innerText = 'Imagen';
-  form.appendChild(imagenLabel);
+  let roleLabel = document.createElement('label');
+  roleLabel.setAttribute('for', 'role');
+  roleLabel.innerText = 'Nombre de Rol';
+  form.appendChild(roleLabel);
 
-  let imagen = document.createElement('input');
-  imagen.type = 'text';
-  imagen.id='imagen-post';
-  imagen.name = 'imagen-post';
-  form.appendChild(imagen);
-
-  let seccionLabel = document.createElement('label');
-  seccionLabel.setAttribute('for', 'seccion-post');
-  seccionLabel.innerText = 'Seccion';
-  form.appendChild(seccionLabel);
-
-  let seccion = document.createElement('input');
-  seccion.id='seccion-post';
-  seccion.name = 'seccion-post';
-  form.appendChild(seccion);
-
-  let tituloLabel = document.createElement('label');
-  tituloLabel.setAttribute('for', 'titulo-post');
-  tituloLabel.innerText = 'Titulo post';
-  form.appendChild(tituloLabel);
-
-  let titulo = document.createElement('input');
-  titulo.id='titulo-post';
-  titulo.name = 'titulo-post';
-  form.appendChild(titulo);
-
-  let cuerpoLabel = document.createElement('label');
-  cuerpoLabel.setAttribute('for', 'cuerpo-post');
-  cuerpoLabel.innerText = 'Cuerpo post';
-  form.appendChild(cuerpoLabel);
-
-  let cuerpo = document.createElement('textarea');
-  cuerpo.id = 'cuerpo-post';
-  cuerpo.name = 'cuerpo-post';
-  cuerpo.classList.add('w-100');
-  form.appendChild(cuerpo);
+  let rol = document.createElement('input');
+  rol.type = 'text';
+  rol.id='role-name';
+  rol.name = 'role-name';
+  form.appendChild(rol);
 
   let submit = document.createElement('button');
-  submit.id = 'submit-change-post';
+  submit.id = 'submit-change-role';
   submit.classList.add('btn', 'btn-primary');
-  submit.innerText='Agregar Post';
+  submit.innerText='Agregar Rol';
   form.appendChild(submit);
   document.getElementById('container').appendChild(form);
 
   submit.addEventListener('click', function () {
 
-    let imagen = document.getElementById('imagen-post').value,
-      seccion = document.getElementById('seccion-post').value,
-      titulo = document.getElementById('titulo-post').value,
-      cuerpo = document.getElementById('cuerpo-post').value;
+    let rol = document.getElementById('role-name').value;
 
     let peticion = new XMLHttpRequest()
-    let params = `option=create&seccion=${seccion}&titulo=${titulo}&cuerpo=${cuerpo}&ruta=${imagen}`;
+    let params = `option=create&rol=${rol}`;
     console.log(params);
-    peticion.open('GET', `./consult_posts.php?${params}`)
+    peticion.open('GET', `./consult_roles.php?${params}`)
 
     peticion.send()
 
@@ -473,28 +382,22 @@ function setAddPosts(){
       }else{
         document.getElementById('table_id').classList.remove('d-none');
         document.getElementById('addTuple').remove();
-        getPosts();
+        getRoles();
       }
     }
   })
 }
 
-//FUNCION PARA HACER UPDATE DE UNA NOTARIA
-function setUpdatePosts(){
-  let seccion = document.getElementsByName('seccion')[0].value,
-    postID = document.getElementsByName('seccion')[0].id,
-    titulo = document.getElementsByName('titulo')[0].value,
-    cuerpo = document.getElementsByName('cuerpo')[0].value,
-    imagenID = document.getElementsByName('imagen')[0].id,
-    ruta = document.getElementsByName('imagenR')[0].value;
+function setUpdateRoles(){
+  let id_rol = document.getElementsByName('rol-input')[0].id,
+      rol = document.getElementsByName('rol-input')[0].value;
 
-  postID = returnIdNumber(postID);
-  imagenID = returnIdNumber(imagenID);
+  id_rol = returnIdNumber(id_rol);
 
   let peticion = new XMLHttpRequest()
-  let params = `option=update&id_post=${postID}&seccion=${seccion}&titulo=${titulo}&cuerpo=${cuerpo}&id_imagen=${imagenID}&ruta=${ruta}`;   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
+  let params = `option=update&id_rol=${id_rol}&rol=${rol}`;   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
   console.log(params);
-  peticion.open('GET', `./consult_posts.php?${params}`)
+  peticion.open('GET', `./consult_roles.php?${params}`)
 
   peticion.send()
 
@@ -511,18 +414,21 @@ function setUpdatePosts(){
     if(data.error){
       alert('Error al obtener datos de la Base');
     }else{
-      getPosts();
+      getRoles();
     }
   }
 }
 
 //FUNCION PARA ELIMINAR UNA NOTARIA
-function setDeletePosts(){
-  let post = document.getElementsByName("seccion")[0].id
+function setDeleteRoles(){
+  let rol = document.getElementsByName('rol-input')[0].id
+
+  rol = returnIdNumber(rol);
 
   let peticion = new XMLHttpRequest()
-  let params = `option=delete&id_post=${post}`;   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
-  peticion.open('GET', `./consult_posts.php?${params}`)
+  let params = `option=delete&id_rol=${rol}`;   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
+  console.log(params);
+  peticion.open('GET', `./consult_roles.php?${params}`)
 
   peticion.send()
 
@@ -539,7 +445,7 @@ function setDeletePosts(){
     if(data.error){
       alert('Error al obtener datos de la Base');
     }else{
-      getPosts();
+      getRoles();
     }
   }
 }

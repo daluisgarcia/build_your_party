@@ -167,4 +167,28 @@ class AdminSQL extends Connection
         $statement->execute();
         return $statement->fetchAll();
     }
+
+    public function associateRoleAndPermission($role, $permission) {
+        $statement = $this->con->prepare("insert into rol_permiso(fk_rol, fk_permiso) values ($role, $permission);");
+        $statement->execute();
+        return $statement->fetchAll();
+    }
+
+    public function createRole($name) {
+        $statement = $this->con->prepare("insert into rol(nombre_rol) values ('$name');");
+        $statement->execute();
+        return $statement->fetchAll();
+    }
+
+    public function updateRole($role, $nombre_rol) {
+        $statement = $this->con->prepare("update rol set nombre_rol='$nombre_rol' where id_rol=$role;");
+        $statement->execute();
+        return $statement->fetchAll();
+    }
+
+    public function deleteRole($id_role) {
+        $statement = $this->con->prepare("delete from rol where id_rol=$id_role;");
+        $statement->execute();
+        return $statement->fetchAll();
+    }
 }

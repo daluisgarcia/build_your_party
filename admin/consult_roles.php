@@ -15,12 +15,8 @@ define('NO_CONTENT_FOUND', 'No se se han encontrado resultados.');
 
 $option = isset($_GET['option']) ? $_GET['option'] : '';
 $role = isset($_GET['rol']) ? $_GET['rol'] : '';
-$imagen = isset($_GET['id_imagen']) ? $_GET['id_imagen'] : '';
-$id = isset($_GET['id_post']) ? $_GET['id_post'] : '';
-$seccion = isset($_GET['seccion']) ? $_GET['seccion'] : '';
-$titulo = isset($_GET['titulo']) ? $_GET['titulo'] : '';
-$cuerpo = isset($_GET['cuerpo']) ? $_GET['cuerpo'] : '';
-
+$permission = isset($_GET['permiso']) ? $_GET['permiso'] : '';
+$id_role = isset($_GET['id_rol']) ? $_GET['id_rol'] : '';
 
 $answer = '';
 
@@ -37,19 +33,21 @@ if ($answer == '') {
     $connect = new AdminSQL();
 
     if($option === 'update') {
-      //$answer = $connect->update_post($id, $titulo, $seccion, $cuerpo, $imagen, $ruta);
-    }elseif($option === 'delete'){
-      //$answer = $connect->delete_post($id);
+      $answer = $connect->updateRole($id_role, $role);
+    }else if($option === 'delete'){
+      $answer = $connect->deleteRole($id_role);
     }else if($option === 'select'){
       $answer = $connect->getRoles();
     } else if($option === 'create') {
-      //$answer = $connect->add_post($ruta, $seccion, $titulo, $cuerpo);
+      $answer = $connect->createRole($role);
     } else if($option === 'permisos') {
       $answer = $connect->getPermissionsForRole($role);
     } else if($option === 'all-permisos') {
       $answer = $connect->getAllPermissions();
     } else if($option === 'all-roles') {
       $answer = $connect->getRoles();
+    } else if ($option === 'associate') {
+      $answer = $connect->associateRoleAndPermission($role, $permission);
     }
 
   } catch (PDOException $e) {
