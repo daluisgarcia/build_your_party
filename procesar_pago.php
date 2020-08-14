@@ -45,7 +45,20 @@ switch ($method) {
                 $error = '<li>Error al conectar con la base de datos</li>';
             }
 
-        }elseif (empty($id_course1) or empty($id_course2)){
+        }elseif (!empty($id_course1) AND !empty($id_course2)){
+
+            try{
+
+                include_once  'model/PartySQL.php';
+                $conn = new PartySQL();
+
+                $total = $conn->get_course_price($id_course1, $id_course2);
+
+            }catch (PDOException $e){
+                $error = '<li>Error al conectar con la base de datos</li>';
+            }
+
+        }else{
             header("Location: products.php");
             die();
         }
@@ -87,12 +100,12 @@ switch ($method) {
             if(!empty($contract)){
                 //REGISTRAR PAGO PARA CONTRATO
                 $connect->add_contract_payment($contract, $count, $metodo);
-                header("Location: products.php");
+                header("Location: contracts.php");
                 die();
             }elseif (!empty($course1) and !empty($course2)){
                 //REGISTRAR PAGO PARA CURSO
                 $connect->add_course_payment($course1, $course2, $count, $metodo, $_SESSION['id_user']);
-                header("Location: products.php");
+                header("Location: contracts.php");
                 die();
             }
 

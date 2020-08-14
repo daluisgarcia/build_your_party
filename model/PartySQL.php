@@ -125,8 +125,26 @@ class PartySQL extends Connection
         }
     }
 
+    public function get_course_price($id_course1, $id_course2){
+        echo "SELECT costo_curso_matrim FROM CURSO_MATRIM WHERE id_curso_matrim=$id_course1 AND fk_templo=$id_course2";
+        $statement = $this->con->prepare("SELECT costo_curso_matrim FROM CURSO_MATRIM WHERE id_curso_matrim=$id_course1 AND fk_templo=$id_course2");
+        $statement->execute();
+        $price = $statement->fetchAll();
+        if(!empty($price)){
+            return $price[0][0];
+        }else{
+            return 0;
+        }
+    }
+
     public function get_user_contracts($id_user){
-        $statement = $this->con->prepare("SELECT id_contrato as id, fecha_aprobado_contrato as fecha_aprobado, fecha_pagado_contrato as pagado, monto_total_contrato as monto FROM CONTRATO WHERE fk_usuario=$id_user;");
+        $statement = $this->con->prepare("SELECT id_contrato as id, fecha_aprobado_contrato as fecha_aprobado, fecha_pagado_contrato as pagado, monto_total_contrato as monto, fecha_realizacion_fiesta as fecha_fiesta, nombre_tipo_fiesta as nombre_fiesta FROM CONTRATO AS C INNER JOIN PRESUPUESTO ON fk_presupuesto=id_presupuesto INNER JOIN FIESTA ON fk_fiesta=id_fiesta INNER JOIN TIPO_FIESTA ON fk_tipo_fiesta=id_tipo_fiesta WHERE C.fk_usuario=$id_user;");
+        $statement->execute();
+        return $statement->fetchAll();
+    }
+
+    public function get_courses_by_user($id_user){
+        $statement = $this->con->prepare("SELECT fecha_inicio_curso_matrim as fecha_inicio, costo_curso_matrim as costo, nombre_templo as templo FROM INSCRIPCION_CUR_M INNER JOIN CURSO_MATRIM ON id_curso_matrim=fk_curso_matrim_1 AND fk_templo=fk_curso_matrim_2 INNER JOIN TEMPLO ON fk_templo=id_templo WHERE fk_usuario=$id_user;");
         $statement->execute();
         return $statement->fetchAll();
     }

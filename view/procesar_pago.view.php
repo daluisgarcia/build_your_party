@@ -26,8 +26,8 @@ require 'navbar.php';
                 <div class="form-group form-inline">
                     <label>Monto a pagar: </label>
 <!--                    PONER COMO MAXIMO Y VALOR POR DEFECTO LA RESTA ENTRE EL PRECIO DEL CONTRATO Y LA SUMATORIA DE PAGOS-->
-                    <input name="count" class="mx-2 form-control" type="number" min="1" max="<?php echo isset($total)?$total:'' ?>" value="<?php echo isset($total)?$total:'' ?>">
-                    <?php echo isset($id_contract)? '<span>(Puede seleccionar un monto menor al indicado y pagar por partes)</span>':'' ?>
+                    <input name="count" class="mx-2 form-control" type="number" min="<?php echo isset($id_course1)? $total:1 ?>" max="<?php echo isset($total)?$total:'' ?>" value="<?php echo isset($total)?$total:'' ?>">
+                    <?php echo isset($id_contract)? '<span>(Puede seleccionar un monto menor al indicado y pagar por partes)</span>':'<span>(Pago unico)</span>' ?>
                 </div>
                 <label>Selecciona tu forma de pago:</label>
                 <div class="form-check">
