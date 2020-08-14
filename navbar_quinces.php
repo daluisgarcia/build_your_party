@@ -7,24 +7,19 @@
             </div>
             <div class="col-lg-1 col-sm-1">
             </div>
-            <div class="col-lg-1 col-sm-1 header-category">
-                <a href="tips_quinces">Tips</a>
-            </div>
-
-
             <div class="col-lg-2 col-sm-2 header-category">
-                <a href=#>Bailes especiales</a>
+                <a href="tips_quinces">Tips</a>
             </div>
 
             <div class="col-lg-2 col-sm-2 header-category">
                 <a href="temas_quinces">Temas únicos</a>
             </div>
 
-            <div class="col-lg-1 col-sm-1 header-category">
+            <div class="col-lg-2 col-sm-2 header-category">
                 <a href=#>Vestidos</a>
             </div>
 
-            <div class="col-lg-1 col-sm-1 header-category">
+            <div class="col-lg-2 col-sm-2 header-category">
                 <a href=#>Accesorios</a>
             </div>
 

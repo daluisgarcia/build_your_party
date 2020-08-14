@@ -8,7 +8,7 @@
 	<?php
 		include_once 'model/tips.php';
 		$connect = new PostManagement();
-  		$posts = $connect->get_post_boda();
+  		$posts = $connect->get_post('TIPBODA');
 	?>
 	
 </head>
