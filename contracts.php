@@ -36,7 +36,7 @@ if(!empty($id_budget)){
 
         $budget_details = [];
         //SE VALIDA QUE NO EXISTA UN CONTRATO PARA ESE PRESUPUESTO
-        if(empty($connect->get_contracts($id_budget))) {
+        if(empty($connect->get_contract($id_budget))) {
             //NO EXISTE CONTRATO, ENTONCES SE CREA
 
             array_push($budget_details, $connect->get_budget_details($id_budget));

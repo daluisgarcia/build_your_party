@@ -108,10 +108,21 @@ class PartySQL extends Connection
         return $statement->fetchAll();
     }
 
-    public function get_contracts($id_budget){
-        $statement = $this->con->prepare("SELECT fecha_aprobado_contrato FROM CONTRATO WHERE fk_presupuesto=$id_budget;");
+    public function get_contract($id_budget){
+        $statement = $this->con->prepare("SELECT fecha_aprobado_contrato, monto_total_contrato FROM CONTRATO WHERE fk_presupuesto=$id_budget;");
         $statement->execute();
         return $statement->fetchAll();
+    }
+
+    public function get_contract_price($id_contract){
+        $statement = $this->con->prepare("SELECT monto_total_contrato as monto FROM CONTRATO WHERE id_contrato=$id_contract;");
+        $statement->execute();
+        $price = $statement->fetchAll();
+        if(!empty($price)){
+            return $price[0][0];
+        }else{
+            return 0;
+        }
     }
 
     public function get_user_contracts($id_user){

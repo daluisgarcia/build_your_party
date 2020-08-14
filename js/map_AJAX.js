@@ -84,7 +84,6 @@ document.getElementById('search-btn').addEventListener('click', function (event)
 
     peticion.onload = function () {
         let data = JSON.parse(peticion.responseText);
-        console.log(data)
         let container = document.getElementById('site-info');
         removeAllChilds(container);
         if(data.error){
@@ -173,6 +172,7 @@ function searchCourses() {
             document.getElementById('site-info').appendChild(element)
         }else{
             if (data.length > 0) {
+                console.log(data);
                 latitud = parseFloat(data[0].latitud);
                 longitud = parseFloat(data[0].longitud);
                 zoomNum = 15;

@@ -445,9 +445,11 @@ CREATE TABLE IF NOT EXISTS INSCRIPCION_CUR_M(
 	id_inscripcion INT NOT NULL auto_increment,
     fk_curso_matrim_1 INT NOT NULL,
 	fk_curso_matrim_2 INT NOT NULL,
+    fk_usuario INT,
     PRIMARY KEY(fk_curso_matrim_1, fk_curso_matrim_2, id_inscripcion),
     FOREIGN KEY(fk_curso_matrim_1) REFERENCES CURSO_MATRIM(id_curso_matrim),
-	FOREIGN KEY(fk_curso_matrim_2) REFERENCES CURSO_MATRIM(fk_templo)
+	FOREIGN KEY(fk_curso_matrim_2) REFERENCES CURSO_MATRIM(fk_templo),
+    FOREIGN KEY(fk_usuario) REFERENCES USUARIO(id_usuario)
 );
 
 CREATE TABLE IF NOT EXISTS ESTADO (
