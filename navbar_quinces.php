@@ -17,7 +17,7 @@
             </div>
 
             <div class="col-lg-2 col-sm-2 header-category">
-                <a href="#">Temas únicos</a>
+                <a href="temas_quinces">Temas únicos</a>
             </div>
 
             <div class="col-lg-1 col-sm-1 header-category">

@@ -64,9 +64,7 @@ if(!empty($id_budget)){
         }
 
         $contracts = $connect->get_user_contracts($_SESSION['id_user']);
-        var_dump($contracts);
         //OBTENER PAGOS PARA ESTE CONTRATO Y MOSTRAR RESTANTE
-
 
         //PASOS:
         //VERIFICAR SI EXISTE UN CONTRATO PARA ESE PRESUPUESTO, SI ES ASI NO SE CREA UN CONTRATO Y SE REDIRIJE A LA VISTA DE PAGOS
