@@ -30,23 +30,15 @@ require 'navbar.php';
                     <?php echo isset($id_contract)? '<span>(Puede seleccionar un monto menor al indicado y pagar por partes)</span>':'<span>(Pago unico)</span>' ?>
                 </div>
                 <label>Selecciona tu forma de pago:</label>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="metodo_pago" id="exampleRadios1" value="TRANSFERENCIA" checked>
-                    <label class="form-check-label" for="exampleRadios1">
-                        Transferencia
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="metodo_pago" id="exampleRadios2" value="TDD">
-                    <label class="form-check-label" for="exampleRadios2">
-                        Tarjeta de debito
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="metodo_pago" id="exampleRadios3" value="TDC">
-                    <label class="form-check-label" for="exampleRadios3">
-                        Tarjeta de credito
-                    </label>
+                <div class="form-group">
+                <?php foreach ($methods as $method): ?>
+                    <div>
+                        <input class="form-check-input" type="radio" name="metodo_pago" id="<?php echo $method['id'] ?>" value="<?php echo $method['id'] ?>" checked>
+                        <label class="form-check-label" for="<?php echo $method['id'] ?>">
+                            <?php echo $method['nombre'] ?>
+                        </label>
+                    </div>
+                <?php endforeach; ?>
                 </div>
             </div>
             <div class="form-group">
@@ -56,14 +48,6 @@ require 'navbar.php';
             <div class="form-group">
                 <label class="form-label">Numero de tarjeta/transferencia</label>
                 <input name="numero" class="form-control " type="text" placeholder="#">
-            </div>
-            <div class="form-group">
-                <label class="form-label">Fecha de vencimiento tarjeta</label>
-                <input name="fecha_ven" class="form-control " type="date" placeholder="#">
-            </div>
-            <div class="form-group">
-                <label class="form-label">Codigo de seguridad de tarjeta</label>
-                <input name="codigo" class="form-control " type="text" placeholder="#">
             </div>
             <?php if(isset($id_contract)): ?>
                 <input class="d-none" name="contractToPay" value="<?php echo $id_contract ?>">

@@ -22,10 +22,12 @@
     <list default="true" id="f3d9412f-d832-42ed-9e83-6e44df7bd0b9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contracts.php" beforeDir="false" afterPath="$PROJECT_DIR$/contracts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/products_AJAX.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/products_AJAX.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/PartySQL.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/PartySQL.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/PaymentSQL.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/PaymentSQL.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/Product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/procesar_pago.php" beforeDir="false" afterPath="$PROJECT_DIR$/procesar_pago.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sqlScripts/INSERTS.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sqlScripts/INSERTS.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqlScripts/create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sqlScripts/create.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/contracts.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/contracts.view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/procesar_pago.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/procesar_pago.view.php" afterDir="false" />
     </list>
@@ -214,7 +216,7 @@
       <workItem from="1597163832500" duration="27822000" />
       <workItem from="1597253828135" duration="23319000" />
       <workItem from="1597329458219" duration="25532000" />
-      <workItem from="1597417720841" duration="8984000" />
+      <workItem from="1597417720841" duration="31477000" />
     </task>
     <servers />
   </component>

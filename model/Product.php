@@ -50,12 +50,20 @@ class Product extends Connection
     }
 
     public function get_products_by_service_id($id_service){
-        //PREPARACION DEL QUERY
         $statement = $this->con->prepare("SELECT p.id_producto as id_producto, p.nombre_producto as nombre_producto, p.precio_producto as precio_producto, t.cantidad_minima as cantidad_minima FROM PRODUCTO as p INNER JOIN PRODUCTO_SERVICIO as t ON p.id_producto=t.fk_producto WHERE t.fk_servicio=$id_service;");
-        //EJECUCION DEL QUERY
         $statement->execute();
-        // El metodo fetch nos va a devolver el resultado o false en caso de que no haya resultado.
         return $statement->fetchAll();
     }
 
+    public function get_product_by_id($id_product){
+        $statement = $this->con->prepare("SELECT * FROM PRODUCTO WHERE id_producto = $id_product");
+        $statement->execute();
+        return $statement->fetchAll();
+    }
+
+    public function update_inventory_product($id_product, $number){
+        $statement = $this->con->prepare("UPDATE PRODUCTO SET cantidad_disponible_producto = cantidad_disponible_producto-$number WHERE id_producto = $id_product; ");
+        $statement->execute();
+        return $statement->fetchAll();
+    }
 }

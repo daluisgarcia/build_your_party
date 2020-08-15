@@ -34,6 +34,32 @@
                             <span class="mx-2"><a href="procesar_pago?idContract=<?php echo $contract['id'] ?>" class="btn btn-success">Pagar</a></span>
                         <?php endif; ?>
                     </p>
+                    <?php
+                        try{
+                            include_once 'model/PartySQL.php';
+                            $connect = new PartySQL();
+
+                            $dates = $connect->get_dates_by_contract($contract['id'] );
+
+                        }catch (PDOException $e){
+                            echo '<div>Error obteniendo citas</div>';
+                        }
+                    ?>
+                    <?php if(isset($dates)): ?>
+                        <?php foreach ($dates as $date): ?>
+                            <div class="card-text row mb-3">
+                                <div class="col">
+                                    <b>Cita para:</b> <?php echo $date['nombre_servicio'] ?>
+                                </div>
+                                <div class="col">
+                                    <?php echo $date['lugar'] ?> el dia <?php echo $date['fecha_reserva'] ?>
+                                </div>
+                                <div class="col">
+
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
                     <div id="toggler-<?php echo $contract['id'] ?>" class="border-top border-bottom pt-2 d-none mb-3">
 
                             <?php

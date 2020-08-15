@@ -3914,30 +3914,40 @@ insert into DECORACION (id_servicio, fk_tematica,fk_persona) value (25,3,6666666
 
 #PAG
 #METODO_PAGO
-insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Fondo Comun',1234561,'2050-08-1', null,null, 'TDC');
-insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Nacional de Credito',1234562,'2050-08-2', null,null, 'TDC');
-insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Fondo Comun',1234563,'2050-08-3', null,null, 'TDC');
-insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco BOD',1234564,'2050-08-4', null,null, 'TDC');
-insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Mercantil',1234565,'2050-08-5', null,null, 'TDC');
-insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco BOD',1234566,'2050-08-6', null,null, 'TDC');
-insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banesco',1234567,'2050-08-7', null,null, 'TDC');
-insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Nacional de Credito',1234568,'2050-08-8', null,null, 'TDC');
-insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Fondo Comun',1234569,'2050-08-9', null,null, 'TDC');
-insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Nacional de Credito',12345610,'2050-08-10', null,null, 'TDC');
-insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Nacional de Credito',null,null,12345611,null, 'TDD');
-insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banesco',null,null,12345612,null, 'TDD');
-insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Nacional de Credito',null,null,12345613,null, 'TDD');
-insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Nacional de Credito',null,null,12345614,null, 'TDD');
-insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Nacional de Credito',null,null,12345615,null, 'TDD');
-insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Fondo Comun',null,null,12345616,null, 'TDD');
-insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco BOD',null,null,12345617,null, 'TDD');
-insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco BOD',null,null,12345618,null, 'TDD');
-insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Fondo Comun',null,null,12345619,null, 'TDD');
-insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco BOD',null,null,12345620,null, 'TDD');
-insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banesco',null,null,null,12345621,'TRANSFERENCIA');
-insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banesco',null,null,null,12345622, 'TRANSFERENCIA');
-insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Nacional de Credito',null,null,null,12345623, 'TRANSFERENCIA');
-insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banesco',null,null,null,12345624, 'TRANSFERENCIA');
+insert into TIPO_METODO_PAGO (nombre_tipo_mp) value ('Transferencia');
+insert into TIPO_METODO_PAGO (nombre_tipo_mp) value ('Tarjeta de credito');
+insert into TIPO_METODO_PAGO (nombre_tipo_mp) value ('Tarjeta de debito');
+insert into TIPO_METODO_PAGO (nombre_tipo_mp) value ('Efectivo');
+insert into METODO_PAGO (numero_metodo_pago, banco_metodo_pago, fk_usuario, fk_tipo) VALUES (1234456, 'Banco Occidental', 23, 2);
+insert into METODO_PAGO (numero_metodo_pago, banco_metodo_pago, fk_usuario, fk_tipo) VALUES (1453754, 'Banco Fondo Comun', 10, 3);
+insert into METODO_PAGO (numero_metodo_pago, banco_metodo_pago, fk_usuario, fk_tipo) VALUES (1168847, 'Banesco', 50, 2);
+insert into METODO_PAGO (numero_metodo_pago, banco_metodo_pago, fk_usuario, fk_tipo) VALUES (0, '', 23, 4);
+insert into METODO_PAGO (numero_metodo_pago, banco_metodo_pago, fk_usuario, fk_tipo) VALUES (2634635, 'Banco Mercantil', 42, 1);
+insert into METODO_PAGO (numero_metodo_pago, banco_metodo_pago, fk_usuario, fk_tipo) VALUES (1255553, 'Banco Oriental', 11, 2);
+#insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Fondo Comun',1234561,'2050-08-1', null,null, 'TDC');
+#insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Nacional de Credito',1234562,'2050-08-2', null,null, 'TDC');
+#insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Fondo Comun',1234563,'2050-08-3', null,null, 'TDC');
+#insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco BOD',1234564,'2050-08-4', null,null, 'TDC');
+#insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Mercantil',1234565,'2050-08-5', null,null, 'TDC');
+#insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco BOD',1234566,'2050-08-6', null,null, 'TDC');
+#insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banesco',1234567,'2050-08-7', null,null, 'TDC');
+#insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Nacional de Credito',1234568,'2050-08-8', null,null, 'TDC');
+#insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Fondo Comun',1234569,'2050-08-9', null,null, 'TDC');
+#insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Nacional de Credito',12345610,'2050-08-10', null,null, 'TDC');
+#insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Nacional de Credito',null,null,12345611,null, 'TDD');
+#insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banesco',null,null,12345612,null, 'TDD');
+#insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Nacional de Credito',null,null,12345613,null, 'TDD');
+#insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Nacional de Credito',null,null,12345614,null, 'TDD');
+#insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Nacional de Credito',null,null,12345615,null, 'TDD');
+#insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Fondo Comun',null,null,12345616,null, 'TDD');
+#insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco BOD',null,null,12345617,null, 'TDD');
+#insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco BOD',null,null,12345618,null, 'TDD');
+#insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Fondo Comun',null,null,12345619,null, 'TDD');
+#insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco BOD',null,null,12345620,null, 'TDD');
+#insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banesco',null,null,null,12345621,'TRANSFERENCIA');
+#insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banesco',null,null,null,12345622, 'TRANSFERENCIA');
+#insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banco Nacional de Credito',null,null,null,12345623, 'TRANSFERENCIA');
+#insert into METODO_PAGO (id_metodo_pago,descripcion_metodo_pago,banco_metodo_pago,numero_tdc,fecha_vencimiento_tdc,numero_tdd,numero_transferencia,tipo) value (null,null,'Banesco',null,null,null,12345624, 'TRANSFERENCIA');
 #PAGO
 insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 121000,'2021-01-30',1,1);
 insert into PAGO(id_pago,monto_pago,fecha_realizacion_pago,fk_contrato,fk_metodo_de_pago) value (null, 51776, '2021-03-1',1,1);
@@ -8027,6 +8037,82 @@ insert into telefono(codigo_area_telefono, numero_telefono, fk_persona) values (
 insert into telefono(codigo_area_telefono, numero_telefono, fk_persona) values (278, 9900976, 29999334);
 insert into telefono(codigo_area_telefono, numero_telefono, fk_persona) values (278, 9900977, 29999335);
 insert into telefono(codigo_area_telefono, numero_telefono, fk_persona) values (278, 9900978, 66666666);
+
+INSERT INTO POST (seccion_post, titulo_post, cuerpo_post)
+VALUES ('BODACAT', "REQUISITOS PARA CASARTE POR LA IGLESIA", 
+"Los requisitos que deberán cumplir los contrayentes o novios para realizar la Ceremonia Eclesiástica son:
+<ul>
+<li>Ambos deben estar bautizados y presentar la fé de Bautismo actualizada ante el párroco.</li>
+<li>Estar capacitados para dar el consentimiento libremente.</li>
+<li>Haber hecho la Confirmación y presentar el acta de la misma.</li>
+<li>Presentar constancia de haber contraído Matrimonio Civil.</li>
+<li>Asistir al curso prematrimonial.</li>
+<li>No haber estado casados antes por la Iglesia.</li>
+<li>No tener parentesco cercano.</li>
+<li>Conocer y aceptar libremente los fines y propiedades del matrimonio.</li>  
+<li>Presentarse ante el Párroco para que autorice la ceremonia.</li>
+<li>Por lo general la boda religiosa debe celebrarse en la iglesia o parroquia situada en la ciudad de residencia de alguno de los contrayentes.</li>
+Pero si desea casarse en cualquier otra parte, sólo debe solicitar un permiso al párroco del templo.</li></ul>
+	<br><br>
+    <p>Articulos relacionados: <a href='documentacion_bodas'>Requisitos para una ceremonia matrimonial</a></p>
+				
+	");
+
+INSERT INTO POST (seccion_post, titulo_post, cuerpo_post)
+VALUES ('BODACAT', "Eucaristía: lecturas y reflexión", 
+"Para este momento, el padre inicia con la oración del perdón de los pecados veniales. Luego realiza las lecturas combinándolas con cantos y salmos. Las primeras lecturas son del Antiguo Testamento, se hacen algunas aclamaciones, sigue con cantos y salmos en donde los asistentes participan al unísono, posteriormente sigue con las segundas lecturas del amor extraídas del Nuevo Testamento, a continuación, el canto a la Gloria del Señor y el Aleluya. Esos textos son escogidos normalmente por el sacerdote, pero en ocasiones los novios pueden escogerlos también. Algunos párrocos acuerdan con dos o tres invitados a que realicen algunas lecturas de la ceremonia, antes de que llegue la novia, y también puede permitir mensajes de amor para el esposo y la esposa, palabras, textos literarios o poemas que sean alusivos al amor.
+<br><br>
+La Eucaristía continua con la proclamación o lectura del Evangelio y la bendición de la campanada en la elevación, que se acostumbra a realizar invitando a los novios y asistentes a ponerse de rodillas para el momento. Cuando termina de realizar la lectura, el sacerdote da la homilía con la reflexión personal de lo leído y la forma como los nuevos esposos deberán ser arquitectos de las bases de su matrimonio, en bendición y obediencia a Dios.");
+
+INSERT INTO POST (seccion_post, titulo_post, cuerpo_post)
+VALUES ('BODACAT', "Bendición Nupcial", 
+"Con los novios arrodillados, el sacerdote ora por ellos, les bendice y realiza las lecturas de bendición nupcial, para ser ejemplo de fe, amor, respeto y fidelidad.  Bendice también a todos los presentes, con la bendición con sus manos y los despide para poderse ir en paz. Se hace el rito de la despedida y el sacerdote da su bendición final, presentando a los nuevos señor y señora.
+<br><br>
+Es aquí cuando se dice “puede besar a la novia”, la felicidad está en su pico, la música comienza a sonar, mientras las fotos capturan el momento del gran beso y con el telón de fondo la decoración de iglesia para matrimonio. Algunas parejas aprovechan el momento para realizar otros rituales antes de irse, como ponerle flores a la virgen o prenderle una vela al santo de su devoción. La salida nupcial de los esposos se da tomados de la mano, al son de la canción que ellos pidieron que se tocase para su despedida. Todos alistan los elementos para echar al aire cuando los novios salgan. Luego de una deliciosa luna de miel de ensueño para descansar y celebrar como esposos, lo que sigue ya es parte de lo que escribirán en el libro de su aventura como marido y mujer.");
+
+
+
+insert into imagen (ruta_imagen,fk_post) values ('https://url2.cl/wawuA',71);
+insert into imagen (ruta_imagen,fk_post) values ('https://url2.cl/DNyIM',72);
+insert into imagen (ruta_imagen,fk_post) values ('https://url2.cl/TMpZZ',73);
+
+insert into imagen (ruta_imagen,fk_post) values ('https://url2.cl/eee7a',49);
+insert into imagen (ruta_imagen,fk_post) values ('https://url2.cl/fF8Wf',47);
+insert into imagen (ruta_imagen,fk_post) values ('https://url2.cl/eYHLy',45);
+insert into imagen (ruta_imagen,fk_post) values ('https://scontent-lga3-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/117315282_744350886380472_3490112649942999639_n.jpg?_nc_ht=scontent-lga3-1.cdninstagram.com&_nc_cat=100&_nc_ohc=RW9KHDn_4AEAX-xhBe4&oh=c40591857f3e8d7b6272c55dac832cb0&oe=5F6048F1',43);
+insert into imagen (ruta_imagen,fk_post) values ('https://i.pinimg.com/originals/b3/db/b2/b3dbb239cc8d86b259cd9a7131040102.jpg',41);
+insert into imagen (ruta_imagen,fk_post) values ('https://i.pinimg.com/originals/de/1e/95/de1e95cbdc548483a4d9c33c38daed0c.jpg',39);
+insert into imagen (ruta_imagen,fk_post) values ('https://ideasparalasfiestas.com/wp-content/uploads/2016/07/ideas-para-fiestas-tematicas-1-1080x600.jpg',37);
+insert into imagen (ruta_imagen,fk_post) values ('https://decoracionsalas.com/wp-content/uploads/2013/02/como-decorar-para-los-15-anos4.jpg',35);
+insert into imagen (ruta_imagen,fk_post) values ('https://www.jardineriaon.com/wp-content/uploads/2016/02/Plumeria_rubra_flores_rosas-830x622.jpg',33);
+insert into imagen (ruta_imagen,fk_post) values ('https://i.pinimg.com/originals/7e/25/04/7e2504e19e8559203f27ba4f0aca5778.jpg',31);
+insert into imagen (ruta_imagen,fk_post) values ('https://i.pinimg.com/originals/3a/d6/61/3ad661820642d263dd18f9908cb561ad.jpg',29);
+insert into imagen (ruta_imagen,fk_post) values ('https://www.diariocritico.com/fotos/1/Vacaciones_Cabecera.jpg',27);
+insert into imagen (ruta_imagen,fk_post) values ('https://www.ecestaticos.com/imagestatic/clipping/0d6/464/0d6464658cec8e7d7f997affb0e5de76/las-normas-de-etiqueta-que-debes-seguir-si-quieres-triunfar-en-la-fiesta-de-nochevieja.jpg?mtime=1579565836',25);
+insert into imagen (ruta_imagen,fk_post) values ('https://www.brides.com/thmb/ECbmrnc_F_ujgdk0saUPSUff5jI=/500x281/smart/filters:no_upscale()/__opt__aboutcom__coeus__resources__content_migration__brides__public__brides-services__production__2016__10__24__580e5669fac24a31e1fae2a9_blogs-aisle-say-How-to-make-wedding-tables-look-more-expensive-9abfe5fa1c90468cb9dbc48f87f438ed.jpg',23);
+insert into imagen (ruta_imagen,fk_post) values ('https://scontent-lga3-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/117615092_1009902242782579_6057048882346547839_n.jpg?_nc_ht=scontent-lga3-1.cdninstagram.com&_nc_cat=107&_nc_ohc=UyE0IhUuPFwAX8Qdlx7&oh=eca7c2f275e95c2b55f94d02266462c0&oe=5F5EADCD',21);
+
+
+insert into imagen (ruta_imagen,fk_post) values ('https://i.pinimg.com/originals/d8/2f/a1/d82fa114a59a269435c9682907713565.jpg',51);
+insert into imagen (ruta_imagen,fk_post) values ('https://s3-us-west-2.amazonaws.com/melingoimages/Images/69813.jpg',52);
+insert into imagen (ruta_imagen,fk_post) values ('https://www.bacp.co.uk/media/7326/partybanner.jpg?anchor=center&mode=crop&width=1120&heightratio=0&format=jpg&quality=80&slimmage=true&rnd=132207170210000000',53);
+insert into imagen (ruta_imagen,fk_post) values ('https://720891.smushcdn.com/1454540/wp-content/uploads/2019/06/Header-2.jpg?lossy=1&strip=1&webp=1',54);
+insert into imagen (ruta_imagen,fk_post) values ('https://cdn.civitatis.com/tailandia/koh-samui/galeria/full-moon-party.jpg',55);
+insert into imagen (ruta_imagen,fk_post) values ('https://i1.adis.ws/i/canon/canon-get-inspired-party-1-1920?qlt=80&w=100%&sm=aspect&aspect=16:9&fmt=jpg&fmt.options=interlaced&bg=rgb(255,255,255)',56);
+insert into imagen (ruta_imagen,fk_post) values ('https://blogmedia.evbstatic.com/wp-content/uploads/wpmulti/sites/8/shutterstock_199419065.jpg',57);
+insert into imagen (ruta_imagen,fk_post) values ('https://d1hfln2sfez66z.cloudfront.net/03-30-2020/t_564e227e75c44c5883f7ffc23e83bc0e_name_BE56F3840D2A4333BB53000C120BCFA3.jpg',58);
+insert into imagen (ruta_imagen,fk_post) values ('https://www.byblos.com/wp-content/uploads/summer-party-sttropez-1600x1000.jpg',59);
+insert into imagen (ruta_imagen,fk_post) values ('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSb4p0hJ6GSncnESHOEL4CLUVlfBf48oSBwIqTaL0RpFA&usqp=CAU&ec=45690269',60);
+insert into imagen (ruta_imagen,fk_post) values ('https://www.nymetroparents.com/columnpic2/stress-free-birthdays.jpg?clear=1',61);
+insert into imagen (ruta_imagen,fk_post) values ('https://media.timeout.com/images/105347841/630/472/image.jpg',62);
+insert into imagen (ruta_imagen,fk_post) values ('https://www.straitstimes.com/sites/default/files/styles/xxx_large/public/articles/2020/05/14/ST_20200514_ARMARQUEE14STEV_5663578.jpg?itok=ELuB3BtS&timestamp=1589394132',63);
+insert into imagen (ruta_imagen,fk_post) values ('https://mk0bloguelacapiec9a0.kinstacdn.com/wp-content/uploads/2018/12/alcool-et-party-blog-2018.jpg',64);
+insert into imagen (ruta_imagen,fk_post) values ('https://www.platinumbanquet.com/wp-content/uploads/Screen-Shot-2017-10-06-at-1.07.58-PM.png',65);
+insert into imagen (ruta_imagen,fk_post) values ('https://i.pinimg.com/originals/d4/d4/bd/d4d4bd492329c2d2ebb989729c0faf57.jpg',66);
+insert into imagen (ruta_imagen,fk_post) values ('https://i.pinimg.com/originals/dd/65/5c/dd655c900670d970b335fea34595b362.jpg',67);
+insert into imagen (ruta_imagen,fk_post) values ('https://www.jacquescatering.com/wp-content/uploads/2018/07/1.jpg',68);
+insert into imagen (ruta_imagen,fk_post) values ('https://lh3.googleusercontent.com/proxy/FcF_Y2cXZuWIzmG6qKaiNoTexlwVEIBhvEoopcvgZiyYxtp9r9Q83A7gn_Ilx74hEKP--E2QKoVUyFu0bsgb7rhCcr5Ny8UQXJXrR87swGWnVMw82cP9QBYYOTcgM7AB4V3Eihg7d4bs',69);
+insert into imagen (ruta_imagen,fk_post) values ('https://1pu8ob314rt22vcxj33w3azm-wpengine.netdna-ssl.com/wp-content/uploads/2013/01/pink_party_theme_pink-dress_black_girl_table.jpg',70);
 
 INSERT INTO `imagen` (`id_imagen`, `ruta_imagen`, `fk_templo`, `fk_trabajo_cyc`, `fk_trabajo_cyc_2`, `fk_jefatura`, `fk_persona`, `fk_producto`, `fk_servicio`, `fk_post`) VALUES
 (1, 'basilica.jpg', 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
