@@ -54,6 +54,8 @@ if ($answer == '') {
       $answer = $connect->specificUser($id_usuario);
     }else if ($option === 'give'){
       $answer = $connect->roleToUser($id_usuario, $rol);
+    }else if ($option === 'take'){
+      $answer = $connect->takeRoleUser($id_usuario, $rol);
     } else {
       $answer = $connect->add_client($cedula, $nombre, $apellido, $correo, $codigo_de_area, $numero, $usuario, $parroquia);
     }

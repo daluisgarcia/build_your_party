@@ -48,6 +48,45 @@ function selectPermisos(rol, drop) {
   })
 }
 
+function selectPermisosforElm() {
+  return new Promise((resolve, reject) => {
+    let dropRoles = document.getElementById('select-rol-unlink');
+    let rol = dropRoles.value
+    let peticion = new XMLHttpRequest()
+    let params = `option=permisos&rol=${rol}`   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
+    console.log("finding permissions for role "+rol+"on drop of id "+"select-permiso-unlink");
+    peticion.open('GET', `./consult_roles.php?${params}`)
+
+    peticion.send()
+
+    //loader.classList.add('active');
+
+    peticion.onreadystatechange = function () {
+      if (peticion.readyState == 4 && peticion.status == 200) {
+        //loader.classList.remove('active')
+      }
+    }
+
+    peticion.onload = function () {
+      let data = JSON.parse(peticion.responseText)
+      if(!data.error) {
+        let dropPermisos = document.getElementById('select-permiso-unlink');
+        removeAllChilds(dropPermisos);
+        for(d in data){
+          let op = document.createElement('option');
+          op.value = data[d].id;
+          op.innerText = data[d].nombre;
+          dropPermisos.appendChild(op);
+        }
+        resolve();
+      }else{
+        //alert('Error al cargar los estados');
+        reject();
+      }
+    }
+  })
+}
+
 function getRoles() {
   let peticion = new XMLHttpRequest()
   let params = `option=select`   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
@@ -79,9 +118,15 @@ function getRoles() {
     agregar.classList.add('btn', 'btn-primary', 'm-2');
     agregar.innerText='Asignar Permiso';
     agregar.addEventListener('click', newAssociation);
+    let eliminar = document.createElement('button')
+    eliminar.id = 'uncheck-permisos';
+    eliminar.classList.add('btn', 'btn-danger', 'm-2');
+    eliminar.innerText='Eliminar Permiso';
+    eliminar.addEventListener('click', unlinkPermission);
     tr1.appendChild(rol);
     tr1.appendChild(permisos);
     tr1.appendChild(agregar);
+    tr1.appendChild(eliminar);
     thead.appendChild(tr1);
     let tbody = document.createElement('tbody');
     if(!data.error){
@@ -121,6 +166,80 @@ function getRoles() {
     setChangePosibilityRoles();
   }
 };
+
+function unlinkPermission() {
+  let tableDiv = document.getElementById('table_id');
+  //dataT.destroy();
+  removeAllChilds(tableDiv);
+  tableDiv.classList.add('d-none');
+
+  let form = document.createElement('form');
+  form.id = 'addTuple';
+
+  let rolLabel = document.createElement('label');
+  rolLabel.setAttribute('for', 'role-to-select');
+  rolLabel.innerText = 'Rol';
+  form.appendChild(rolLabel);
+  let rol = document.createElement('select');
+  rol.id = 'select-rol-unlink';
+  rol.name = 'rol';
+  rol.setAttribute('onchange','selectPermisosforElm()');
+  form.appendChild(rol);
+
+  let permisoLabel = document.createElement('label');
+  permisoLabel.setAttribute('for', 'permiso-to-select');
+  permisoLabel.innerText = 'Permiso';
+  form.appendChild(permisoLabel);
+  let permisoelm = document.createElement('select');
+  permisoelm.id = 'select-permiso-unlink';
+  permisoelm.name = 'permiso';
+  form.appendChild(permisoelm);
+
+  let rolPromise = selectAllRolesChain();
+  rolPromise.then(() => {
+  }).catch(() => {
+    console.log('ERROR CON ROLES');
+  })
+
+  let submit = document.createElement('button');
+  submit.id = 'submit-change-rp';
+  submit.classList.add('btn', 'btn-primary');
+  submit.innerText='Desvincular';
+  form.appendChild(submit);
+  document.getElementById('container').appendChild(form);
+
+  submit.addEventListener('click', function () {
+
+    let rol = document.getElementById('select-rol-unlink').value,
+      permiso = document.getElementById('select-permiso-unlink').value;
+
+    let peticion = new XMLHttpRequest()
+    let params = `option=unlink&rol=${rol}&permiso=${permiso}`;
+    console.log(params);
+    peticion.open('GET', `./consult_roles.php?${params}`)
+
+    peticion.send()
+
+    //loader.classList.add('active');
+
+    peticion.onreadystatechange = function(){
+      if(peticion.readyState == 4 && peticion.status == 200){
+        //loader.classList.remove('active')
+      }
+    }
+
+    peticion.onload = function(){
+      let data = JSON.parse(peticion.responseText)
+      if(data.error){
+        alert('Error al introducir datos');
+      }else{
+        document.getElementById('table_id').classList.remove('d-none');
+        document.getElementById('addTuple').remove();
+        getRoles();
+      }
+    }
+  })
+}
 
 function newAssociation() {
   let tableDiv = document.getElementById('table_id');
@@ -196,6 +315,48 @@ function newAssociation() {
         document.getElementById('table_id').classList.remove('d-none');
         document.getElementById('addTuple').remove();
         getRoles();
+      }
+    }
+  })
+}
+
+function selectAllRolesChain() {
+  return new Promise((resolve, reject) => {
+    let peticion = new XMLHttpRequest()
+    let params = `option=all-roles`   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
+    peticion.open('GET', `./consult_roles.php?${params}`)
+
+    peticion.send()
+
+    //loader.classList.add('active');
+
+    peticion.onreadystatechange = function () {
+      if (peticion.readyState == 4 && peticion.status == 200) {
+        //loader.classList.remove('active')
+      }
+    }
+
+    peticion.onload = function () {
+      let data = JSON.parse(peticion.responseText)
+      if(!data.error) {
+        let dropRoles = document.getElementById('select-rol-unlink');
+        removeAllChilds(dropRoles);
+        for(d in data){
+          let op = document.createElement('option');
+          op.value = data[d].id;
+          op.innerText = data[d].rol;
+          dropRoles.appendChild(op);
+        }
+        console.log(dropRoles.value);
+        let permisoPromise = selectPermisosforElm();
+        permisoPromise.then(() => {
+          resolve();
+        }).catch(() => {
+          console.log('ERROR CON PERMISOS');
+        })
+      }else{
+        //alert('Error al cargar los estados');
+        reject();
       }
     }
   })
