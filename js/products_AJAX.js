@@ -80,7 +80,6 @@ function selectPartys() {
                 opt.value = data[d].id;
                 opt.innerText = data[d].fecha;
                 dropdown.appendChild(opt);
-                document.getElementById('goToBudgets').href = `budgets?idParty=${data[d].id}`;
             }
             selectBudgets();
         }
@@ -94,6 +93,8 @@ function selectBudgets() {
     partyId = partyId[index].value;
     let params = `idfiesta=${partyId}&option=getBudgets`;
     peticion.open('GET', `./getPartysAndBudget.php?${params}`)
+
+    document.getElementById('goToBudgets').href = `budgets?idParty=${partyId}`;
 
     peticion.send()
 
@@ -109,8 +110,12 @@ function selectBudgets() {
         let data = JSON.parse(peticion.responseText)
         if (data.error) {
             alert('ERROR: Recoleccion de fiestas');
+            document.getElementById('goToBudgets').href = `products`;
         } else if (data.length === 0){
+            let dropdown = document.getElementById('budget-select');
+            removeAllChilds(dropdown);
             alert('Debe crear un presupuesto para poder agregar productos');
+            document.getElementById('goToBudgets').href = `products`;
         }else{
             //LLENAR DROPDOWN DE PRESUPUESTOS
             let dropdown = document.getElementById('budget-select');
