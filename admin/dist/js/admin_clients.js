@@ -205,6 +205,10 @@ function getClients() {
     municipioC.innerText = 'Municipio';
     let estadoC = document.createElement('td')
     estadoC.innerText = 'Estado';
+    let rolesC = document.createElement('td')
+    rolesC.innerText = 'Roles';
+    let agregarC = document.createElement('td')
+    agregarC.innerText = 'Agregar Rol';
     tr1.appendChild(cedula);
     tr1.appendChild(nombre);
     tr1.appendChild(apellido);
@@ -215,6 +219,8 @@ function getClients() {
     tr1.appendChild(parroquiaC);
     tr1.appendChild(municipioC);
     tr1.appendChild(estadoC);
+    tr1.appendChild(rolesC);
+    tr1.appendChild(agregarC);
     thead.appendChild(tr1);
     let tbody = document.createElement('tbody');
     if(!data.error){
@@ -270,6 +276,27 @@ function getClients() {
         estadoC2.id = `estado-${data[d].estado_id}`;
         estadoC2.classList.add('clickeable-clients');
 
+        let rolC2 = document.createElement('select');
+        rolC2.id = `drop-${data[d].usuario}`;
+        rolC2.name = 'rol';
+
+        let promise = rolesForUser(data[d].usuario_id, `drop-${data[d].usuario}`);
+        promise.then(() => {
+        }).catch(() => {
+          console.log('ERROR CON PERMISOS');
+        })
+
+
+        let agregarC2 = document.createElement('button')
+        agregarC2.id = `agregar-${data[d].usuario_id}`;
+        agregarC2.classList.add('btn', 'btn-primary', 'm-2');
+        agregarC2.innerText='Asignar Rol';
+        agregarC2.addEventListener('click', function () {
+          let user = returnIdNumber(agregarC2.id);
+          console.log('aqui si mani usuario'+user);
+          newRoleUser(user)
+        })
+
         tr2.appendChild(cedulaC2);
         tr2.appendChild(nombreC2);
         tr2.appendChild(apellidoC2);
@@ -280,6 +307,8 @@ function getClients() {
         tr2.appendChild(parroquiaC2);
         tr2.appendChild(municipioC2);
         tr2.appendChild(estadoC2);
+        tr2.appendChild(rolC2);
+        tr2.appendChild(agregarC2);
         tbody.appendChild(tr2);
       }
     }
@@ -295,6 +324,154 @@ function getClients() {
   }
 };
 
+
+function rolesForUser(user, id) {
+  return new Promise((resolve, reject) => {
+    let peticion = new XMLHttpRequest()
+    let params = `option=myroles&id_usuario=${user}`   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
+    peticion.open('GET', `./consult_clients.php?${params}`)
+
+    peticion.send()
+
+    //loader.classList.add('active');
+
+    peticion.onreadystatechange = function () {
+      if (peticion.readyState == 4 && peticion.status == 200) {
+        //loader.classList.remove('active')
+      }
+    }
+
+    peticion.onload = function () {
+      let data = JSON.parse(peticion.responseText)
+      if(!data.error) {
+        let dropRoles = document.getElementById(id);
+        removeAllChilds(dropRoles);
+        for(d in data){
+          let op = document.createElement('option');
+          op.value = data[d].id_rol;
+          op.innerText = data[d].nombre_rol;
+          dropRoles.appendChild(op);
+        }
+        resolve();
+      }else{
+        //alert('Error al cargar los estados');
+        reject();
+      }
+    }
+  })
+}
+
+function newRoleUser(user) {
+  let tableDiv = document.getElementById('table_id');
+  //dataT.destroy();
+  removeAllChilds(tableDiv);
+  tableDiv.classList.add('d-none');
+
+  let form = document.createElement('form');
+  form.id = 'addTuple';
+
+  let userLabel = document.createElement('label');
+  userLabel.setAttribute('for', 'user-label');
+  userLabel.innerText = 'Usuario:';
+  form.appendChild(userLabel);
+  let username = document.createElement('label');
+  username.setAttribute('for', 'username-label');
+  username.id = 'username-label';
+  form.appendChild(username);
+
+  let userPromise = getUser(user);
+  userPromise.then(() => {
+  }).catch(() => {
+    console.log('ERROR CON PERMISOS');
+  })
+
+  let allroles = document.createElement('label');
+  allroles.setAttribute('for', 'role-to-select');
+  allroles.innerText = 'Rol';
+  form.appendChild(allroles);
+  let role = document.createElement('select');
+  role.id = 'select-rol';
+  role.name = 'rol';
+  form.appendChild(role);
+
+  let rolPromise = selectAllRoles();
+  rolPromise.then(() => {
+  }).catch(() => {
+    console.log('ERROR CON PERMISOS');
+  })
+
+  let submit = document.createElement('button');
+  submit.id = 'submit-change-rp';
+  submit.classList.add('btn', 'btn-primary');
+  submit.innerText='Asociar';
+  form.appendChild(submit);
+  document.getElementById('container').appendChild(form);
+
+  submit.addEventListener('click', function () {
+
+    let rol = document.getElementById('select-rol').value;
+
+    let peticion = new XMLHttpRequest()
+    let params = `option=give&rol=${rol}&id_usuario=${user}`;
+    console.log(params);
+    peticion.open('GET', `./consult_clients.php?${params}`)
+
+    peticion.send()
+
+    //loader.classList.add('active');
+
+    peticion.onreadystatechange = function(){
+      if(peticion.readyState == 4 && peticion.status == 200){
+        //loader.classList.remove('active')
+      }
+    }
+
+    peticion.onload = function(){
+      let data = JSON.parse(peticion.responseText)
+      if(data.error){
+        alert('Error al introducir datos');
+      }else{
+        document.getElementById('table_id').classList.remove('d-none');
+        document.getElementById('addTuple').remove();
+        getClients();
+      }
+    }
+  })
+};
+
+function getUser(user) {
+  return new Promise((resolve, reject) => {
+    let peticion = new XMLHttpRequest()
+    let params = `option=specific&id_usuario=${user}`   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
+    console.log("for get"+params);
+    peticion.open('GET', `./consult_clients.php?${params}`)
+
+    peticion.send()
+
+    //loader.classList.add('active');
+
+    peticion.onreadystatechange = function () {
+      if (peticion.readyState == 4 && peticion.status == 200) {
+        //loader.classList.remove('active')
+      }
+    }
+
+    peticion.onload = function () {
+      let data = JSON.parse(peticion.responseText)
+      if(!data.error) {
+        let username = document.getElementById('username-label');
+        for(d in data){
+          username.innerText = data[d].username;
+        }
+        resolve();
+      }else{
+        //alert('Error al cargar los estados');
+        reject();
+      }
+    }
+  })
+}
+
 //AÑADIR A LAS FILAS LA POSIBILIDAD DE CAMBIAR LOS DATOS
 function setChangePosibilityClients(){
   let rows = document.getElementsByTagName('tr');
@@ -306,6 +483,9 @@ function setChangePosibilityClients(){
           let columns = event.target.parentElement.children;
           let names = ['cedula','nombre','apellido', 'correo', 'codigo', 'numero', 'usuario'];
           for (let j = 0; j < columns.length; j++) {
+            if (j> 9) {
+              continue;
+            }
             if (j < 7) {
               let input = document.createElement('input');
               input.type = 'text';
@@ -403,7 +583,7 @@ document.getElementById('cliente').addEventListener("click", function (event) {
 //FUNCION PARA CREACION DE FORMULARIO Y AGREGAR UN CLIENTE
 function setAddClients(){
   let tableDiv = document.getElementById('table_id');
-  dataT.destroy();
+  //dataT.destroy();
   removeAllChilds(tableDiv);
   tableDiv.classList.add('d-none');
 

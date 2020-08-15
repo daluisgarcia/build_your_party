@@ -191,4 +191,22 @@ class AdminSQL extends Connection
         $statement->execute();
         return $statement->fetchAll();
     }
+
+    public function rolesForUser($id_usuario) {
+        $statement = $this->con->prepare("select r.nombre_rol as nombre_rol, r.id_rol as id_rol from rol r, rol_usuario rp where rp.fk_rol=r.id_rol and rp.fk_usuario=$id_usuario;");
+        $statement->execute();
+        return $statement->fetchAll();
+    }
+
+    public function specificUser($id_usuario) {
+        $statement = $this->con->prepare("select nombre_usuario as username from usuario where id_usuario=$id_usuario;");
+        $statement->execute();
+        return $statement->fetchAll();
+    }
+
+    public function roleToUser($id_usuario, $id_rol) {
+        $statement = $this->con->prepare("insert into rol_usuario values($id_rol,$id_usuario);");
+        $statement->execute();
+        return $statement->fetchAll();
+    }
 }
