@@ -26,6 +26,7 @@ $id_telefono = isset($_GET['id_telefono']) ? $_GET['id_telefono'] : '';
 $estado = isset($_GET['estado']) ? $_GET['estado'] : '';
 $municipio = isset($_GET['municipio']) ? $_GET['municipio'] : '';
 $parroquia = isset($_GET['parroquia']) ? $_GET['parroquia'] : '';
+$rol = isset($_GET['rol']) ? $_GET['rol'] : '';
 
 $answer = '';
 
@@ -43,10 +44,18 @@ if ($answer == '') {
 
     if($option === 'update') {
       $answer1 = $connect->update_client($cedula, $nombre, $apellido, $correo, $codigo_de_area, $numero, $id_telefono, $usuario, $id_usuario, $parroquia);
-    }else if($option === 'delete'){
+    } else if($option === 'delete'){
       $answer = $connect->delete_client($cedula, $id_usuario);
-    }else if($option === 'select'){
+    } else if($option === 'select'){
       $answer = $connect->get_users_and_persons();
+    } else if ($option === 'myroles'){
+      $answer = $connect->rolesForUser($id_usuario);
+    }else if ($option === 'specific'){
+      $answer = $connect->specificUser($id_usuario);
+    }else if ($option === 'give'){
+      $answer = $connect->roleToUser($id_usuario, $rol);
+    }else if ($option === 'take'){
+      $answer = $connect->takeRoleUser($id_usuario, $rol);
     } else {
       $answer = $connect->add_client($cedula, $nombre, $apellido, $correo, $codigo_de_area, $numero, $usuario, $parroquia);
     }

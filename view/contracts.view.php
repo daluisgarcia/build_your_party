@@ -7,17 +7,35 @@
 <br>
 
 <div class="container mt-1">
+    <div class="display-3 text-center mb-3">Contratos y pagos realizados</div>
     <section class="row">
         <?php foreach ($contracts as $contract): ?>
-            <div class="card" style="width: 100%">
+            <div class="card mb-3" style="width: 100%">
                 <div class="card-body">
-                    <h5 class="card-title h2">Contrato <?php echo $contract['fecha_aprobado'] ?></h5>
+                    <h5 class="card-title h2">Contrato <?php echo $contract['fecha_aprobado'] ?> - Fiesta <?php echo $contract['nombre_fiesta'].' '.$contract['fecha_fiesta'] ?></h5>
                     <p class="card-text">
-                        <b>Total a pagar:</b> <?php echo $contract['monto'] ?>
-                        <span class="ml-auto"><a href="procesar_pago?idContract=<?php echo $contract['id'] ?>" class="btn btn-success">Pagar</a></span>
+                        <b>Precio total:</b> <?php echo $contract['monto'] ?>
+                        <span class="mx-2">Pago restante: <?php
+                            try{
+                                include_once 'model/PaymentSQL.php';
+                                $conn = new PaymentSQL();
+
+                                $paid =  $conn->get_sum_contract_payments($contract['id']);
+                                if($paid !== null){
+                                    echo $contract['monto']-$paid;
+                                }else{
+                                    echo $contract['monto'];
+                                }
+                            }catch (PDOException $e){
+                                echo 'ERROR';
+                            }
+                            ?></span>
+                        <?php if($contract['monto']-$paid !== 0): ?>
+                            <span class="mx-2"><a href="procesar_pago?idContract=<?php echo $contract['id'] ?>" class="btn btn-success">Pagar</a></span>
+                        <?php endif; ?>
                     </p>
                     <div id="toggler-<?php echo $contract['id'] ?>" class="border-top border-bottom pt-2 d-none mb-3">
-                        <div class="row">
+
                             <?php
                                 try {
                                     include_once 'model/PaymentSQL.php';
@@ -30,18 +48,30 @@
                                 }
                             ?>
                             <?php foreach ($payments as $payment): ?>
-                                <p class="card-text">
-                                    <div class="row">
-                                        <div class="col">Pago <?php echo $payment['fecha'] ?></div>
-                                        <div class="col text-right">Monto: <?php echo $payment['monto'] ?></div>
-                                    </div>
-                                </p>
+                                <div class="container">
+                                    <p class="card-text">
+                                        <div class="row">
+                                            <div class="col">Pago <?php echo $payment['fecha'] ?></div>
+                                            <div class="col-1">Monto:</div>
+                                            <div class="col-2 text-right"><?php echo $payment['monto'] ?></div>
+                                        </div>
+                                    </p>
+                                </div>
                             <?php endforeach; ?>
-                        </div>
                     </div>
                     <?php if(sizeof($payments) > 0): ?>
                         <button type="button" class="btn btn-primary mx-1 toggler" data-toggle="toggler-<?php echo $contract['id']; ?>">Mostrar pagos realizados</button>
                     <?php endif; ?>
+                </div>
+            </div>
+        <?php endforeach; ?>
+        <?php foreach ($courses as $course): ?>
+            <div class="card mb-3" style="width: 100%">
+                <div class="card-body">
+                    <h5 class="card-title h2">Curso matrimonial <?php echo $course['fecha_inicio'].' - Templo '.$course['templo'] ?></h5>
+                    <p class="card-text">
+                        <b>Precio total:</b> <?php echo $course['costo'] ?>
+                    </p>
                 </div>
             </div>
         <?php endforeach; ?>

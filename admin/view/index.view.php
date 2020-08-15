@@ -255,15 +255,6 @@
               </p>
             </a>
           </li>
-          <li class="nav-item option">
-            <a href="#" id="permisos" class="nav-link">
-              <img src="./dist/img/benefit.svg" class="nav-icon">
-              <p>
-                Permisos
-                <!--                <span class="right badge badge-danger">New</span>-->
-              </p>
-            </a>
-          </li>
 <!--          <li class="nav-item has-treeview">-->
 <!--            <a href="#" class="nav-link">-->
 <!--              <i class="nav-icon fas fa-copy"></i>-->

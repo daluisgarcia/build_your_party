@@ -191,4 +191,34 @@ class AdminSQL extends Connection
         $statement->execute();
         return $statement->fetchAll();
     }
+
+    public function rolesForUser($id_usuario) {
+        $statement = $this->con->prepare("select r.nombre_rol as nombre_rol, r.id_rol as id_rol from rol r, rol_usuario rp where rp.fk_rol=r.id_rol and rp.fk_usuario=$id_usuario;");
+        $statement->execute();
+        return $statement->fetchAll();
+    }
+
+    public function specificUser($id_usuario) {
+        $statement = $this->con->prepare("select nombre_usuario as username from usuario where id_usuario=$id_usuario;");
+        $statement->execute();
+        return $statement->fetchAll();
+    }
+
+    public function roleToUser($id_usuario, $id_rol) {
+        $statement = $this->con->prepare("insert into rol_usuario values($id_rol,$id_usuario);");
+        $statement->execute();
+        return $statement->fetchAll();
+    }
+
+    public function takeRoleUser($id_usuario, $id_rol) {
+        $statement = $this->con->prepare("delete from rol_usuario where fk_rol=$id_rol and fk_usuario=$id_usuario;");
+        $statement->execute();
+        return $statement->fetchAll();
+    }
+
+    public function unlinkRoleAndPermission($role, $permission) {
+        $statement = $this->con->prepare("delete from rol_permiso where fk_rol=$role and fk_permiso=$permission;");
+        $statement->execute();
+        return $statement->fetchAll();
+    }
 }

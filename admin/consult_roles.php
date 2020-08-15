@@ -48,6 +48,8 @@ if ($answer == '') {
       $answer = $connect->getRoles();
     } else if ($option === 'associate') {
       $answer = $connect->associateRoleAndPermission($role, $permission);
+    } else if ($option === 'unlink') {
+      $answer = $connect->unlinkRoleAndPermission($role, $permission);
     }
 
   } catch (PDOException $e) {
