@@ -23,6 +23,10 @@
                                 $paid =  $conn->get_sum_contract_payments($contract['id']);
                                 if($paid !== null){
                                     echo $contract['monto']-$paid;
+                                    if($contract['monto']-$paid){
+                                        //COLOCAR FECHA DE PAGADO DEL CONTRATO
+                                        $conn->set_contract_as_paid($contract['id']);
+                                    }
                                 }else{
                                     echo $contract['monto'];
                                 }

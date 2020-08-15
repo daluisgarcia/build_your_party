@@ -1,6 +1,20 @@
 
-    <?php
-        session_start();
+    <?php   session_start();
+        //CHECKEAR FIESTAS Y SI TIENEN CONTRATOS SIN FECHA DE PAGO PARA CARGAR UNA ALERTA
+        if(isset($_SESSION["user"])) {
+            try {
+                include_once 'model/PaymentSQL.php';
+                $connect = new PaymentSQL();
+
+                $alert = $connect->get_payment_alert($_SESSION['id_user']);
+                if(!empty($alert)){
+                    echo "<script>alert('Tiene pagos pendientes')</script>";
+                }
+
+            } catch (PDOException $e) {
+
+            }
+        }
         include 'navbar.php';
     ?>
 
@@ -50,7 +64,7 @@
                 <div class="col-12 mb-3 display-3">Para tu matrimonio tenemos:</div>
                 <div class="row">
                     <div class="col-12 col-md-6 mb-3 text-center hover-shadow">
-                        <a href="map_search" class="no-deco-hover row" title="Templos y cursos matrimoniales">
+                        <a href="wedding_courses.php" class="no-deco-hover row" title="Templos y cursos matrimoniales">
                             <div class="col-4">
                                 <img class="land-icon" src="https://www.svgrepo.com/show/43798/church.svg" alt="icono de iglesia">
                             </div>
@@ -80,7 +94,7 @@
                         </a>
                     </div>
                     <div class="col-12 col-md-6 mb-3 text-center hover-shadow">
-                        <a href="products" class="no-deco-hover row" title="Ver opciones para la musica">
+                        <a href="products.php" class="no-deco-hover row" title="Ver opciones para la musica">
                             <div class="col-4">
                                 <img class="land-icon" src="https://www.svgrepo.com/show/31588/dancers.svg" alt="icono de baile">
                             </div>
