@@ -8756,8 +8756,5 @@ insert into TRABAJO_CYC(id_trabajo_cyc, nombre_trabajo_cyc, tiempo_realizacion_t
 insert into imagen(fk_trabajo_cyc, fk_trabajo_cyc_2, ruta_imagen) value (14,27123551, 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fluvbridal.com.au%2Fproduct%2Femily%2F&psig=AOvVaw0O_8E2x4uX1hIsHhm3rCXK&ust=1597587903663000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLDt_vO0nesCFQAAAAAdAAAAABAk');
 insert into imagen(fk_trabajo_cyc, fk_trabajo_cyc_2, ruta_imagen) value (15,27123551, 'https://cdn.shopify.com/s/files/1/0253/4591/6979/products/dd5ca509998ca3e4d6b838d52c8c808c_1024x1024.jpg?v=1577462365');
 
-
-
-
-
-
+insert into SERVICIO(id_servicio, nombre_servicio, modalidad_pago_servicio, costo_servicio, precio_servicio, requiere_cita_servicio, detalles_servicio, fk_categoria) value(null, 'Florista pepita', 'HORA', 0, 0, 1, 'Los mejores arreglos', 9);
+insert into SERVICIO_TERCERIZADO(id_servicio, fk_persona, tipo_servicio_tercerizado) value (390,29999332,'');
