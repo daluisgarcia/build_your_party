@@ -8693,3 +8693,5 @@ INSERT INTO `post` (`id_post`, `seccion_post`, `titulo_post`, `cuerpo_post`) VAL
 insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (9999999, 'T-800', 'Skynet', 'TheTerminator@gmail.com', 1453);
 insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'TheTerminator', '12345', 9999999);
 insert into rol_usuario values(4,241);
+insert into permiso values(null,'ADMIN');
+insert into rol_permiso values(4,217);
