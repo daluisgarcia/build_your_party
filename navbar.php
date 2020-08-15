@@ -68,7 +68,7 @@
         <a href="logout" class="btn btn-outline-warning mx-1">Cerrar Sesion</a>
     <?php endif; ?>
 
-    <?php if(isset($_SESSION['user'])): ?>
+    <?php if(isset($_SESSION['ADMIN'])): ?>
         <a href="admin" class="btn btn-outline-success mx-1">ADMIN</a>
     <?php endif; ?>
 
