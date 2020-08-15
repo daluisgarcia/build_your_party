@@ -26,4 +26,10 @@ class user extends Connection
         $statement->execute();
         return $this->get_user_data($usuario,$pass);
     }
+
+    public function getAllPermissionsForUser($id_usuario) {
+        $statement = $this->con->prepare("select pe.nombre_permiso as nombre_permiso from (select p2.nombre_permiso as nombre_permiso, r.id_rol as id_rol from permiso p2, rol_permiso rp, rol r where rp.fk_permiso=p2.id_permiso and rp.fk_rol=r.id_rol) pe, rol_usuario ru where ru.fk_usuario=$id_usuario and ru.fk_rol = pe.id_rol;");
+        $statement->execute();
+        return $statement->fetchAll();
+    }
 }

@@ -8713,3 +8713,8 @@ insert into imagen (ruta_imagen,fk_post) values ('https://i.pinimg.com/originals
 insert into imagen (ruta_imagen,fk_post) values ('https://www.jacquescatering.com/wp-content/uploads/2018/07/1.jpg',68);
 insert into imagen (ruta_imagen,fk_post) values ('https://lh3.googleusercontent.com/proxy/FcF_Y2cXZuWIzmG6qKaiNoTexlwVEIBhvEoopcvgZiyYxtp9r9Q83A7gn_Ilx74hEKP--E2QKoVUyFu0bsgb7rhCcr5Ny8UQXJXrR87swGWnVMw82cP9QBYYOTcgM7AB4V3Eihg7d4bs',69);
 insert into imagen (ruta_imagen,fk_post) values ('https://1pu8ob314rt22vcxj33w3azm-wpengine.netdna-ssl.com/wp-content/uploads/2013/01/pink_party_theme_pink-dress_black_girl_table.jpg',70);
+
+#ADMIN
+insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (9999999, 'T-800', 'Skynet', 'TheTerminator@gmail.com', 1453);
+insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value (null, 'TheTerminator', '12345', 9999999);
+insert into rol_usuario values(4,241);
