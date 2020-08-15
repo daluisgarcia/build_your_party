@@ -52,4 +52,5 @@ fabric.properties
 # *.iml
 # modules.xml
 .idea/workspace.xml
-./fpdf17/
+/fpdf17
+/.idea
