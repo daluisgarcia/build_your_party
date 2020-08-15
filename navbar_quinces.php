@@ -16,11 +16,11 @@
             </div>
 
             <div class="col-lg-2 col-sm-2 header-category">
-                <a href=#>Vestidos</a>
+                <a href='vestidos'>Vestidos</a>
             </div>
 
             <div class="col-lg-2 col-sm-2 header-category">
-                <a href=#>Accesorios</a>
+                <a href='products.php'>Accesorios</a>
             </div>
 
         </div>

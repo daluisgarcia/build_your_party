@@ -31,7 +31,7 @@
                     </p>
                     <div class="text-center">
                         <a class="btn btn-outline-primary m-auto" href="#">Mas sobre nosotros</a>
-                        <a class="btn btn-primary m-auto" href="#">ArmarMiFiesta</a>
+                        <a class="btn btn-primary m-auto" href="party_select">ArmarMiFiesta</a>
                     </div>
                 </div>
                 <div class="col-12 col-md-5 p-2">
@@ -50,7 +50,7 @@
                 <div class="col-12 mb-3 display-3">Para tu matrimonio tenemos:</div>
                 <div class="row">
                     <div class="col-12 col-md-6 mb-3 text-center hover-shadow">
-                        <a href="#" class="no-deco-hover row" title="Templos y cursos matrimoniales">
+                        <a href="map_search" class="no-deco-hover row" title="Templos y cursos matrimoniales">
                             <div class="col-4">
                                 <img class="land-icon" src="https://www.svgrepo.com/show/43798/church.svg" alt="icono de iglesia">
                             </div>
@@ -60,7 +60,7 @@
                         </a>
                     </div>
                     <div class="col-12 col-md-6 mb-3 text-center hover-shadow">
-                        <a href="#" class="no-deco-hover row" title="Corte y costura">
+                        <a href="vestidos" class="no-deco-hover row" title="Corte y costura">
                             <div class="col-4">
                                 <img class="land-icon" src="https://www.svgrepo.com/show/6317/wedding-dress.svg" alt="icono de vestido">
                             </div>
@@ -80,7 +80,7 @@
                         </a>
                     </div>
                     <div class="col-12 col-md-6 mb-3 text-center hover-shadow">
-                        <a href="#" class="no-deco-hover row" title="Ver opciones para la musica">
+                        <a href="products" class="no-deco-hover row" title="Ver opciones para la musica">
                             <div class="col-4">
                                 <img class="land-icon" src="https://www.svgrepo.com/show/31588/dancers.svg" alt="icono de baile">
                             </div>
@@ -121,24 +121,24 @@
                         </p>
                     </div>
                     <div class="col-12 col-md-6">
-                        <a href="#" class="hover-shadow p-2 my-1 d-block no-deco-hover text-dark" title="Ver concejos">
+                        <a href="tips_quinces" class="hover-shadow p-2 my-1 d-block no-deco-hover text-dark" title="Ver consejos">
                             <img class="tab-icon m-1" src="https://www.svgrepo.com/show/287536/bulb.svg" alt="icono de bombillo">
                             Tips para quinceañeras
                         </a>
-                        <a href="#" class="hover-shadow p-2 my-1 d-block no-deco-hover text-dark" title="Ver tematicas">
+                        <a href="temas_quinces" class="hover-shadow p-2 my-1 d-block no-deco-hover text-dark" title="Ver tematicas">
                             <img class="tab-icon m-1" src="https://www.svgrepo.com/show/221333/theme.svg" alt="icono de tematica">
                             Temáticas para tu fiesta
                         </a>
-                        <a href="#" class="hover-shadow p-2 my-1 d-block no-deco-hover text-dark" title="Ver accesorios">
+                        <a href="products" class="hover-shadow p-2 my-1 d-block no-deco-hover text-dark" title="Ver accesorios">
                             <img class="tab-icon m-1" src="https://www.svgrepo.com/show/162904/women-accesories.svg" alt="icono de zarcillos">
                             Todo tipo de accesorios
                         </a>
-                        <a href="#" class="hover-shadow p-2 my-1 d-block no-deco-hover text-dark" title="Corte y costura">
+                        <a href="vestidos" class="hover-shadow p-2 my-1 d-block no-deco-hover text-dark" title="Corte y costura">
                             <img class="tab-icon m-1" src="https://www.svgrepo.com/show/6317/wedding-dress.svg" alt="icono de vestido">
                             Los mejores para confeccionar tu vestido
                         </a>
                     </div>
-                    <div class="btn btn-lg btn-block btn-primary mt-2 mx-5">Mira todos los servicios que ofrecemos</div>
+                    <div class="btn btn-lg btn-block btn-primary mt-2 mx-5"><a href="products">Mira todos los servicios que ofrecemos</a></div>
                 </div>
             </div>
         </div>
@@ -157,7 +157,7 @@
                         <p class="card-text">
                             Encuentra todo lo necesario para el bautizo de tu hij@ y dejanos lo demás a nosotros
                         </p>
-                        <a href="#" class="btn btn-outline-primary">Ver más</a>
+                        <a href="party_select" class="btn btn-outline-primary">Ver más</a>
                     </div>
                 </div>
             </div>
@@ -169,7 +169,7 @@
                             Organizar los cumpleaños o fiestas de los niños siempre es estresante, aqui estás a tan solo unos
                             clicks de tener todo listo, ¿lo vas a dejar pasar?
                         </p>
-                        <a href="#" class="btn btn-outline-primary">Ver más</a>
+                        <a href="party_select" class="btn btn-outline-primary">Ver más</a>
                     </div>
                 </div>
             </div>
@@ -181,7 +181,7 @@
                             Ofrecemos lo necesario para que le organices a tu amigo o a ti mismo una despedida de soltería
                             como se debe, unos clicks y todo listo!!
                         </p>
-                        <a href="#" class="btn btn-outline-primary">Ver más</a>
+                        <a href="party_select" class="btn btn-outline-primary">Ver más</a>
                     </div>
                 </div>
             </div>
@@ -193,7 +193,7 @@
                             Un divorcio es algo triste en muchas ocasiones y en otras puede ser una liberación, para ambas
                             oportunidades tenemos lo que necesitas!! ArmaTuDivorcio ahora.
                         </p>
-                        <a href="#" class="btn btn-outline-primary">Ver más</a>
+                        <a href="party_select" class="btn btn-outline-primary">Ver más</a>
                     </div>
                 </div>
             </div>
