@@ -3051,83 +3051,6 @@ insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) 
 insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Floristería Mi jardín' , 'FLORES', 23);
 insert into PROVEEDOR(id_proveedor, nombre_proveedor, tipo_proveedor, fk_lugar) value (null, 'Floristería Fruto prohibido' , 'FLORES', 24);
 
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Invitaciones', 'En lugar de las clásicas invitaciones impresas, puedes preparar un bonito video de dos o tres minutos. Puede ser romántico, musical, divertido o en el estilo que más te guste, con fotos de ustedes y los datos de la fiesta. Resultará sorpresivo, económico y mucho más cálido que un sobre recibido por correo.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Vestido', 'No busques vestido de novia. En el momento en que mencionas vestido de novia, los precios suben. ¡Y por vestidos tremendamente similares! Si quieres ahorrar en tu vestido sin sacrificar tu look, busca vestidos en color blanco o marfil ¡o en el color que más desees! Hasta los diseñadores tienen precios más bajos cuando de vestidos se trata. Te sorprenderás de los exquisitos modelos que encontrarás.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Mesa', 'Mientras más grande la mesa, menor la cantidad de centros de mesa o decoración de mesa que se precisará. En lugar de mesas de seis personas, escoge las de 8.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Invitados', 'Si a la mayoría de tus invitados les gusta la parranda, su intensidad y volumen irán en aumento y gradualmente la fiesta es un descontrol. Del mismo modo, si los más callados no se sientan junto a invitados más animados, tu recepción será sumamente aburrida. Para lograr una recepción divertida y agradable intenta equilibrar ambas personalidades en las mesas.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Mesa Principal', 'La mesa principal debe colocarse donde la puedan ver el mayor número posible de invitados. Recuerda que ustedes son los protagonistas de esta celebración, y todos querrán verlos y tenerlos cerca.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Invitados jovenes', 'Sienta a los invitados más jóvenes cerca de los parlantes y de la pista de baile y a los invitados mayores un poco más lejos, así se sentirán más cómodos.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Recuerdos', 'A veces se nos olvida de que aquellos que asisten a la boda merecen ser atendidos de la mejor forma y nada mejor que dejar un recuerdo inolvidable en sus mentes por acompañarlos en uno de los días más importantes de sus vidas.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Luna de miel', '¿No saben cómo elegir destino para tu luna de miel?. Pues estamos seguros que siempre han soñado con algún lugar al cual ir y este es el mejor momento para conocerlo.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Número de invitados', 'Haz un cálculo aproximado de los invitados que quieres que asistan a tu boda antes de contratar el banquete. Esto asegurará que haya espacio suficiente para que se encuentren cómodos.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Lugar de celebración', 'Asegúrate de que los invitados estén bien informados del lugar de la ceremonia, es decir ubicación exacta, los horarios y el transporte.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Fotografo', 'Seguro que no quieres perderte ningún detalle del día de tu boda, por ello, es importante que cuentes con la presencia de un profesional de la fotografía, y que escojas según su estilo a la hora de inmortalizar cada momento.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Comida y bebida', 'Si se dan cuenta, cada evento especial se suele celebrar acompañándolo de bebidas deliciosas y de alimentos de calidad. Su boda no iba a ser diferente, haz que tus invitados la recuerden como una experiencia para los sentidos.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Detalle para invitados', 'Nada les dice a tus invitados que los conoces y son realmente importantes para ti como prepararles un detalle personalizado en sus mesas.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Música', 'La música ambienta, le da colorido a un evento y hace que los pies y los corazones recuerden, se muevan y se conmuevan. Tu selección de conjunto musical es muy importante pues uno bueno logrará ver a tus invitados, descubrir qué les gusta y hallar la melodía perfecta para cada momento de la boda, así que no olvides consultar y escuchar varias opciones antes de elegir uno.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Tarjetas de agradecimiento', 'Otro detalle increíble y de mucha personalidad que puedes tener con tus invitados es entregarles tarjetas de agradecimiento personalizadas. Tanto el mensaje como los diseños pueden variar ligeramente y eso las haría incluso más únicas y representativas del afecto que sientes por cada uno de ellos.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Día de la boda', 'Pensemos en el momento que todas ustedes vivirán: me refiero al instante en que despierten y piensen: “¡Hoy me caso!”. Para disfrutar la boda al máximo es importante que descansen bien, que pongan en práctica técnicas de relajación, no se desvelen y, por supuesto, que no lleguen a la boda con el estómago vacío.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Vestimenta', 'Para comenzar ese día con el pie derecho es importante que ambos novios se arreglen con tiempo para evitar contratiempos y prisas, que generarán estrés y mal humor.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Momentos previos a la boda', 'Cuando lleguen al lugar donde se celebrará la boda, busquen un momento para estar en privado, respiren hondo, caminen, muevan los brazos, griten… lo que les funcione para deshacerse de los nervios y la tensión.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Zapatos', 'Les aseguro que unos zapatos incómodos restarán diversión a la boda. Por nada del mundo elijan unos zapatos increíbles, pero igualmente incómodos. Asimismo, no olviden un cambio de zapatos para la hora de la fiesta y baile.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'BODA', 'Tiempo de pareja', 'Pasen tiempo juntos. No olviden que ustedes son la razón de la fiesta, así que concéntrense en disfrutar como pareja de su gran día y no se pierdan entre los amigos, amigas y compromisos.');
-
-#quinces
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Tema', 'Elige un tema o motivo para consolidar la idea para tu fiesta de Quinceañera. Esto hará que planear una Quinceañera sea mucho más fácil.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Flores', 'Si tienes un color específico en mente, investiga cuáles flores están disponibles durante la temporada de tu fiesta.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Invitados mayores', 'Si piensas invitar a personas mayores a tu fiesta, asegúrate de que haya suficientes lugares para poder sentarse.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Restricciones en la comida', 'Recuerda que algunas personas tienen restricciones dietéticas como alergias. De ser posible, asegúrate de que el menú incluya algo que todos puedan comer.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Compatibilidad de invitados', 'Junta a personas con intereses similares y de la misma edad en la misma mesa. Asegúrate de que cada mesa tenga un número par de personas ya que los invitados tienden a platicar en pares. No quisieras dejar alguien fuera.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Agradecimientos', 'Las notas de agradecimiento son tan importantes como las invitaciones. El día después de tu Quinceañera es el momento perfecto para escribirlas, ya que tu memoria aún está fresca.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Tiempo de planificación', 'Es necesario que cuentes con bastante tiempo para planificar, así te ahorras estrés  y puedes reservar servicios con más tranquilidad.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Peinado y maquillaje', 'Visita expertos en Hair & Make-up y separa el que se ajuste a tu presupuesto y te guste como te arregló.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Colores', 'Escoge un color o un par de colores que te gusten especialmente y que no desentonen con la temática de la fiesta, un color que tenga algún significado especial para ti. Los puedes llevar en el vestido, en las guirnaldas que adornen el salón, las cortinas, el mantel, la vajilla... Combina como más te guste.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Usar rojo', 'El tono más audaz como el rojo se encuentran en un esquema elegante para aquellas que buscan un look más atrevido.');
-
-#decoracion
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Pizarras de gis', 'Una idea para darle al evento un toque bohemio, artesanal y divertido es incluir la tendencia de imitar las pizarras y escribir mensajes con gis. Algo diferente que vale la pena intentar, aunque sea en algún detalle para tu fiesta.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Colores naranja y rosa', 'La combinacion de naranja y el rosa crearán un ambiente divertido en tu fiesta. ¡Incorpora centros de mesa con flores de colores vivos para animar el lugar!');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Flores tropicales', '¡Las flores tropicales y las tonalidades inspiradas en el océano le darán vida a tu fiesta!');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Accesorios básicos', 'Siempre se debe contar con los accesorios básicos; los globos y las serpentinas son elementales y nunca estarán de más en una fiesta.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Vajilla colorida', 'Elige platos, vasos, servilletas y cubiertos de papel en base a tu paleta de color.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Jerarquía en la mesa', 'Mantén un orden jerárquico en la mesa, ubicando los elementos protagonistas y más voluminosos en el centro y parte posterior, dejando los más pequeñitos en la parte frontal.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Fiest infantil', 'En caso de ser una fiesta infantil, es importante que la decoración sea adecuada a la edad de los invitados.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Banderines y guirnaldas', 'Personaliza tus propios banderines y guirnaldas para decorar tu fiestan Este tipo de elementos alegran cualquier evento, sobre todo cuando se trata de cumpleaños o fiestas de bienvenidas.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Luces', 'Las luces son un factor muy importante que no siempre se tiene en cuenta a la hora de preparar la decoración de una fiesta. Si disponemos de focos de distintos colores, podremos jugar con distintos efectos sobre globos u otros elementos.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Velas', 'Si la fiesta es para adultos, una posibilidad es optar por una decoración con velas. Este tipo de iluminación queda especialmente llamativa por la noche.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Telas', 'La decoración con telas, se ha convertido en una de las favoritas en las fiestas.Principalmente la decoración de telas se realiza en los techos, por lo que debemos utilizar telas no muy pesadas para no tener problemas y que su peso las tire.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Luces nocturnas', 'Las bolsas de luz, tiras y guirnaldas de luces quedarán preciosas al anochecer. Usalas para rodear columnas, decorar árboles y arbustos, disimular paredes feas o sosas, bordear caminos, iluminar rincones oscuros, decorar la parte trasera del bar o buffet... y llenarlo todas las mesas con destellos de velitas.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Carteles', 'Si quieres que nadie se pierda en ese día tan especial no dejes de señalizar colgando carteles en árboles, paredes, columnas etc.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Bebidas', 'Anima tu fiesta con un rincón de bebidas o Corner Bar. Selecciona entre nuestros productos todo lo que necesitas para decorarlo con mucho estilo.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Sillas y mesas', 'Viste las mesas y las sillas a juego, para un resultado uniforme y coherente que dará mucha calidez a tu evento.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Flores', '¡La belleza de las flores es insuperable! llena tu fiesta o evento de pétalos, flores flotantes, rosas adhesivas entre otras para engalanar tu celebración.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Banderines', 'La forma más popular de decorar tu fiesta es usando banderines de colores. ¡Cunden muchísimo!.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Tiras y colgantes', 'Decora tus paredes, puertas y techos con tiras y colgantes que le vayan a tu fiesta. Puedes usarlos en la entrada para crear expectación o en la sala para separar ambientes. También quedan perfectos como fondos de escaparates o de mesas de buffet.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Tonos pastel', 'Los colores más utilizados para decorar una fiesta de 15 años son las tonalidades pastel, colores claros o en todos rosados. Lo importante es que transmita delicadeza y frescura en el espacio. Deberá reflejar la jovialidad de la anfitriona y el resto de los invitados adolescentes.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'XV', 'Combinacion de colores', 'Todos los objetos que elijas para decorar el espacio deberán respetar la combinación de colores que hayas elegido. Jamás te limites a incorporar un solo color, ya que sobrecargarás el espacio y será molesto a la vista. Deberás combinar tu color principal con un color claro u oscuro para equilibrar los tonos en el espacio.');
-
-#Recomendaciones
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'El pastel', 'El Pastel, es un elemento muy importante en cualquier celebración. No puede faltar en tan importante evento.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Invitaciones con anticipación', 'Enviar con tiempo las invitaciones. Los invitados agradecerán ese tiempo para prepararse, ahorrar y cómo no, reservar ese día.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Lista de cosas', 'lista todas las cosas que tienes que hacer para que no se te escape nada y para que no quede nada imprevisto para el último momento.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Día de la celebración', '¿Cuándo celebrar tu fiesta? Generalmente los viernes y sábados por la tarde noche son los mejores días para organizar una fiesta.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Clima', 'Aunque parezca una obviedad, la climatología puede fastidiarnos completamente un evento, así que esto debes tenerlo en cuenta.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Decoración personalizada', 'La decoración personalizada va a jugar un papel fundamental en tu fiestas, así que no renuncies a ella y destina parte del presupuesto a personalizarla o tematizarla.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Espacio para invitados', 'En función del número de invitados, escoger un lugar en el que entren todos de forma cómoda.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Epoca de celebración', 'La época del año en la que organices la fiesta marcará completamente esta decisión. Si es en primavera o en verano, un lugar con espacios al aire libre resulta de lo más agradable.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Estacionamiento', 'Es importante que compruebes si el sitio cuenta con parking propio o tiene cercano un parking público o incluso servicio de aparcacoches. Es posible que muchos invitados opten por acudir al evento en su coche y si el estacionamiento no es fácil, puede suponer un problema.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Normas del Salón', 'Cuando escojas el espacio, asegúrate de preguntar primero lo que puedes y no puedes hacer.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Comida tipo coctel', 'Para una fiesta, lo ideal es que opten por un montaje tipo cóctel con aperitivos fáciles de comer. Este formato es más informal y permite a los invitados relacionarse entre ellos más libremente.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Puestos de comida', 'Los puestos de comida y los showcookings son una tendencia que está muy de moda y aportan originalidad y diversión al catering. El éxito está asegurado si los incluyes en tu fiesta.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Canciones especiales', 'En cualquier fiesta hay momentos álgidos que requieren de canciones especiales. Haz una lista de canciones para la llegada del homenajeado o para una entrega de premios o de regalos y pídele al responsable de la música que los ponga en ese momento.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Actividades de la fiesta', 'Amenizar la fiesta con propuesta y actividades divertidas es un acierto seguro y ayudarán a crear un ambiente desenfadado y divertido en el que todo el mundo lo va a pasar fenomenal.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Seguridad', 'Contrata seguridad o ten en cuenta cualquier elemento de seguridad que necesite tu fiesta.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Personal de limpieza', 'Recuerda reservar un equipo de limpieza para cuando tu fiesta haya terminado.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Mesa central', 'Una mesa en el centro del salón o bien en un extremo de este con diversos bocadillos que puedan servir de tentempié es muy buena opción.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Importancia de la mesa', 'La mesa es el punto fuerte de la fiesta y el foco principal al que prestar atención. No nos engañemos, por muy bonito que queramos dejar el espacio donde se celebre, la magia sucede en la mesa.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Mesa para regalos', 'A lado de la mesa de bocadillos se puede colocar una mesa más para los regalos, esta debe estar decorada también con algún mantel distintivo, la pared también debe estar decorada con figuras que representen esa celebración.');
-insert into POST(id_post, seccion_post, titulo_post, cuerpo_post) value (null, 'OTRO', 'Música acorde', 'Elige música que vaya acorde con lo que se está celebrando, respetar los motivos de la celebración es vital.');
-
 #CATEGORIA
 insert into CATEGORIA(id_categoria, nombre_categoria, fk_categoria) value(null, 'Tarjeteria', null);
 insert into CATEGORIA(id_categoria, nombre_categoria, fk_categoria) value(null, 'Accesorios', null);
@@ -4897,128 +4820,6 @@ INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_templo) VALUES (10.660022
 INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_templo) VALUES (10.6920458,-71.6639662, 119);
 INSERT INTO COORDENADA (x_coordenada, y_coordenada, fk_templo) VALUES (10.6401353,-71.6535695, 120);
 
-#imagenes templo
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'basilica.jpg', 1);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'sinagoga.jpg', 2);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'budista.jpg', 3);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'hindu.jpg', 4);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'mezquita.jpg', 5);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'basilica.jpg', 6);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'sinagoga.jpg', 7);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'budista.jpg', 8);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'hindu.jpg', 9);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'mezquita.jpg', 10);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'basilica.jpg', 11);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'sinagoga.jpg', 12);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'budista.jpg', 13);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'hindu.jpg', 14);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'mezquita.jpg', 15);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'basilica.jpg', 16);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'sinagoga.jpg', 17);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'budista.jpg', 18);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'hindu.jpg', 19);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'mezquita.jpg', 20);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'basilica.jpg', 21);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'sinagoga.jpg', 22);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'budista.jpg', 23);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'hindu.jpg', 24);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'mezquita.jpg', 25);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'basilica.jpg', 26);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'sinagoga.jpg', 27);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'budista.jpg', 28);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'hindu.jpg', 29);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'mezquita.jpg', 30);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'basilica.jpg', 31);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'sinagoga.jpg', 32);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'budista.jpg', 33);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'hindu.jpg', 34);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'mezquita.jpg', 35);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'basilica.jpg', 36);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'sinagoga.jpg', 37);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'budista.jpg', 38);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'hindu.jpg', 39);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'mezquita.jpg', 40);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'basilica.jpg', 41);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'sinagoga.jpg', 42);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'budista.jpg', 43);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'hindu.jpg', 44);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'mezquita.jpg', 45);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'basilica.jpg', 46);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'sinagoga.jpg', 47);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'budista.jpg', 48);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'hindu.jpg', 49);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'mezquita.jpg', 50);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'basilica.jpg', 51);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'sinagoga.jpg', 52);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'budista.jpg', 53);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'hindu.jpg', 54);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'mezquita.jpg', 55);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'basilica.jpg', 56);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'sinagoga.jpg', 57);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'budista.jpg', 58);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'hindu.jpg', 59);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'mezquita.jpg', 60);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'basilica.jpg', 61);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'sinagoga.jpg', 62);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'budista.jpg', 63);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'hindu.jpg', 64);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'mezquita.jpg', 65);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'basilica.jpg', 66);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'sinagoga.jpg', 67);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'budista.jpg', 68);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'hindu.jpg', 69);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'mezquita.jpg', 70);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'basilica.jpg', 71);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'sinagoga.jpg', 72);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'budista.jpg', 73);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'hindu.jpg', 74);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'mezquita.jpg', 75);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'basilica.jpg', 76);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'sinagoga.jpg', 77);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'budista.jpg', 78);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'hindu.jpg', 79);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'mezquita.jpg', 80);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'basilica.jpg', 81);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'sinagoga.jpg', 82);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'budista.jpg', 83);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'hindu.jpg', 84);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'mezquita.jpg', 85);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'basilica.jpg', 86);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'sinagoga.jpg', 87);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'budista.jpg', 88);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'hindu.jpg', 89);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'mezquita.jpg', 90);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'basilica.jpg', 91);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'sinagoga.jpg', 92);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'budista.jpg', 93);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'hindu.jpg', 94);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'mezquita.jpg', 95);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'basilica.jpg', 96);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'sinagoga.jpg', 97);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'budista.jpg', 98);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'hindu.jpg', 99);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'mezquita.jpg', 100);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'basilica.jpg', 101);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'sinagoga.jpg', 102);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'budista.jpg', 103);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'hindu.jpg', 104);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'mezquita.jpg', 105);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'basilica.jpg', 106);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'sinagoga.jpg', 107);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'budista.jpg', 108);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'hindu.jpg', 109);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'mezquita.jpg', 110);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'basilica.jpg', 111);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'sinagoga.jpg', 112);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'budista.jpg', 113);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'hindu.jpg', 114);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'mezquita.jpg', 115);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'basilica.jpg', 116);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'sinagoga.jpg', 117);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'budista.jpg', 118);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'hindu.jpg', 119);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_templo) values (null, 'mezquita.jpg', 120);
-
 #ambientes
 insert into AMBIENTE(id_ambiente, nombre_ambiente) values (null, 'fumadores');
 insert into AMBIENTE(id_ambiente, nombre_ambiente) values (null, 'musica techno');
@@ -6133,396 +5934,6 @@ insert into ROL_USUARIO(fk_rol,fk_usuario) value (1,237);
 insert into ROL_USUARIO(fk_rol,fk_usuario) value (1,238);
 insert into ROL_USUARIO(fk_rol,fk_usuario) value (1,239);
 insert into ROL_USUARIO(fk_rol,fk_usuario) value (1,240);
-
-#imagenes servicios
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, '1.jpg', 1);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, '2.jpg', 2);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, '3.jpg', 3);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, '4.jpg', 4);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, '5.jpg', 5);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, '6.jpg', 6);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, '7.jpg', 7);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, '8.jpg', 8);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, '9.jpg', 9);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, '10.jpg', 10);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, '11.jpg', 11);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, '12.jpg', 12);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, '13.jpg', 13);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, '14.jpg', 14);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, '15.jpg', 15);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, '16.jpg', 16);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, '17.jpg', 17);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, '17.jpg', 18);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, '19.jpg', 19);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, '20.jpg', 20);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, '21.jpg', 21);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, '22.jpg', 22);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, '23.jpg', 23);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, '24.jpg', 24);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, '25.jpg', 25);
-
-#imagenes restaurantes
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 26);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 27);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 28);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 29);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 30);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 31);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 32);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 33);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 34);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 35);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 36);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 37);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 38);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 39);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 40);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 41);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 42);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 43);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 44);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 45);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 46);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 47);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 48);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 49);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 50);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 51);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 52);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 53);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 54);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 55);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 56);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 57);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 58);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 59);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 60);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 61);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 62);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 63);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 64);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 65);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 66);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 67);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 68);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 69);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 70);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 71);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 72);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 73);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 74);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 75);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 76);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 77);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 78);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 79);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 80);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 81);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 82);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 83);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 84);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 85);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 86);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 87);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 88);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 89);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 90);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 91);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 92);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 93);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 94);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 95);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 96);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 97);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 98);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 99);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 100);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 101);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 102);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 103);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 104);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 105);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 106);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 107);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 108);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 109);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 110);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 111);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 112);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 113);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 114);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 115);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 116);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 117);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 118);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 119);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 120);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 121);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 122);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 123);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 124);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 125);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 126);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 127);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 128);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 129);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 130);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 131);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 132);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 133);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 134);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 135);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 136);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 137);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 138);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 139);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 140);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 141);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 142);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 143);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 144);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 145);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 146);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 147);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 148);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 149);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 150);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 151);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 152);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 153);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 154);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 155);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 156);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 157);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 158);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 159);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 160);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 161);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 162);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 163);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 164);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 165);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 166);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 167);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 168);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 169);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 170);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 171);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 172);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 173);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 174);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 175);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 176);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 177);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 178);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 179);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 180);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 181);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 182);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 183);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 184);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 185);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 186);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 187);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 188);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 189);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 190);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 191);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 192);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 193);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 194);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 195);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 196);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 197);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 198);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 199);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 200);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 201);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 202);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 203);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 204);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 205);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 206);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 207);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 208);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 209);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 210);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 211);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 212);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 213);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 214);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 215);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 216);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 217);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 218);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 219);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 220);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 221);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 222);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 223);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 224);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 225);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 226);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 227);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 228);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 229);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 230);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 231);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 232);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 233);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 234);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 235);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 236);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 237);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 238);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 239);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 264);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 265);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 266);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 267);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 268);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 269);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 270);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 271);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 272);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 273);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 274);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 275);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 276);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 277);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 278);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 279);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 280);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 281);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 282);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 283);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 284);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 285);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 286);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 287);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 288);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 289);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 290);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 291);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 292);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 293);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 294);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 295);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 296);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 297);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 298);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 299);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 300);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 301);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 302);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 303);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 304);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 305);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 306);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 307);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 308);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 309);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 310);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 311);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 312);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 313);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 314);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 315);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 316);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 317);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 318);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 319);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 320);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 321);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 322);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 323);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 324);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 325);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 326);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 327);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 328);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 329);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 330);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 331);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 332);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 333);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 334);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 335);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 336);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 337);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 338);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 339);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 340);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 341);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 342);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 343);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 344);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 345);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 346);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 347);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 348);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 349);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 350);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 351);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 352);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 353);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 354);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 355);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 356);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 357);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 358);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 359);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 360);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 361);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 362);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 363);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 364);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 365);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 366);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 367);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 368);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 369);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 370);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 371);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 372);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 373);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 374);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 375);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 376);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 377);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 378);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 379);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 380);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 381);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 382);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 383);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'restaurant.jpg', 384);
-
-#imagenes salones
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'salon.jpg', 240);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'salon.jpg', 241);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'salon.jpg', 242);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'salon.jpg', 243);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'salon.jpg', 244);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'salon.jpg', 245);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'salon.jpg', 246);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'salon.jpg', 247);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'salon.jpg', 248);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'salon.jpg', 249);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'salon.jpg', 250);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'salon.jpg', 251);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'salon.jpg', 252);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'salon.jpg', 253);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'salon.jpg', 254);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'salon.jpg', 255);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'salon.jpg', 256);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'salon.jpg', 257);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'salon.jpg', 258);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'salon.jpg', 259);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'salon.jpg', 260);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'salon.jpg', 261);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'salon.jpg', 262);
-insert into IMAGEN(id_imagen, ruta_imagen, fk_servicio) values (null, 'salon.jpg', 263);
 
 INSERT INTO ESTACIONAMIENTO VALUES(null, 10, 'Altura suficiente para vehiculos de gran tamaño', 240);
 INSERT INTO ESTACIONAMIENTO VALUES(null, 5, 'Espacio para vehiculos personales de cuatro puertas', 245);
@@ -8195,28 +7606,6 @@ insert into descuento (porcentaje_descuento, fk_servicio, fecha_inicio_descuento
 insert into descuento (porcentaje_descuento, fk_servicio, fecha_inicio_descuento, fecha_fin_descuento) values (24, 132, '2020-4-15', '2020-5-24');
 insert into descuento (porcentaje_descuento, fk_servicio, fecha_inicio_descuento, fecha_fin_descuento) values (16, 7, '2020-7-14', '2020-8-16');
 
-#insert imagenes
-insert into imagen (ruta_imagen,fk_post) values ('https://url2.cl/lZars',1);
-insert into imagen (ruta_imagen,fk_post) values ('https://url2.cl/UQuZU',2);
-insert into imagen (ruta_imagen,fk_post) values ('https://url2.cl/pXeAs',3);
-insert into imagen (ruta_imagen,fk_post) values ('https://url2.cl/X4clG',4);
-insert into imagen (ruta_imagen,fk_post) values ('https://url2.cl/sxUs7',5);
-insert into imagen (ruta_imagen,fk_post) values ('https://url2.cl/kPknv',6);
-insert into imagen (ruta_imagen,fk_post) values ('https://url2.cl/65S5U',7);
-insert into imagen (ruta_imagen,fk_post) values ('https://url2.cl/MkSXe',8);
-insert into imagen (ruta_imagen,fk_post) values ('https://url2.cl/SBU8E',9);
-insert into imagen (ruta_imagen,fk_post) values ('https://url2.cl/vBDyB',10);
-insert into imagen (ruta_imagen,fk_post) values ('https://url2.cl/rSTBx',11);
-insert into imagen (ruta_imagen,fk_post) values ('https://url2.cl/rdlqh',12);
-insert into imagen (ruta_imagen,fk_post) values ('https://url2.cl/rSQA6',13);
-insert into imagen (ruta_imagen,fk_post) values ('https://url2.cl/J14zT',14);
-insert into imagen (ruta_imagen,fk_post) values ('https://url2.cl/I8zHU',15);
-insert into imagen (ruta_imagen,fk_post) values ('https://url2.cl/Q4bF1',16);
-insert into imagen (ruta_imagen,fk_post) values ('https://url2.cl/3hDT8',17);
-insert into imagen (ruta_imagen,fk_post) values ('https://im0-tub-com.yandex.net/i?id=dc1ea78ead64e4a890e1cf5dcf6ec07f&n=13',18);
-insert into imagen (ruta_imagen,fk_post) values ('https://im0-tub-com.yandex.net/i?id=9f8eef5f8bead659536393d4df63ffc3&n=13',19);
-insert into imagen (ruta_imagen,fk_post) values ('https://im0-tub-com.yandex.net/i?id=62984f198037e19aa6697d6b72efba01&n=13',20);
-
 #telefonos personas
 insert into telefono(codigo_area_telefono, numero_telefono, fk_persona) values (278, 9900560, 14837347);
 insert into telefono(codigo_area_telefono, numero_telefono, fk_persona) values (278, 9900561, 14837348);
@@ -8638,81 +8027,657 @@ insert into telefono(codigo_area_telefono, numero_telefono, fk_persona) values (
 insert into telefono(codigo_area_telefono, numero_telefono, fk_persona) values (278, 9900977, 29999335);
 insert into telefono(codigo_area_telefono, numero_telefono, fk_persona) values (278, 9900978, 66666666);
 
-INSERT INTO POST (seccion_post, titulo_post, cuerpo_post)
-VALUES ('BODACAT', "REQUISITOS PARA CASARTE POR LA IGLESIA", 
-"Los requisitos que deberán cumplir los contrayentes o novios para realizar la Ceremonia Eclesiástica son:
-<ul>
-<li>Ambos deben estar bautizados y presentar la fé de Bautismo actualizada ante el párroco.</li>
-<li>Estar capacitados para dar el consentimiento libremente.</li>
-<li>Haber hecho la Confirmación y presentar el acta de la misma.</li>
-<li>Presentar constancia de haber contraído Matrimonio Civil.</li>
-<li>Asistir al curso prematrimonial.</li>
-<li>No haber estado casados antes por la Iglesia.</li>
-<li>No tener parentesco cercano.</li>
-<li>Conocer y aceptar libremente los fines y propiedades del matrimonio.</li>  
-<li>Presentarse ante el Párroco para que autorice la ceremonia.</li>
-<li>Por lo general la boda religiosa debe celebrarse en la iglesia o parroquia situada en la ciudad de residencia de alguno de los contrayentes.</li>
-Pero si desea casarse en cualquier otra parte, sólo debe solicitar un permiso al párroco del templo.</li></ul>
-	<br><br>
-    <p>Articulos relacionados: <a href='documentacion_bodas'>Requisitos para una ceremonia matrimonial</a></p>
-				
-	");
+INSERT INTO `imagen` (`id_imagen`, `ruta_imagen`, `fk_templo`, `fk_trabajo_cyc`, `fk_trabajo_cyc_2`, `fk_jefatura`, `fk_persona`, `fk_producto`, `fk_servicio`, `fk_post`) VALUES
+(1, 'basilica.jpg', 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(2, 'sinagoga.jpg', 2, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(3, 'budista.jpg', 3, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(4, 'hindu.jpg', 4, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(5, 'mezquita.jpg', 5, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(6, 'basilica.jpg', 6, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(7, 'sinagoga.jpg', 7, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(8, 'budista.jpg', 8, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(9, 'hindu.jpg', 9, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(10, 'mezquita.jpg', 10, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(11, 'basilica.jpg', 11, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(12, 'sinagoga.jpg', 12, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(13, 'budista.jpg', 13, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(14, 'hindu.jpg', 14, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(15, 'mezquita.jpg', 15, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(16, 'basilica.jpg', 16, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(17, 'sinagoga.jpg', 17, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(18, 'budista.jpg', 18, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(19, 'hindu.jpg', 19, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(20, 'mezquita.jpg', 20, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(21, 'basilica.jpg', 21, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(22, 'sinagoga.jpg', 22, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(23, 'budista.jpg', 23, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(24, 'hindu.jpg', 24, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(25, 'mezquita.jpg', 25, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(26, 'basilica.jpg', 26, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(27, 'sinagoga.jpg', 27, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(28, 'budista.jpg', 28, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(29, 'hindu.jpg', 29, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(30, 'mezquita.jpg', 30, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(31, 'basilica.jpg', 31, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(32, 'sinagoga.jpg', 32, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(33, 'budista.jpg', 33, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(34, 'hindu.jpg', 34, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(35, 'mezquita.jpg', 35, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(36, 'basilica.jpg', 36, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(37, 'sinagoga.jpg', 37, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(38, 'budista.jpg', 38, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(39, 'hindu.jpg', 39, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(40, 'mezquita.jpg', 40, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(41, 'basilica.jpg', 41, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(42, 'sinagoga.jpg', 42, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(43, 'budista.jpg', 43, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(44, 'hindu.jpg', 44, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(45, 'mezquita.jpg', 45, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(46, 'basilica.jpg', 46, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(47, 'sinagoga.jpg', 47, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(48, 'budista.jpg', 48, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(49, 'hindu.jpg', 49, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(50, 'mezquita.jpg', 50, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(51, 'basilica.jpg', 51, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(52, 'sinagoga.jpg', 52, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(53, 'budista.jpg', 53, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(54, 'hindu.jpg', 54, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(55, 'mezquita.jpg', 55, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(56, 'basilica.jpg', 56, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(57, 'sinagoga.jpg', 57, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(58, 'budista.jpg', 58, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(59, 'hindu.jpg', 59, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(60, 'mezquita.jpg', 60, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(61, 'basilica.jpg', 61, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(62, 'sinagoga.jpg', 62, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(63, 'budista.jpg', 63, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(64, 'hindu.jpg', 64, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(65, 'mezquita.jpg', 65, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(66, 'basilica.jpg', 66, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(67, 'sinagoga.jpg', 67, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(68, 'budista.jpg', 68, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(69, 'hindu.jpg', 69, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(70, 'mezquita.jpg', 70, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(71, 'basilica.jpg', 71, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(72, 'sinagoga.jpg', 72, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(73, 'budista.jpg', 73, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(74, 'hindu.jpg', 74, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(75, 'mezquita.jpg', 75, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(76, 'basilica.jpg', 76, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(77, 'sinagoga.jpg', 77, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(78, 'budista.jpg', 78, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(79, 'hindu.jpg', 79, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(80, 'mezquita.jpg', 80, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(81, 'basilica.jpg', 81, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(82, 'sinagoga.jpg', 82, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(83, 'budista.jpg', 83, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(84, 'hindu.jpg', 84, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(85, 'mezquita.jpg', 85, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(86, 'basilica.jpg', 86, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(87, 'sinagoga.jpg', 87, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(88, 'budista.jpg', 88, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(89, 'hindu.jpg', 89, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(90, 'mezquita.jpg', 90, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(91, 'basilica.jpg', 91, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(92, 'sinagoga.jpg', 92, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(93, 'budista.jpg', 93, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(94, 'hindu.jpg', 94, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(95, 'mezquita.jpg', 95, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(96, 'basilica.jpg', 96, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(97, 'sinagoga.jpg', 97, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(98, 'budista.jpg', 98, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(99, 'hindu.jpg', 99, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(100, 'mezquita.jpg', 100, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(101, 'basilica.jpg', 101, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(102, 'sinagoga.jpg', 102, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(103, 'budista.jpg', 103, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(104, 'hindu.jpg', 104, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(105, 'mezquita.jpg', 105, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(106, 'basilica.jpg', 106, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(107, 'sinagoga.jpg', 107, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(108, 'budista.jpg', 108, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(109, 'hindu.jpg', 109, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(110, 'mezquita.jpg', 110, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(111, 'basilica.jpg', 111, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(112, 'sinagoga.jpg', 112, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(113, 'budista.jpg', 113, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(114, 'hindu.jpg', 114, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(115, 'mezquita.jpg', 115, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(116, 'basilica.jpg', 116, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(117, 'sinagoga.jpg', 117, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(118, 'budista.jpg', 118, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(119, 'hindu.jpg', 119, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(120, 'mezquita.jpg', 120, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(121, '1.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL),
+(122, '2.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 2, NULL),
+(123, '3.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 3, NULL),
+(124, '4.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 4, NULL),
+(125, '5.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 5, NULL),
+(126, '6.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 6, NULL),
+(127, '7.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 7, NULL),
+(128, '8.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 8, NULL),
+(129, '9.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 9, NULL),
+(130, '10.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 10, NULL),
+(131, '11.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 11, NULL),
+(132, '12.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 12, NULL),
+(133, '13.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 13, NULL),
+(134, '14.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 14, NULL),
+(135, '15.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 15, NULL),
+(136, '16.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 16, NULL),
+(137, '17.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 17, NULL),
+(138, '17.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 18, NULL),
+(139, '19.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 19, NULL),
+(140, '20.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 20, NULL),
+(141, '21.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 21, NULL),
+(142, '22.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 22, NULL),
+(143, '23.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 23, NULL),
+(144, '24.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 24, NULL),
+(145, '25.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 25, NULL),
+(146, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 26, NULL),
+(147, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 27, NULL),
+(148, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 28, NULL),
+(149, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 29, NULL),
+(150, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 30, NULL),
+(151, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 31, NULL),
+(152, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 32, NULL),
+(153, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 33, NULL),
+(154, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 34, NULL),
+(155, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 35, NULL),
+(156, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 36, NULL),
+(157, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 37, NULL),
+(158, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 38, NULL),
+(159, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 39, NULL),
+(160, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 40, NULL),
+(161, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 41, NULL),
+(162, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 42, NULL),
+(163, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 43, NULL),
+(164, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 44, NULL),
+(165, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 45, NULL),
+(166, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 46, NULL),
+(167, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 47, NULL),
+(168, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 48, NULL),
+(169, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 49, NULL),
+(170, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 50, NULL),
+(171, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 51, NULL),
+(172, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 52, NULL),
+(173, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 53, NULL),
+(174, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 54, NULL),
+(175, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 55, NULL),
+(176, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 56, NULL),
+(177, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 57, NULL),
+(178, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 58, NULL),
+(179, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 59, NULL),
+(180, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 60, NULL),
+(181, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 61, NULL),
+(182, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 62, NULL),
+(183, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 63, NULL),
+(184, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 64, NULL),
+(185, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 65, NULL),
+(186, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 66, NULL),
+(187, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 67, NULL),
+(188, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 68, NULL),
+(189, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 69, NULL),
+(190, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 70, NULL),
+(191, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 71, NULL),
+(192, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 72, NULL),
+(193, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 73, NULL),
+(194, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 74, NULL),
+(195, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 75, NULL),
+(196, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 76, NULL),
+(197, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 77, NULL),
+(198, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 78, NULL),
+(199, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 79, NULL),
+(200, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 80, NULL),
+(201, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 81, NULL),
+(202, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 82, NULL),
+(203, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 83, NULL),
+(204, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 84, NULL),
+(205, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 85, NULL),
+(206, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 86, NULL),
+(207, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 87, NULL),
+(208, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 88, NULL),
+(209, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 89, NULL),
+(210, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 90, NULL),
+(211, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 91, NULL),
+(212, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 92, NULL),
+(213, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 93, NULL),
+(214, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 94, NULL),
+(215, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 95, NULL),
+(216, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 96, NULL),
+(217, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 97, NULL),
+(218, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 98, NULL),
+(219, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 99, NULL),
+(220, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 100, NULL),
+(221, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 101, NULL),
+(222, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 102, NULL),
+(223, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 103, NULL),
+(224, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 104, NULL),
+(225, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 105, NULL),
+(226, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 106, NULL),
+(227, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 107, NULL),
+(228, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 108, NULL),
+(229, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 109, NULL),
+(230, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 110, NULL),
+(231, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 111, NULL),
+(232, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 112, NULL),
+(233, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 113, NULL),
+(234, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 114, NULL),
+(235, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 115, NULL),
+(236, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 116, NULL),
+(237, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 117, NULL),
+(238, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 118, NULL),
+(239, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 119, NULL),
+(240, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 120, NULL),
+(241, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 121, NULL),
+(242, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 122, NULL),
+(243, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 123, NULL),
+(244, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 124, NULL),
+(245, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 125, NULL),
+(246, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 126, NULL),
+(247, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 127, NULL),
+(248, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 128, NULL),
+(249, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 129, NULL),
+(250, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 130, NULL),
+(251, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 131, NULL),
+(252, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 132, NULL),
+(253, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 133, NULL),
+(254, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 134, NULL),
+(255, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 135, NULL),
+(256, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 136, NULL),
+(257, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 137, NULL),
+(258, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 138, NULL),
+(259, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 139, NULL),
+(260, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 140, NULL),
+(261, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 141, NULL),
+(262, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 142, NULL),
+(263, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 143, NULL),
+(264, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 144, NULL),
+(265, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 145, NULL),
+(266, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 146, NULL),
+(267, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 147, NULL),
+(268, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 148, NULL),
+(269, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 149, NULL),
+(270, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 150, NULL),
+(271, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 151, NULL),
+(272, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 152, NULL),
+(273, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 153, NULL),
+(274, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 154, NULL),
+(275, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 155, NULL),
+(276, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 156, NULL),
+(277, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 157, NULL),
+(278, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 158, NULL),
+(279, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 159, NULL),
+(280, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 160, NULL),
+(281, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 161, NULL),
+(282, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 162, NULL),
+(283, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 163, NULL),
+(284, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 164, NULL),
+(285, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 165, NULL),
+(286, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 166, NULL),
+(287, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 167, NULL),
+(288, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 168, NULL),
+(289, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 169, NULL),
+(290, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 170, NULL),
+(291, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 171, NULL),
+(292, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 172, NULL),
+(293, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 173, NULL),
+(294, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 174, NULL),
+(295, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 175, NULL),
+(296, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 176, NULL),
+(297, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 177, NULL),
+(298, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 178, NULL),
+(299, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 179, NULL),
+(300, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 180, NULL),
+(301, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 181, NULL),
+(302, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 182, NULL),
+(303, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 183, NULL),
+(304, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 184, NULL),
+(305, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 185, NULL),
+(306, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 186, NULL),
+(307, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 187, NULL),
+(308, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 188, NULL),
+(309, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 189, NULL),
+(310, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 190, NULL),
+(311, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 191, NULL),
+(312, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 192, NULL),
+(313, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 193, NULL),
+(314, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 194, NULL),
+(315, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 195, NULL),
+(316, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 196, NULL),
+(317, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 197, NULL),
+(318, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 198, NULL),
+(319, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 199, NULL),
+(320, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 200, NULL),
+(321, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 201, NULL),
+(322, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 202, NULL),
+(323, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 203, NULL),
+(324, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 204, NULL),
+(325, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 205, NULL),
+(326, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 206, NULL),
+(327, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 207, NULL),
+(328, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 208, NULL),
+(329, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 209, NULL),
+(330, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 210, NULL),
+(331, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 211, NULL),
+(332, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 212, NULL),
+(333, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 213, NULL),
+(334, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 214, NULL),
+(335, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 215, NULL),
+(336, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 216, NULL),
+(337, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 217, NULL),
+(338, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 218, NULL),
+(339, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 219, NULL),
+(340, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 220, NULL),
+(341, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 221, NULL),
+(342, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 222, NULL),
+(343, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 223, NULL),
+(344, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 224, NULL),
+(345, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 225, NULL),
+(346, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 226, NULL),
+(347, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 227, NULL),
+(348, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 228, NULL),
+(349, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 229, NULL),
+(350, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 230, NULL),
+(351, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 231, NULL),
+(352, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 232, NULL),
+(353, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 233, NULL),
+(354, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 234, NULL),
+(355, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 235, NULL),
+(356, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 236, NULL),
+(357, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 237, NULL),
+(358, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 238, NULL),
+(359, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 239, NULL),
+(360, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 264, NULL),
+(361, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 265, NULL),
+(362, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 266, NULL),
+(363, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 267, NULL),
+(364, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 268, NULL),
+(365, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 269, NULL),
+(366, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 270, NULL),
+(367, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 271, NULL),
+(368, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 272, NULL),
+(369, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 273, NULL),
+(370, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 274, NULL),
+(371, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 275, NULL),
+(372, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 276, NULL),
+(373, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 277, NULL),
+(374, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 278, NULL),
+(375, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 279, NULL),
+(376, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 280, NULL),
+(377, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 281, NULL),
+(378, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 282, NULL),
+(379, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 283, NULL),
+(380, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 284, NULL),
+(381, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 285, NULL),
+(382, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 286, NULL),
+(383, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 287, NULL),
+(384, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 288, NULL),
+(385, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 289, NULL),
+(386, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 290, NULL),
+(387, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 291, NULL),
+(388, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 292, NULL),
+(389, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 293, NULL),
+(390, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 294, NULL),
+(391, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 295, NULL),
+(392, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 296, NULL),
+(393, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 297, NULL),
+(394, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 298, NULL),
+(395, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 299, NULL),
+(396, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 300, NULL),
+(397, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 301, NULL),
+(398, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 302, NULL),
+(399, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 303, NULL),
+(400, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 304, NULL),
+(401, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 305, NULL),
+(402, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 306, NULL),
+(403, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 307, NULL),
+(404, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 308, NULL),
+(405, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 309, NULL),
+(406, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 310, NULL),
+(407, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 311, NULL),
+(408, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 312, NULL),
+(409, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 313, NULL),
+(410, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 314, NULL),
+(411, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 315, NULL),
+(412, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 316, NULL),
+(413, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 317, NULL),
+(414, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 318, NULL),
+(415, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 319, NULL),
+(416, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 320, NULL),
+(417, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 321, NULL),
+(418, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 322, NULL),
+(419, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 323, NULL),
+(420, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 324, NULL),
+(421, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 325, NULL),
+(422, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 326, NULL),
+(423, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 327, NULL),
+(424, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 328, NULL),
+(425, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 329, NULL),
+(426, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 330, NULL),
+(427, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 331, NULL),
+(428, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 332, NULL),
+(429, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 333, NULL),
+(430, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 334, NULL),
+(431, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 335, NULL),
+(432, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 336, NULL),
+(433, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 337, NULL),
+(434, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 338, NULL),
+(435, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 339, NULL),
+(436, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 340, NULL),
+(437, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 341, NULL),
+(438, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 342, NULL),
+(439, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 343, NULL),
+(440, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 344, NULL),
+(441, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 345, NULL),
+(442, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 346, NULL),
+(443, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 347, NULL),
+(444, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 348, NULL),
+(445, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 349, NULL),
+(446, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 350, NULL),
+(447, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 351, NULL),
+(448, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 352, NULL),
+(449, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 353, NULL),
+(450, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 354, NULL),
+(451, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 355, NULL),
+(452, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 356, NULL),
+(453, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 357, NULL),
+(454, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 358, NULL),
+(455, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 359, NULL),
+(456, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 360, NULL),
+(457, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 361, NULL),
+(458, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 362, NULL),
+(459, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 363, NULL),
+(460, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 364, NULL),
+(461, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 365, NULL),
+(462, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 366, NULL),
+(463, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 367, NULL),
+(464, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 368, NULL),
+(465, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 369, NULL),
+(466, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 370, NULL),
+(467, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 371, NULL),
+(468, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 372, NULL),
+(469, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 373, NULL),
+(470, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 374, NULL),
+(471, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 375, NULL),
+(472, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 376, NULL),
+(473, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 377, NULL),
+(474, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 378, NULL),
+(475, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 379, NULL),
+(476, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 380, NULL),
+(477, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 381, NULL),
+(478, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 382, NULL),
+(479, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 383, NULL),
+(480, 'restaurant.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 384, NULL),
+(481, 'salon.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 240, NULL),
+(482, 'salon.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 241, NULL),
+(483, 'salon.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 242, NULL),
+(484, 'salon.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 243, NULL),
+(485, 'salon.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 244, NULL),
+(486, 'salon.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 245, NULL),
+(487, 'salon.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 246, NULL),
+(488, 'salon.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 247, NULL),
+(489, 'salon.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 248, NULL),
+(490, 'salon.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 249, NULL),
+(491, 'salon.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 250, NULL),
+(492, 'salon.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 251, NULL),
+(493, 'salon.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 252, NULL),
+(494, 'salon.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 253, NULL),
+(495, 'salon.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 254, NULL),
+(496, 'salon.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 255, NULL),
+(497, 'salon.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 256, NULL),
+(498, 'salon.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 257, NULL),
+(499, 'salon.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 258, NULL),
+(500, 'salon.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 259, NULL),
+(501, 'salon.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 260, NULL),
+(502, 'salon.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 261, NULL),
+(503, 'salon.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 262, NULL),
+(504, 'salon.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 263, NULL),
+(505, 'https://url2.cl/lZars', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1),
+(506, 'https://url2.cl/UQuZU', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 2),
+(507, 'https://url2.cl/pXeAs', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 3),
+(508, 'https://url2.cl/X4clG', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 4),
+(509, 'https://url2.cl/sxUs7', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 5),
+(510, 'https://url2.cl/kPknv', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 6),
+(511, 'https://url2.cl/65S5U', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 7),
+(512, 'https://url2.cl/MkSXe', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 8),
+(513, 'https://url2.cl/SBU8E', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 9),
+(514, 'https://url2.cl/vBDyB', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 10),
+(515, 'https://url2.cl/rSTBx', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 11),
+(516, 'https://url2.cl/rdlqh', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 12),
+(517, 'https://url2.cl/rSQA6', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 13),
+(518, 'https://url2.cl/J14zT', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 14),
+(519, 'https://url2.cl/I8zHU', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 15),
+(520, 'https://url2.cl/Q4bF1', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 16),
+(521, 'https://url2.cl/3hDT8', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 17),
+(522, 'https://im0-tub-com.yandex.net/i?id=dc1ea78ead64e4a890e1cf5dcf6ec07f&n=13', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 18),
+(523, 'https://im0-tub-com.yandex.net/i?id=9f8eef5f8bead659536393d4df63ffc3&n=13', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 19),
+(524, 'https://im0-tub-com.yandex.net/i?id=62984f198037e19aa6697d6b72efba01&n=13', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 20),
+(525, 'https://url2.cl/wawuA', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 71),
+(526, 'https://url2.cl/DNyIM', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 72),
+(527, 'https://url2.cl/TMpZZ', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 73),
+(528, 'https://url2.cl/eee7a', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 49),
+(529, 'https://url2.cl/fF8Wf', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 47),
+(530, 'https://url2.cl/eYHLy', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 45),
+(531, 'https://scontent-lga3-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/117315282_744350886380472_3490112649942999639_n.jpg?_nc_ht=scontent-lga3-1.cdninstagram.com&_nc_cat=100&_nc_ohc=RW9KHDn_4AEAX-xhBe4&oh=c40591857f3e8d7b6272c55dac832cb0&oe=5F6048F1', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 43),
+(532, 'https://i.pinimg.com/originals/b3/db/b2/b3dbb239cc8d86b259cd9a7131040102.jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 41),
+(533, 'https://i.pinimg.com/originals/de/1e/95/de1e95cbdc548483a4d9c33c38daed0c.jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 39),
+(534, 'https://ideasparalasfiestas.com/wp-content/uploads/2016/07/ideas-para-fiestas-tematicas-1-1080x600.jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 37),
+(535, 'https://decoracionsalas.com/wp-content/uploads/2013/02/como-decorar-para-los-15-anos4.jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 35),
+(536, 'https://www.jardineriaon.com/wp-content/uploads/2016/02/Plumeria_rubra_flores_rosas-830x622.jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 33),
+(537, 'https://i.pinimg.com/originals/7e/25/04/7e2504e19e8559203f27ba4f0aca5778.jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 31),
+(538, 'https://i.pinimg.com/originals/3a/d6/61/3ad661820642d263dd18f9908cb561ad.jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 29),
+(539, 'https://www.diariocritico.com/fotos/1/Vacaciones_Cabecera.jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 27),
+(540, 'https://www.ecestaticos.com/imagestatic/clipping/0d6/464/0d6464658cec8e7d7f997affb0e5de76/las-normas-de-etiqueta-que-debes-seguir-si-quieres-triunfar-en-la-fiesta-de-nochevieja.jpg?mtime=1579565836', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 25),
+(541, 'https://www.brides.com/thmb/ECbmrnc_F_ujgdk0saUPSUff5jI=/500x281/smart/filters:no_upscale()/__opt__aboutcom__coeus__resources__content_migration__brides__public__brides-services__production__2016__10__24__580e5669fac24a31e1fae2a9_blogs-aisle-say-How-to-make-wedding-tables-look-more-expensive-9abfe5fa1c90468cb9dbc48f87f438ed.jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 23),
+(542, 'https://scontent-lga3-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/117615092_1009902242782579_6057048882346547839_n.jpg?_nc_ht=scontent-lga3-1.cdninstagram.com&_nc_cat=107&_nc_ohc=UyE0IhUuPFwAX8Qdlx7&oh=eca7c2f275e95c2b55f94d02266462c0&oe=5F5EADCD', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 21),
+(543, 'https://i.pinimg.com/originals/d8/2f/a1/d82fa114a59a269435c9682907713565.jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 51),
+(544, 'https://s3-us-west-2.amazonaws.com/melingoimages/Images/69813.jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 52),
+(545, 'https://www.bacp.co.uk/media/7326/partybanner.jpg?anchor=center&mode=crop&width=1120&heightratio=0&format=jpg&quality=80&slimmage=true&rnd=132207170210000000', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 53),
+(546, 'https://720891.smushcdn.com/1454540/wp-content/uploads/2019/06/Header-2.jpg?lossy=1&strip=1&webp=1', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 54),
+(547, 'https://cdn.civitatis.com/tailandia/koh-samui/galeria/full-moon-party.jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 55),
+(548, 'https://i1.adis.ws/i/canon/canon-get-inspired-party-1-1920?qlt=80&w=100%&sm=aspect&aspect=16:9&fmt=jpg&fmt.options=interlaced&bg=rgb(255,255,255)', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 56),
+(549, 'https://blogmedia.evbstatic.com/wp-content/uploads/wpmulti/sites/8/shutterstock_199419065.jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 57),
+(550, 'https://d1hfln2sfez66z.cloudfront.net/03-30-2020/t_564e227e75c44c5883f7ffc23e83bc0e_name_BE56F3840D2A4333BB53000C120BCFA3.jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 58),
+(551, 'https://www.byblos.com/wp-content/uploads/summer-party-sttropez-1600x1000.jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 59),
+(552, 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSb4p0hJ6GSncnESHOEL4CLUVlfBf48oSBwIqTaL0RpFA&usqp=CAU&ec=45690269', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 60),
+(553, 'https://www.nymetroparents.com/columnpic2/stress-free-birthdays.jpg?clear=1', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 61),
+(554, 'https://media.timeout.com/images/105347841/630/472/image.jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 62),
+(555, 'https://www.straitstimes.com/sites/default/files/styles/xxx_large/public/articles/2020/05/14/ST_20200514_ARMARQUEE14STEV_5663578.jpg?itok=ELuB3BtS&timestamp=1589394132', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 63),
+(556, 'https://mk0bloguelacapiec9a0.kinstacdn.com/wp-content/uploads/2018/12/alcool-et-party-blog-2018.jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 64),
+(557, 'https://www.platinumbanquet.com/wp-content/uploads/Screen-Shot-2017-10-06-at-1.07.58-PM.png', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 65),
+(558, 'https://i.pinimg.com/originals/d4/d4/bd/d4d4bd492329c2d2ebb989729c0faf57.jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 66),
+(559, 'https://i.pinimg.com/originals/dd/65/5c/dd655c900670d970b335fea34595b362.jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 67),
+(560, 'https://www.jacquescatering.com/wp-content/uploads/2018/07/1.jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 68),
+(561, 'https://lh3.googleusercontent.com/proxy/FcF_Y2cXZuWIzmG6qKaiNoTexlwVEIBhvEoopcvgZiyYxtp9r9Q83A7gn_Ilx74hEKP--E2QKoVUyFu0bsgb7rhCcr5Ny8UQXJXrR87swGWnVMw82cP9QBYYOTcgM7AB4V3Eihg7d4bs', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 69),
+(562, 'https://1pu8ob314rt22vcxj33w3azm-wpengine.netdna-ssl.com/wp-content/uploads/2013/01/pink_party_theme_pink-dress_black_girl_table.jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 70),
+(563, 'http://entrenovias.com/wp-content/uploads/2015/07/reducir-gastos-de-boda.jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 74),
+(564, 'http://entrenovias.com/wp-content/uploads/2015/07/stress.jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 75),
+(565, 'https://img.vixdata.io/pd/webp-large/es/sites/default/files/imj/imujer/F/Fiesta-de-15-o-viaje-La-dura-decision-1.jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 10000002),
+(566, 'https://i.pinimg.com/originals/75/2d/54/752d5460f7e2544423199d8d3b693f5e.jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 10000004),
+(567, 'https://ichef.bbci.co.uk/news/976/cpsprodpb/1222/production/_103624640_marduk.jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 8888),
+(568, '\r\nhttp://www.enchantedfairies.com.au/uploads/4/0/5/3/40530249/5641495_orig.jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 8888),
+(569, 'https://www.pastiche.org.uk/wp-content/uploads/2020/04/IMG_6564-scaled.jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 8888);
 
-INSERT INTO POST (seccion_post, titulo_post, cuerpo_post)
-VALUES ('BODACAT', "Eucaristía: lecturas y reflexión", 
-"Para este momento, el padre inicia con la oración del perdón de los pecados veniales. Luego realiza las lecturas combinándolas con cantos y salmos. Las primeras lecturas son del Antiguo Testamento, se hacen algunas aclamaciones, sigue con cantos y salmos en donde los asistentes participan al unísono, posteriormente sigue con las segundas lecturas del amor extraídas del Nuevo Testamento, a continuación, el canto a la Gloria del Señor y el Aleluya. Esos textos son escogidos normalmente por el sacerdote, pero en ocasiones los novios pueden escogerlos también. Algunos párrocos acuerdan con dos o tres invitados a que realicen algunas lecturas de la ceremonia, antes de que llegue la novia, y también puede permitir mensajes de amor para el esposo y la esposa, palabras, textos literarios o poemas que sean alusivos al amor.
-<br><br>
-La Eucaristía continua con la proclamación o lectura del Evangelio y la bendición de la campanada en la elevación, que se acostumbra a realizar invitando a los novios y asistentes a ponerse de rodillas para el momento. Cuando termina de realizar la lectura, el sacerdote da la homilía con la reflexión personal de lo leído y la forma como los nuevos esposos deberán ser arquitectos de las bases de su matrimonio, en bendición y obediencia a Dios.");
 
-INSERT INTO POST (seccion_post, titulo_post, cuerpo_post)
-VALUES ('BODACAT', "Bendición Nupcial", 
-"Con los novios arrodillados, el sacerdote ora por ellos, les bendice y realiza las lecturas de bendición nupcial, para ser ejemplo de fe, amor, respeto y fidelidad.  Bendice también a todos los presentes, con la bendición con sus manos y los despide para poderse ir en paz. Se hace el rito de la despedida y el sacerdote da su bendición final, presentando a los nuevos señor y señora.
-<br><br>
-Es aquí cuando se dice “puede besar a la novia”, la felicidad está en su pico, la música comienza a sonar, mientras las fotos capturan el momento del gran beso y con el telón de fondo la decoración de iglesia para matrimonio. Algunas parejas aprovechan el momento para realizar otros rituales antes de irse, como ponerle flores a la virgen o prenderle una vela al santo de su devoción. La salida nupcial de los esposos se da tomados de la mano, al son de la canción que ellos pidieron que se tocase para su despedida. Todos alistan los elementos para echar al aire cuando los novios salgan. Luego de una deliciosa luna de miel de ensueño para descansar y celebrar como esposos, lo que sigue ya es parte de lo que escribirán en el libro de su aventura como marido y mujer.");
-
-
-
-insert into imagen (ruta_imagen,fk_post) values ('https://url2.cl/wawuA',71);
-insert into imagen (ruta_imagen,fk_post) values ('https://url2.cl/DNyIM',72);
-insert into imagen (ruta_imagen,fk_post) values ('https://url2.cl/TMpZZ',73);
-
-insert into imagen (ruta_imagen,fk_post) values ('https://url2.cl/eee7a',49);
-insert into imagen (ruta_imagen,fk_post) values ('https://url2.cl/fF8Wf',47);
-insert into imagen (ruta_imagen,fk_post) values ('https://url2.cl/eYHLy',45);
-insert into imagen (ruta_imagen,fk_post) values ('https://scontent-lga3-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/117315282_744350886380472_3490112649942999639_n.jpg?_nc_ht=scontent-lga3-1.cdninstagram.com&_nc_cat=100&_nc_ohc=RW9KHDn_4AEAX-xhBe4&oh=c40591857f3e8d7b6272c55dac832cb0&oe=5F6048F1',43);
-insert into imagen (ruta_imagen,fk_post) values ('https://i.pinimg.com/originals/b3/db/b2/b3dbb239cc8d86b259cd9a7131040102.jpg',41);
-insert into imagen (ruta_imagen,fk_post) values ('https://i.pinimg.com/originals/de/1e/95/de1e95cbdc548483a4d9c33c38daed0c.jpg',39);
-insert into imagen (ruta_imagen,fk_post) values ('https://ideasparalasfiestas.com/wp-content/uploads/2016/07/ideas-para-fiestas-tematicas-1-1080x600.jpg',37);
-insert into imagen (ruta_imagen,fk_post) values ('https://decoracionsalas.com/wp-content/uploads/2013/02/como-decorar-para-los-15-anos4.jpg',35);
-insert into imagen (ruta_imagen,fk_post) values ('https://www.jardineriaon.com/wp-content/uploads/2016/02/Plumeria_rubra_flores_rosas-830x622.jpg',33);
-insert into imagen (ruta_imagen,fk_post) values ('https://i.pinimg.com/originals/7e/25/04/7e2504e19e8559203f27ba4f0aca5778.jpg',31);
-insert into imagen (ruta_imagen,fk_post) values ('https://i.pinimg.com/originals/3a/d6/61/3ad661820642d263dd18f9908cb561ad.jpg',29);
-insert into imagen (ruta_imagen,fk_post) values ('https://www.diariocritico.com/fotos/1/Vacaciones_Cabecera.jpg',27);
-insert into imagen (ruta_imagen,fk_post) values ('https://www.ecestaticos.com/imagestatic/clipping/0d6/464/0d6464658cec8e7d7f997affb0e5de76/las-normas-de-etiqueta-que-debes-seguir-si-quieres-triunfar-en-la-fiesta-de-nochevieja.jpg?mtime=1579565836',25);
-insert into imagen (ruta_imagen,fk_post) values ('https://www.brides.com/thmb/ECbmrnc_F_ujgdk0saUPSUff5jI=/500x281/smart/filters:no_upscale()/__opt__aboutcom__coeus__resources__content_migration__brides__public__brides-services__production__2016__10__24__580e5669fac24a31e1fae2a9_blogs-aisle-say-How-to-make-wedding-tables-look-more-expensive-9abfe5fa1c90468cb9dbc48f87f438ed.jpg',23);
-insert into imagen (ruta_imagen,fk_post) values ('https://scontent-lga3-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/117615092_1009902242782579_6057048882346547839_n.jpg?_nc_ht=scontent-lga3-1.cdninstagram.com&_nc_cat=107&_nc_ohc=UyE0IhUuPFwAX8Qdlx7&oh=eca7c2f275e95c2b55f94d02266462c0&oe=5F5EADCD',21);
-
-
-insert into imagen (ruta_imagen,fk_post) values ('https://i.pinimg.com/originals/d8/2f/a1/d82fa114a59a269435c9682907713565.jpg',51);
-insert into imagen (ruta_imagen,fk_post) values ('https://s3-us-west-2.amazonaws.com/melingoimages/Images/69813.jpg',52);
-insert into imagen (ruta_imagen,fk_post) values ('https://www.bacp.co.uk/media/7326/partybanner.jpg?anchor=center&mode=crop&width=1120&heightratio=0&format=jpg&quality=80&slimmage=true&rnd=132207170210000000',53);
-insert into imagen (ruta_imagen,fk_post) values ('https://720891.smushcdn.com/1454540/wp-content/uploads/2019/06/Header-2.jpg?lossy=1&strip=1&webp=1',54);
-insert into imagen (ruta_imagen,fk_post) values ('https://cdn.civitatis.com/tailandia/koh-samui/galeria/full-moon-party.jpg',55);
-insert into imagen (ruta_imagen,fk_post) values ('https://i1.adis.ws/i/canon/canon-get-inspired-party-1-1920?qlt=80&w=100%&sm=aspect&aspect=16:9&fmt=jpg&fmt.options=interlaced&bg=rgb(255,255,255)',56);
-insert into imagen (ruta_imagen,fk_post) values ('https://blogmedia.evbstatic.com/wp-content/uploads/wpmulti/sites/8/shutterstock_199419065.jpg',57);
-insert into imagen (ruta_imagen,fk_post) values ('https://d1hfln2sfez66z.cloudfront.net/03-30-2020/t_564e227e75c44c5883f7ffc23e83bc0e_name_BE56F3840D2A4333BB53000C120BCFA3.jpg',58);
-insert into imagen (ruta_imagen,fk_post) values ('https://www.byblos.com/wp-content/uploads/summer-party-sttropez-1600x1000.jpg',59);
-insert into imagen (ruta_imagen,fk_post) values ('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSb4p0hJ6GSncnESHOEL4CLUVlfBf48oSBwIqTaL0RpFA&usqp=CAU&ec=45690269',60);
-insert into imagen (ruta_imagen,fk_post) values ('https://www.nymetroparents.com/columnpic2/stress-free-birthdays.jpg?clear=1',61);
-insert into imagen (ruta_imagen,fk_post) values ('https://media.timeout.com/images/105347841/630/472/image.jpg',62);
-insert into imagen (ruta_imagen,fk_post) values ('https://www.straitstimes.com/sites/default/files/styles/xxx_large/public/articles/2020/05/14/ST_20200514_ARMARQUEE14STEV_5663578.jpg?itok=ELuB3BtS&timestamp=1589394132',63);
-insert into imagen (ruta_imagen,fk_post) values ('https://mk0bloguelacapiec9a0.kinstacdn.com/wp-content/uploads/2018/12/alcool-et-party-blog-2018.jpg',64);
-insert into imagen (ruta_imagen,fk_post) values ('https://www.platinumbanquet.com/wp-content/uploads/Screen-Shot-2017-10-06-at-1.07.58-PM.png',65);
-insert into imagen (ruta_imagen,fk_post) values ('https://i.pinimg.com/originals/d4/d4/bd/d4d4bd492329c2d2ebb989729c0faf57.jpg',66);
-insert into imagen (ruta_imagen,fk_post) values ('https://i.pinimg.com/originals/dd/65/5c/dd655c900670d970b335fea34595b362.jpg',67);
-insert into imagen (ruta_imagen,fk_post) values ('https://www.jacquescatering.com/wp-content/uploads/2018/07/1.jpg',68);
-insert into imagen (ruta_imagen,fk_post) values ('https://lh3.googleusercontent.com/proxy/FcF_Y2cXZuWIzmG6qKaiNoTexlwVEIBhvEoopcvgZiyYxtp9r9Q83A7gn_Ilx74hEKP--E2QKoVUyFu0bsgb7rhCcr5Ny8UQXJXrR87swGWnVMw82cP9QBYYOTcgM7AB4V3Eihg7d4bs',69);
-insert into imagen (ruta_imagen,fk_post) values ('https://1pu8ob314rt22vcxj33w3azm-wpengine.netdna-ssl.com/wp-content/uploads/2013/01/pink_party_theme_pink-dress_black_girl_table.jpg',70);
+INSERT INTO `post` (`id_post`, `seccion_post`, `titulo_post`, `cuerpo_post`) VALUES
+(1, 'TIPBODA', 'Invitaciones', 'En lugar de las clásicas invitaciones impresas, puedes preparar un bonito video de dos o tres minutos. Puede ser romántico, musical, divertido o en el estilo que más te guste, con fotos de ustedes y los datos de la fiesta. Resultará sorpresivo, económico y mucho más cálido que un sobre recibido por correo.'),
+(2, 'TIPBODA', 'Vestido', 'No busques vestido de novia. En el momento en que mencionas vestido de novia, los precios suben. ¡Y por vestidos tremendamente similares! Si quieres ahorrar en tu vestido sin sacrificar tu look, busca vestidos en color blanco o marfil ¡o en el color que más desees! Hasta los diseñadores tienen precios más bajos cuando de vestidos se trata. Te sorprenderás de los exquisitos modelos que encontrarás.'),
+(3, 'TIPBODA', 'Mesa', 'Mientras más grande la mesa, menor la cantidad de centros de mesa o decoración de mesa que se precisará. En lugar de mesas de seis personas, escoge las de 8.'),
+(4, 'TIPBODA', 'Invitados', 'Si a la mayoría de tus invitados les gusta la parranda, su intensidad y volumen irán en aumento y gradualmente la fiesta es un descontrol. Del mismo modo, si los más callados no se sientan junto a invitados más animados, tu recepción será sumamente aburrida. Para lograr una recepción divertida y agradable intenta equilibrar ambas personalidades en las mesas.'),
+(5, 'TIPBODA', 'Mesa Principal', 'La mesa principal debe colocarse donde la puedan ver el mayor número posible de invitados. Recuerda que ustedes son los protagonistas de esta celebración, y todos querrán verlos y tenerlos cerca.'),
+(6, 'TIPBODA', 'Invitados jovenes', 'Sienta a los invitados más jóvenes cerca de los parlantes y de la pista de baile y a los invitados mayores un poco más lejos, así se sentirán más cómodos.'),
+(7, 'TIPBODA', 'Recuerdos', 'A veces se nos olvida de que aquellos que asisten a la boda merecen ser atendidos de la mejor forma y nada mejor que dejar un recuerdo inolvidable en sus mentes por acompañarlos en uno de los días más importantes de sus vidas.'),
+(8, 'TIPBODA', 'Luna de miel', '¿No saben cómo elegir destino para tu luna de miel?. Pues estamos seguros que siempre han soñado con algún lugar al cual ir y este es el mejor momento para conocerlo.'),
+(9, 'TIPBODA', 'Número de invitados', 'Haz un cálculo aproximado de los invitados que quieres que asistan a tu boda antes de contratar el banquete. Esto asegurará que haya espacio suficiente para que se encuentren cómodos.'),
+(10, 'TIPBODA', 'Lugar de celebración', 'Asegúrate de que los invitados estén bien informados del lugar de la ceremonia, es decir ubicación exacta, los horarios y el transporte.'),
+(11, 'TIPBODA', 'Fotografo', 'Seguro que no quieres perderte ningún detalle del día de tu boda, por ello, es importante que cuentes con la presencia de un profesional de la fotografía, y que escojas según su estilo a la hora de inmortalizar cada momento.'),
+(12, 'TIPBODA', 'Comida y bebida', 'Si se dan cuenta, cada evento especial se suele celebrar acompañándolo de bebidas deliciosas y de alimentos de calidad. Su boda no iba a ser diferente, haz que tus invitados la recuerden como una experiencia para los sentidos.'),
+(13, 'TIPBODA', 'Detalle para invitados', 'Nada les dice a tus invitados que los conoces y son realmente importantes para ti como prepararles un detalle personalizado en sus mesas.'),
+(14, 'TIPBODA', 'Música', 'La música ambienta, le da colorido a un evento y hace que los pies y los corazones recuerden, se muevan y se conmuevan. Tu selección de conjunto musical es muy importante pues uno bueno logrará ver a tus invitados, descubrir qué les gusta y hallar la melodía perfecta para cada momento de la boda, así que no olvides consultar y escuchar varias opciones antes de elegir uno.'),
+(15, 'TIPBODA', 'Tarjetas de agradecimiento', 'Otro detalle increíble y de mucha personalidad que puedes tener con tus invitados es entregarles tarjetas de agradecimiento personalizadas. Tanto el mensaje como los diseños pueden variar ligeramente y eso las haría incluso más únicas y representativas del afecto que sientes por cada uno de ellos.'),
+(16, 'TIPBODA', 'Día de la boda', 'Pensemos en el momento que todas ustedes vivirán: me refiero al instante en que despierten y piensen: “¡Hoy me caso!”. Para disfrutar la boda al máximo es importante que descansen bien, que pongan en práctica técnicas de relajación, no se desvelen y, por supuesto, que no lleguen a la boda con el estómago vacío.'),
+(17, 'TIPBODA', 'Vestimenta', 'Para comenzar ese día con el pie derecho es importante que ambos novios se arreglen con tiempo para evitar contratiempos y prisas, que generarán estrés y mal humor.'),
+(18, 'TIPBODA', 'Momentos previos a la boda', 'Cuando lleguen al lugar donde se celebrará la boda, busquen un momento para estar en privado, respiren hondo, caminen, muevan los brazos, griten… lo que les funcione para deshacerse de los nervios y la tensión.'),
+(19, 'TIPBODA', 'Zapatos', 'Les aseguro que unos zapatos incómodos restarán diversión a la boda. Por nada del mundo elijan unos zapatos increíbles, pero igualmente incómodos. Asimismo, no olviden un cambio de zapatos para la hora de la fiesta y baile.'),
+(20, 'TIPBODA', 'Tiempo de pareja', 'Pasen tiempo juntos. No olviden que ustedes son la razón de la fiesta, así que concéntrense en disfrutar como pareja de su gran día y no se pierdan entre los amigos, amigas y compromisos.'),
+(21, 'TIPXV', 'Tema', 'Elige un tema o motivo para consolidar la idea para tu fiesta de Quinceañera. Esto hará que planear una Quinceañera sea mucho más fácil.'),
+(22, 'TIPXV', 'Flores', 'Si tienes un color específico en mente, investiga cuáles flores están disponibles durante la temporada de tu fiesta.'),
+(23, 'TIPXV', 'Invitados mayores', 'Si piensas invitar a personas mayores a tu fiesta, asegúrate de que haya suficientes lugares para poder sentarse.'),
+(24, 'TIPXV', 'Restricciones en la comida', 'Recuerda que algunas personas tienen restricciones dietéticas como alergias. De ser posible, asegúrate de que el menú incluya algo que todos puedan comer.'),
+(25, 'TIPXV', 'Compatibilidad de invitados', 'Junta a personas con intereses similares y de la misma edad en la misma mesa. Asegúrate de que cada mesa tenga un número par de personas ya que los invitados tienden a platicar en pares. No quisieras dejar alguien fuera.'),
+(26, 'TIPXV', 'Agradecimientos', 'Las notas de agradecimiento son tan importantes como las invitaciones. El día después de tu Quinceañera es el momento perfecto para escribirlas, ya que tu memoria aún está fresca.'),
+(27, 'TIPXV', 'Tiempo de planificación', 'Es necesario que cuentes con bastante tiempo para planificar, así te ahorras estrés  y puedes reservar servicios con más tranquilidad.'),
+(28, 'TIPXV', 'Peinado y maquillaje', 'Visita expertos en Hair & Make-up y separa el que se ajuste a tu presupuesto y te guste como te arregló.'),
+(29, 'TIPXV', 'Colores', 'Escoge un color o un par de colores que te gusten especialmente y que no desentonen con la temática de la fiesta, un color que tenga algún significado especial para ti. Los puedes llevar en el vestido, en las guirnaldas que adornen el salón, las cortinas, el mantel, la vajilla... Combina como más te guste.'),
+(30, 'TIPXV', 'Usar rojo', 'El tono más audaz como el rojo se encuentran en un esquema elegante para aquellas que buscan un look más atrevido.'),
+(31, 'TIPXV', 'Pizarras de gis', 'Una idea para darle al evento un toque bohemio, artesanal y divertido es incluir la tendencia de imitar las pizarras y escribir mensajes con gis. Algo diferente que vale la pena intentar, aunque sea en algún detalle para tu fiesta.'),
+(32, 'TIPXV', 'Colores naranja y rosa', 'La combinacion de naranja y el rosa crearán un ambiente divertido en tu fiesta. ¡Incorpora centros de mesa con flores de colores vivos para animar el lugar!'),
+(33, 'TIPXV', 'Flores tropicales', '¡Las flores tropicales y las tonalidades inspiradas en el océano le darán vida a tu fiesta!'),
+(34, 'TIPXV', 'Accesorios básicos', 'Siempre se debe contar con los accesorios básicos; los globos y las serpentinas son elementales y nunca estarán de más en una fiesta.'),
+(35, 'TIPXV', 'Vajilla colorida', 'Elige platos, vasos, servilletas y cubiertos de papel en base a tu paleta de color.'),
+(36, 'TIPXV', 'Jerarquía en la mesa', 'Mantén un orden jerárquico en la mesa, ubicando los elementos protagonistas y más voluminosos en el centro y parte posterior, dejando los más pequeñitos en la parte frontal.'),
+(37, 'TIPXV', 'Fiest infantil', 'En caso de ser una fiesta infantil, es importante que la decoración sea adecuada a la edad de los invitados.'),
+(38, 'TIPXV', 'Banderines y guirnaldas', 'Personaliza tus propios banderines y guirnaldas para decorar tu fiestan Este tipo de elementos alegran cualquier evento, sobre todo cuando se trata de cumpleaños o fiestas de bienvenidas.'),
+(39, 'TIPXV', 'Luces', 'Las luces son un factor muy importante que no siempre se tiene en cuenta a la hora de preparar la decoración de una fiesta. Si disponemos de focos de distintos colores, podremos jugar con distintos efectos sobre globos u otros elementos.'),
+(40, 'TIPXV', 'Velas', 'Si la fiesta es para adultos, una posibilidad es optar por una decoración con velas. Este tipo de iluminación queda especialmente llamativa por la noche.'),
+(41, 'TIPXV', 'Telas', 'La decoración con telas, se ha convertido en una de las favoritas en las fiestas.Principalmente la decoración de telas se realiza en los techos, por lo que debemos utilizar telas no muy pesadas para no tener problemas y que su peso las tire.'),
+(42, 'TIPXV', 'Luces nocturnas', 'Las bolsas de luz, tiras y guirnaldas de luces quedarán preciosas al anochecer. Usalas para rodear columnas, decorar árboles y arbustos, disimular paredes feas o sosas, bordear caminos, iluminar rincones oscuros, decorar la parte trasera del bar o buffet... y llenarlo todas las mesas con destellos de velitas.'),
+(43, 'TIPXV', 'Carteles', 'Si quieres que nadie se pierda en ese día tan especial no dejes de señalizar colgando carteles en árboles, paredes, columnas etc.'),
+(44, 'TIPXV', 'Bebidas', 'Anima tu fiesta con un rincón de bebidas o Corner Bar. Selecciona entre nuestros productos todo lo que necesitas para decorarlo con mucho estilo.'),
+(45, 'TIPXV', 'Sillas y mesas', 'Viste las mesas y las sillas a juego, para un resultado uniforme y coherente que dará mucha calidez a tu evento.'),
+(46, 'TIPXV', 'Flores', '¡La belleza de las flores es insuperable! llena tu fiesta o evento de pétalos, flores flotantes, rosas adhesivas entre otras para engalanar tu celebración.'),
+(47, 'TIPXV', 'Banderines', 'La forma más popular de decorar tu fiesta es usando banderines de colores. ¡Cunden muchísimo!.'),
+(48, 'TIPXV', 'Tiras y colgantes', 'Decora tus paredes, puertas y techos con tiras y colgantes que le vayan a tu fiesta. Puedes usarlos en la entrada para crear expectación o en la sala para separar ambientes. También quedan perfectos como fondos de escaparates o de mesas de buffet.'),
+(49, 'TIPXV', 'Tonos pastel', 'Los colores más utilizados para decorar una fiesta de 15 años son las tonalidades pastel, colores claros o en todos rosados. Lo importante es que transmita delicadeza y frescura en el espacio. Deberá reflejar la jovialidad de la anfitriona y el resto de los invitados adolescentes.'),
+(50, 'TIPXV', 'Combinacion de colores', 'Todos los objetos que elijas para decorar el espacio deberán respetar la combinación de colores que hayas elegido. Jamás te limites a incorporar un solo color, ya que sobrecargarás el espacio y será molesto a la vista. Deberás combinar tu color principal con un color claro u oscuro para equilibrar los tonos en el espacio.'),
+(51, 'TIPOTRO', 'El pastel', 'El Pastel, es un elemento muy importante en cualquier celebración. No puede faltar en tan importante evento.'),
+(52, 'TIPOTRO', 'Invitaciones con anticipación', 'Enviar con tiempo las invitaciones. Los invitados agradecerán ese tiempo para prepararse, ahorrar y cómo no, reservar ese día.'),
+(53, 'TIPOTRO', 'Lista de cosas', 'lista todas las cosas que tienes que hacer para que no se te escape nada y para que no quede nada imprevisto para el último momento.'),
+(54, 'TIPOTRO', 'Día de la celebración', '¿Cuándo celebrar tu fiesta? Generalmente los viernes y sábados por la tarde noche son los mejores días para organizar una fiesta.'),
+(55, 'TIPOTRO', 'Clima', 'Aunque parezca una obviedad, la climatología puede fastidiarnos completamente un evento, así que esto debes tenerlo en cuenta.'),
+(56, 'TIPOTRO', 'Decoración personalizada', 'La decoración personalizada va a jugar un papel fundamental en tu fiestas, así que no renuncies a ella y destina parte del presupuesto a personalizarla o tematizarla.'),
+(57, 'TIPOTRO', 'Espacio para invitados', 'En función del número de invitados, escoger un lugar en el que entren todos de forma cómoda.'),
+(58, 'TIPOTRO', 'Epoca de celebración', 'La época del año en la que organices la fiesta marcará completamente esta decisión. Si es en primavera o en verano, un lugar con espacios al aire libre resulta de lo más agradable.'),
+(59, 'TIPOTRO', 'Estacionamiento', 'Es importante que compruebes si el sitio cuenta con parking propio o tiene cercano un parking público o incluso servicio de aparcacoches. Es posible que muchos invitados opten por acudir al evento en su coche y si el estacionamiento no es fácil, puede suponer un problema.'),
+(60, 'TIPOTRO', 'Normas del Salón', 'Cuando escojas el espacio, asegúrate de preguntar primero lo que puedes y no puedes hacer.'),
+(61, 'TIPOTRO', 'Comida tipo coctel', 'Para una fiesta, lo ideal es que opten por un montaje tipo cóctel con aperitivos fáciles de comer. Este formato es más informal y permite a los invitados relacionarse entre ellos más libremente.'),
+(62, 'TIPOTRO', 'Puestos de comida', 'Los puestos de comida y los showcookings son una tendencia que está muy de moda y aportan originalidad y diversión al catering. El éxito está asegurado si los incluyes en tu fiesta.'),
+(63, 'TIPOTRO', 'Canciones especiales', 'En cualquier fiesta hay momentos álgidos que requieren de canciones especiales. Haz una lista de canciones para la llegada del homenajeado o para una entrega de premios o de regalos y pídele al responsable de la música que los ponga en ese momento.'),
+(64, 'TIPOTRO', 'Actividades de la fiesta', 'Amenizar la fiesta con propuesta y actividades divertidas es un acierto seguro y ayudarán a crear un ambiente desenfadado y divertido en el que todo el mundo lo va a pasar fenomenal.'),
+(65, 'TIPOTRO', 'Seguridad', 'Contrata seguridad o ten en cuenta cualquier elemento de seguridad que necesite tu fiesta.'),
+(66, 'TIPOTRO', 'Personal de limpieza', 'Recuerda reservar un equipo de limpieza para cuando tu fiesta haya terminado.'),
+(67, 'TIPOTRO', 'Mesa central', 'Una mesa en el centro del salón o bien en un extremo de este con diversos bocadillos que puedan servir de tentempié es muy buena opción.'),
+(68, 'TIPOTRO', 'Importancia de la mesa', 'La mesa es el punto fuerte de la fiesta y el foco principal al que prestar atención. No nos engañemos, por muy bonito que queramos dejar el espacio donde se celebre, la magia sucede en la mesa.'),
+(69, 'TIPOTRO', 'Mesa para regalos', 'A lado de la mesa de bocadillos se puede colocar una mesa más para los regalos, esta debe estar decorada también con algún mantel distintivo, la pared también debe estar decorada con figuras que representen esa celebración.'),
+(70, 'TIPOTRO', 'Música acorde', 'Elige música que vaya acorde con lo que se está celebrando, respetar los motivos de la celebración es vital.'),
+(9999999, 'BODACAT', 'REQUISITOS PARA CASARTE POR LA IGLESIA', 'Los requisitos que deberán cumplir los contrayentes o novios para realizar la Ceremonia Eclesiástica son:\n<ul>\n<li>Ambos deben estar bautizados y presentar la fé de Bautismo actualizada ante el párroco.</li>\n<li>Estar capacitados para dar el consentimiento libremente.</li>\n<li>Haber hecho la Confirmación y presentar el acta de la misma.</li>\n<li>Presentar constancia de haber contraído Matrimonio Civil.</li>\n<li>Asistir al curso prematrimonial.</li>\n<li>No haber estado casados antes por la Iglesia.</li>\n<li>No tener parentesco cercano.</li>\n<li>Conocer y aceptar libremente los fines y propiedades del matrimonio.</li>  \n<li>Presentarse ante el Párroco para que autorice la ceremonia.</li>\n<li>Por lo general la boda religiosa debe celebrarse en la iglesia o parroquia situada en la ciudad de residencia de alguno de los contrayentes.</li>\nPero si desea casarse en cualquier otra parte, sólo debe solicitar un permiso al párroco del templo.</li></ul>\n	<br><br>\n    <p>Articulos relacionados: <a href=\'documentacion_bodas\'>Requisitos para una ceremonia matrimonial</a></p>\n				\n	'),
+(72, 'BODACAT', 'Eucaristía: lecturas y reflexión', 'Para este momento, el padre inicia con la oración del perdón de los pecados veniales. Luego realiza las lecturas combinándolas con cantos y salmos. Las primeras lecturas son del Antiguo Testamento, se hacen algunas aclamaciones, sigue con cantos y salmos en donde los asistentes participan al unísono, posteriormente sigue con las segundas lecturas del amor extraídas del Nuevo Testamento, a continuación, el canto a la Gloria del Señor y el Aleluya. Esos textos son escogidos normalmente por el sacerdote, pero en ocasiones los novios pueden escogerlos también. Algunos párrocos acuerdan con dos o tres invitados a que realicen algunas lecturas de la ceremonia, antes de que llegue la novia, y también puede permitir mensajes de amor para el esposo y la esposa, palabras, textos literarios o poemas que sean alusivos al amor.\n<br><br>\nLa Eucaristía continua con la proclamación o lectura del Evangelio y la bendición de la campanada en la elevación, que se acostumbra a realizar invitando a los novios y asistentes a ponerse de rodillas para el momento. Cuando termina de realizar la lectura, el sacerdote da la homilía con la reflexión personal de lo leído y la forma como los nuevos esposos deberán ser arquitectos de las bases de su matrimonio, en bendición y obediencia a Dios.'),
+(73, 'BODACAT', 'Bendición Nupcial', 'Con los novios arrodillados, el sacerdote ora por ellos, les bendice y realiza las lecturas de bendición nupcial, para ser ejemplo de fe, amor, respeto y fidelidad.  Bendice también a todos los presentes, con la bendición con sus manos y los despide para poderse ir en paz. Se hace el rito de la despedida y el sacerdote da su bendición final, presentando a los nuevos señor y señora.\n<br><br>\nEs aquí cuando se dice “puede besar a la novia”, la felicidad está en su pico, la música comienza a sonar, mientras las fotos capturan el momento del gran beso y con el telón de fondo la decoración de iglesia para matrimonio. Algunas parejas aprovechan el momento para realizar otros rituales antes de irse, como ponerle flores a la virgen o prenderle una vela al santo de su devoción. La salida nupcial de los esposos se da tomados de la mano, al son de la canción que ellos pidieron que se tocase para su despedida. Todos alistan los elementos para echar al aire cuando los novios salgan. Luego de una deliciosa luna de miel de ensueño para descansar y celebrar como esposos, lo que sigue ya es parte de lo que escribirán en el libro de su aventura como marido y mujer.'),
+(74, 'BODA', 'CÓMO REDUCIR LOS GASTOS DE LA BODA?', 'Una boda es uno de los eventos más importantes en la vida, pero si se quiere recordar la boda solo como un momento crucial y no como un gasto o endeudamiento difícil de superar. Ya que muchas personas no logran hacer la boda en términos económicos menores entran en deudas o prestamos que pueden durar mucho tiempo, por esto hemos hecho una lista de formas para reducir los gastos de la boda.\r\n<br><br>\r\nConsejos para reducir gastos de la boda:\r\n<br><br>\r\n<b>Reservaciones.</b> Hacer las reservaciones del local, ya sea auditorio, salón de fiestas, jardín, con suficiente tiempo, hasta puede preguntar al encargado si hay alguna promoción, de esta manera podrá ahorrar hasta un 5% en el precio.\r\n<br><br>\r\n<b>Fecha adecuada</b>. Normalmente hay ciertos meses en que se llevan a cabo más bodas. También los días varían. Las bodas suelen realizarse días sábados o domingos. Si elige por ejemplo un día de semana, como jueves puede que encuentre mejores precios en varios servicios ofrecidos para este tipo de festejos. Los meses del año con temporada alta en bodas suelen ser noviembre y diciembre, y los primeros días de enero, añadiendo la fecha (según el país) del día del amor o San Valentín.<br><br>\r\n\r\n                                                                  <b>Boda casual</b>. No hablamos de un festejo desorganizado sino menos formal, de manera que sea una boda elegante, pero menos ostentosa (costosa), con menos decoración y menos invitados, es una de las mejores maneras de ahorrar en gatos de una boda.\r\n<br><br>\r\n<b>Menos tiempo de festejo</b>. Las bodas suelen ser celebradas durante 5 horas que es el tiempo de alquiler del local y otros gastos, lo más seguro es que los invitados ni se enteren que la boda duro una hora menos de lo normal.\r\n<br><br>\r\n<b>Boda mañanera.</b> Las bodas suelen ser a las horas nocturnas pero, una boda que se efectué por la mañana o a comienzos del atardecer será menos costosa. Tanto el salón, la casa de banquetes y otros proveedores podrán hacer más bajos susprecios a estas horas. De esta manera tanto los proveedores como usted tendrán un día más aprovechado.'),
+(75, 'BODA', 'CÓMO EVITAR EL ESTRÉS ANTES DE LA BODA?', '<br>El día de la boda es siempre uno de los momentos más emocionantes y bonitos por los que pasan los novios a lo largo de su relación, ya que, además de afianzar sus compromisos, supone una forma de mostrar al mundo su amor. A pesar de ello, pasar por el altar no siempre es tarea fácil al requerir de cientos de preparativos para celebrar por todo lo alto el gran día. Y es que los meses de planificación y organización necesarios para casarse, pueden llegar a resultar muy angustiosos, provocando un estado de nerviosismo generalizado en los novios y sus familiares, y en ocasiones, incluso una crisis de pareja a causa de la tensión acumulada.\r\n<br>\r\nLa larga lista de tareas pendientes como la elección del menú que se servirá en la celebración, la búsqueda del vestido perfecto, sin olvidar los anillos, así como otras tareas imprescindibles de cara a que todo salga lo mejor posible, no dejan de afectar además negativamente a los novios, causando irritabilidad, trastornos en el peso o la piel, y un largo etcétera de pequeñas consecuencias debidas al sobre esfuerzo y el cansancio. Estos trastornos pueden por el contrario evitarse siempre que se sigan una serie de consejos útiles para obtener la relajación necesaria, y para evitar los efectos negativos del estrés sobre la imagen y la salud antes del gran día: Sé optimista, planifica las actividades a realizar, no cargues con todo y aprende a delegar funciones, haz ejercicio, duerme bien, sé paciente y date algún capricho.\r\n\r\n'),
+(8888, 'TEMAXV', 'Galeria de XV anos', 'LOS TEMAS MÁS ÚNICOS CON LOS QUE HEMOS TRABAJADO'),
+(10000004, 'XV', 'La celebración de la Quinceañera', 'La celebración marca la transición de niña a mujer de la quinceañera. Sirve como un modo de reconocer que la chica en cuestión ha alcanzado la madurez. La celebración sin embargo varía mucho según los distintos países. Sin embargo, el cumplir quince años no significa que la chica en cuestión sea ya mayor de edad porque esto puede variar según las leyes de cada país.<br><br>La fiesta de quince años en Ecuador, Colombia y Venezuela se inicia con la llegada de los invitados. Posteriormente, cuando todos los invitados llegan, la quinceañera sale caminando por las escaleras con guardias a sus lados de guardas con sus nobles espadas arriba, acompañada de los brazos de su padre, quien es recibida por la madre y demás familiares y amigos. Luego, padre e hija bailan el vals. Cabe destacar que en Venezuela después que la quinceañera hace su entrada, se realiza el cambio de zapatillas, normalmente ella lleva zapatos deportivos y su padre se lo cambia por unas sandalias o zapatos de tacón alto, simbolizando así de que pasa de niña a mujer.'),
+(10000002, 'XV', '¿FIESTA DE 15 AÑOS O VIAJE?', '¿Fiesta de 15 o viaje? La dura decisión a la que se enfrentan muchas adolescentes cuando se acerca la fecha de su cumpleaños. Pocas afortunadas pueden hacer las dos opciones, mientras que muchas de ellas deberán elegir la fiesta o el viaje.\r\n<br>\r\nHoy te contamos los beneficios de realizar una fiesta, para que consideres qué es lo que prefieres en esta ocasión tan especial en la que pasas de niña a mujer.\r\n<br>\r\nLa fiesta de 15 es una noche de ensueño, en la que la pequeña adolescente comparte junto a sus familiares y amigos el paso a ser mujer, una nueva experiencia. En muchas ocasiones, los cumpleaños de 15 suelen ser tan majestuosos -y costosos- como una boda. El vestido, el salón, la sesión de fotos, los vídeos exteriores, el catering, las invitaciones y los souvenirs suelen sumar mucho dinero, algo que muchos padres no pueden pagar.\r\n<br>\r\nSi estás pensando en la fiesta de ensueño, es necesario que hables con tus padres para que sepas si se puede.\r\n<br>\r\nSi no te importa tanto esto, puedes optar por una fiesta más sencilla, que no necesariamente tiene que ser poco emotiva, todo lo contrario: lo bonito, que es compartir con tus seres queridos, lo seguirás teniendo.\r\n<br>\r\nAdemás, organizar la fiesta lleva mucho tiempo que se te quitará de otras actividades como salir con tus amigos o realizar tus tareas. Si no te gusta mucho todo este asunto, es mejor que optes por un viaje y una fiesta de cumpleaños común.');
 
 #ADMIN
 insert into PERSONA(cedula_persona, nombre_persona, apellido_persona, correo_persona, fk_lugar) value (9999999, 'T-800', 'Skynet', 'TheTerminator@gmail.com', 1453);
