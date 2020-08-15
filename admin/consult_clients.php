@@ -28,6 +28,12 @@ $municipio = isset($_GET['municipio']) ? $_GET['municipio'] : '';
 $parroquia = isset($_GET['parroquia']) ? $_GET['parroquia'] : '';
 $rol = isset($_GET['rol']) ? $_GET['rol'] : '';
 
+$create = isset($_SESSION['Crear PERSONA']) ? $_SESSION['Crear PERSONA'] : 0 ;
+$update = isset($_SESSION['Actualizar PERSONA']) ? $_SESSION['Actualizar PERSONA'] : 0 ;
+$delete = isset($_SESSION['Eliminar PERSONA']) ? $_SESSION['Eliminar PERSONA'] : 0 ;
+$deleteRU = isset($_SESSION['Eliminar ROL_USUARIO']) ? $_SESSION['Eliminar ROL_USUARIO'] : 0 ;
+$createRU = isset($_SESSION['Crear ROL_USUARIO']) ? $_SESSION['Crear ROL_USUARIO'] : 0 ;
+
 $answer = '';
 
 if ($option !== '') {
@@ -42,9 +48,9 @@ if ($answer == '') {
   try {
     $connect = new AdminSQL();
 
-    if($option === 'update') {
+    if(($option === 'update') && ($update === 1)) {
       $answer1 = $connect->update_client($cedula, $nombre, $apellido, $correo, $codigo_de_area, $numero, $id_telefono, $usuario, $id_usuario, $parroquia);
-    } else if($option === 'delete'){
+    } else if(($option === 'delete') && ($delete === 1)){
       $answer = $connect->delete_client($cedula, $id_usuario);
     } else if($option === 'select'){
       $answer = $connect->get_users_and_persons();
@@ -52,9 +58,11 @@ if ($answer == '') {
       $answer = $connect->rolesForUser($id_usuario);
     }else if ($option === 'specific'){
       $answer = $connect->specificUser($id_usuario);
-    }else if ($option === 'give'){
+    }else if (($option === 'give') && ($createRU === 1)) {
       $answer = $connect->roleToUser($id_usuario, $rol);
-    } else {
+    }else if (($option === 'take') && ($deleteRU === 1)) {
+      $answer = $connect->takeRoleUser($id_usuario, $rol);
+    } else if (($option === 'create') && ($create === 1)) {
       $answer = $connect->add_client($cedula, $nombre, $apellido, $correo, $codigo_de_area, $numero, $usuario, $parroquia);
     }
 

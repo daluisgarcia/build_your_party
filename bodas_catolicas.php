@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
-    <title>Tips para Bodas</title>
+    <title>Bodas Católicas</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/carrusel.js"></script>
 	<?php
 		include_once 'model/tips.php';
 		$connect = new PostManagement();
-  		$posts = $connect->get_post_bodacat();
+        $posts = $connect->get_post("BODACAT");;
 	?>
 	
 </head>

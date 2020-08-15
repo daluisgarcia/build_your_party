@@ -26,6 +26,10 @@ $personname2 = isset($_GET['personname2']) ? $_GET['personname2'] : '';
 $codigo_area = isset($_GET['codigoarea']) ? $_GET['codigoarea'] : '';
 $telefono = isset($_GET['telefono']) ? $_GET['telefono'] : '';
 
+$create = isset($_SESSION['Crear NOTARIA']) ? $_SESSION['Crear NOTARIA'] : 0 ;
+$update = isset($_SESSION['Actualizar NOTARIA']) ? $_SESSION['Actualizar NOTARIA'] : 0 ;
+$delete = isset($_SESSION['Eliminar NOTARIA']) ? $_SESSION['Eliminar NOTARIA'] : 0 ;
+
 $answer = '';
 
 if ($option !== '') {
@@ -40,15 +44,15 @@ if ($answer == '') {
   try {
     $connect = new AdminSQL();
 
-    if($option === 'update') {
+    if(($option === 'update') && ($update === 1)) {
       $answer1 = $connect->update_notary($id, $name, $fklugar);
       $answer2 = $connect->update_coordinates($coordID, $latitud, $longitud);
       $answer3 = $connect->update_person($personID, $personname1, $personname2);
       $answer = [$answer1, $answer2, $answer3];
 
-    }elseif($option === 'delete'){
+    }elseif(($option === 'delete') && ($delete === 1)){
       $answer = $connect->delete_notary($id, $coordID, $personID);
-    }else{
+    }elseif (($option === 'create') && ($create === 1)){
       $answer = $connect->add_notary($name, $fklugar, $personID, $latitud, $longitud, $codigo_area,$telefono);
     }
 

@@ -207,8 +207,6 @@ function getClients() {
     estadoC.innerText = 'Estado';
     let rolesC = document.createElement('td')
     rolesC.innerText = 'Roles';
-    let agregarC = document.createElement('td')
-    agregarC.innerText = 'Agregar Rol';
     tr1.appendChild(cedula);
     tr1.appendChild(nombre);
     tr1.appendChild(apellido);
@@ -220,7 +218,6 @@ function getClients() {
     tr1.appendChild(municipioC);
     tr1.appendChild(estadoC);
     tr1.appendChild(rolesC);
-    tr1.appendChild(agregarC);
     thead.appendChild(tr1);
     let tbody = document.createElement('tbody');
     if(!data.error){
@@ -293,8 +290,16 @@ function getClients() {
         agregarC2.innerText='Asignar Rol';
         agregarC2.addEventListener('click', function () {
           let user = returnIdNumber(agregarC2.id);
-          console.log('aqui si mani usuario'+user);
           newRoleUser(user)
+        })
+
+        let eliminarC2 = document.createElement('button')
+        eliminarC2.id = `eliminar-${data[d].usuario_id}`;
+        eliminarC2.classList.add('btn', 'btn-danger', 'm-2');
+        eliminarC2.innerText='Eliminar Rol';
+        eliminarC2.addEventListener('click', function () {
+          let user = returnIdNumber(eliminarC2.id);
+          deleteRoleUser(user)
         })
 
         tr2.appendChild(cedulaC2);
@@ -309,6 +314,7 @@ function getClients() {
         tr2.appendChild(estadoC2);
         tr2.appendChild(rolC2);
         tr2.appendChild(agregarC2);
+        tr2.appendChild(eliminarC2);
         tbody.appendChild(tr2);
       }
     }
@@ -324,8 +330,87 @@ function getClients() {
   }
 };
 
+function deleteRoleUser(user) {
+  console.log('borrar permiso a usuario '+user);
+  let tableDiv = document.getElementById('table_id');
+  //dataT.destroy();
+  removeAllChilds(tableDiv);
+  tableDiv.classList.add('d-none');
 
-function rolesForUser(user, id) {
+  let form = document.createElement('form');
+  form.id = 'addTuple';
+
+  let userLabel = document.createElement('label');
+  userLabel.setAttribute('for', 'user-label');
+  userLabel.innerText = 'Usuario:';
+  form.appendChild(userLabel);
+  let username = document.createElement('label');
+  username.setAttribute('for', 'username-label');
+  username.id = 'username-label';
+  form.appendChild(username);
+
+  let userPromise = getUser(user);
+  userPromise.then(() => {
+  }).catch(() => {
+    console.log('ERROR CON PERMISOS');
+  })
+
+  let userroles = document.createElement('label');
+  userroles.setAttribute('for', 'role-to-select');
+  userroles.innerText = 'Rol';
+  form.appendChild(userroles);
+  let role = document.createElement('select');
+  role.id = `select-rol-${user}`;
+  role.name = 'rol';
+  form.appendChild(role);
+
+  let rolPromise = rolesForUser(user, role.id);
+  rolPromise.then(() => {
+  }).catch(() => {
+    console.log('ERROR CON PERMISOS');
+  })
+
+  let submit = document.createElement('button');
+  submit.id = 'submit-change-rp';
+  submit.classList.add('btn', 'btn-primary');
+  submit.innerText='Desvincular';
+  form.appendChild(submit);
+  document.getElementById('container').appendChild(form);
+
+  submit.addEventListener('click', function () {
+
+    let rol = document.getElementById(`select-rol-${user}`).value;
+
+    let peticion = new XMLHttpRequest()
+    let params = `option=take&rol=${rol}&id_usuario=${user}`;
+    console.log(params);
+    peticion.open('GET', `./consult_clients.php?${params}`)
+
+    peticion.send()
+
+    //loader.classList.add('active');
+
+    peticion.onreadystatechange = function(){
+      if(peticion.readyState == 4 && peticion.status == 200){
+        //loader.classList.remove('active')
+      }
+    }
+
+    peticion.onload = function(){
+      let data = JSON.parse(peticion.responseText)
+      if(data.error){
+        alert('Error al introducir datos');
+      }else{
+        document.getElementById('table_id').classList.remove('d-none');
+        document.getElementById('addTuple').remove();
+        getClients();
+      }
+    }
+  })
+}
+
+
+function rolesForUser(user, drop) {
   return new Promise((resolve, reject) => {
     let peticion = new XMLHttpRequest()
     let params = `option=myroles&id_usuario=${user}`   //PARTE DE LA URL QUE DEFINE LOS ELEMENTOS DE GET
@@ -344,7 +429,7 @@ function rolesForUser(user, id) {
     peticion.onload = function () {
       let data = JSON.parse(peticion.responseText)
       if(!data.error) {
-        let dropRoles = document.getElementById(id);
+        let dropRoles = document.getElementById(drop);
         removeAllChilds(dropRoles);
         for(d in data){
           let op = document.createElement('option');

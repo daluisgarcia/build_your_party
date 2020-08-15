@@ -21,6 +21,10 @@ $seccion = isset($_GET['seccion']) ? $_GET['seccion'] : '';
 $titulo = isset($_GET['titulo']) ? $_GET['titulo'] : '';
 $cuerpo = isset($_GET['cuerpo']) ? $_GET['cuerpo'] : '';
 
+$create = isset($_SESSION['Crear POST']) ? $_SESSION['Crear POST'] : 0 ;
+$update = isset($_SESSION['Actualizar POST']) ? $_SESSION['Actualizar POST'] : 0 ;
+$delete = isset($_SESSION['Eliminar POST']) ? $_SESSION['Eliminar POST'] : 0 ;
+
 
 $answer = '';
 
@@ -36,13 +40,13 @@ if ($answer == '') {
   try {
     $connect = new AdminSQL();
 
-    if($option === 'update') {
+    if(($option === 'update') && ($update === 1)) {
       $answer = $connect->update_post($id, $titulo, $seccion, $cuerpo, $imagen, $ruta);
-    }elseif($option === 'delete'){
+    }elseif(($option === 'delete') && ($delete === 1)){
       $answer = $connect->delete_post($id);
     }else if($option === 'select'){
       $answer = $connect->get_posts();
-    } else {
+    } else if (($option === 'create') && ($create === 1)) {
       $answer = $connect->add_post($ruta, $seccion, $titulo, $cuerpo);
     }
 

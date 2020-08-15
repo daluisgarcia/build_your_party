@@ -28,12 +28,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
             $conexion = new user();
             $login = $conexion->get_user_data($usuario,$pass);
-
+            $permissions = $conexion->getAllPermissionsForUser($login[0]['id_usuario']);
             if(empty($login)){
                 $error .= '<li>Datos inválidos</li>';
             } else {
                 $_SESSION['id_user'] = $login[0]['id_usuario'];
                 $_SESSION['user'] = $login[0]['nombre_usuario'];
+                foreach ($permissions as &$permission) {
+                    $_SESSION[$permission['nombre_permiso']] = 1;
+                }
                 header("Location: index.php");
                 die();
             }

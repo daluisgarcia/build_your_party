@@ -209,4 +209,16 @@ class AdminSQL extends Connection
         $statement->execute();
         return $statement->fetchAll();
     }
+
+    public function takeRoleUser($id_usuario, $id_rol) {
+        $statement = $this->con->prepare("delete from rol_usuario where fk_rol=$id_rol and fk_usuario=$id_usuario;");
+        $statement->execute();
+        return $statement->fetchAll();
+    }
+
+    public function unlinkRoleAndPermission($role, $permission) {
+        $statement = $this->con->prepare("delete from rol_permiso where fk_rol=$role and fk_permiso=$permission;");
+        $statement->execute();
+        return $statement->fetchAll();
+    }
 }
