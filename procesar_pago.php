@@ -98,13 +98,13 @@ switch ($method) {
             if(!empty($contract)){
                 //REGISTRAR PAGO PARA CONTRATO
                 $connect->add_contract_payment($contract, $count, $metodo);
-                //header("Location: contracts.php");
+                header("Location: contracts.php");
                 die();
             }elseif (!empty($course1) and !empty($course2)){
                 //REGISTRAR PAGO PARA CURSO
                 if(!$connect->get_ins_course_by_user($_SESSION['id_user'])) {
                     $connect->add_course_payment($course1, $course2, $count, $metodo, $_SESSION['id_user']);
-                    //header("Location: contracts.php");
+                    header("Location: contracts.php");
                     die();
                 }else{
                     echo "<script>alert('Ya tiene un pago para este curso')</script>";

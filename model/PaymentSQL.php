@@ -54,7 +54,6 @@ class PaymentSQL extends Connection
         $statement2 = $this->con->prepare("SELECT id_metodo_pago as id FROM METODO_PAGO WHERE banco_metodo_pago='$bank' AND numero_metodo_pago=$number AND fk_tipo=$type AND fk_usuario=$id_user");
         $statement2->execute();
         $id = $statement2->fetchAll();
-        var_dump($id);
         $id = $id[0][0];
         return $id;
     }
