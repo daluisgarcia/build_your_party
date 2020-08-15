@@ -65,10 +65,14 @@
     </div>
 
     <?php if(isset($_SESSION['user'])): ?>
-        <a href="logout" class="btn btn-outline-warning">Cerrar Sesion</a>
+        <a href="logout" class="btn btn-outline-warning mx-1">Cerrar Sesion</a>
     <?php endif; ?>
 
-    <a href="<?php echo isset($_SESSION['user']) ? 'party_select' : 'register' ?>" class="btn btn-secondary mx-2">Arma Tu Fiesta</a>
+    <?php if(isset($_SESSION['user'])): ?>
+        <a href="admin" class="btn btn-outline-success mx-1">ADMIN</a>
+    <?php endif; ?>
+
+    <a href="<?php echo isset($_SESSION['user']) ? 'party_select' : 'register' ?>" class="btn btn-secondary mx-1">Arma Tu Fiesta</a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

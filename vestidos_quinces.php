@@ -27,39 +27,6 @@ require 'navbar_quinces.php';
     Brilla en tu gran día con el último grito de la moda
 </h2>
 <br>
-<form class="ml-3">
-    <div class="form-row align-items-center">
-        <div class="col-auto my-1">
-            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                <option selected>Caracas</option>
-                <option value="2">Valencia</option>
-                <option value="3">Aragua</option>
-            </select>
-        </div>
-        <div class="col-auto my-1 ml-2">
-            <div class="custom-control custom-checkbox mr-sm-2">
-                <input type="checkbox" class="custom-control-input" id="modistas_checkbox">
-                <label class="custom-control-label" for="modistas_checkbox">Modistas</label>
-            </div>
-        </div>
-        <div class="col-auto my-1 ml-2">
-            <div class="custom-control custom-checkbox mr-sm-2">
-                <input type="checkbox" class="custom-control-input" id="diseñadores_checkbox">
-                <label class="custom-control-label" for="diseñadores_checkbox">Diseñadores</label>
-            </div>
-        </div>
-        <div class="col-auto my-1 ml-2">
-            <div class="custom-control custom-checkbox mr-sm-2">
-                <input type="checkbox" class="custom-control-input" id="costureras_checkbox">
-                <label class="custom-control-label" for="costureras_checkbox">Costureras</label>
-            </div>
-        </div>
-        <div class="col-sm-7 ml-2">
-            <input class="form-control" type="text" placeholder="Buscar">
-        </div>
-    </div>
-</form>
-<br>
 <br>
 <div class="row">
     <div class="col-lg-4 col-md-4 col-xs-4 thumb ml-4">

@@ -58,7 +58,7 @@
 			matrimonio.</li>
 			<li>Acta de Esponsales debidamente firmada por los contrayentes.</li>
 		</ul>
-		<p>Articulos relacionados: <a href=#>Requisitos para una ceremonia matrimonial católica</a></p>
+		<p>Articulos relacionados: <a href='bodas_catolicas'>Requisitos para una ceremonia matrimonial católica</a></p>
 		
 	</div>
 

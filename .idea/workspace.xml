@@ -20,16 +20,124 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3d9412f-d832-42ed-9e83-6e44df7bd0b9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/fpdf17/FAQ.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/changelog.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/acceptpagebreak.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/addfont.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/addlink.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/addpage.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/aliasnbpages.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/cell.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/close.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/error.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/footer.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/fpdf.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/getstringwidth.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/getx.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/gety.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/header.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/image.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/index.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/line.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/link.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/ln.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/multicell.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/output.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/pageno.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/rect.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/setauthor.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/setautopagebreak.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/setcompression.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/setcreator.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/setdisplaymode.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/setdrawcolor.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/setfillcolor.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/setfont.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/setfontsize.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/setkeywords.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/setleftmargin.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/setlinewidth.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/setlink.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/setmargins.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/setrightmargin.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/setsubject.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/settextcolor.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/settitle.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/settopmargin.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/setx.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/setxy.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/sety.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/text.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/doc/write.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/font/courier.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/font/courierb.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/font/courierbi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/font/courieri.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/font/helvetica.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/font/helveticab.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/font/helveticabi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/font/helveticai.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/font/symbol.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/font/times.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/font/timesb.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/font/timesbi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/font/timesi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/font/zapfdingbats.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/fpdf.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/fpdf.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/install.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/makefont/cp1250.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/makefont/cp1251.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/makefont/cp1252.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/makefont/cp1253.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/makefont/cp1254.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/makefont/cp1255.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/makefont/cp1257.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/makefont/cp1258.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/makefont/cp874.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/makefont/iso-8859-1.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/makefont/iso-8859-11.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/makefont/iso-8859-15.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/makefont/iso-8859-16.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/makefont/iso-8859-2.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/makefont/iso-8859-4.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/makefont/iso-8859-5.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/makefont/iso-8859-7.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/makefont/iso-8859-9.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/makefont/koi8-r.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/makefont/koi8-u.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/makefont/makefont.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/makefont/ttfparser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/tutorial/20k_c1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/tutorial/20k_c2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/tutorial/calligra.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/tutorial/calligra.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/tutorial/calligra.z" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/tutorial/index.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/tutorial/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/tutorial/makefont.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/tutorial/paises.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/tutorial/tuto1.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/tutorial/tuto1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/tutorial/tuto2.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/tutorial/tuto2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/tutorial/tuto3.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/tutorial/tuto3.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/tutorial/tuto4.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/tutorial/tuto4.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/tutorial/tuto5.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/tutorial/tuto5.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/tutorial/tuto6.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/tutorial/tuto6.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/tutorial/tuto7.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf17/tutorial/tuto7.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts.php" beforeDir="false" afterPath="$PROJECT_DIR$/contracts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/PartySQL.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/PartySQL.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/PaymentSQL.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/PaymentSQL.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/procesar_pago.php" beforeDir="false" afterPath="$PROJECT_DIR$/procesar_pago.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqlScripts/INSERTS.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sqlScripts/INSERTS.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqlScripts/create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sqlScripts/create.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/navbar.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/contracts.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/contracts.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/procesar_pago.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/procesar_pago.view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,7 +324,8 @@
       <workItem from="1597163832500" duration="27822000" />
       <workItem from="1597253828135" duration="23319000" />
       <workItem from="1597329458219" duration="25532000" />
-      <workItem from="1597417720841" duration="31477000" />
+      <workItem from="1597417720841" duration="32239000" />
+      <workItem from="1597502727368" duration="5173000" />
     </task>
     <servers />
   </component>

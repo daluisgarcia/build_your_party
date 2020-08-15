@@ -20,15 +20,15 @@
                 </div>
 
                 <div class="col-lg-1 col-sm-4 header-category"> 
-                    <a href=#>Vestidos</a>
+                    <a href='vestidos'>Vestidos</a>
                 </div>
 
                 <div class="col-lg-1 col-sm-4 header-category"> 
-                    <a href=#>Accesorios</a>
+                    <a href='products.php'>Accesorios</a>
                 </div>
 
                 <div class="col-lg-1 col-sm-4 header-category"> 
-                    <a href=#>Buques</a>
+                    <a href='products.php'>Buques</a>
                 </div>
                 
             </div>

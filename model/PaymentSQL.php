@@ -25,6 +25,18 @@ class PaymentSQL extends Connection
         }
     }
 
+    public function set_contract_as_paid($id_contract){
+        $statement = $this->con->prepare("UPDATE CONTRATO SET fecha_pagado_contrato=curdate() WHERE id_contrato=$id_contract AND fecha_pagado_contrato IS NULL;");
+        $statement->execute();
+        return $statement->fetchAll();
+    }
+
+    public function get_payment_alert($id_user){
+        $statement = $this->con->prepare("SELECT * FROM CONTRATO AS C INNER JOIN PRESUPUESTO AS P ON C.fk_presupuesto=P.id_presupuesto INNER JOIN FIESTA AS F ON P.fk_fiesta=F.id_fiesta WHERE F.fk_usuario=$id_user AND fecha_realizacion_fiesta BETWEEN CURDATE() AND date_add(curdate(), INTERVAL 7 DAY) AND C.fecha_pagado_contrato IS NULL;");
+        $statement->execute();
+        return $statement->fetchAll();
+    }
+
     public function get_ins_course_by_user($id_user){
         $statement = $this->con->prepare("SELECT * FROM INSCRIPCION_CUR_M WHERE fk_usuario=$id_user");
         $statement->execute();

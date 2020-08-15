@@ -8695,3 +8695,69 @@ insert into USUARIO(id_usuario, nombre_usuario, passw_usuario, fk_persona) value
 insert into rol_usuario values(4,241);
 insert into permiso values(null,'ADMIN');
 insert into rol_permiso values(4,217);
+
+
+insert into imagen (fk_persona,ruta_imagen) value (27123555,'https://i.pinimg.com/originals/cd/0c/b4/cd0cb44b03a5d3cc5ba477867b52bf36.jpg');
+
+insert into imagen(fk_trabajo_cyc, fk_trabajo_cyc_2, ruta_imagen) value (1,27123555,'https://4.bp.blogspot.com/-Gb5ONQqTG7A/VNvIyv8Y2DI/AAAAAAAAFsk/8fJsnzuIuuE/s1600/la%2Bfoto%2B5-3.JPG');
+
+insert into TRABAJO_CYC(id_trabajo_cyc, nombre_trabajo_cyc, tiempo_realizacion_trabajo_cyc, tipo_tela_trabajo_cyc, fk_cyc) value (null, 'Super Traje', 3, 'Poliester' , 27123555);
+insert into TRABAJO_CYC(id_trabajo_cyc, nombre_trabajo_cyc, tiempo_realizacion_trabajo_cyc, tipo_tela_trabajo_cyc, fk_cyc) value (null, 'Traje Frozono', 3, 'Poliester' , 27123555);
+
+insert into imagen(fk_trabajo_cyc, fk_trabajo_cyc_2, ruta_imagen) value (6,27123555,'https://ae01.alicdn.com/kf/HTB1Q_QGsmBYBeNjy0Feq6znmFXaE/Traje-de-Cosplay-de-los-incre-bles-2-DE-ELENA-Parr-Elastigirl.jpg');
+insert into imagen(fk_trabajo_cyc, fk_trabajo_cyc_2, ruta_imagen) value (7,27123555,'https://i.pinimg.com/originals/70/e4/a8/70e4a810a848dd769cd43d7c169e9435.png');
+
+
+insert into imagen (fk_persona,ruta_imagen) value (27123554,'https://static.wixstatic.com/media/b39f88_9db573c4ba524b6baa90c8cc0119547e~mv2.jpg/v1/fill/w_504,h_682,al_c,lg_1,q_80/b39f88_9db573c4ba524b6baa90c8cc0119547e~mv2.webp');
+
+insert into imagen(fk_trabajo_cyc, fk_trabajo_cyc_2, ruta_imagen) value (2,27123554,'https://i.pinimg.com/736x/f8/33/f4/f833f46fcbcbbd0c8a9696e9f78ad245.jpg');
+
+insert into TRABAJO_CYC(id_trabajo_cyc, nombre_trabajo_cyc, tiempo_realizacion_trabajo_cyc, tipo_tela_trabajo_cyc, fk_cyc) value (null, 'Emily', 3, 'Organza' , 27123554);
+insert into TRABAJO_CYC(id_trabajo_cyc, nombre_trabajo_cyc, tiempo_realizacion_trabajo_cyc, tipo_tela_trabajo_cyc, fk_cyc) value (null, 'Lucy', 4, 'Organza' , 27123554);
+
+insert into imagen(fk_trabajo_cyc, fk_trabajo_cyc_2, ruta_imagen) value (8,27123554,'https://www.davidsbridal.com.mx/3099-large_default/Vestido-XV-A%C3%B1os-Tirante-Hombro-Caido-Detalles-Holan.jpg');
+insert into imagen(fk_trabajo_cyc, fk_trabajo_cyc_2, ruta_imagen) value (9,27123554,'https://cdn.stillwhite.com/assets/d0/f5/87/d0f587ef68bb11ea99f602dadaedef01/1600x.jpg');
+
+
+insert into imagen (fk_persona,ruta_imagen) value (27123553,'https://i.pinimg.com/originals/ab/87/fb/ab87fb067bb0d0ca7201bcbbe07cd367.jpg');
+
+insert into imagen(fk_trabajo_cyc, fk_trabajo_cyc_2, ruta_imagen) value (3,27123553,'https://organizadoradm.com/wp-content/uploads/2019/09/1-vestidos-para-15-color-marsala-7398-1.jpg');
+
+insert into TRABAJO_CYC(id_trabajo_cyc, nombre_trabajo_cyc, tiempo_realizacion_trabajo_cyc, tipo_tela_trabajo_cyc, fk_cyc) value (null, 'Lulu', 3, 'Organza' , 27123554);
+insert into TRABAJO_CYC(id_trabajo_cyc, nombre_trabajo_cyc, tiempo_realizacion_trabajo_cyc, tipo_tela_trabajo_cyc, fk_cyc) value (null, 'Fanny', 4, 'Organza' , 27123554);
+
+insert into imagen(fk_trabajo_cyc, fk_trabajo_cyc_2, ruta_imagen) value (10,27123553, 'https://mui.today/__export/1588724310894/sites/mui/img/2020/05/05/pnina-tornai-princesa.jpg_827845522.jpg');
+insert into imagen(fk_trabajo_cyc, fk_trabajo_cyc_2, ruta_imagen) value (11,27123553,'https://www.kleinfeldbridal.com/wp-content/uploads/2019/01/pnina-tornai-floral-applique-tulle-ball-gown-33910480-413x600.jpg');
+
+
+
+
+insert into imagen (fk_persona,ruta_imagen) value (27123552,'https://www.nuevatribuna.es/media/nuevatribuna/images/2018/11/08/2018110813211214994.jpg');
+
+insert into imagen(fk_trabajo_cyc, fk_trabajo_cyc_2, ruta_imagen) value (4,27123552,'https://i.etsystatic.com/19044787/r/il/7accf3/1710793120/il_570xN.1710793120_povn.jpg');
+
+insert into TRABAJO_CYC(id_trabajo_cyc, nombre_trabajo_cyc, tiempo_realizacion_trabajo_cyc, tipo_tela_trabajo_cyc, fk_cyc) value (null, 'Lisa', 6, 'Organza' , 27123552);
+insert into TRABAJO_CYC(id_trabajo_cyc, nombre_trabajo_cyc, tiempo_realizacion_trabajo_cyc, tipo_tela_trabajo_cyc, fk_cyc) value (null, 'Rose', 8, 'Organza' , 27123552);
+
+insert into imagen(fk_trabajo_cyc, fk_trabajo_cyc_2, ruta_imagen) value (12,27123552, 'https://www.kleinfeldbridal.com/wp-content/uploads/2019/10/stella-york-spaghetti-strap-v-neckline-ball-gown-wedding-dress-with-beading-and-embroidery-34150193.jpg');
+insert into imagen(fk_trabajo_cyc, fk_trabajo_cyc_2, ruta_imagen) value (13,27123552, 'https://cdn.shopify.com/s/files/1/0061/5189/7177/products/7012-1_2000x.jpg?v=1574570052');
+
+
+
+
+
+insert into imagen (fk_persona,ruta_imagen) value (27123551,'https://static.abc.es/media/MM/2019/01/03/jamie-dornan-kqyD--1350x900@abc.jpg');
+
+insert into imagen(fk_trabajo_cyc, fk_trabajo_cyc_2, ruta_imagen) value (5,27123551,'https://www.promfy.com/uploads/product/2/H/2H250/illusion-bodice-pleated-tulle-skirt-wedding-dress-1.jpg');
+
+insert into TRABAJO_CYC(id_trabajo_cyc, nombre_trabajo_cyc, tiempo_realizacion_trabajo_cyc, tipo_tela_trabajo_cyc, fk_cyc) value (null, 'Lucero', 3, 'Organza' , 27123551);
+insert into TRABAJO_CYC(id_trabajo_cyc, nombre_trabajo_cyc, tiempo_realizacion_trabajo_cyc, tipo_tela_trabajo_cyc, fk_cyc) value (null, 'Sana', 4, 'Organza' , 27123551);
+
+insert into imagen(fk_trabajo_cyc, fk_trabajo_cyc_2, ruta_imagen) value (14,27123551, 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fluvbridal.com.au%2Fproduct%2Femily%2F&psig=AOvVaw0O_8E2x4uX1hIsHhm3rCXK&ust=1597587903663000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLDt_vO0nesCFQAAAAAdAAAAABAk');
+insert into imagen(fk_trabajo_cyc, fk_trabajo_cyc_2, ruta_imagen) value (15,27123551, 'https://cdn.shopify.com/s/files/1/0253/4591/6979/products/dd5ca509998ca3e4d6b838d52c8c808c_1024x1024.jpg?v=1577462365');
+
+
+
+
+
+
