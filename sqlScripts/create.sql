@@ -83,18 +83,22 @@ CREATE TABLE IF NOT EXISTS SALON_FIESTA(
     FOREIGN KEY (id_servicio) REFERENCES SERVICIO(id_servicio)
 );
 
+CREATE TABLE IF NOT EXISTS TIPO_METODO_PAGO(
+		id_tipo_mp int not null auto_increment,
+        nombre_tipo_mp varchar(50) not null,
+        primary key (id_tipo_mp)
+);
+
 CREATE TABLE IF NOT EXISTS METODO_PAGO(
     id_metodo_pago INT NOT NULL auto_increment,
     descripcion_metodo_pago VARCHAR(100),
-    banco_metodo_pago VARCHAR(30) NOT NULL,
-    numero_tdc int(16),
-    fecha_vencimiento_tdc DATE,
-    numero_tdd int(16),
-    numero_transferencia VARCHAR(30),
-    fk_usuario int,
-    tipo VARCHAR(13) NOT NULL CHECK(tipo IN('TDC','TDD','TRANSFERENCIA')),
+    numero_metodo_pago int(20),
+    banco_metodo_pago VARCHAR(30),
+    fk_usuario int not null,
+    fk_tipo int not null,
     PRIMARY KEY(id_metodo_pago),
-    foreign key (fk_usuario) references USUARIO(id_usuario)
+    foreign key (fk_usuario) references USUARIO(id_usuario),
+    foreign key (fk_tipo) references TIPO_METODO_PAGO(id_tipo_mp)
 );
 
 CREATE TABLE IF NOT EXISTS RELIGION(

@@ -25,32 +25,36 @@ class PaymentSQL extends Connection
         }
     }
 
+    public function get_ins_course_by_user($id_user){
+        $statement = $this->con->prepare("SELECT * FROM INSCRIPCION_CUR_M WHERE fk_usuario=$id_user");
+        $statement->execute();
+        $bool = $statement->fetchAll();
+        if(!empty($bool)){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
     public function get_user_pay_methods($id_user){
-        $statement = $this->con->prepare("SELECT id_metodo_pago as id, banco_metodo_pago as banco, CASE WHEN tipo = 'TDC' THEN numero_tdc WHEN tipo = 'TDD' THEN numero_tdd WHEN tipo = 'TRANSFERENCIA' THEN numero_transferencia END as numero,tipo FROM METODO_PAGO WHERE fk_usuario=$id_user");
+        $statement = $this->con->prepare("SELECT id_metodo_pago as id, banco_metodo_pago as banco, numero_metodo_pago as numero, nombre_tipo_mp as tipo FROM METODO_PAGO INNER JOIN TIPO_METODO_PAGO ON id_tipo_mp=fk_tipo WHERE fk_usuario=$id_user");
         $statement->execute();
         return $statement->fetchAll();
     }
 
-    public function add_payment_method($type, $number, $out_date, $bank, $id_user){
-        switch ($type){
-            case 'TDC':
-                $statement = $this->con->prepare("INSERT INTO METODO_PAGO (banco_metodo_pago, numero_tdc, fecha_vencimiento_tdc, tipo, fk_usuario) VALUES ('$bank',$number,'$out_date','$type',$id_user)");
-                $statement2 = $this->con->prepare("SELECT id_metodo_pago as id FROM METODO_PAGO WHERE banco_metodo_pago='$bank' AND numero_tdc=$number AND fecha_vencimiento_tdc='$out_date' AND tipo='$type' AND fk_usuario=$id_user");
-                break;
-            case 'TDD':
-                $statement = $this->con->prepare("INSERT INTO METODO_PAGO (banco_metodo_pago, numero_tdd, tipo, fk_usuario) VALUES ('$bank',$number,'$type',$id_user);");
-                $statement2 = $this->con->prepare("SELECT id_metodo_pago as id FROM METODO_PAGO WHERE banco_metodo_pago='$bank' AND numero_tdd=$number AND tipo='$type' AND fk_usuario=$id_user");
-                break;
-            case 'TRANSFERENCIA':
-                $statement = $this->con->prepare("INSERT INTO METODO_PAGO (banco_metodo_pago, numero_transferencia, tipo, fk_usuario) VALUES ('$bank',$number,'$type',$id_user);");
-                $statement2 = $this->con->prepare("SELECT id_metodo_pago as id FROM METODO_PAGO WHERE banco_metodo_pago='$bank' AND numero_transferencia=$number AND tipo='$type' AND fk_usuario=$id_user");
-                break;
-            default:
-                $statement = '';
-        }
+    public function get_payment_methods(){
+        $statement = $this->con->prepare("SELECT id_tipo_mp as id, nombre_tipo_mp as nombre FROM TIPO_METODO_PAGO;");
         $statement->execute();
+        return $statement->fetchAll();
+    }
+
+    public function add_payment_method($type, $number,$bank, $id_user){
+        $statement = $this->con->prepare("INSERT INTO METODO_PAGO (numero_metodo_pago, banco_metodo_pago, fk_usuario, fk_tipo) VALUES ($number, '$bank', $id_user, $type);");
+        $statement->execute();
+        $statement2 = $this->con->prepare("SELECT id_metodo_pago as id FROM METODO_PAGO WHERE banco_metodo_pago='$bank' AND numero_metodo_pago=$number AND fk_tipo=$type AND fk_usuario=$id_user");
         $statement2->execute();
         $id = $statement2->fetchAll();
+        var_dump($id);
         $id = $id[0][0];
         return $id;
     }

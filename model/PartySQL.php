@@ -37,7 +37,7 @@ class PartySQL extends Connection
 
     public function get_budget_details($id_budget){
         //PREPARACION DEL QUERY
-        $statement = $this->con->prepare("SELECT SP.id_servicio_presupuesto as id_reg,SP.precio_total_servicio_presupuesto as precio_total,SP.cantidad_servicio_presupuesto as cantidad_horas,SP.fk_servicio as id_servicio,S.nombre_servicio as nombre_servicio,CASE WHEN D1.porcentaje_descuento IS NULL THEN S.precio_servicio WHEN D1.porcentaje_descuento IS NOT NULL THEN S.precio_servicio-(S.precio_servicio*D1.porcentaje_descuento/100) END as precio_servicio,D1.porcentaje_descuento as descuento_servicio, S.modalidad_pago_servicio as modalidad,PP.fk_producto as id_producto,PP.cantidad_producto_pedido as cantidad_producto,P.nombre_producto as nombre_producto,CASE WHEN D.porcentaje_descuento IS NULL THEN P.precio_producto WHEN D.porcentaje_descuento IS NOT NULL THEN P.precio_producto-(P.precio_producto*D.porcentaje_descuento/100) END as precio_producto,D.porcentaje_descuento as descuento_producto FROM SERVICIO_PRESUPUESTO AS SP LEFT JOIN SERVICIO AS S ON SP.fk_servicio=S.id_servicio LEFT JOIN PRODUCTO_PEDIDO AS PP ON SP.id_servicio_presupuesto=PP.fk_servicio_presupuesto LEFT JOIN PRODUCTO AS P ON PP.fk_producto=P.id_producto LEFT JOIN DESCUENTO AS D ON D.fk_producto=P.id_producto LEFT JOIN DESCUENTO AS D1 ON D.fk_servicio=S.id_servicio WHERE SP.fk_presupuesto=$id_budget;");
+        $statement = $this->con->prepare("SELECT SP.id_servicio_presupuesto as id_reg,SP.precio_total_servicio_presupuesto as precio_total,SP.cantidad_servicio_presupuesto as cantidad_horas,SP.fk_servicio as id_servicio,S.nombre_servicio as nombre_servicio, S.requiere_cita_servicio as cita,CASE WHEN D1.porcentaje_descuento IS NULL THEN S.precio_servicio WHEN D1.porcentaje_descuento IS NOT NULL THEN S.precio_servicio-(S.precio_servicio*D1.porcentaje_descuento/100) END as precio_servicio,D1.porcentaje_descuento as descuento_servicio, S.modalidad_pago_servicio as modalidad,PP.fk_producto as id_producto,PP.cantidad_producto_pedido as cantidad_producto,P.nombre_producto as nombre_producto,CASE WHEN D.porcentaje_descuento IS NULL THEN P.precio_producto WHEN D.porcentaje_descuento IS NOT NULL THEN P.precio_producto-(P.precio_producto*D.porcentaje_descuento/100) END as precio_producto,D.porcentaje_descuento as descuento_producto FROM SERVICIO_PRESUPUESTO AS SP LEFT JOIN SERVICIO AS S ON SP.fk_servicio=S.id_servicio LEFT JOIN PRODUCTO_PEDIDO AS PP ON SP.id_servicio_presupuesto=PP.fk_servicio_presupuesto LEFT JOIN PRODUCTO AS P ON PP.fk_producto=P.id_producto LEFT JOIN DESCUENTO AS D ON D.fk_producto=P.id_producto LEFT JOIN DESCUENTO AS D1 ON D.fk_servicio=S.id_servicio WHERE SP.fk_presupuesto=$id_budget;");
         //EJECUCION DEL QUERY
         $statement->execute();
         // El metodo fetch nos va a devolver el resultado o false en caso de que no haya resultado.
@@ -125,8 +125,69 @@ class PartySQL extends Connection
         }
     }
 
+    public function check_inventory($id_budget){
+        $details = $this->get_budget_details($id_budget);
+        include_once 'Product.php';
+        $conn = new Product();
+        foreach ($details as $detail){
+            if($detail['id_producto'] !== null){
+                $product = $conn->get_product_by_id($detail['id_producto']);
+                if($detail['cantidad_producto'] > $product[0]['cantidad_disponible_producto']){
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    public function update_inventory($id_budget){
+        if($this->check_inventory($id_budget)){
+            $details = $this->get_budget_details($id_budget);
+            include_once 'Product.php';
+            $conn = new Product();
+            foreach ($details as $detail){
+                if($detail['id_producto'] !== null){
+                    $conn->update_inventory_product($detail['id_producto'], $detail['cantidad_producto']);
+                }
+            }
+            return true;
+        }
+        return false;
+    }
+
+    public function add_third_contracts_and_dates($id_contract, $id_budget){
+        $details = $this->get_budget_details($id_budget);
+        foreach ($details as $detail){
+            if($detail['cita'] === '1'){
+                //AGREGAR CITA
+                $statement = $this->con->prepare("INSERT INTO RESERVA (fecha_reserva, fk_contrato, fk_servicio) VALUES (date_add(NOW(), INTERVAL 3 DAY), $id_contract, ".$detail['id_servicio'].");");
+                $statement->execute();
+                $statement = $this->con->prepare("SELECT id_reserva FROM RESERVA WHERE fecha_reserva=date_add(curdate(), INTERVAL 3 DAY) AND fk_contrato=$id_contract AND fk_servicio=".$detail['id_servicio']);
+                $statement->execute();
+                $id_date = $statement->fetchAll();
+                $id_date = $id_date[0][0];
+                $statement = $this->con->prepare("INSERT INTO CITA (id_reserva, id_reserva_2, fk_lugar) VALUES ($id_date, $id_contract, (SELECT P.fk_lugar FROM PERSONA AS P INNER JOIN SERVICIO_TERCERIZADO AS ST ON ST.fk_persona=P.cedula_persona WHERE ST.id_servicio=".$detail['id_servicio']."));");
+                $statement->execute();
+            }elseif($detail['cita'] === '0'){
+                //AGREGAR CONTRATO A TERCEROS
+                $statement = $this->con->prepare("SELECT id_servicio FROM SERVICIO_TERCERIZADO WHERE id_servicio=".$detail['id_servicio']);
+                $statement->execute();
+                $is_third_service = $statement->fetchAll();
+                if(!empty($is_third_service)){
+                    $statement = $this->con->prepare("INSERT INTO CONTRATO_TERCERO (fecha_aprobado_contrato_tercero, fk_contrato, fk_servicio_presupuesto) VALUES (curdate(), $id_contract, ".$detail['id_reg'].");");
+                    $statement->execute();
+                }
+            }
+        }
+    }
+
+    public function get_dates_by_contract($id_contract){
+        $statement = $this->con->prepare("SELECT fecha_reserva, CONCAT(tipo_lugar, ' ',nombre_lugar) as lugar, nombre_servicio FROM RESERVA AS R INNER JOIN CITA AS C ON R.id_reserva=c.id_reserva INNER JOIN LUGAR ON id_lugar=C.fk_lugar INNER JOIN SERVICIO ON R.fk_servicio=id_servicio WHERE R.fk_contrato=$id_contract;");
+        $statement->execute();
+        return $statement->fetchAll();
+    }
+
     public function get_course_price($id_course1, $id_course2){
-        echo "SELECT costo_curso_matrim FROM CURSO_MATRIM WHERE id_curso_matrim=$id_course1 AND fk_templo=$id_course2";
         $statement = $this->con->prepare("SELECT costo_curso_matrim FROM CURSO_MATRIM WHERE id_curso_matrim=$id_course1 AND fk_templo=$id_course2");
         $statement->execute();
         $price = $statement->fetchAll();
@@ -152,6 +213,13 @@ class PartySQL extends Connection
     public function add_new_contract($id_user, $id_budget, $price){
         $statement = $this->con->prepare("INSERT INTO CONTRATO (fecha_aprobado_contrato, fecha_pagado_contrato, monto_total_contrato, fk_presupuesto, fk_usuario) VALUES (curdate(), null, $price, $id_budget, $id_user);");
         $statement->execute();
-        return $statement->fetchAll();
+        $statement = $this->con->prepare("SELECT id_contrato FROM CONTRATO WHERE fecha_aprobado_contrato=curdate() AND fecha_pagado_contrato IS NULL AND monto_total_contrato =$price AND fk_presupuesto=$id_budget AND fk_usuario=$id_user");
+        $statement->execute();
+        $id = $statement->fetchAll();
+        if (!empty($id)){
+            return $id[0][0];
+        }else{
+            return null;
+        }
     }
 }

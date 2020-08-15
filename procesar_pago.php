@@ -90,23 +90,25 @@ switch ($method) {
                 $tipo = isset($_POST['metodo_pago']) ? $_POST['metodo_pago'] : '';
                 $banco = isset($_POST['banco']) ? $_POST['banco'] : '';
                 $numero = isset($_POST['numero']) ? $_POST['numero'] : '';
-                $vencimiento = isset($_POST['fecha_ven']) ? $_POST['fecha_ven'] : '';
-                $cod_tarjeta = isset($_POST['codigo']) ? $_POST['codigo'] : '';
 
-                $metodo = $connect->add_payment_method($tipo,$numero,$vencimiento,$banco,$_SESSION['id_user']);
+                $metodo = $connect->add_payment_method($tipo,$numero,$banco,$_SESSION['id_user']);
             }
 
             //REGISTRAR PAGO
             if(!empty($contract)){
                 //REGISTRAR PAGO PARA CONTRATO
                 $connect->add_contract_payment($contract, $count, $metodo);
-                header("Location: contracts.php");
+                //header("Location: contracts.php");
                 die();
             }elseif (!empty($course1) and !empty($course2)){
                 //REGISTRAR PAGO PARA CURSO
-                $connect->add_course_payment($course1, $course2, $count, $metodo, $_SESSION['id_user']);
-                header("Location: contracts.php");
-                die();
+                if(!$connect->get_ins_course_by_user($_SESSION['id_user'])) {
+                    $connect->add_course_payment($course1, $course2, $count, $metodo, $_SESSION['id_user']);
+                    //header("Location: contracts.php");
+                    die();
+                }else{
+                    echo "<script>alert('Ya tiene un pago para este curso')</script>";
+                }
             }
 
         }catch (PDOException $e){
@@ -127,6 +129,7 @@ try {
 
     //OBETENER METODOS DE PAGO PARA UN USUARIO
     $pay_methods = $connect->get_user_pay_methods($_SESSION['id_user']);
+    $methods = $connect->get_payment_methods();
 }catch (PDOException $e){
     $error = '<li>Error al conectar con la base de datos</li>';
 }

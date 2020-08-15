@@ -55,9 +55,17 @@ try {
         }
         $budget_details = $ordered;
         unset($ordered);
-        $price = get_total_price($budget_details[0]);
-        //SE INSERTA EL CONTRATO CON EL PRECIO TOTAL CALCULADO
-        $connect->add_new_contract($_SESSION['id_user'], $id_budget, $price);
+        $can_add = $connect->update_inventory($id_budget);
+        if($can_add){
+            $price = get_total_price($budget_details[0]);
+            //SE INSERTA EL CONTRATO CON EL PRECIO TOTAL CALCULADO
+            $id_contract = $connect->add_new_contract($_SESSION['id_user'], $id_budget, $price);
+            //AGREGAR CONTRATOS A TERCEROS
+            $connect->add_third_contracts_and_dates($id_contract, $id_budget);
+            //CREAR CITAS A SERVICIOS PERTINENTES
+        }else{
+            echo '<script>alert("No se pudo agregar, inventario insufuciente")</script>';
+        }
     }
 
     $contracts = $connect->get_user_contracts($_SESSION['id_user']);
