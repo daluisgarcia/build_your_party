@@ -5,7 +5,7 @@ class Connection
     private $dbms = 'mysql';
 
     private $host = 'localhost';
-    private $port = '3308';
+    private $port = '3306';
     private $dbname = 'ATF';
     private $user = 'root';
     private $pass = '';
